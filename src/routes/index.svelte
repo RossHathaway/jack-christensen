@@ -14,15 +14,15 @@
     font-style: italic;
   }
 
-  photo-wrapper {
+  .photo-wrapper {
     display: flex;
     justify-content: space-between;
   }
 
-  img {
-    height: 100%;
-    max-width: 400px;
-  }
+  /* img { */
+  /* height: 100%; */
+  /* max-width: 400px; */
+  /* } */
 
   p {
     margin: 1em auto;
