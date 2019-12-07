@@ -39,8 +39,6 @@
   <title>Jack Shields Christensen</title>
 </svelte:head>
 
-<h1>Jack Shields Christensen</h1>
-
 <div class="photo-wrapper">
   <img alt='Jack in Hawaii' src='uncle-jack-in-hawaii.jpg'>
   <img alt='Jack on diving tower' src='uncle-jack-on-diving-tower.jpg'>
