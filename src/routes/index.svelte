@@ -11,7 +11,7 @@
     text-transform: uppercase;
     font-weight: 700;
     margin: 0 0 0.5em 0;
-    font-style: italic;
+    font-style: oblique;
   }
 
   .photo-wrapper {
@@ -26,6 +26,8 @@
 
   p {
     margin: 1em auto;
+    font-weight: bold;
+    font-style: oblique;
   }
 
   @media (min-width: 480px) {
@@ -68,6 +70,8 @@
   xFF02: &#xFF02;<br />
   65287: &#65287;<br />
 </h2>
+
+<p>asdf paragraph <b>asdflkjasd</b> </p>
 
 <div class="photo-wrapper">
   <img alt='Jack in Hawaii' src='uncle-jack-in-hawaii.jpg'>

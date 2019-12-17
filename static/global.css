@@ -12,8 +12,7 @@
   src: url("./fonts/LucidaTypewriterStd-Bold.woff2") format("woff2"), /* Modern Browsers */
   url("./fonts/LucidaTypewriterStd-Bold.woff") format("woff"), /* Modern Browsers */
   url("./fonts/LucidaTypewriterStd-Bold.ttf") format("truetype"); /* Safari, Android, iOS */
-  font-weight: normal;
-  font-style: normal;
+  font-weight: bold;
 }
 
 @font-face {
@@ -22,7 +21,7 @@
   url("./fonts/LucidaTypewriterStd-Obl.woff") format("woff"), /* Modern Browsers */
   url("./fonts/LucidaTypewriterStd-Obl.ttf") format("truetype"); /* Safari, Android, iOS */
   font-weight: normal;
-  font-style: normal;
+  font-style: oblique;
 }
 
 @font-face {
@@ -30,8 +29,8 @@
   src: url("./fonts/LucidaTypewriterStd-BoldObl.woff2") format("woff2"), /* Modern Browsers */
   url("./fonts/LucidaTypewriterStd-BoldObl.woff") format("woff"), /* Modern Browsers */
     url("./fonts/LucidaTypewriterStd-BoldObl.ttf") format("truetype"); /* Safari, Android, iOS */
-  font-weight: normal;
-  font-style: normal;
+  font-weight: bold;
+  font-style: oblique;
 }
 
 body {
