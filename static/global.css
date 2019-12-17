@@ -1,6 +1,42 @@
+@font-face {
+  font-family: "LucidaTypewriterStd";
+  src: url("./fonts/std/LucidaTypewriterStd.woff2") format("woff2"), /* Modern Browsers */
+  url("./fonts/std/LucidaTypewriterStd.woff") format("woff"), /* Modern Browsers */
+  url("./fonts/std/LucidaTypewriterStd.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LucidaTypewriterStd-Bold";
+  src: url("./fonts/LucidaTypewriterStd-Bold.woff2") format("woff2"), /* Modern Browsers */
+  url("./fonts/LucidaTypewriterStd-Bold.woff") format("woff"), /* Modern Browsers */
+  url("./fonts/LucidaTypewriterStd-Bold.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LucidaTypewriterStd-Obl";
+  src: url("./fonts/LucidaTypewriterStd-Obl.woff2") format("woff2"), /* Modern Browsers */
+  url("./fonts/LucidaTypewriterStd-Obl.woff") format("woff"), /* Modern Browsers */
+  url("./fonts/LucidaTypewriterStd-Obl.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LucidaTypewriterStd-BoldObl";
+  src: url("./fonts/LucidaTypewriterStd-BoldObl.woff2") format("woff2"), /* Modern Browsers */
+  url("./fonts/LucidaTypewriterStd-BoldObl.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/LucidaTypewriterStd-BoldObl.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
-  font-family: 'Roboto Slab', 'Merriweather', serif;
+  font-family: 'LucidaTypewriterStd', /*'Roboto Slab', 'Merriweather', serif;*/monospace;
   font-size: 14px;
   line-height: 1.5;
   color: #333;
