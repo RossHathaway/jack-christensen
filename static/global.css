@@ -1,20 +1,21 @@
 @font-face {
-font-family: "LucidaTypewriterMin";
-  src: url("fonts/std/LucidaTypewriterStd-min.woff2") format("woff2");
+  font-family: "LucidaTypewriterSubset";
+  src: url("./fonts/std/LucidaTypewriterStd-min.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "LucidaTypewriter";
-  src: url("./fonts/std/LucidaTypewriterStd.woff2") format("woff2"),
-  url("./fonts/std/LucidaTypewriterStd.woff") format("woff");
+  src: url("fonts/std/LucidaTypewriterStd.woff2") format("woff2"),
+  url("fonts/std/LucidaTypewriterStd.woff") format("woff"),
+  url("fonts/std/LucidaTypewriterStd.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "LucidaTypewriter";
+  font-family: "LucidaTypewriterBold";
   src: url("./fonts/LucidaTypewriterStd-Bold.woff2") format("woff2"),
   /* url("./fonts/LucidaTypewriterStd-Bold.woff") format("woff") */;
   font-weight: bold;
@@ -38,13 +39,13 @@ font-family: "LucidaTypewriterMin";
 
 body {
   margin: 0;
-  font-family: 'LucidaTypewriter', sans-serif;
+  font-family: LucidaTypewriter, LucidaTypewriterSubset, sans-serif;
   font-size: 14px;
   line-height: 1.5;
   color: #333;
 }
 .fonts-stage-1 body {
-  font-family: LucidaTypewriterMin, serif;
+  font-family: LucidaTypewriterSubset, sans-serif;
   font-weight: 400;
   font-style: normal;
 }

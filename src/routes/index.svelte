@@ -77,3 +77,28 @@
   <img alt='Jack in Hawaii' src='uncle-jack-in-hawaii.jpg'>
   <img alt='Jack on diving tower' src='uncle-jack-on-diving-tower.jpg'>
 </div>
+
+<script>
+  import FontFaceObserver from 'fontfaceobserver'
+  (function () {
+    // Optimization for Repeat Views
+    if (sessionStorage.criticalFoftFontsLoaded) {
+      document.documentElement.className += " fonts-stage-1 fonts-stage-2";
+      return;
+    }
+
+    var fontASubset = new FontFaceObserver('LucidaTypewriterSubset');
+    Promise.all([fontASubset.load()]).then(function () {
+      document.documentElement.className += " fonts-stage-1";
+      var fontA = new FontFaceObserver('LucidaTypewriter');
+      var fontB = new FontFaceObserver('LucidaTypewriterBold');
+      var fontC = new FontFaceObserver('LucidaTypewriterItalic');
+      var fontD = new FontFaceObserver('LucidaTypewriterBoldItalic');
+      Promise.all([fontA.load(), fontB.load(), fontC.load(), fontD.load()]).then(function () {
+        document.documentElement.className += " fonts-stage-2";
+        // Optimization for Repeat Views
+        sessionStorage.criticalFoftFontsLoaded = true;
+      });
+    });
+  })();
+</script>
