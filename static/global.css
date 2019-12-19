@@ -1,44 +1,69 @@
 @font-face {
-  font-family: "LucidaTypewriterStd";
-  src: url("fonts/std/LucidaTypewriterStd.woff2") format("woff2"), /* Modern Browsers */
-  url("fonts/std/LucidaTypewriterStd.woff") format("woff"), /* Modern Browsers */
-  url("fonts/std/LucidaTypewriterStd.ttf") format("truetype"); /* Safari, Android, iOS */
+font-family: "LucidaTypewriterMin";
+  src: url("fonts/std/LucidaTypewriterStd-min.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "LucidaTypewriterStd-Bold";
-  src: url("fonts/LucidaTypewriterStd-Bold.woff2") format("woff2"), /* Modern Browsers */
-  url("fonts/LucidaTypewriterStd-Bold.woff") format("woff"), /* Modern Browsers */
-  url("fonts/LucidaTypewriterStd-Bold.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-family: "LucidaTypewriter";
+  src: url("./fonts/std/LucidaTypewriterStd.woff2") format("woff2"),
+  url("./fonts/std/LucidaTypewriterStd.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LucidaTypewriter";
+  src: url("./fonts/LucidaTypewriterStd-Bold.woff2") format("woff2"),
+  /* url("./fonts/LucidaTypewriterStd-Bold.woff") format("woff") */;
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "LucidaTypewriterStd-Obl";
-  src: url("fonts/LucidaTypewriterStd-Obl.woff2") format("woff2"), /* Modern Browsers */
-  url("fonts/LucidaTypewriterStd-Obl.woff") format("woff"), /* Modern Browsers */
-  url("fonts/LucidaTypewriterStd-Obl.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-family: "LucidaTypewriter";
+  src: url("./fonts/LucidaTypewriterStd-Obl.woff2") format("woff2"),
+  /* url("./fonts/LucidaTypewriterStd-Obl.woff") format("woff") */;
   font-weight: normal;
   font-style: oblique;
 }
 
 @font-face {
-  font-family: "LucidaTypewriterStd-BoldObl";
-  src: url("fonts/LucidaTypewriterStd-BoldObl.woff2") format("woff2"), /* Modern Browsers */
-  url("fonts/LucidaTypewriterStd-BoldObl.woff") format("woff"), /* Modern Browsers */
-    url("fonts/LucidaTypewriterStd-BoldObl.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-family: "LucidaTypewriter";
+  src: url("./fonts/LucidaTypewriterStd-BoldObl.woff2") format("woff2");
+  /* url("./fonts/LucidaTypewriterStd-BoldObl.woff") format("woff"); */
   font-weight: bold;
   font-style: oblique;
 }
 
 body {
   margin: 0;
-  font-family: 'LucidaTypewriterStd', /*'Roboto Slab', 'Merriweather', serif;*/monospace;
+  font-family: 'LucidaTypewriter', sans-serif;
   font-size: 14px;
   line-height: 1.5;
   color: #333;
+}
+.fonts-stage-1 body {
+  font-family: LucidaTypewriterMin, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.fonts-stage-2 body {
+  font-family: LucidaTypewriter, sans-serif;
+}
+.fonts-stage-2 strong {
+  font-family: LucidaTypewriter, sans-serif;
+  font-weight: 700;
+}
+.fonts-stage-2 em {
+  font-family: LucidaTypewriter, sans-serif;
+  font-style: oblique;
+}
+.fonts-stage-2 strong em,
+.fonts-stage-2 em strong {
+  font-family: LucidaTypewriter, sans-serif;
+  font-weight: 700;
+  font-style: oblique;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -53,15 +78,6 @@ h1 {
 
 a {
   color: inherit;
-}
-
-code {
-  font-family: menlo, inconsolata, monospace;
-  font-size: calc(1em - 2px);
-  color: #555;
-  background-color: #f0f0f0;
-  padding: 0.2em 0.4em;
-  border-radius: 2px;
 }
 
 @media (min-width: 400px) {
