@@ -1,4 +1,14 @@
 ---
 label: basic-format
 hide_body: false
-fields: []
+fields:
+- name: basic_text_box
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: basic text box
+  description: for anything
