@@ -26,25 +26,76 @@
 
   p {
     margin: 1em auto;
+    font-size: 36px;
   }
 
   @media (min-width: 480px) {
     h1 {
-      font-size: 4em;
+      font-size: 10px;
     }
   }
 </style>
 
+<script>
+  let centuryFonts = ['PT Serif', 'Lora', 'Noto Serif', 'Crimson Text', 'Vollkorn', 'Crimson Pro', 'Gelasio']
+
+  let lucidaFonts = ['Merriweather', 'Roboto Slab', 'Playfair Display', 'Arvo', 'Alegreya', 'Cardo']
+</script>
+
 <svelte:head>
   <title>Jack Shields Christensen</title>
 </svelte:head>
-<h2>
+
+<!-- {#each centuryFonts as font }
+<p style="font-family: {font};">
+  {font}: 
+&#257; a 
+&#275; e 
+&#299; i
+&#333; o
+&#363; u
+&#563; y
+&Amacr; A
+&Emacr; E
+&Imacr; I
+&Omacr; O
+&Umacr; U
+‘?’ “!”
+'abc' "def" it's
+</p>
+{/each}
+
+{#each lucidaFonts as font }
+<p style="font-family: {font};">
+  {font}: 
+&#257; a
+&#275; e
+&#299; i
+&#333; o
+&#363; u
+&#563; y
+&Amacr; A
+&Emacr; E
+&Imacr; I
+&Omacr; O
+&Umacr; U
+‘?’ “!”
+'abc' "def" it's
+</p>
+{/each} -->
+
+<!-- <h2>
   &#257; a
   &#275; e
   &#299; i
   &#333; o
   &#363; u
   &#563; y
+  &Amacr; A
+  &Emacr; E
+  &Imacr; I
+  &Omacr; O
+  &Umacr; U
 </h2>
 
 <h2>
@@ -68,6 +119,20 @@
   xFF02: &#xFF02;<br />
   65287: &#65287;<br />
 </h2>
+
+<p>
+  &#257; a
+  &#275; e
+  &#299; i
+  &#333; o
+  &#363; u
+  &#563; y
+  &Amacr; A
+  &Emacr; E
+  &Imacr; I
+  &Omacr; O
+  &Umacr; U
+</p> -->
 
 <div class="photo-wrapper">
   <img alt='Jack in Hawaii' src='uncle-jack-in-hawaii.jpg'>
