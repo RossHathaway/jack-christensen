@@ -6,3 +6,4 @@ basic_text_box: |-
   m
 
 ---
+![](/uncle-jack-on-diving-tower.jpg)
