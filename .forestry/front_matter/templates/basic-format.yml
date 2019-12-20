@@ -12,3 +12,5 @@ fields:
       format: markdown
   label: basic text box
   description: for anything
+pages:
+- src/routes/documents/test1.md
