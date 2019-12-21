@@ -1,4 +1,0 @@
----
-
----
-![](/rossmetapod.png)

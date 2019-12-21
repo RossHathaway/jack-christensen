@@ -3,5 +3,4 @@ label: No Front Matter
 hide_body: false
 fields: []
 pages:
-- src/routes/documents/Categories/Architecture/metapod.md
 - src/routes/documents/Contact.md
