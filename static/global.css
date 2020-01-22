@@ -1,44 +1,9 @@
-/* @font-face {
-  font-family: "LucidaTypewriterStd";
-  src: url("./fonts/std/LucidaTypewriterStd.woff2") format("woff2"),
-  url("./fonts/std/LucidaTypewriterStd.woff") format("woff"),
-  url("./fonts/std/LucidaTypewriterStd.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "LucidaTypewriterStd-Bold";
-  src: url("./fonts/LucidaTypewriterStd-Bold.woff2") format("woff2"),
-  url("./fonts/LucidaTypewriterStd-Bold.woff") format("woff"),
-  url("./fonts/LucidaTypewriterStd-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "LucidaTypewriterStd-Obl";
-  src: url("./fonts/LucidaTypewriterStd-Obl.woff2") format("woff2"),
-  url("./fonts/LucidaTypewriterStd-Obl.woff") format("woff"),
-  url("./fonts/LucidaTypewriterStd-Obl.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "LucidaTypewriterStd-BoldObl";
-  src: url("./fonts/LucidaTypewriterStd-BoldObl.woff2") format("woff2"),
-  url("./fonts/LucidaTypewriterStd-BoldObl.woff") format("woff"),
-    url("./fonts/LucidaTypewriterStd-BoldObl.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}  */
 
 body {
   margin: 0;
-  font-family: monospace;
+  font-family: 'Noto Serif', serif;
+  ;
   font-size: 14px;
-  font-size-adjust: 0.01;
   /* line-height: 1.5; */
   color: #333;
 }
