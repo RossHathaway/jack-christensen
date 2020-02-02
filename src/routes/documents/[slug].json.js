@@ -1,4 +1,4 @@
-import { getPost } from './_posts.js';
+import { getPost } from './_docs.js';
 
 const lookup = new Map();
 

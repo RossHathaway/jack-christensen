@@ -1,4 +1,4 @@
-import { getPosts } from './_posts.js';
+import { getPosts } from './_docs.js.js';
 
 let contents;
 

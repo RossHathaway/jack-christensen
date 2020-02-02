@@ -9,8 +9,12 @@
   <!-- we're using the non-standard `rel=prefetch` attribute to
 				tell Sapper to load the data for the page as soon as
 				the user hovers over the link or taps it, instead of
-				waiting for the 'click' event -->
-  <li><a rel="prefetch" href="blog/{post.slug}">{post.title}</a></li>
+        waiting for the 'click' event 
+      
+        TODO: change link to have propeimport { mdsvex } from 'mdsvex';
+r url
+      -->
+  <li><a rel="prefetch" href="documents/{post.slug}">{post.title}</a></li>
   {/each}
 </ul>
 
@@ -24,7 +28,7 @@
 <script>
   export default {
     preload({ params, query }) {
-      return this.fetch(`blog.json`)
+      return this.fetch(`documents.json`)
         .then((r) => r.json())
         .then((posts) => {
           return { posts };
