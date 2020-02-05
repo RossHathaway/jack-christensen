@@ -2,10 +2,10 @@
   export async function preload(page, session) {
     const { slug } = page.params;
 
-    const res = await this.fetch(`blog/${slug}.json`);
-    const article = await res.json();
+    const res = await this.fetch(`documents/${slug}.json`);
+    const post = await res.json();
 
-    return { article };
+    return { post };
   }
 </script>
 
