@@ -4,7 +4,7 @@ import marked from 'marked';
 
 export function getPosts() {
   const slugs = fs
-    .readdirSync('posts')
+    .readdirSync('documents')
     .filter((file) => path.extname(file) === '.md')
     .map((file) => file.slice(0, -3));
 
@@ -14,7 +14,7 @@ export function getPosts() {
 }
 
 export function getPost(slug) {
-  const file = `posts/${slug}.md`;
+  const file = `documents/${slug}.md`;
   if (!fs.existsSync(file)) return null;
 
   const markdown = fs.readFileSync(file, 'utf-8');
