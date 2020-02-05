@@ -1,6 +1,6 @@
 <script context="module">
   export async function preload(page, session) {
-    const data = await this.fetch(`blog.json`);
+    const data = await this.fetch(`documents.json`);
     const posts = await data.json();
     return { posts };
   }
@@ -22,7 +22,7 @@
 				tell Sapper to load the data for the page as soon as
 				the user hovers over the link or taps it, instead of
 				waiting for the 'click' event -->
-  <li><a rel="prefetch" href="blog/{post.slug}">{post.title}</a></li>
+  <li><a rel="prefetch" href="documents/{post.slug}">{post.title}</a></li>
   {/each}
 </ul>
 
