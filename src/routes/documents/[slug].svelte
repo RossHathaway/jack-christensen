@@ -1,3 +1,18 @@
+<script context="module">
+  export async function preload(page, session) {
+    const { slug } = page.params;
+
+    const res = await this.fetch(`blog/${slug}.json`);
+    const article = await res.json();
+
+    return { article };
+  }
+</script>
+
+<script>
+  export let post;
+</script>
+
 <svelte:head>
   <title>{post.metadata.title}</title>
 </svelte:head>
@@ -44,7 +59,7 @@
   }
 </style>
 
-<script>
+<!-- Svelte 2 blog from markdown version <script>
   export default {
     async preload({ params, query }) {
       // the `slug` parameter is available because
@@ -59,4 +74,4 @@
       }
     }
   };
-</script>
+</script> -->

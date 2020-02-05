@@ -1,3 +1,21 @@
+<svelte:head>
+  <title>Sapper project template</title>
+</svelte:head>
+
+<h1>Great success!</h1>
+
+<figure>
+  <img alt="Borat" src="great-success.png" />
+  <figcaption>HIGH FIVE!</figcaption>
+</figure>
+
+<p>
+  <strong
+    >Try editing this file (routes/index.html) to test hot module
+    reloading.</strong
+  >
+</p>
+
 <style>
   h1,
   figure,
@@ -11,18 +29,17 @@
     text-transform: uppercase;
     font-weight: 700;
     margin: 0 0 0.5em 0;
-    font-style: oblique;
   }
 
-  .photo-wrapper {
-    display: flex;
-    justify-content: space-between;
+  figure {
+    margin: 0 0 1em 0;
   }
 
-  /* img { */
-  /* height: 100%; */
-  /* max-width: 400px; */
-  /* } */
+  img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 0 1em 0;
+  }
 
   p {
     margin: 1em auto;
@@ -35,7 +52,3 @@
     }
   }
 </style>
-
-<svelte:head>
-  <title>Jack Shields Christensen</title>
-</svelte:head>

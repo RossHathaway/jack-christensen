@@ -1,13 +1,10 @@
 import fs from 'fs';
 import path from 'path';
 import marked from 'marked';
-/* 
-function to get posts in given filepath
 
-*/
-export function getPosts(filepath) {
+export function getPosts() {
   const slugs = fs
-    .readdirSync('documents') // change to filepath
+    .readdirSync('documents')
     .filter((file) => path.extname(file) === '.md')
     .map((file) => file.slice(0, -3));
 

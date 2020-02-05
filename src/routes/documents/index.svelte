@@ -1,3 +1,15 @@
+<script context="module">
+  export async function preload(page, session) {
+    const data = await this.fetch(`blog.json`);
+    const posts = await data.json();
+    return { posts };
+  }
+</script>
+
+<script>
+  export let posts;
+</script>
+
 <svelte:head>
   <title>Blog</title>
 </svelte:head>
@@ -24,15 +36,3 @@ r url
     line-height: 1.5;
   }
 </style>
-
-<script>
-  export default {
-    preload({ params, query }) {
-      return this.fetch(`documents.json`)
-        .then((r) => r.json())
-        .then((posts) => {
-          return { posts };
-        });
-    }
-  };
-</script>
