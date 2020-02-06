@@ -1,10 +1,10 @@
 <script>
+  import NavSection from './NavSection.svelte';
   export let segment;
 </script>
 
 <style>
   nav {
-    border-bottom: 1px solid rgba(255, 62, 0, 0.1);
     font-weight: 300;
     padding: 0 1em;
     display: flex;
@@ -46,7 +46,7 @@
 </style>
 
 <nav>
-  <div></div>
+  <NavSection title='home' />
   <ul>
     <li><a class:selected="{segment === undefined}" href=".">home</a></li>
     <li><a class:selected='{segment === "about"}' href="about">about</a></li>

@@ -1,9 +1,12 @@
 <script>
-  export let title, links;
+  export let title,
+    bgColor = 'goldenrod',
+    borderColor = 'black',
+    links = [];
 </script>
 
-<div>
-  <h4>{title}</h4>
+<div style="background-color: {bgColor}; --borderColor: {borderColor}">
+  <h4>{title.toUpperCase()}</h4>
   <ul>
     {#each links as link}
     <li><a href="{link.url}"></a>{link.title}</li>
@@ -12,6 +15,13 @@
 </div>
 
 <style>
+  div {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid var(--borderColor);
+  }
   ul {
     margin: 0;
     padding: 0;
