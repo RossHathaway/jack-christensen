@@ -7,3 +7,5 @@ fields:
   config:
     required: false
   label: Title
+pages:
+- documents/about-uncle-jack/my-favorite-snapshot.md
