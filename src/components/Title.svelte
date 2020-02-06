@@ -17,6 +17,7 @@
   h1,
   h2 {
     text-align: center;
+    margin: 0;
   }
   h1 {
     font-style: italic;
