@@ -17,7 +17,9 @@
   h1,
   h2 {
     text-align: center;
-    font-weight: bold;
+  }
+  h1 {
+    font-style: italic;
   }
 </style>
 
