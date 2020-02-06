@@ -4,13 +4,18 @@ body {
   font-size: 20px;
   letter-spacing: 0.02em;
   line-height: 1.5;
-  color: #333;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
 }
 
 strong {
   letter-spacing: 0.04em;
 }
-
+h1,
+h2,
+h3 {
+  text-align: center;
+}
 h1 {
   font-size: 50px;
   letter-spacing: 0.08em;
