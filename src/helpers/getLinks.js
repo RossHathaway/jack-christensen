@@ -1,7 +1,9 @@
 import fs from 'fs';
 
 export function getLinks(path) {
-  const paths = fs.readdirSync(path);
+  // console.log('cwd', process.cwd());
+  const folderPath = path.split('.')[0];
+  const paths = fs.readdirSync('src/routes' + folderPath);
   const links = paths.map((path) => {
     const name = path
       .split('-')
