@@ -7,3 +7,5 @@ fields:
   config:
     required: false
   label: Title
+pages:
+- src/routes/categories/Hawai'i/obama-s-neighborhood.svexy
