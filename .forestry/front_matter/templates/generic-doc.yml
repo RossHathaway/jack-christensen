@@ -8,4 +8,5 @@ fields:
     required: false
   label: Title
 pages:
-- documents/about-uncle-jack/my-favorite-snapshot.md
+- src/routes/categories/Hawai'i/hike-to-diamond-head-lighthouse.svexy
+- src/routes/categories/Hawai'i/obama-s-neighborhood.svexy

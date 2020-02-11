@@ -5,10 +5,11 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: documents
-  label: documents
+  path: src/routes
+  label: parent-folder
   create: all
   match: "**/*"
+  new_doc_ext: svexy
 upload_dir: static
 public_path: ''
 front_matter_path: ''
