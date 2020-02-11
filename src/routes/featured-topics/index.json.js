@@ -1,3 +1,1 @@
-import { get as listingPage } from '../../helpers/ListingPage.json.js';
-
-export const get = listingPage;
+export { get } from '../../helpers/ListingPage.json.js';

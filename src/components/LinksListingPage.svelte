@@ -3,7 +3,6 @@
   import { stores } from '@sapper/app';
   const { page } = stores();
 
-  console.log('url', $page.path + '.json');
   let links = [];
   axios
     .get($page.path + '.json')
