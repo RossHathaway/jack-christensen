@@ -29,11 +29,13 @@ export default {
         'process.env.NODE_ENV': JSON.stringify(mode)
       }),
       svelte({
-        extensions: ['.svelte', '.svexy'],
+        extensions: ['.svelte', '.md'],
         dev,
         hydratable: true,
         emitCss: true,
-        preprocess: mdsvex()
+        preprocess: mdsvex({
+          extension: '.md'
+        })
       }),
       resolve({
         browser: true,
@@ -83,8 +85,10 @@ export default {
         'process.env.NODE_ENV': JSON.stringify(mode)
       }),
       svelte({
-        extensions: ['.svelte', '.svexy'],
-        preprocess: mdsvex(),
+        extensions: ['.svelte', '.md'],
+        preprocess: mdsvex({
+          extension: '.md'
+        }),
         generate: 'ssr',
         dev
       }),
