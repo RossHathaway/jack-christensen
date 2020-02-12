@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { makeReadableName } from './makeReadableNameFromPath';
 
 export function getLinks(path) {
   let links = [];
@@ -23,13 +24,4 @@ export function getLinks(path) {
 
 function removeFileEnding(file) {
   return file.split('.')[0];
-}
-
-function makeReadableName(path) {
-  return path
-    .split('-')
-    .map(
-      (nameSegment) => nameSegment[0].toUpperCase() + nameSegment.substring(1)
-    )
-    .join(' ');
 }
