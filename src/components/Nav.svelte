@@ -1,5 +1,4 @@
 <script>
-  import NavSection from './NavSection.svelte';
   export let segment;
 </script>
 
@@ -9,6 +8,7 @@
     padding: 0 1em;
     display: flex;
     flex-direction: column;
+    max-width: 200px;
   }
   ul {
     margin: 0;
@@ -46,7 +46,6 @@
 </style>
 
 <nav>
-  <NavSection title='home' />
   <ul>
     <li><a class:selected="{segment === undefined}" href=".">home</a></li>
     <li><a class:selected='{segment === "about"}' href="about">about</a></li>

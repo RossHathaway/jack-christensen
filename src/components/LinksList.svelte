@@ -3,6 +3,10 @@
   import { stores } from '@sapper/app';
   import { makeReadableName } from '../helpers/makeReadableNameFromPath';
 
+  export let isNav = false,
+    bgColor = 'white',
+    borderColor = null;
+
   const { page } = stores();
   const currentPath = $page.path;
   const trimmedPath = currentPath.endsWith('/')
@@ -10,7 +14,8 @@
     : currentPath;
 
   const removedSlashes = trimmedPath.split('/');
-  const title = makeReadableName(removedSlashes[removedSlashes.length - 1]);
+  const lastPathSection = removedSlashes[removedSlashes.length - 1];
+  const title = makeReadableName(lastPathSection);
   let links = [];
 
   onMount(() =>
@@ -22,7 +27,7 @@
 </script>
 
 <div>
-  <h3>{title}</h3>
+  <h3>{isNav ? `<a href="/{lastPathSection}">${title}</a>` : title}</h3>
   <ul>
     {#each links as link}
     <li><a href="{link.path}">{link.name}</a></li>
@@ -33,5 +38,9 @@
 <style>
   ul {
     list-style: none;
+  }
+
+  li {
+    padding: 0.5rem;
   }
 </style>
