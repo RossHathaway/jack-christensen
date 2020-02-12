@@ -9,7 +9,7 @@ sections:
   label: parent-folder
   create: all
   match: "**/*"
-  new_doc_ext: svexy
+  new_doc_ext: md
 upload_dir: static
 public_path: ''
 front_matter_path: ''
