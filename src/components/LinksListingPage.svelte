@@ -1,15 +1,21 @@
 <script>
-  import axios from 'axios';
+  import { onMount } from 'svelte';
   import { stores } from '@sapper/app';
+
   const { page } = stores();
+  const currentPath = $page.path;
+  const trimmedPath = currentPath.endsWith('/')
+    ? currentPath.slice(0, -1)
+    : currentPath;
 
   let links = [];
-  axios
-    .get($page.path + '.json')
-    .then(({ data }) => {
-      links = data;
-    })
-    .catch((err) => console.error(err));
+
+  onMount(() =>
+    fetch(trimmedPath + '.json')
+      .then((res) => res.json())
+      .then((json) => (links = json))
+      .catch((err) => console.log(`error in fetch from ${trimmedPath}.json`))
+  );
 </script>
 
 <ul>

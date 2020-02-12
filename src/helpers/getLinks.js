@@ -1,19 +1,23 @@
 import fs from 'fs';
 
 export function getLinks(path) {
-  const folderPath = removeFileEnding(path);
-  const paths = fs.readdirSync('src/routes' + folderPath);
+  let links = [];
+  try {
+    const folderPath = removeFileEnding(path);
+    const paths = fs.readdirSync('src/routes' + folderPath);
 
-  const links = paths
-    .filter((child) => !child.startsWith('index'))
-    .map((child) => {
-      const childFileName = removeFileEnding(child);
-      const childPath = `${folderPath}/${childFileName}`;
-      const readableName = makeReadableName(childFileName);
+    links = paths
+      .filter((child) => !child.startsWith('index'))
+      .map((child) => {
+        const childFileName = removeFileEnding(child);
+        const childPath = `${folderPath}/${childFileName}`;
+        const readableName = makeReadableName(childFileName);
 
-      return { path: childPath, name: readableName };
-    });
-
+        return { path: childPath, name: readableName };
+      });
+  } catch (err) {
+    console.log('got an error in getLinks.js function getLinks');
+  }
   return links;
 }
 
