@@ -1,1 +1,1 @@
-export { get } from '../../helpers/ListingPage.json.js';
+export { get } from '../../helpers/LinksList.json.js';
