@@ -1,13 +1,11 @@
 ---
 title: Obama's Neighborhood
+---**UNCLE JACK’S PUBLIC SERVICE PROJECTS**
 
----
-**UNCLE JACK’S PUBLIC SERVICE PROJECTS**
-
-**The Clean Air Team &   
+**The Clean Air Team &  
  The Program To Preserve Hawaiian Place Names**
 
-**851 NORTH SCHOOL STREET, #505 • HONOLULU • HI 96817   
+**851 NORTH SCHOOL STREET, #505 • HONOLULU • HI 96817  
  TEL: (808) 528•0528** [**www.unclejackinhawaii.com **](http://www.unclejackinhawaii.com/)[**jacksc@hawaii.edu**](mailto:jacksc@hawaii.edu)
 
 » PRESIDENT OBAMA'S NEIGHBORHOOD”
