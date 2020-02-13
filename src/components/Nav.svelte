@@ -6,10 +6,10 @@
 
 <nav>
   <ul>
-    <LinksList links={homeSectionLinks} className="home" title="HOME"/> 
-    <LinksList folder="featured-topics"/> 
-    <LinksList folder="categories"/>
-    <a href="./contact">CONTACT</a>
+    <LinksList isNav links={homeSectionLinks} className="home" title="HOME"/> 
+    <LinksList isNav folder="featured-topics"/> 
+    <LinksList isNav folder="categories"/>
+    <div class="contact"><h3><a href="./contact">CONTACT</a></h3></div>
   </ul>
 </nav>
 
@@ -25,12 +25,23 @@
     margin: 0;
     padding: 0;
   }
-  /* clearfix */
-  ul::after {
-    content: '';
-    display: block;
-    clear: both;
+
+  .contact {
+    color: white;
+    background-color: darkred;
+    border: 2px solid black;
+    margin-bottom: 2rem;
   }
 
-
+  .contact a {
+    text-decoration: none;
+    display: block;
+  }
+  .contact a:visited {
+      color: black;
+    }
+  .contact a:hover,
+  .contact a:active {
+      color: green;
+    }
 </style>

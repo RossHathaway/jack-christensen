@@ -38,7 +38,7 @@
 <div class="{folder} {className}">
   <h3>
     {#if isNav}
-    <a rel="prefetch" href="/{folder}">{title}</a>
+    <a rel="prefetch" href="/{folder ? folder : ''}">{title}</a>
     {:else} {title} {/if}
   </h3>
   <ul>
