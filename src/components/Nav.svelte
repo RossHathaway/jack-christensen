@@ -4,11 +4,11 @@
 
 <nav>
   <ul>
-  <LinksList isNav folder="home"/>
-  <LinksList isNav folder="featured-topics"/>
-  <LinksList isNav folder="categories"/>
-  <a href="./contact">CONTACT</a>
-</ul>
+    <LinksList isNav folder="home"/> <LinksList isNav
+    folder="featured-topics"/> <LinksList isNav
+    folder="categories"/>
+    <a href="./contact">CONTACT</a>
+  </ul>
 </nav>
 
 <style>

@@ -4,8 +4,7 @@
   import { makeReadableName } from '../helpers/makeReadableNameFromPath';
 
   export let isNav = false,
-    folder = null,
-    classForStyling = 'index';
+    folder = null;
 
   const { page } = stores();
   const currentPath = $page.path;
@@ -31,7 +30,7 @@
   );
 </script>
 
-<div>
+<div class="{folder}">
   <h3>
     {#if isNav}
     <a rel="prefetch" href="/{folder}">{title}</a>
@@ -46,8 +45,33 @@
 
 <style>
   div {
-    background-color: var(--bgColor, white);
-    border: var(--border, none);
+    background-color: white;
+  }
+
+  .home,
+  .featured-topics {
+    background-color: goldenrod;
+    color: white;
+  }
+
+  .home {
+    border: 2px solid black;
+  }
+
+  .featured-topics {
+    border: 2px solid royalblue;
+  }
+
+  .categories {
+    background-color: darkred;
+    color: white;
+    border: 2px solid lightgray;
+  }
+
+  .featured-topics,
+  .categories,
+  .home {
+    --visitedColor: gray;
   }
 
   ul {
@@ -59,10 +83,10 @@
   }
 
   a:visited {
-    color: var(--visitedColor, green);
+    color: var(--visitedColor, gray);
   }
   a:hover,
   a:active {
-    color: var(--activeColor, red);
+    color: var(--activeColor, green);
   }
 </style>
