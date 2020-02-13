@@ -1,6 +1,15 @@
 <script>
-  export let segment;
+  import LinksList from './LinksList.svelte';
 </script>
+
+<nav>
+  <ul>
+  <LinksList isNav folder="home"/>
+  <LinksList isNav folder="featured-topics"/>
+  <LinksList isNav folder="categories"/>
+  <a href="./contact">CONTACT</a>
+</ul>
+</nav>
 
 <style>
   nav {
@@ -44,18 +53,3 @@
     display: block;
   }
 </style>
-
-<nav>
-  <ul>
-    <li><a class:selected="{segment === undefined}" href=".">home</a></li>
-    <li><a class:selected='{segment === "about"}' href="about">about</a></li>
-
-    <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-    <li>
-      <a rel="prefetch" class:selected='{segment === "blog"}' href="blog"
-        >blog</a
-      >
-    </li>
-  </ul>
-</nav>
