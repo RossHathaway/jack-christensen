@@ -16,7 +16,7 @@
   const removedSlashes = trimmedPath.split('/');
   const lastPathSection = removedSlashes[removedSlashes.length - 1];
   const title = folder
-    ? makeReadableName(folder)
+    ? makeReadableName(folder).toUpperCase()
     : makeReadableName(lastPathSection);
 
   const fetchPath = folder ? folder : trimmedPath;
