@@ -4,7 +4,8 @@
   import { makeReadableName } from '../helpers/makeReadableNameFromPath';
 
   export let isNav = false,
-    folder = null;
+    folder = null,
+    links = [];
 
   const { page } = stores();
   const currentPath = $page.path;
@@ -20,14 +21,14 @@
 
   const fetchPath = folder ? folder : trimmedPath;
 
-  let links = [];
-
-  onMount(() =>
-    fetch(fetchPath + '.json')
-      .then((res) => res.json())
-      .then((json) => (links = json))
-      .catch((err) => console.log(`error in fetch from ${fetchPath}.json`))
-  );
+  if (links.length === 0) {
+    onMount(() =>
+      fetch(fetchPath + '.json')
+        .then((res) => res.json())
+        .then((json) => (links = json))
+        .catch((err) => console.log(`error in fetch from ${fetchPath}.json`))
+    );
+  }
 </script>
 
 <div class="{folder}">

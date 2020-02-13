@@ -1,12 +1,14 @@
 <script>
   import LinksList from './LinksList.svelte';
+
+  const homeSectionLinks = [{path: '/', name: 'About This Site'}, {path: '/about-uncle-jack', name: 'About Uncle Jack'}]
 </script>
 
 <nav>
   <ul>
-    <LinksList isNav folder="home"/> <LinksList isNav
-    folder="featured-topics"/> <LinksList isNav
-    folder="categories"/>
+    <LinksList links={homeSectionLinks}/> 
+    <LinksList folder="featured-topics"/> 
+    <LinksList folder="categories"/>
     <a href="./contact">CONTACT</a>
   </ul>
 </nav>
