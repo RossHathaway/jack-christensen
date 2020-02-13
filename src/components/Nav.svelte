@@ -6,7 +6,7 @@
 
 <nav>
   <ul>
-    <LinksList links={homeSectionLinks}/> 
+    <LinksList links={homeSectionLinks} className="home" title="HOME"/> 
     <LinksList folder="featured-topics"/> 
     <LinksList folder="categories"/>
     <a href="./contact">CONTACT</a>
@@ -16,7 +16,7 @@
 <style>
   nav {
     font-weight: 300;
-    padding: 0 1em;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
     max-width: 200px;
@@ -31,27 +31,6 @@
     display: block;
     clear: both;
   }
-  li {
-    display: block;
-    float: left;
-    width: 100%;
-  }
-  .selected {
-    position: relative;
-    display: inline-block;
-  }
-  .selected::after {
-    position: absolute;
-    content: '';
-    width: calc(100% - 1em);
-    height: 2px;
-    background-color: rgb(255, 62, 0);
-    display: block;
-    bottom: -1px;
-  }
-  a {
-    text-decoration: none;
-    padding: 1em 0.5em;
-    display: block;
-  }
+
+
 </style>

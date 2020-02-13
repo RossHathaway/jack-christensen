@@ -5,6 +5,8 @@
 
   export let isNav = false,
     folder = null,
+    title,
+    className = null,
     links = [];
 
   const { page } = stores();
@@ -15,9 +17,11 @@
 
   const removedSlashes = trimmedPath.split('/');
   const lastPathSection = removedSlashes[removedSlashes.length - 1];
-  const title = folder
-    ? makeReadableName(folder).toUpperCase()
-    : makeReadableName(lastPathSection);
+  if (!title) {
+    title = folder
+      ? makeReadableName(folder).toUpperCase()
+      : makeReadableName(lastPathSection);
+  }
 
   const fetchPath = folder ? folder : trimmedPath;
 
@@ -31,7 +35,7 @@
   }
 </script>
 
-<div class="{folder}">
+<div class="{folder} {className}">
   <h3>
     {#if isNav}
     <a rel="prefetch" href="/{folder}">{title}</a>
@@ -47,6 +51,7 @@
 <style>
   div {
     background-color: white;
+    margin-bottom: 1rem;
   }
 
   .home,
@@ -69,25 +74,25 @@
     border: 2px solid lightgray;
   }
 
-  .featured-topics,
-  .categories,
-  .home {
-    --visitedColor: gray;
-  }
-
   ul {
     list-style: none;
+    padding: 0;
   }
 
   li {
     padding: 0.5rem;
   }
 
+  a {
+    text-decoration: none;
+    display: block;
+  }
+
   a:visited {
-    color: var(--visitedColor, gray);
+    color: black;
   }
   a:hover,
   a:active {
-    color: var(--activeColor, green);
+    color: green;
   }
 </style>
