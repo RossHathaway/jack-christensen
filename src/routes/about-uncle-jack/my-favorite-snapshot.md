@@ -1,6 +1,3 @@
-+++
-
-+++
 <strong>MY FAVORITE SNAPSHOT</strong> was taken by Professor Winfield E. Nagley
 who later became chairman of the Philosophy Department at the
 University Of Hawai'i. I'm in my mid—twenties atop a phallic
