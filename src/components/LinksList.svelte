@@ -5,7 +5,7 @@
 
   export let isNav = false,
     folder = null,
-    title,
+    title = null,
     className = null,
     links = [];
 
@@ -17,7 +17,7 @@
 
   const removedSlashes = trimmedPath.split('/');
   const lastPathSection = removedSlashes[removedSlashes.length - 1];
-  if (!title) {
+  if (title === null) {
     title = folder
       ? makeReadableName(folder).toUpperCase()
       : makeReadableName(lastPathSection);
@@ -39,7 +39,7 @@
   <h3>
     {#if isNav}
     <a rel="prefetch" href="/{folder ? folder : ''}">{title}</a>
-    {:else} {title} {/if}
+    {:else if title} {title} {/if}
   </h3>
   <ul>
     {#each links as link}

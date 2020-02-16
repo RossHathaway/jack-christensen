@@ -5,6 +5,7 @@
   const { page } = stores();
   const currentPath = $page.path.endsWith('/') ? $page.path : $page.path + '/';
   const distantPassagesPath = `${currentPath}distant-passages`
+  const triptychPath = `${currentPath}triptych`
 ```
 
 <h3 style="text-align: center;">SINGLE SENTENCE POEMS</h3> 
@@ -30,8 +31,9 @@ as souvenirs from several journeys to Japan and Peru:
 1. <a href="{distantPassagesPath}/izcuchaca">Izcuchaca </a>
 1. <a href="{distantPassagesPath}/el-condor-pasa">El Condor Pasa </a>
 
-The second part is called TRIPTYCH beginning with
+The second part is called <a href="{triptychPath}">TRIPTYCH</a> beginning with
 another travel fragment followed by my two longest sentences: 
 
-Uncouth Youth
-Spring Green Global Hero
+1. <a href="{triptychPath}/uncouth-youth">Uncouth Youth</a>
+1. <a href="{triptychPath}/spring-green">Spring Green</a> 
+1. <a href="{triptychPath}/global-hero">Global Hero</a>
