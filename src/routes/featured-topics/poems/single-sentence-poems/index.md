@@ -20,15 +20,15 @@ My selections here are arranged in two
 parts. The first is entitled <a href="{distantPassagesPath}">DISTANT PASSAGES</a> comprised of nine pieces written
 as souvenirs from several journeys to Japan and Peru: 
 
-Inland Sea 
-Miyajima 
-Ise
-Kyoto Downpour 
-The Sacred Valley Of The Incas 
-Machu Picchu 
-La Pampa de Anta
-Izcuchaca 
-El Condor Pasa 
+1. <a href="{distantPassagesPath}/inland-sea">Inland Sea</a>
+1. <a href="{distantPassagesPath}/miyajima">Miyajima</a> 
+1. <a href="{distantPassagesPath}/ise">Ise</a>
+1. <a href="{distantPassagesPath}/kyoto-downpour">Kyoto Downpour </a>
+1. <a href="{distantPassagesPath}/the-sacred-valley-of-the-incas">The Sacred Valley Of The Incas </a>
+1. <a href="{distantPassagesPath}/machu-picchu">Machu Picchu </a>
+1. <a href="{distantPassagesPath}/la-pampa-de-anta">La Pampa de Anta</a>
+1. <a href="{distantPassagesPath}/izcuchaca">Izcuchaca </a>
+1. <a href="{distantPassagesPath}/el-condor-pasa">El Condor Pasa </a>
 
 The second part is called TRIPTYCH beginning with
 another travel fragment followed by my two longest sentences: 
