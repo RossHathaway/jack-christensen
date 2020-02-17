@@ -1,4 +1,4 @@
-### Machu Picchu 
+## Machu Picchu 
 As I hiked along an ancient passage <br />
 overlooking a plunging jungle ravine, <br />
 not far from the architectural wonders <br />

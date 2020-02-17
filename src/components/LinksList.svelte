@@ -36,11 +36,11 @@
 </script>
 
 <div class="{folder} {className}">
-  <h3>
+  <h2 style="{isNav ? 'font-size: 24px;' : null}">
     {#if isNav}
     <a rel="prefetch" href="/{folder ? folder : ''}">{title}</a>
     {:else if title} {title} {/if}
-  </h3>
+  </h2>
   <ul>
     {#each links as link}
     <li><a rel="prefetch" href="{link.path}">{link.name}</a></li>

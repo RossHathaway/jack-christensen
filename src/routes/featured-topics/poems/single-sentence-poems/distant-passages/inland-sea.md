@@ -1,4 +1,4 @@
-### Inland Sea 
+## Inland Sea 
 When leaving the quiet, pine clad islet <br />
 where we'd rested overnight at an inn, <br />
 we walked down the shoreline trail to <br />

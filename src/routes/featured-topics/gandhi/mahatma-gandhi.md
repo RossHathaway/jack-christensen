@@ -22,7 +22,7 @@ Below, Attenborough directs a scene with Kingsley and front line extras.
 — Attenborough Private Archives, Surrey, England
 
 
-#### GANDHI
+## GANDHI
 
 A Film By Sir Richard Attenborough
 MOHANDAS KARAMCHAND GANDHI was born October 2, 1869 at Porbandar in the state
@@ -180,7 +180,7 @@ In Search Of Gandhi and The Words Of Gandhi.
 This cine-survey was compiled by J.S. Christensen in 1991
 with a few insertions by Lord Attenborough during 1992.
 
-##### GANDHI'S HUMOR
+### GANDHI'S HUMOR
 WHEN HE DISEMBARKED from a steamer at Marseilles as a world famous personage,
 Mahatma Gandhi still was required to make a declaration of his possessions to
 the French customs officer. So he stated, "I am a poor mendicant. My earthly

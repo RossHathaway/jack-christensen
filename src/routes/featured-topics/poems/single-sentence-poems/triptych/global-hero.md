@@ -1,4 +1,4 @@
-### Global Hero 
+## Global Hero 
 
 Charles Lindbergh, an unknown aviator, <br />
 was popularly labeled "Lucky Lindy" <br />

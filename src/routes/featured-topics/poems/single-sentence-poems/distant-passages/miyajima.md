@@ -1,4 +1,4 @@
-### Miyajima 
+## Miyajima 
 To see the famous view, we rented a skiff <br />
 and rowed away from the Sacred Island of <br />
 steep ravines safeguarded by evergreens, <br />

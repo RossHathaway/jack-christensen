@@ -1,4 +1,4 @@
-### Kyoto Downpour 
+## Kyoto Downpour 
 A few upright rocks amidst plain gray pebbles, <br />
 carefully selected to form a border surrounding <br />
 the garden tea house, now gain surface details, <br />

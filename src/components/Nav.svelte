@@ -26,6 +26,10 @@
     padding: 0;
   }
 
+  :global(.contact h2) {
+    font-size: 24px;
+  }
+
   .contact {
     color: white;
     background-color: darkred;

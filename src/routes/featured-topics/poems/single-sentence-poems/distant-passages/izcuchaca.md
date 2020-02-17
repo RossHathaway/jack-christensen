@@ -1,4 +1,4 @@
-### Izcuchaca 
+## Izcuchaca 
 Passing through this Peruvian <br />
 mountain town, I momentarily <br />
 glimpse a typical village lad <br />

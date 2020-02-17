@@ -14,13 +14,9 @@
     width: 100%;
     height: var(--logoSize);
   }
-  h1,
-  h2 {
+  h1 {
     margin: 0;
   }
-  /* h1 { */
-    /* font-style: italic; */
-  /* } */
 </style>
 
 <header>

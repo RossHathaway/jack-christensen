@@ -1,4 +1,4 @@
-### Ise 
+## Ise 
 We stood among inquisitive, mystified people <br />
 looking through the transparent silk curtain <br />
 covering the entrance to the fenced enclosure, <br />
