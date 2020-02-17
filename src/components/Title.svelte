@@ -18,15 +18,14 @@
   h2 {
     margin: 0;
   }
-  h1 {
-    font-style: italic;
-  }
+  /* h1 { */
+    /* font-style: italic; */
+  /* } */
 </style>
 
 <header>
   <Logo size={logoSize} />
   <div class="title-container" style="--logoSize:{logoSize}">
     <h1>Jack Shields Christensen</h1>
-    <h2>JackShieldsChristensen.com</h2>
   </div>
 </header>

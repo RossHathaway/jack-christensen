@@ -3,7 +3,6 @@
 </svelte:head>
 
 <div>
-  <img alt="Jack in Hawaii" src="uncle-jack-in-hawaii.jpg" />
   <img alt="Jack in Hawaii" src="uncle-jack-on-diving-tower.jpg" />
 </div>
 
@@ -33,6 +32,11 @@
 </p>
 
 <style>
+  div {
+    display: flex;
+    justify-content: center;
+  }
+
   h1,
   figure,
   p {
