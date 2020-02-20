@@ -1,3 +1,5 @@
+<h2>MY FAVORITE SNAPSHOT</h2>
+
 <strong>MY FAVORITE SNAPSHOT</strong> was taken by Professor Winfield E. Nagley
 who later became chairman of the Philosophy Department at the
 University Of Hawai'i. I'm in my mid—twenties atop a phallic
@@ -12,4 +14,13 @@ found as fertility symbols on all the Hawaiian Islands, and this
 is the finest example. The natural configuration of the stone
 was carved to some extent by ancient people.
 
-![](/my-favorite-snapshot.png)
+<div markdown="1">
+<img src="/my-favorite-snapshot.png" alt="Jack at Hawaiian cultural site Ka-ule-o—Nanahoa">
+</div>
+
+```css style
+  div {
+    display: flex;
+    justify-content: center;
+  }
+```
