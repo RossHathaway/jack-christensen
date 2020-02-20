@@ -1,30 +1,42 @@
-The most important movie
+<div markdown="1">
+<section markdown="1">The most important movie
 you'll ever see!
-GANDHI
+<br><br>
+<strong>GANDHI</strong>
+<br><br>
 A Film By Sir Richard Attenborough
-
-Featuring
-Ben Kingsley
-Candice Bergen
-Martin Sheen
-Trevor Howard
-John Mills
-Sir John Gielgud
-
+<br><br>
+Featuring<br>
+Ben Kingsley<br>
+Candice Bergen<br>
+Martin Sheen<br>
+Trevor Howard<br>
+John Mills<br>
+Sir John Gielgud<br>
+<br><br>
+<!-- four dots -->
 A Brief Cine-Survey
 By J.S. Christensen
-
+<br><br>
 Also
-GANDHI'S HUMOR
+<br>
+<strong>GANDHI'S HUMOR</strong>
+</section>
+<img src="/ghandi-1.png" alt="Ben Kingsley and Candice Bergen in Mahatma Gandhi movie" id="gandhi-1">
+</div>
+
+<section>
 PHOTOS: Above, Ben Kingsley in the leading role of Mahatma Gandhi, with co-star
 Candice Bergen portraying LIFE Magazine photographer Margaret Burke White.
 Below, Attenborough directs a scene with Kingsley and front line extras.
 — Attenborough Private Archives, Surrey, England
+</section>
 
+<img src="/ghandi-2.png" alt="Attenborough directs a scene with Kingsley and front line extras" id="gandhi-2">
 
 ## GANDHI
 
-A Film By Sir Richard Attenborough
+### A Film By Sir Richard Attenborough
 MOHANDAS KARAMCHAND GANDHI was born October 2, 1869 at Porbandar in the state
 of Gujarat, India. During the second half of his life he became his country's
 most famous political and spiritual leader. The respectful title of Mahatma
@@ -42,7 +54,7 @@ until he attained his full stature as history's foremost advocate of massive
 Civil Disobedience, and later as an enormously influential elder statesman.
 
 Attenborough's three hour and eight minute movie about Mahatma Gandhi's
-adulthood was twenty years in the making -- filmed with epic proportions
+adulthood was twenty years in the making —— filmed with epic proportions
 across the vast nation of India. Its premiere showing was presented in
 New Delhi on the last day of November, 1982, soon followed by openings
 in London, New York and Los Angeles.
@@ -59,7 +71,7 @@ the record for the most Oscars ever earned by a British film.
 It was no surprise when top honors for Best Film and Best Director in both
 the United Kingdom and America went to Sir Richard Attenborough. Long before
 this extraordinary production, he already had proved himself consummate master
-of the dramatic arts — as an accomplished actor, director and producer -- with
+of the dramatic arts —— as an accomplished actor, director and producer —— with
 an international film and stage career. In 1976 Attenborough was knighted by
 Queen Elizabeth II. After his leading role in the mega-hit movie Jurassic Park
 in the early 1990s his professional history attained fifty years.
@@ -179,7 +191,7 @@ In Search Of Gandhi and The Words Of Gandhi.
 
 This cine-survey was compiled by J.S. Christensen in 1991
 with a few insertions by Lord Attenborough during 1992.
-
+<!-- four dots -->
 ### GANDHI'S HUMOR
 WHEN HE DISEMBARKED from a steamer at Marseilles as a world famous personage,
 Mahatma Gandhi still was required to make a declaration of his possessions to
@@ -207,7 +219,7 @@ the pages, then removed a paper clip which had held them together. Returning
 the papers, Gandhi said, "I have extracted the most valuable part of it."
 A doctor insisted on giving Gandhi a penicillin injection when he was ill,
 but the patient refused. The doctor said, "If I give you the shot, you'll
-recover in three days -—— otherwise it could take three months." To which
+recover in three days —— otherwise it could take three months." To which
 Gandhi replied, "That's all right with me, I'm in no hurry." The doctor
 protested, "But you might infect others." Gandhi retorted, "Then give
 them the penicillin."
@@ -216,3 +228,28 @@ cremation, where he remained from early morning without food. Toward evening
 someone suggested that he retire for some rest and a little nourishment. But
 he smiled and said, "Surely after sixty-two years of companionship, if I went
 away from her now, with the cremation unfinished, she would never forgive me."
+<!-- four dots -->
+```css style
+  div {
+    display: flex;
+  }
+
+  #gandhi-1 {
+    padding: 0 1em 1em;
+    align-self: start;
+  }
+
+  #gandhi-2 {
+    width: 100%;
+    padding: 1em 0;
+  }
+
+  section:nth-of-type(1) {
+    text-align: center;
+}
+
+  section {
+  margin-bottom: 1em;
+}
+
+```
