@@ -54,7 +54,6 @@
   p {
     margin: 1em auto;
     text-align: center;
-    max-width: 750px;
   }
 
   .border {
