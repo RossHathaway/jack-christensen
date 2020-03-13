@@ -148,7 +148,7 @@ half Indian through his paternal ancestry and comes from the same village
 where Gandhi was born — Kingsley seems so real, so natural that he brings
 an unshakable moral force to the screen."
 
-Yime: "It is impossible to recall an actor who has aged more persuasively
+Time: "It is impossible to recall an actor who has aged more persuasively
 over the course of a movie."
 
 Los Angeles Times: "Immediately we are carried into one of the film's most
@@ -197,32 +197,38 @@ WHEN HE DISEMBARKED from a steamer at Marseilles as a world famous personage,
 Mahatma Gandhi still was required to make a declaration of his possessions to
 the French customs officer. So he stated, "I am a poor mendicant. My earthly
 property at this moment consists of six spinning wheels, some dishes, a can of
-goat's milk, six homespun loin cloths and towels, and my reputation -—- which
+goat's milk, six homespun loin cloths and towels, and my reputation — which
 cannot be worth much."
+<br><br>
 Once when Gandhi was traveling by train, a lawyer sharing the same compartment
 fell from his bed to the floor. Luckily he was not injured except for bruises.
 Later the lawyer claimed that serious injury was averted because his fellow
 passenger was Mahatma Gandhi who quipped, "Then you shouldn't have fallen out
 of bed in the first place."
+<br><br>
 Having been invited to Buckingham Palace to meet England's King George V and
 Queen Mary, Gandhi arrived for the occasion dressed in his white loincloth,
 but he immediately put the royals at ease with his naturalness. Afterward
 someone asked Gandhi if he had been properly attired for the occasion, and
 he replied, "Oh, His Highness had on enough for both of us."
+<br><br>
 Gandhi gave everything away following a vow of poverty. But he still had
 expenses which other persons paid so he could do his work free of financial
 concerns. He once told an interviewer, "I have many friends who complain
 to one another about how much it costs them to keep me living in poverty."
+<br><br>
 A spokesman for a publication once handed Gandhi a few typed sheets, asking
 him to read the contents carefully and give his opinion. Gandhi glanced at
 the pages, then removed a paper clip which had held them together. Returning
 the papers, Gandhi said, "I have extracted the most valuable part of it."
+<br><br>
 A doctor insisted on giving Gandhi a penicillin injection when he was ill,
 but the patient refused. The doctor said, "If I give you the shot, you'll
 recover in three days —— otherwise it could take three months." To which
 Gandhi replied, "That's all right with me, I'm in no hurry." The doctor
 protested, "But you might infect others." Gandhi retorted, "Then give
 them the penicillin."
+<br><br>
 After Gandhi's devoted wife died, he sat alongside the burning pyre during her
 cremation, where he remained from early morning without food. Toward evening
 someone suggested that he retire for some rest and a little nourishment. But
