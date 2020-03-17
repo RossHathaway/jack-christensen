@@ -20,7 +20,8 @@ My full name is Jack Shields Christensen and I was born in Wisconsin. I grew up 
 </p>
 
 ```css style
-  figure {
+
+figure {
     margin: 2em;
     max-width: 350px;
     float: right;
@@ -30,6 +31,5 @@ My full name is Jack Shields Christensen and I was born in Wisconsin. I grew up 
     max-width: 350px;
     padding-bottom: 1em;
   } 
-
 
 ```

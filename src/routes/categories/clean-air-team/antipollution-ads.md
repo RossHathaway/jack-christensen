@@ -140,7 +140,7 @@ THEY BECOME LITTERETTES">
 around kids - it's child abuse">
 
 ```css style
-/* img {
+img {
   width: 100%;
-} */
+}
 ```
