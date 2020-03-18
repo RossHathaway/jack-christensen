@@ -6,7 +6,7 @@ import babel from 'rollup-plugin-babel';
 import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
-import { mdsvex } from 'mdsvex';
+import { markdown } from 'svelte-preprocess-markdown';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -33,9 +33,7 @@ export default {
         dev,
         hydratable: true,
         emitCss: true,
-        preprocess: mdsvex({
-          extension: '.md'
-        })
+        preprocess: markdown()
       }),
       resolve({
         browser: true,
@@ -86,9 +84,7 @@ export default {
       }),
       svelte({
         extensions: ['.svelte', '.md'],
-        preprocess: mdsvex({
-          extension: '.md'
-        }),
+        preprocess: markdown(),
         generate: 'ssr',
         dev
       }),
