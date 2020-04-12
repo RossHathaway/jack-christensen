@@ -62,45 +62,45 @@ Private excursions and lectures
 pay for these newspaper ads ...
 
 <QuoteWrapper>
-<p>REMINDER: <br>
-BAN FILTER CIGARETTES <br>
-(THEY BECOME LITTERETTES) </p>
-THE CLEAN AIR TEAM 528&#9679;0528
+<p>REMINDER: </p>
+<p>BAN FILTER CIGARETTES </p>
+<p>(THEY BECOME LITTERETTES) </p>
+<p class="smaller-text">THE CLEAN AIR TEAM 528&#9679;0528</p>
 </QuoteWrapper>
 
 <QuoteWrapper>
-<p>REMINDER: <br>
-DON'T BE A LITTER-BUM <br>
-(IT'S TRASHY) </p>
-THE CLEAN AIR TEAM 528&#9679;0528
+<p>REMINDER: </p>
+<p>DON'T BE A LITTER-BUM </p>
+<p>(IT'S TRASHY) </p>
+<p class="smaller-text">THE CLEAN AIR TEAM 528&#9679;0528</p>
 </QuoteWrapper>
 
 <QuoteWrapper>
-<p>REMINDER: <br>
-IF YOU LOVE HAWAII... <br>
-DON'T THROW RUBBISH IN HER FACE </p>
-THE CLEAN AIR TEAM 528&#9679;0528
+<p>REMINDER: </p>
+<p class="smaller-text">IF YOU LOVE HAWAII... </p>
+<p class="smaller-text">DON'T THROW RUBBISH IN HER FACE </p>
+<p class="smaller-text">THE CLEAN AIR TEAM 528&#9679;0528</p>
 </QuoteWrapper>
 
 <QuoteWrapper>
-<p>REMINDER: <br>
-DON'T JUST SAY "POLLUTION" <br>
-SAY "POLLUTION PEOPLE" </p>
-THE CLEAN AIR TEAM 528&#9679;0528
+<p>REMINDER: </p>
+<p>DON'T JUST SAY "POLLUTION" </p>
+<p>SAY "POLLUTION PEOPLE" </p>
+<p class="smaller-text">THE CLEAN AIR TEAM 528&#9679;0528</p>
 </QuoteWrapper>
 
 <QuoteWrapper>
-<p>POLLUTION PEOPLE <br>
-SHOULD BE <br>
-KICKED OFF THE PLANET! </p>
-THE CLEAN AIR TEAM 528&#9679;0528
+<p>POLLUTION PEOPLE </p>
+<p>SHOULD BE </p>
+<p>KICKED OFF THE PLANET! </p>
+<p class="smaller-text">THE CLEAN AIR TEAM 528&#9679;0528</p>
 </QuoteWrapper>
 
 <QuoteWrapper>
-<p>REMINDER: <br>
-DON'T SMOKE AROUND KIDS <br>
-(IT'S CHILD ABUSE) </p>
-THE CLEAN AIR TEAM 528&#9679;0528
+<p>REMINDER: </p>
+<p>DON'T SMOKE AROUND KIDS </p>
+<p>(IT'S CHILD ABUSE) </p>
+<p class="smaller-text">THE CLEAN AIR TEAM 528&#9679;0528</p>
 </QuoteWrapper>
 
 <img src="dont-be-litterbum.svg" alt="don't be a litter bum - it's trashy">

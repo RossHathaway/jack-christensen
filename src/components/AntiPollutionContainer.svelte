@@ -25,7 +25,7 @@
     stroke="#231f20"
     stroke-width="3.75"
   />
-  <foreignObject class="node" x="101" y="15" width="75%" height="1">
+  <foreignObject class="node" x="101" y="28" width="75%" height="1">
     <body xmlns="http://www.w3.org/1999/xhtml">
       <slot></slot>
     </body>
@@ -42,20 +42,23 @@
   foreignObject {
     overflow: visible;
     text-align: center;
-    /* width: 300px; */
   }
 
   foreignObject body {
     font-family: Galindo, sans-serif;
-    font-size: 14px; /* for bottom line */
+    font-size: 16px;
     color: #231f20;
-    line-height: 1.2;
+    line-height: normal;
+    max-height: 50px;
+  }
+
+  foreignObject :global(.smaller-text) {
+    font-size: 14px;
+    margin: 0;
   }
 
   foreignObject :global(p) {
-    font-size: 16px; /* for top three lines */
     margin: 0;
-    padding-bottom: 2px;
   }
 
   .anti-pollution-container {
