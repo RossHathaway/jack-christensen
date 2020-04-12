@@ -61,42 +61,42 @@ A few slogans became our standard antipollution ads.
 Private excursions and lectures
 pay for these newspaper ads ...
 
-<QuoteWrapper>
+<QuoteWrapper justify="flex-start">
 <p>REMINDER: </p>
 <p>BAN FILTER CIGARETTES </p>
 <p>(THEY BECOME LITTERETTES) </p>
 <p class="smaller-text">THE CLEAN AIR TEAM 528&#9679;0528</p>
 </QuoteWrapper>
 
-<QuoteWrapper>
+<QuoteWrapper justify="center">
 <p>REMINDER: </p>
 <p>DON'T BE A LITTER-BUM </p>
 <p>(IT'S TRASHY) </p>
 <p class="smaller-text">THE CLEAN AIR TEAM 528&#9679;0528</p>
 </QuoteWrapper>
 
-<QuoteWrapper>
+<QuoteWrapper justify="flex-end">
 <p>REMINDER: </p>
 <p class="smaller-text">IF YOU LOVE HAWAII... </p>
 <p class="smaller-text">DON'T THROW RUBBISH IN HER FACE </p>
 <p class="smaller-text">THE CLEAN AIR TEAM 528&#9679;0528</p>
 </QuoteWrapper>
 
-<QuoteWrapper>
+<QuoteWrapper justify="flex-start">
 <p>REMINDER: </p>
 <p>DON'T JUST SAY "POLLUTION" </p>
 <p>SAY "POLLUTION PEOPLE" </p>
 <p class="smaller-text">THE CLEAN AIR TEAM 528&#9679;0528</p>
 </QuoteWrapper>
 
-<QuoteWrapper>
+<QuoteWrapper justify="center">
 <p>POLLUTION PEOPLE </p>
 <p>SHOULD BE </p>
 <p>KICKED OFF THE PLANET! </p>
 <p class="smaller-text">THE CLEAN AIR TEAM 528&#9679;0528</p>
 </QuoteWrapper>
 
-<QuoteWrapper>
+<QuoteWrapper justify="flex-end">
 <p>REMINDER: </p>
 <p>DON'T SMOKE AROUND KIDS </p>
 <p>(IT'S CHILD ABUSE) </p>
@@ -114,4 +114,6 @@ img {
   width: 100%;
   margin-bottom: 2em;
 }
+
+
 </style>
