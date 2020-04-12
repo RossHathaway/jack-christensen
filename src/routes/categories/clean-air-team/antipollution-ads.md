@@ -62,75 +62,46 @@ Private excursions and lectures
 pay for these newspaper ads ...
 
 <QuoteWrapper>
-a a a a a a a a a a a a a a a a a a a a a a a a a a 
-REMINDER: <br>
+<p>REMINDER: <br>
 BAN FILTER CIGARETTES <br>
-(THEY BECOME LITTERETTES) <br>
-THE CLEAN AIR TEAM 528.0528
+(THEY BECOME LITTERETTES) </p>
+THE CLEAN AIR TEAM 528&#9679;0528
 </QuoteWrapper>
 
+<QuoteWrapper>
+<p>REMINDER: <br>
+DON'T BE A LITTER-BUM <br>
+(IT'S TRASHY) </p>
+THE CLEAN AIR TEAM 528&#9679;0528
+</QuoteWrapper>
 
+<QuoteWrapper>
+<p>REMINDER: <br>
+IF YOU LOVE HAWAII... <br>
+DON'T THROW RUBBISH IN HER FACE </p>
+THE CLEAN AIR TEAM 528&#9679;0528
+</QuoteWrapper>
 
+<QuoteWrapper>
+<p>REMINDER: <br>
+DON'T JUST SAY "POLLUTION" <br>
+SAY "POLLUTION PEOPLE" </p>
+THE CLEAN AIR TEAM 528&#9679;0528
+</QuoteWrapper>
 
+<QuoteWrapper>
+<p>POLLUTION PEOPLE <br>
+SHOULD BE <br>
+KICKED OFF THE PLANET! </p>
+THE CLEAN AIR TEAM 528&#9679;0528
+</QuoteWrapper>
 
-••••••••••••••••••••••••••••••••••••
-REMINDER:	• •
-•
-DON'T BE A LITTER-BUM	•
-•
-(IT'S TRASHY)	•
-•
-THE CLEAN AIR TEAM 528.0528	•
-•
-••••••••••••••••••••••••••••••••••••
-0
-
-
-
-
-
-••••••••••••••••••••••••••••••••••••
-•
-REMINDER:	•
-•
-IF YOU LOVE HAWAII...	•
-DON'T THROW RUBBISH IN HER FACE
-.
-THE CLEAN AIR TEAM 528.0528	•
-•
-
-•
-•REMINDER: 
-DON'T JUST SAY "POLLUTION" 
-SAY "POLLUTION PEOPLE" 
-THE CLEAN AIR TEAM 528.0528
-•
-• 
-• 
-•
-    • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
-
-
-•••••••••••••••••••••••••••••••••••• POLLUTION PEOPLE	• •
-SHOULD BE	• •
-•
-KICKED OFF THE PLANET!	•
-•
-THE CLEAN AIR TEAM 528.0528	•
-•
-••••••••••••••••••••••••••••••••••••
-
-
-••••••••••••••••••••••••••••••••••••
-REMINDER:	• •
-•
-DON'T SMOKE AROUND KIDS •
-•
-(IT'S CHILD ABUSE)	•
-•
-THE CLEAN AIR TEAM 528.0528	•
-•
-••••••••••••••••••••••••••••••••••••
+<QuoteWrapper>
+<p>REMINDER: <br>
+DON'T SMOKE AROUND KIDS <br>
+(IT'S CHILD ABUSE) </p>
+THE CLEAN AIR TEAM 528&#9679;0528
+</QuoteWrapper>
 
 <img src="dont-be-litterbum.svg" alt="don't be a litter bum - it's trashy">
 <img src="ban-cigarettes.svg" alt="BAN FILTER CIGARETTES!
