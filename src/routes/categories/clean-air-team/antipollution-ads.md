@@ -58,8 +58,9 @@ of The Clean Air Team:
 
 A few slogans became our standard antipollution ads.
 
-Private excursions and lectures
-pay for these newspaper ads ...
+<strong id="payment-section">
+Private excursions and lectures pay for these newspaper ads ...
+</strong>
 
 <QuoteWrapper justify="flex-start">
 <p>REMINDER: </p>
@@ -112,8 +113,14 @@ around kids - it's child abuse">
 <style>
 img {
   width: 100%;
-  margin-bottom: 2em;
+  margin-bottom: 3rem;
 }
 
-
+#payment-section {
+  display: block;
+  font-style: italic;
+  font-size: 2rem;
+  color: lightgray;
+  margin: 1rem 0 2rem;
+}
 </style>

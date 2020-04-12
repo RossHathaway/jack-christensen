@@ -42,7 +42,7 @@
   div {
     display: flex;
     justify-content: var(--justify);
-    padding-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   svg {
