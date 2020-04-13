@@ -1,36 +1,27 @@
-., ... \II
-\i-rr -- ﬁ’ﬁrf/s‘
-s .2. 5? The Program To Preserve Hawauan Place Names ‘u, 3-1 5
-
+## The Program To Preserve Hawaiian Place Names
+<div class="centered">
+ A STATEWIDE PUBLIC SERVICE SINCE 1974
+</div>
  
+<!-- TODO: contact info -->
+<!-- 851 NORTH SCHOOL STREET, #505 - HONOLULU - HI 96817 -->
 
-' *\‘_W
-l. a!
-u, A STATEWIDE PUBLIC SERVICE SINCE 1974 ‘w
+<!-- TEL: (808) 528-0528 www.unc|ejackinhawaii.com jacksc@hawaii.edu -->
 
- 
+### "USING HAWAIIAN WORDS"
 
-‘E 851 NORTH SCHOOL STREET, #505 - HONOLULU - HI 96817 3‘
-
-' ‘ TEL: (808) 528-0528 www.unc|ejackinhawaii.com jacksc@hawaii.edu ' ‘
-
-"USING HAWAIIAN WORDS"'
-
+<div class="centered">
 FREE LECTURE PRESENTED BY SPECIAL ARRANGEMENT
 FOR
 EDUCATIONAL INSTITUTIONS
 SOCIAL ORGANIZATIONS
 BUSINESS GROUPS
+</div>
+<!-- TODO: four circles -->
 
-0 O O 0
-
-THIS HELPFUL SESSION has been conducted by volunteer speakers
-since April, 1974 as the easiest and fastest way to find out
-
-how to cope with saying and writing individual Hawaiian words.
-It's complete in a single sitting that lasts just one hour —-
-
-not a series of classes for learning conversational Hawaiian.
+**THIS HELPFUL SESSION** has been conducted by volunteer speakers
+since April, 1974 as the easiest and fastest way to find out how to cope with saying and writing individual Hawaiian words.
+It's complete in a single sitting that lasts just one hour -- not a series of classes for learning conversational Hawaiian.
 
 The informal lecture ranks as the first and still the foremost
 presentation of its kind for the general public, explaining
@@ -38,17 +29,13 @@ the structure of our Hawaiian place names in the Aloha State
 and encouraging people to preserve them in speech and printed matter for generations to come.
 
 Participants become acquainted with all the basic guidelines
-for standard spelling, pronunciation and usage of traditional
-
-terms people encounter everywhere throughout The Islands.
+for standard spelling, pronunciation and usage of traditional terms people encounter everywhere throughout The Islands.
 
 Such knowledge is essential for professionals who use Hawaiian
 words frequently —- especially persons employed in the visitor
-industry, public relations, advertising, writers and editors,
+industry, public relations, advertising, writers and editors, broadcasters and recording artists.
 
-broadcasters and recording artists.
-
-BACKGROUND
+#### BACKGROUND
 
 FOR OVER A QUARTER OF A CENTURY volunteer speakers contributed
 hundreds of hours toward the development of this presentation.
@@ -60,51 +47,51 @@ style and reliable content.
 Those pioneering efforts were given without an admission charge
 to more than eighty audiences at the following locations:
 
-Roosevelt High School, Honolulu
-(Three sessions in one day during April, 1974)
-Hawaiian Mission Elementary School, Honolulu
-Wai'anae Intermediate School, O'ahu
-KITV—4 News Staff, Honolulu (For television newscasters only)
-Aloha Airlines Cabin Attendants, Honolulu International Airport
-Ma'ili Elementary School, O'ahu (Faculty only) - _
-Tourism Industry Employees' Class, Visitors Bureau, Waikiki
-Waialua Elementary School, O'ahu
-Leilehua High School, Wahiawa, O'ahu
-Waimea Elementary School, Kaua'i
-Kapa'a Intermediate School, Kaua'i
-Kaua'i High School, Lihu'e (Four sessions)
-Hui Ho'oﬁlu 'Olelo Hawai'i, Hilo (Hawaiian Language Club)
-The Henry Opﬁkaha'ia School, Hilo
-(One private evening session for students, teachers, parents)
-Hilo High School (Two sessions)
-Waiakea Intermediate School, Hilo
-Kapi'olani Elementary School, Hilo
-Hawaiian Civic Club, Na'alehu, Big Island
-(One evening session for members and friends)
-Thelma Parker Memorial Library, Kamuela, Big Island
-(Afternoon session)
-Pu'uhonua O Honaunau, National Historic Park, Kona
-(Evening session)
-Kona Rotary Club, Kailua—Kona (Dinner meeting for members)
-Our Lady Of Sorrows School, Wahiawa, O'ahu
-Kalakaua Intermediate School, Honolulu (Three sessions)
-Hawai'i School For Girls, Diamond Head (Two outdoor sessions)
+Roosevelt High School, Honolulu<br>
+(Three sessions in one day during April, 1974)<br>
+Hawaiian Mission Elementary School, Honolulu<br>
+Wai'anae Intermediate School, O'ahu<br>
+KITV—4 News Staff, Honolulu (For television newscasters only)<br>
+Aloha Airlines Cabin Attendants, Honolulu International Airport<br>
+Ma'ili Elementary School, O'ahu (Faculty only)<br>
+Tourism Industry Employees' Class, Visitors Bureau, Waikiki<br>
+Waialua Elementary School, O'ahu<br>
+Leilehua High School, Wahiawa, O'ahu<br>
+Waimea Elementary School, Kaua'i<br>
+Kapa'a Intermediate School, Kaua'i<br>
+Kaua'i High School, Lihu'e (Four sessions)<br>
+Hui Ho'oﬁlu 'Olelo Hawai'i, Hilo (Hawaiian Language Club)<br>
+The Henry Opﬁkaha'ia School, Hilo<br>
+(One private evening session for students, teachers, parents)<br>
+Hilo High School (Two sessions)<br>
+Waiakea Intermediate School, Hilo<br>
+Kapi'olani Elementary School, Hilo<br>
+Hawaiian Civic Club, Na'alehu, Big Island<br>
+(One evening session for members and friends)<br>
+Thelma Parker Memorial Library, Kamuela, Big Island<br>
+(Afternoon session)<br>
+Pu'uhonua O Honaunau, National Historic Park, Kona<br>
+(Evening session)<br>
+Kona Rotary Club, Kailua—Kona (Dinner meeting for members)<br>
+Our Lady Of Sorrows School, Wahiawa, O'ahu<br>
+Kalakaua Intermediate School, Honolulu (Three sessions)<br>
+Hawai'i School For Girls, Diamond Head (Two outdoor sessions)<br>
 Committee For The Preservation & Study Of Hawaiian Language,
-Art & Culture, Bishop Museum, Honolulu (Invitational)
-Tenney Theater, Saint Andrew's Cathedral, Honolulu
-(Eight evening sessions for the general public)
-Waimea Falls Park, O'ahu (Evening session for staff and guests)
-Windward School For Adults, Kailua, O'ahu (Evening session)
-Arcadia Retirement Residence, Honolulu (Evening session)
-Waikiki Public Library, Honolulu
-(Thirty—eight consecutive Saturday afternoon sessions)
-Halekulani (Four private sessions for hotel staff and guests)
+Art & Culture, Bishop Museum, Honolulu (Invitational)<br>
+Tenney Theater, Saint Andrew's Cathedral, Honolulu<br>
+(Eight evening sessions for the general public)<br>
+Waimea Falls Park, O'ahu (Evening session for staff and guests)<br>
+Windward School For Adults, Kailua, O'ahu (Evening session)<br>
+Arcadia Retirement Residence, Honolulu (Evening session)<br>
+Waikiki Public Library, Honolulu<br>
+(Thirty—eight consecutive Saturday afternoon sessions)<br>
+Halekulani (Four private sessions for hotel staff and guests)<br>
 
-0 O O
+<!-- 0 O O three dots-->
 
-ADVISORY
+#### ADVISORY
 
-PLEASE UNDERSTAND that sessions of Using Hawaiian WOrds are
+PLEASE UNDERSTAND that sessions of **Using Hawaiian Words** are
 conducted by volunteer speakers without a vast knowledge of
 the Hawaiian Language. Ability in conversational Hawaiian is
 not required because our primary goal is simply to cover the
@@ -120,9 +107,7 @@ fundamental factors. Thus, all the essentials can be covered
 within the time limitation for this single session, and nOne
 of the key elements will be left out.
 
- 
-
-LEARNING WORDS ONE—BY-ONE ON YOUR OWN
+##### LEARNING WORDS ONE—BY-ONE ON YOUR OWN
 
 SINGLE TERMS or simple combinations of words comprise most of
 the Hawaiian Language the average person is apt to encounter
@@ -151,7 +136,7 @@ can't be bothered. However, it's not difficult to learn the
 correct usage of ONLY the particular Hawaiian terms which you
 encounter frequently in the conduct your daily life. You'll
 need to learn merely those FAMILIAR WORDS comprising your own
-Personal Hawaiian Vocabulary. If we consider how often we see,
+__Personal Hawaiian Vocabulary__. If we consider how often we see,
 hear and say certain Hawaiian terms, it will be an easy matter
 for anyone to compile a list of words which can be regarded as
 immediate features of one's local environment. Thus, different
@@ -161,12 +146,10 @@ place names or street names —- and you're on your way!
 
  
 
-PERSONAL HAWAIIAN VOCABULARY
+#### PERSONAL HAWAIIAN VOCABULARY
 
- 
-
+ <!-- TODO: make table -->
 WORD MEANING SOUND PATTERN
-
  
 
  
@@ -193,90 +176,54 @@ WHEN YOU NEED MORE LINES obtain a notebook and transfer your
 first ten words into it. As your list becomes longer, it will
 be helpful to begin organizing your Hawaiian terms into major
 categories for quick reference, according to basic topics such
-as Proper Names or Street Names or Town Names or Botanical Names
-or Names Of Channels Between Islands, etc.
-
- 
-
- 
-
- 
-
- 
-
- 
+as __Proper Names__ or __Street Names__ or __Town Names__ or __Botanical Names__
+or __Names Of Channels Between Islands__, etc.
 
 ALWAYS LOOK UP THE MEANING of any word you include. If there's
 no literal translation, insert the notation: (meaning lost).
 
 SOUND PATTERNS that first appeared in the 1965 publication
-Instant Hawaiian Pocket Dictionary have been incorporated
-
+__Instant Hawaiian Pocket Dictionary__ have been incorporated
 into this program because these easy phonetic renderings
-
 in English, indicating how to say a Hawaiian word right,
-
 can be applied to any Hawaiian term. This is a valuable
-
 aid to pronunciation which you'll be able to construct by
 yourself after attending today's session. Each syllable
-
 is shown as a unit of sound separated by dashes. Syllables
 needing stress appear in CAPS while unstressed syllables are
-
 in lower case. Keep watching how this is done so you can apply
-helpful SOUND PATTERNS to your own Personal Hawaiian Vocabulary.
+helpful SOUND PATTERNS to your own __Personal Hawaiian Vocabulary__.
 It's the key item for quick reference, indicating exactly how
 to say a word -— without having to figure it out all over again!
 
- 
+<!-- 0 O O dots -->
 
- 
+## The Program To Preserve Hawaiian Place Names
 
-0 O O
+A STATEWIDE PUBLIC SERVICE SINCE 1974
+851 NORTH SCHOOL STREET, #505 - HONOLULU - HI 96817
+<!-- TODO: contact info -->
+<!-- TEL: (808) 528-0528 www.unclejackinhawaii.com jacksc@hawaii.edu -->
 
- 
+### STANDARD REFERENCES FOR HAWAIIAN WORDS
 
-5‘ ’wﬁ The Program To Preserve Hawaiian Place Names “'
-
-h m
-“I, A STATEWIDE PUBLIC SERVICE SINCE 1974 w
-‘E 851 NORTH SCHOOL STREET, #505 - HONOLULU - HI 96817 3‘
-
-' ‘ TEL: (808) 528-0528 www.unclejackinhawaii.Com jacksc@hawaii.edu ' ‘
-
- 
-
-STANDARD REFERENCES FOR HAWAIIAN WORDS
-
-HAWAIIAN DICTIONARY
-
-Hawaiian-English and English—Hawaiian
-
-By Mary Kawena Pukui and Samuel H. Elbert
-
+HAWAIIAN DICTIONARY<br>
+Hawaiian-English and English—Hawaiian<br>
+By Mary Kawena Pukui and Samuel H. Elbert<br>
 University Of Hawai'i Press, 1986, Revised and Enlarged Edition
-
-Cloth, 600 pages
-
+Cloth, 600 pages<br>
 [The result of decades of compilation, research and analysis, this book is the
 definitive and authoritative reference for Hawaiian vocabulary. It consists of
 26,000 Hawaiian—English entries and 12,500 English—Hawaiian entries, together
 with a bibliography of references.]
 
-NEW POCKET HAWAIIAN DICTIONARY
-
-With A Concise Hawaiian Grammar
-
-By Mary Kawena Pukui and Samuel H. Elbert,
-
-With Esther T. Mo‘okini and Yu Mapuana Nishizawa
-
-University Of Hawai'i Press, 1992
-
-Paperback, 272 pages
-
-[This condensed version of the unabridged Hawaiian Dictionary contains the most
+NEW POCKET HAWAIIAN DICTIONARY<br>
+With A Concise Hawaiian Grammar<br>
+By Mary Kawena Pukui and Samuel H. Elbert,<br>
+With Esther T. Mo‘okini and Yu Mapuana Nishizawa<br>
+University Of Hawai'i Press, 1992<br>
+Paperback, 272 pages<br>
+[This condensed version of the unabridged __Hawaiian Dictionary__ contains the most
 frequently used 6,000 Hawaiian words, plus 4,800 English words, as well as 750
 "Hawaiianized" English names. A condensed grammar outlines in clear and simple
 terms the structure of the language and the position of Hawaiian within the
@@ -284,59 +231,40 @@ Polynesian language family.]
 
  
 
-PLACE NAMES 0F HAWAI'I
-
-By Mary Kawena Pukui, Samuel H. Elbert and Esther T. Mo‘okini
-
-University Of Hawai‘i Press, 1974, Revised Edition
-
-Paperback, 310 pages with maps
-
+PLACE NAMES 0F HAWAI'I<br>
+By Mary Kawena Pukui, Samuel H. Elbert and Esther T. Mo‘okini<br>
+University Of Hawai‘i Press, 1974, Revised Edition<br>
+Paperback, 310 pages with maps<br>
 [This valuable work consists of an inventory, interpretation and informative
 analysis of more than 4,000 Hawaiian place names that reward the reader with
 interesting facts on geography, mythology, history, linguistics and poetry.]
 
-POCKET PLACE NAMES OF HAWAI'I
-
-By Mary Kawena Pukui, Samuel H. Elbert and Esther T. Mo‘okini
-University Of Hawai‘i Press, 1989
-
-Paperback, 96 pages with maps
-
+POCKET PLACE NAMES OF HAWAI'I<br>
+By Mary Kawena Pukui, Samuel H. Elbert and Esther T. Mo‘okini<br>
+University Of Hawai‘i Press, 1989<br>
+Paperback, 96 pages with maps<br>
 [Abridged and updated version of Place Names Of Hawai‘i]
 
- 
-
-MAMAKA KAIAO: A Modern Hawaiian Vocabulary
-
-Created & Compiled By Kamike Hua'olelo with support from
-
-Hale Kuamo'o & 'Aha Pﬁnana Leo
-
-University Of Hawai'i Press, 2003
-
-Cloth, $42.00 / Paperback, $15.95 / 414 pages
-
+MAMAKA KAIAO: A Modern Hawaiian Vocabulary<br>
+Created & Compiled By Kamike Hua'olelo with support from<br>
+Hale Kuamo'o & 'Aha Pﬁnana Leo<br>
+University Of Hawai'i Press, 2003<br>
+Cloth, $42.00 / Paperback, $15.95 / 414 pages<br>
 [The title translates as "carrying forward into a new era." Published in both
 Hawaiian and English, this companion to the Hawaiian Dictionary contains more
 than 1,000 new and contemporary Hawaiian terms essential to the continuation
-and growth of the Hawaiian Language. These words were created, collected and
-
- 
-
-approved by the Hawaiian Lexicon Committee, from 1987 through 2003. Members
+and growth of the Hawaiian Language. These words were created, collected and approved by the Hawaiian Lexicon Committee, from 1987 through 2003. Members
 of the committee generally meet four to six times each year to discuss terms
 related to new fields of knowledge which are not found in the Pukui & Elbert
 standard dictionary. Useful words from other languages are "Hawaiianized"
 into suitable terms. Also certain Hawaiian words are updated and revised
 for accuracy, and elements are included from similar Polynesian Languages.]
 
-REFERENCE MAPS OF THE ISLANDS 0F HAWAI'I
+<!-- TODO: 3 dots -->
 
-By James A. Bier
-
-University Of Hawai'i Press, folded paper sheets
-
+REFERENCE MAPS OF THE ISLANDS 0F HAWAI'I<br>
+By James A. Bier<br>
+University Of Hawai'i Press, folded paper sheets<br>
 [These five full-color shaded relief maps of six islands include large—scale
 insets of towns and also show detailed networks of roads, the locations of
 parks and beaches and hiking trails, cultural sites, and natural points of
@@ -347,11 +275,16 @@ spelling to facilitate correct pronunciation and accurate interpretation.
 Each map is fully indexed.]
 
 O'AHU, 7th Edition, 2007, 28x25 inches
+
 HAWAI'I, 8th Edition, 2010, 24x30 inches
+
 MAUI, 8th Edition, 2008, 24x18s inches
+
 KAUA'i, 7th Edition, 2004, 22x14s inches
 
 MOLOKA'i & LANA'I, 5th Edition, 2002, 21x18 inches
+
+<!-- three dots -->
 
 THE WEB SITE http://www.ulukau.org was announced in the spring of 2004
 as the first Hawaiian/English e—library. The site's dictionaries allow
