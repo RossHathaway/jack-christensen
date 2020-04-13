@@ -36,34 +36,25 @@
     justify-content: center;
   }
 
-  /* h1 {
-    text-align: center;
-    margin: 0 auto;
-    font-size: 2.8em;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 0 0 0.5em 0;
-  } */
-
   img {
     width: 100%;
     max-width: 400px;
-    margin: 0 0 1em 0;
+    margin: 0 0 1rem 0;
   }
 
   p {
-    margin: 1em auto;
+    margin: 1rem auto;
     text-align: center;
   }
 
   .border {
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
     border-bottom: dotted black 4px;
   }
 
   @media (min-width: 480px) {
     /* h1 {
-      font-size: 4em;
+      font-size: 4rem;
     } */
   }
 </style>

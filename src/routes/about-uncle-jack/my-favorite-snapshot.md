@@ -17,6 +17,6 @@ was carved to some extent by ancient people.
   div {
     display: flex;
     justify-content: center;
-    padding: 1em 0;
+    padding: 1rem 0;
   }
 </style>

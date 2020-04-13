@@ -18,14 +18,14 @@ My full name is Jack Shields Christensen and I was born in Wisconsin. I grew up 
 <style>
 
 figure {
-    margin: 2em;
+    margin: 2rem;
     max-width: 350px;
     float: right;
   }
 
   img {
     max-width: 350px;
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
   } 
 
 </style>

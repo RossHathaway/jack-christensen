@@ -9,7 +9,7 @@
     position: relative;
     max-width: 800px;
     background-color: white;
-    padding: 0 2em 2em 2em;
+    padding: 0 2rem 2rem 2rem;
     margin: 0 auto;
     box-sizing: border-box;
   }

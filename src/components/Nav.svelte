@@ -19,7 +19,7 @@
     padding: 0 1rem;
     display: flex;
     flex-direction: column;
-    max-width: 12rem;
+    max-width: 14rem;
   }
   ul {
     margin: 0;
@@ -27,7 +27,7 @@
   }
 
   :global(.contact h2) {
-    font-size: 24px;
+    font-size: 2rem;
   }
 
   .contact {
