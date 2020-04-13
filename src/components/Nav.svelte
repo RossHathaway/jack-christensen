@@ -19,7 +19,7 @@
     padding: 0 1rem;
     display: flex;
     flex-direction: column;
-    max-width: 200px;
+    max-width: 12rem;
   }
   ul {
     margin: 0;
