@@ -11,6 +11,11 @@ My limited rambles are available for individuals or couples and small groups int
 
 The presentation of any tour -- regardless of the number of participants -- requires a single honorarium to pay for **ONE** of The Clean Air Team's antipollution ads to be published in The Honolulu Star-Advertiser at its prevailing insertion fee, plus any transportation expenses or associated costs.
 
+<figure>
+<img src="private-outings-beach.png" alt="Kahana Bay on the windward side of O'ahu">
+<figcaption>Kahana Bay, Windward O'ahu</figcaption>
+</figure>
+
 #### OAHU ISLAND
 
 MOST OF MY OUTINGS are pleasant strolls through beautiful and interesting areas I've known for over fifty years.
