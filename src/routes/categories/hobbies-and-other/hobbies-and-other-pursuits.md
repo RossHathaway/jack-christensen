@@ -1,5 +1,5 @@
-<h2>Uncle Jack's
-HOBBIES AND OTHER PURSUITS</h2>
+## Uncle Jack's
+HOBBIES AND OTHER PURSUITS
 <!-- TODO: four dots -->
 
 ### COACHING SESSIONS
