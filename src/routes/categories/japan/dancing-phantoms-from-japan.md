@@ -13,16 +13,16 @@ seen details of the traditional backstage Costume Ceremony. The program is fully
 
 **ENLARGED CHARACTERS** are depicted in Noh theatricals because, rather than reflecting familiar reality, these plays aim at portraying situations that extend beyond common experience and everyday reasoning power. Yet the themes remain simple, emphasizing the essence of a single emotion: love, jealousy, revenge, filial devotion or the heroism of a warrior.
 
-<div id="pictures-from-noh">
+<div id="pictures-section-1">
 
 <div>
-<img alt="Noh performer with mask" class="right" src="dancing-phantoms-from-japan-2.png" />
-<img alt="Noh performers getting ready" class="left" src="dancing-phantoms-from-japan-1.png" />
+<img alt="Noh performer with mask" src="dancing-phantoms-from-japan-2.png" />
+<img alt="Noh performers getting ready" src="dancing-phantoms-from-japan-1.png" />
 </div>
 
 <div>
-<img alt="Noh performer on stage" class="left" src="dancing-phantoms-from-japan-edited.png" />
-<img alt="photographer taking a picture of the costume area" class="right" src="dancing-phantoms-from-japan-4.png" />
+<img alt="Noh performer on stage" src="dancing-phantoms-from-japan-edited.png" />
+<img alt="photographer taking a picture of the costume area" src="dancing-phantoms-from-japan-4.png" />
 </div>
 
 </div>
@@ -37,35 +37,49 @@ seen details of the traditional backstage Costume Ceremony. The program is fully
 
 **DANCING PHANTOMS FROM JAPAN** continues inviting audiences to observe a captivating display of creativity as our team of Master Dressers, from the renowned Kanze Kaikan Noh Theater in Kyoto, sets about transforming their fellow professionals into vivid "dancing phantoms" who are then prepared to take command of the stage and perform with marvelous grace.
 
+<div id="pictures-section-2">
+
+<img alt="Noh performer getting dressed" src="dancing-phantoms-from-japan-5.png" />
+<img alt="Noh performer in costume" src="dancing-phantoms-from-japan-6.png" />
+<img alt="speaker informing audience in Noh performance" src="dancing-phantoms-from-japan-7.png" />
+
+</div>
+
 **DANCING PHANTOMS FROM JAPAN** is excellent for summer arts festivals that already have an established patronage, or it can be presented independently as a cultural event. The same program has been repeated three times during a single day — at ten o'clock in the morning, a matinee
 at three o'clock, and an evening performance at eight.
 
 <style>
 
-#pictures-from-noh {
-  position: relative;
-  left: -100px;
-  width: calc(100% + 200px);
-  display: flex;
-}
+  img {
+    margin: 0.25rem;
+  }
 
-#pictures-from-noh div {
-  height: 880px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-self: center;
-}
+  #pictures-section-1 {
+    position: relative;
+    left: -100px;
+    width: calc(100% + 200px);
+    display: flex;
+  }
 
-#pictures-from-noh > div:first-of-type {
-    align-items: flex-end;
-}
+  #pictures-section-1 div {
+    height: 880px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+  }
 
-#pictures-from-noh > div:last-of-type {
-    align-items: flex-start;
-}
+  #pictures-section-1 > div:first-of-type {
+      align-items: flex-end;
+  }
 
-#pictures-from-noh img {
-  margin: 0.25rem;
-}
+  #pictures-section-1 > div:last-of-type {
+      align-items: flex-start;
+  }
+
+  #pictures-section-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 </style>
