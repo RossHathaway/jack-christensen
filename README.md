@@ -4,7 +4,7 @@ Based on the default [Sapper](https://github.com/sveltejs/sapper)#Rollup templat
 
 ## Structure
 
-Sapper expects to find two directories in the root of your project —  `src` and `static`.
+.md files in src/routes are processed by svelte-preprocess-markdown to make pages. Folders within routes/ have index page that imports the Links component from src/components, and this Links component will make links to the files or folders inside the parent folder. The data passed to the Links component is from the index.json.js file in the same folder which makes an endpoint for when sapper is doing the build. This gets the filenames and routes for the other files in the parent folder.
 
 
 ### src
