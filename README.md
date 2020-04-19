@@ -11,7 +11,7 @@ Based on the default [Sapper](https://github.com/sveltejs/sapper)#Rollup templat
 
 ## Production mode and deployment
 
-To start a production version of this app, run `npm run build && npm run export`. This is because it is a static app and uses the sapper export command instead of the sapper build command. Running in production will disable live reloading, and activate the appropriate bundler plugins.
+To start a production version of this app, run `npm run export && npm start`. This is because it is a static app and uses the sapper export command instead of the sapper build command. Running in production will disable live reloading, and activate the appropriate bundler plugins.
 
 You can deploy your application to any environment that supports Node 8 or above. 
 
