@@ -1,5 +1,5 @@
 <script>
-  import Links from '../../../components/LinksList.svelte';
+  import Links from 'LinksList.svelte';
 </script>
 
 <Links />

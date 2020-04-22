@@ -1,6 +1,6 @@
 <script>
   import { stores } from '@sapper/app';
-  import Links from '../../../../components/LinksList.svelte';
+  import Links from 'LinksList.svelte';
 
   const { page } = stores();
   const currentPath = $page.path.endsWith('/') ? $page.path : $page.path + '/';

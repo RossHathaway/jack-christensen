@@ -1,5 +1,5 @@
 <script>
-  import Links from '../../../../../components/LinksList.svelte';
+  import Links from 'LinksList.svelte';
 </script>
 
 <h3 style="text-align: center;">TRIPTYCH</h3> 
