@@ -34,10 +34,13 @@ export default {
         entries: [
           {
             find: 'LinksList.json',
-            replacement: path.resolve(__dirname, 'src/helpers/LinksList.json'),
+            replacement: path.resolve(
+              __dirname,
+              'src/helpers/LinksList.json.js'
+            ),
           },
           {
-            find: 'LinksList',
+            find: 'LinksList.svelte',
             replacement: path.resolve(
               __dirname,
               'src/components/LinksList.svelte'
@@ -103,10 +106,13 @@ export default {
         entries: [
           {
             find: 'LinksList.json',
-            replacement: path.resolve(__dirname, 'src/helpers/LinksList.json'),
+            replacement: path.resolve(
+              __dirname,
+              'src/helpers/LinksList.json.js'
+            ),
           },
           {
-            find: 'LinksList',
+            find: 'LinksList.svelte',
             replacement: path.resolve(
               __dirname,
               'src/components/LinksList.svelte'

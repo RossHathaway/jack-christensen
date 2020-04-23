@@ -1,1 +1,1 @@
-export { get } from 'LinksList.json.js';
+export { get } from 'LinksList.json';
