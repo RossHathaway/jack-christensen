@@ -1,42 +1,47 @@
 <script>
   import { onMount } from 'svelte';
   import { stores } from '@sapper/app';
-  import { makeReadableName } from '../helpers/makeReadableNameFromPath';
+  import { makeReadableName } from 'makeReadableName';
 
   export let isNav = false,
+    lastPathSection = null,
     folder = null,
     title = null,
     className = null,
     links = [];
 
-  const { page } = stores();
-  const currentPath = $page.path;
-  const trimmedPath = currentPath.endsWith('/')
-    ? currentPath.slice(0, -1)
-    : currentPath;
+    // make function that gets last section of path
+  // const { page } = stores();
+  // const currentPath = $page.path;
+  // const trimmedPath = currentPath.endsWith('/')
+  //   ? currentPath.slice(0, -1)
+  //   : currentPath;
 
-  const removedSlashes = trimmedPath.split('/');
-  const lastPathSection = removedSlashes[removedSlashes.length - 1];
+  // const removedSlashes = trimmedPath.split('/');
+  // const lastPathSection = removedSlashes[removedSlashes.length - 1];
+  // end of logic to extract
   if (title === null) {
     title = folder
       ? makeReadableName(folder).toUpperCase()
       : makeReadableName(lastPathSection);
   }
 
-  const fetchPath = folder ? folder : trimmedPath;
+  // const fetchPath = folder ? folder : trimmedPath;
 
-  if (links.length === 0) {
-    onMount(() =>
-      fetch(fetchPath + '.json')
-        .then((res) => res.json())
-        .then((json) => (links = json))
-        .catch((err) => console.log(`error in fetch from ${fetchPath}.json`))
-    );
-  }
+  // if (links.length === 0) {
+  //   onMount(() =>
+  //   fetch(fetchPath + '.json')
+  //     .then((res) => res.json())
+  //     .then((json) => (links = json))
+  //     .catch((err) => console.log(`error in fetch from ${fetchPath}.json`))
+  //   );
+  // }
 </script>
 
 <div class="{folder} {className}">
-  <h2 style="{isNav ? 'font-size: 24px;' : null}">
+  <h2
+    style="{isNav ? 'font-size: 24px;' : null}"
+  >
     {#if isNav}
     <a rel="prefetch" href="/{folder ? folder : ''}">{title}</a>
     {:else if title} {title} {/if}

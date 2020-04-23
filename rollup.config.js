@@ -46,6 +46,13 @@ export default {
               'src/components/LinksList.svelte'
             ),
           },
+          {
+            find: 'makeReadableName',
+            replacement: path.resolve(
+              __dirname,
+              'src/helpers/makeReadableNameFromPath.js'
+            ),
+          },
         ],
       }),
       svelte({
@@ -116,6 +123,13 @@ export default {
             replacement: path.resolve(
               __dirname,
               'src/components/LinksList.svelte'
+            ),
+          },
+          {
+            find: 'makeReadableName',
+            replacement: path.resolve(
+              __dirname,
+              'src/helpers/makeReadableNameFromPath.js'
             ),
           },
         ],
