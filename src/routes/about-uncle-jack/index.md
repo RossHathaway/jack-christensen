@@ -2,7 +2,7 @@
   import { preload } from 'helpers/preloadFuncForIndexPages'
 
   export preload
-  // export async function preload(page) {
+  export async function preload(page) {
   //   try {
   //   const { path } = page
   //   const removedSlashes = path.split('/')
