@@ -1,23 +1,26 @@
 <script context="module">
+  import { preload } from 'helpers/preloadFuncForIndexPages'
 
+  export preload
+  // export async function preload(page) {
+  //   try {
+  //   const { path } = page
+  //   const removedSlashes = path.split('/')
+  //   const lastPathSection = removedSlashes[removedSlashes.length - 1];
 
-  export async function preload(page) {
-    const { path } = page
-    const removedSlashes = path.split('/')
-    const lastPathSection = removedSlashes[removedSlashes.length - 1];
+  //   const res = await this.fetch(path + '.json')
+  //   const links = await res.json()
 
-    const res = await this.fetch(path + '.json')
-    const links = await res.json()
-
-// error handling
-// .catch((err) => console.log(`error in fetch from ${fetchPath}.json`))
-    return { links, lastPathSection }
-  }
+  //   return { links, lastPathSection }
+  //   } catch(e) {
+  //     console.error(`error getting data from ${path}.json`)
+  //   }
+  // }
 </script>
 
 <script>
   import Links from 'LinksList.svelte';
-  import { makeReadableName } from 'makeReadableName';
+  import { makeReadableName } from 'helpers/makeReadableNameFromPath';
 
   export let links, lastPathSection
 

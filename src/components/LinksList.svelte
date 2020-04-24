@@ -1,7 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import { stores } from '@sapper/app';
-  import { makeReadableName } from 'makeReadableName';
+  import { makeReadableName } from 'helpers/makeReadableNameFromPath';
 
   export let isNav = false,
     lastPathSection = null,

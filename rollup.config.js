@@ -47,11 +47,8 @@ export default {
             ),
           },
           {
-            find: 'makeReadableName',
-            replacement: path.resolve(
-              __dirname,
-              'src/helpers/makeReadableNameFromPath.js'
-            ),
+            find: 'helpers',
+            replacement: path.resolve(__dirname, 'src/helpers'),
           },
         ],
       }),
@@ -126,11 +123,8 @@ export default {
             ),
           },
           {
-            find: 'makeReadableName',
-            replacement: path.resolve(
-              __dirname,
-              'src/helpers/makeReadableNameFromPath.js'
-            ),
+            find: 'helpers',
+            replacement: path.resolve(__dirname, 'src/helpers'),
           },
         ],
       }),
