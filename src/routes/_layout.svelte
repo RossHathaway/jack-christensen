@@ -16,7 +16,7 @@
   import Nav from '../components/Nav.svelte';
   import Title from '../components/Title.svelte'
 
-  export let featuredLinks, categoryLinks, segment
+  export let featuredLinks, categoryLinks;
 
 </script>
 
