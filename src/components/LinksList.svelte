@@ -10,32 +10,12 @@
     className = null,
     links = [];
 
-    // make function that gets last section of path
-  // const { page } = stores();
-  // const currentPath = $page.path;
-  // const trimmedPath = currentPath.endsWith('/')
-  //   ? currentPath.slice(0, -1)
-  //   : currentPath;
-
-  // const removedSlashes = trimmedPath.split('/');
-  // const lastPathSection = removedSlashes[removedSlashes.length - 1];
-  // end of logic to extract
   if (title === null) {
     title = folder
       ? makeReadableName(folder).toUpperCase()
       : makeReadableName(lastPathSection);
   }
 
-  // const fetchPath = folder ? folder : trimmedPath;
-
-  // if (links.length === 0) {
-  //   onMount(() =>
-  //   fetch(fetchPath + '.json')
-  //     .then((res) => res.json())
-  //     .then((json) => (links = json))
-  //     .catch((err) => console.log(`error in fetch from ${fetchPath}.json`))
-  //   );
-  // }
 </script>
 
 <div class="{folder} {className}">

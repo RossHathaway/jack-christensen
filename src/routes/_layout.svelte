@@ -1,8 +1,41 @@
+<script context="module">
+  export async function preload() {
+    // const featuredLinks = this.fetch('featured-topics.json').then(res => res.json());
+    // const categoryLinks = this.fetch('categories.json').then(res => res.json());
+
+    // await Promise.all([featuredLinks, categoryLinks])
+
+    let featuredLinks = await this.fetch('featured-topics.json')
+    featuredLinks = await featuredLinks.json()
+
+    let categoryLinks = await this.fetch('categories.json')
+    categoryLinks = await categoryLinks.json()
+
+    return { featuredLinks, categoryLinks };
+  }
+</script>
+
 <script>
+  import Links from 'LinksList.svelte';
+  import { makeReadableName } from 'helpers/makeReadableNameFromPath';
   import Nav from '../components/Nav.svelte';
   import Title from '../components/Title.svelte'
-  export let segment;
+
+  export let featuredLinks, categoryLinks, segment
+
 </script>
+
+<Title />
+
+<div class="container">
+
+  <Nav {...{featuredLinks, categoryLinks}}/>
+
+  <main>
+    <slot></slot>
+  </main>
+
+</div>
 
 <style>
   main {
@@ -18,14 +51,3 @@
     /* scroll ? */
   }
 </style>
-<Title />
-
-<div class="container">
-
-  <Nav {segment} />
-
-  <main>
-    <slot></slot>
-  </main>
-
-</div>
