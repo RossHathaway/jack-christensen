@@ -1,15 +1,10 @@
 <script context="module">
   export async function preload() {
-    // const featuredLinks = this.fetch('featured-topics.json').then(res => res.json());
-    // const categoryLinks = this.fetch('categories.json').then(res => res.json());
+    let featuredLinks = this.fetch('featured-topics.json').then(res => res.json());
+    let categoryLinks = this.fetch('categories.json').then(res => res.json());
 
-    // await Promise.all([featuredLinks, categoryLinks])
-
-    let featuredLinks = await this.fetch('featured-topics.json')
-    featuredLinks = await featuredLinks.json()
-
-    let categoryLinks = await this.fetch('categories.json')
-    categoryLinks = await categoryLinks.json()
+    featuredLinks = await featuredLinks;
+    categoryLinks = await categoryLinks;
 
     return { featuredLinks, categoryLinks };
   }
