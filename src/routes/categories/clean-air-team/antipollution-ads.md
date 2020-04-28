@@ -120,7 +120,7 @@ img {
   display: block;
   font-style: italic;
   font-size: 2rem;
-  color: lightgray;
   margin: 1rem 0 2rem;
+  text-align: center;
 }
 </style>

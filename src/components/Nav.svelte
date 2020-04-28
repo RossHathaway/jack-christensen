@@ -1,11 +1,14 @@
 <script>
   import LinksList from './LinksList.svelte';
+  import Logo from './Logo.svelte'
 
-  export let featuredLinks, categoryLinks
+  export let logoSize, featuredLinks, categoryLinks
 
 const homeSectionLinks = [{path: '/', name: 'About This Site'}, {path: '/about-uncle-jack', name: 'About Uncle Jack'}]
 </script>
 
+<div class="outer-container">
+  <Logo size={logoSize} />
 <nav>
   <ul>
     <LinksList isNav links={homeSectionLinks} className="home" title="HOME"/> 
@@ -14,8 +17,18 @@ const homeSectionLinks = [{path: '/', name: 'About This Site'}, {path: '/about-u
     <div class="contact"><h2><a href="./contact">CONTACT</a></h2></div>
   </ul>
 </nav>
+</div>
+
 
 <style>
+
+  .outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
   nav {
     font-weight: 300;
     padding: 0 1rem;

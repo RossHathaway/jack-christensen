@@ -16,19 +16,24 @@
   import Nav from '../components/Nav.svelte';
   import Title from '../components/Title.svelte'
 
+  const logoSize = 200
+
   export let featuredLinks, categoryLinks;
 
 </script>
 
-<Title />
 
-<div class="container">
-
-  <Nav {...{featuredLinks, categoryLinks}}/>
+<div class="outer-container">
+  
+  <Nav {logoSize} {...{featuredLinks, categoryLinks}}/>
+  
+  <div class="inner-container">
+  <Title height={logoSize}/>
 
   <main>
     <slot></slot>
   </main>
+  </div>
 
 </div>
 
@@ -40,8 +45,13 @@
     margin: 0 auto;
     box-sizing: border-box;
   }
-  .container {
+  .outer-container {
     display: flex;
     /* scroll ? */
+  }
+
+  .inner-container {
+    display: flex;
+    flex-direction: column;
   }
 </style>

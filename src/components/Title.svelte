@@ -1,27 +1,21 @@
 <script>
-  import Logo from './Logo.svelte'
-  let logoSize = 200
+  export let height
 </script>
 
 <style>
   header {
     display: flex;
-  }
-  .title-container {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    height: var(--logoSize);
+    height: var(--height);
   }
+  
   h1 {
     margin: 0;
   }
 </style>
 
-<header>
-  <Logo size={logoSize} />
-  <div class="title-container" style="--logoSize:{logoSize}">
-    <h1>Jack Shields Christensen</h1>
-  </div>
+<header style="--height:{height}px">
+    <h1 >Jack Shields Christensen</h1>
 </header>
