@@ -31,10 +31,12 @@ const homeSectionLinks = [{path: '/', name: 'About This Site'}, {path: '/about-u
   :global(ul > div) {
     color: var(--alt-text-color-1);
     background-color: var(--alt-bg-color-1);
+    padding: 0.25rem;
   }
 
   :global(ul > div > h2) {
     font-size: 1.5rem;
+    margin: 0;
   }
 
   .contact {
