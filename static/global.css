@@ -1,3 +1,11 @@
+:root {
+  --main-bg-color: #ccdbdc;
+  --alt-bg-color-1: #9ad1d4;
+  --alt-bg-color-2: #80ced7;
+  --main-text-color: #004169;
+  --alt-text-color-1: #007ea7;
+}
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -17,8 +25,8 @@ body {
   font-size: 1.25rem;
   letter-spacing: 0.02em;
   line-height: 1.5;
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
 }
 
 strong {
@@ -48,6 +56,10 @@ h3 {
 
 a {
   color: inherit;
+}
+
+a:visited {
+  color: var(--alt-text-color-1);
 }
 
 figure {

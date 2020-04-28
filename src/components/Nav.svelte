@@ -11,7 +11,7 @@ const homeSectionLinks = [{path: '/', name: 'About This Site'}, {path: '/about-u
     <LinksList isNav links={homeSectionLinks} className="home" title="HOME"/> 
     <LinksList isNav title="FEATURED TOPICS" folder="featured-topics" links={featuredLinks}/> 
     <LinksList isNav title="CATEGORIES" folder="categories" links={categoryLinks}/>
-    <div class="contact"><h3><a href="./contact">CONTACT</a></h3></div>
+    <div class="contact"><h2><a href="./contact">CONTACT</a></h2></div>
   </ul>
 </nav>
 
@@ -28,14 +28,16 @@ const homeSectionLinks = [{path: '/', name: 'About This Site'}, {path: '/about-u
     padding: 0;
   }
 
-  :global(.contact h2) {
-    font-size: 2rem;
+  :global(ul > div) {
+    color: var(--alt-text-color-1);
+    background-color: var(--alt-bg-color-1);
+  }
+
+  :global(ul > div > h2) {
+    font-size: 1.5rem;
   }
 
   .contact {
-    color: white;
-    background-color: darkred;
-    border: 2px solid black;
     margin-bottom: 2rem;
   }
 
@@ -43,11 +45,14 @@ const homeSectionLinks = [{path: '/', name: 'About This Site'}, {path: '/about-u
     text-decoration: none;
     display: block;
   }
-  .contact a:visited {
-      color: black;
-    }
+
+  /* a:visited {
+    color: var(--alt-text-color-1);
+  } */
+  
+/*
   .contact a:hover,
   .contact a:active {
-      color: green;
-    }
+      color: ?;
+    } */
 </style>

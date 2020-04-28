@@ -19,9 +19,7 @@
 </script>
 
 <div class="{folder} {className}">
-  <h2
-    style="{isNav ? 'font-size: 24px;' : null}"
-  >
+  <h2>
     {#if isNav}
     <a rel="prefetch" href="/{folder ? folder : ''}">{title}</a>
     {:else if title} {title} {/if}
@@ -35,28 +33,7 @@
 
 <style>
   div {
-    background-color: white;
     margin-bottom: 1rem;
-  }
-
-  .home,
-  .featured-topics {
-    background-color: goldenrod;
-    color: white;
-  }
-
-  .home {
-    border: 2px solid black;
-  }
-
-  .featured-topics {
-    border: 2px solid royalblue;
-  }
-
-  .categories {
-    background-color: darkred;
-    color: white;
-    border: 2px solid lightgray;
   }
 
   ul {
@@ -73,11 +50,8 @@
     display: block;
   }
 
-  a:visited {
-    color: black;
-  }
-  a:hover,
+  /* a:hover,
   a:active {
     color: green;
-  }
+  } */
 </style>
