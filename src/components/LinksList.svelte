@@ -17,8 +17,8 @@
   }
 
 </script>
-
-<div class="{folder} {className}">
+<!-- {className} -->
+<div class="{folder}">
   <h2>
     {#if isNav}
     <a rel="prefetch" href="/{folder ? folder : ''}">{title}</a>
