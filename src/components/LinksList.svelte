@@ -7,7 +7,6 @@
     lastPathSection = null,
     folder = null,
     title = null,
-    className = null,
     links = [];
 
   if (title === null) {
@@ -17,7 +16,6 @@
   }
 
 </script>
-<!-- {className} -->
 <div class="{folder}">
   <h2>
     {#if isNav}

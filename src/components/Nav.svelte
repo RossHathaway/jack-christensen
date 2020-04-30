@@ -12,17 +12,17 @@ const homeSectionLinks = [{path: '/about-uncle-jack', name: 'About Uncle Jack'}]
   <Logo size={logoSize} />
 <nav>
   <ul>
-    <li>
-    <LinksList isNav links={homeSectionLinks} class="home" title="HOME"/> 
+    <li class="home">
+    <LinksList isNav links={homeSectionLinks} title="HOME"/> 
   </li>
-  <li>
-    <LinksList isNav title="FEATURED TOPICS" folder="featured-topics" links={featuredLinks} class=/> 
+  <li class="featured">
+    <LinksList isNav title="FEATURED TOPICS" folder="featured-topics" links={featuredLinks} /> 
   </li>
-  <li>
-    <LinksList isNav title="CATEGORIES" folder="categories" links={categoryLinks}/>
+  <li class="categories">
+    <LinksList isNav title="CATEGORIES" folder="categories" links={categoryLinks} />
   </li>
-  <li>
-    <div class="contact"><h2><a href="./contact">CONTACT</a></h2></div>
+  <li class="contact">
+    <div><h2><a href="./contact">CONTACT</a></h2></div>
   </li>
   </ul>
 </nav>
@@ -50,18 +50,27 @@ const homeSectionLinks = [{path: '/about-uncle-jack', name: 'About Uncle Jack'}]
     list-style: none;
   }
 
-  :global(ul > li > div) {
+  :global(nav > ul > li > div) {
     color: white;
-    background-color: var(--alt-bg-color-1);
     padding: 0.5rem;
   }
 
-  :global(div > h2) {
+  :global(nav div > h2) {
     font-size: 1.5rem;
     margin: 0;
   }
 
-  .home, .
+  :global(nav a:visited) {
+    color: var(--main-bg-color)
+  }
+
+  .home, .featured {
+    background-color: var(--second-darkest-hue)
+  }
+
+  .categories, .contact {
+    background-color: var(--darkest-hue)
+  }
 
   .contact {
     margin-bottom: 2rem;
