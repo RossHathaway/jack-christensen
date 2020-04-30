@@ -3,7 +3,7 @@
   import Logo from './Logo.svelte'
 
   export let logoSize, featuredLinks, categoryLinks
-  
+
 // {path: '/', name: 'About This Site'},
 const homeSectionLinks = [{path: '/about-uncle-jack', name: 'About Uncle Jack'}]
 </script>
@@ -43,7 +43,7 @@ const homeSectionLinks = [{path: '/about-uncle-jack', name: 'About Uncle Jack'}]
   }
 
   :global(ul > div) {
-    color: var(--alt-text-color-1);
+    color: var(--second-darkest-hue);
     background-color: var(--alt-bg-color-1);
     padding: 0.25rem;
   }
@@ -63,7 +63,7 @@ const homeSectionLinks = [{path: '/about-uncle-jack', name: 'About Uncle Jack'}]
   }
 
   /* a:visited {
-    color: var(--alt-text-color-1);
+    color: var(--second-darkest-hue);
   } */
   
 /*
