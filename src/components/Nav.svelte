@@ -3,8 +3,9 @@
   import Logo from './Logo.svelte'
 
   export let logoSize, featuredLinks, categoryLinks
-
-const homeSectionLinks = [{path: '/', name: 'About This Site'}, {path: '/about-uncle-jack', name: 'About Uncle Jack'}]
+  
+// {path: '/', name: 'About This Site'},
+const homeSectionLinks = [{path: '/about-uncle-jack', name: 'About Uncle Jack'}]
 </script>
 
 <div class="outer-container">
