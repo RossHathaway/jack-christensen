@@ -11,7 +11,7 @@ Based on the default [Sapper](https://github.com/sveltejs/sapper)#Rollup templat
 
 ## Production mode and deployment
 
-To start a production version of this app, run `npm run export`. This will make a static version of the app. There is no need to run `npm start` or similar commands after when deploying on Now v2.
+To start a production version of this app, run `npm run export`. This will make a static version of the app. There is no need to run `npm start` or similar commands after when deploying on Now v2. The default folder this will export to is `__sapper__/export`.
 
 You can deploy your application to any environment that supports Node 8 or above. 
 
