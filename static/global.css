@@ -68,10 +68,6 @@ figure {
   align-items: center;
 }
 
-svg {
-  fill: var(--darkest-hue);
-}
-
 /* @media (min-width: 400px) { */
 /* body {
     font-size: 16px;
