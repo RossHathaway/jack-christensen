@@ -42,7 +42,8 @@ const homeSectionLinks = [{path: '/about-uncle-jack', name: 'About Uncle Jack'}]
     padding: 0 1rem;
     display: flex;
     flex-direction: column;
-    max-width: 14rem;
+    /* max-width: 14rem; */
+    width: 20rem;
   }
   ul {
     margin: 0;
