@@ -62,7 +62,7 @@ const homeSectionLinks = [{path: '/about-uncle-jack', name: 'About Uncle Jack'}]
   }
 
   :global(nav a:visited) {
-    color: var(--main-bg-color)
+    color: white;
   }
 
   .home, .featured {
