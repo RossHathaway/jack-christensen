@@ -19,7 +19,6 @@
   const logoSize = 200
 
   export let featuredLinks, categoryLinks;
-
 </script>
 
 

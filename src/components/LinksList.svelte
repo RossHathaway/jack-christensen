@@ -1,14 +1,17 @@
 <script>
-  import { onMount } from 'svelte';
   import { stores } from '@sapper/app';
   import { makeReadableName } from 'helpers/makeReadableNameFromPath';
+  import { getLastPathSection } from 'helpers/getLastPathSection'
 
   export let isNav = false,
-    lastPathSection = null,
-    folder = null,
+    folder = '',
     title = null,
     links = [];
 
+  let lastPathSection = ''
+  const { page } = stores();
+  $: lastPathSection = getLastPathSection($page.path)
+  
   if (title === null) {
     title = folder
       ? makeReadableName(folder).toUpperCase()
@@ -19,12 +22,12 @@
 <div class="{folder}">
   <h2>
     {#if isNav}
-    <a rel="prefetch" href="/{folder ? folder : ''}">{title}</a>
+    <a rel="prefetch" href="/{folder}" aria-current={lastPathSection === folder ? "location" : undefined}>{title}</a>
     {:else if title} {title} {/if}
   </h2>
   <ul>
     {#each links as link}
-    <li><a rel="prefetch" href="{link.path}">{link.name}</a></li>
+    <li><a rel="prefetch" href="{link.path}" aria-current={lastPathSection === folder ? "location" : undefined}>{link.name}</a></li>
     {/each}
   </ul>
 </div>

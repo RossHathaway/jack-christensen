@@ -82,6 +82,11 @@ const homeSectionLinks = [{path: '/about-uncle-jack', name: 'About Uncle Jack'}]
     display: block;
   }
 
+  [aria-current] {
+    border-bottom: 2px solid white;
+    background-color: red;
+  }
+
   /* a:visited {
     color: var(--second-darkest-hue);
   } */
