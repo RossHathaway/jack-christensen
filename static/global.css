@@ -58,9 +58,9 @@ a {
   color: inherit;
 }
 
-a:visited {
+/* a:visited {
   color: var(--darkest-hue);
-}
+} */
 
 figure {
   display: flex;
