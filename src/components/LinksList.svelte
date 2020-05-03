@@ -11,7 +11,7 @@
   let lastPathSection = ''
   const { page } = stores();
   $: lastPathSection = getLastPathSection($page.path)
-  
+
   if (title === null) {
     title = folder
       ? makeReadableName(folder).toUpperCase()
@@ -27,7 +27,8 @@
   </h2>
   <ul>
     {#each links as link}
-    <li><a rel="prefetch" href="{link.path}" aria-current={lastPathSection === folder ? "location" : undefined}>{link.name}</a></li>
+    <li><a rel="prefetch" href="{link.path}" aria-current={lastPathSection === getLastPathSection(link.path) ? "location" : undefined}>{link.name}</a>
+      </li>
     {/each}
   </ul>
 </div>

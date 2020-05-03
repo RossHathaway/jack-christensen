@@ -65,6 +65,11 @@ const homeSectionLinks = [{path: '/about-uncle-jack', name: 'About Uncle Jack'}]
     color: white;
   }
 
+
+  :global(nav a[aria-current]) {
+    border-bottom: 2px solid white;
+  }
+
   .home, .featured {
     background-color: var(--second-darkest-hue)
   }
@@ -80,11 +85,6 @@ const homeSectionLinks = [{path: '/about-uncle-jack', name: 'About Uncle Jack'}]
   .contact a {
     text-decoration: none;
     display: block;
-  }
-
-  [aria-current] {
-    border-bottom: 2px solid white;
-    background-color: red;
   }
 
   /* a:visited {
