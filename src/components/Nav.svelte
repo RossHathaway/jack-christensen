@@ -5,7 +5,7 @@
   export let logoSize, featuredLinks, categoryLinks
 
 // {path: '/', name: 'About This Site'},
-const homeSectionLinks = [{path: '/about-uncle-jack', name: 'About Uncle Jack'}]
+const homeSectionLinks = [{path: '/about-uncle-jack', name: 'About Uncle Jack', lastUrlSegment: 'about-uncle-jack'}]
 </script>
 
 <div class="outer-container">

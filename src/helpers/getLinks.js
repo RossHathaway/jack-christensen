@@ -14,7 +14,7 @@ export function getLinks(path) {
         const childPath = `${folderPath}/${childFileName}`;
         const readableName = makeReadableName(childFileName);
 
-        return { path: childPath, name: readableName };
+        return { path: childPath, name: readableName, lastUrlSegment: child };
       });
   } catch (err) {
     console.log('got an error in getLinks.js function getLinks');
