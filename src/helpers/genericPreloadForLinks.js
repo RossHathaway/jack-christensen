@@ -1,5 +1,3 @@
-import { getLastPathSection } from './getLastPathSection';
-
 export async function genericPreloadForLinks(page, context) {
   try {
     const { path } = page;
