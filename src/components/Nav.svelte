@@ -22,7 +22,7 @@ const homeSectionLinks = [{path: '/about-uncle-jack', name: 'About Uncle Jack', 
     <LinksList isNav title="CATEGORIES" folder="categories" links={categoryLinks} />
   </li>
   <li class="contact">
-    <div><h2><a href="./contact">CONTACT</a></h2></div>
+    <LinksList isNav title="CONTACT" folder="contact" links={[]} />
   </li>
   </ul>
 </nav>
