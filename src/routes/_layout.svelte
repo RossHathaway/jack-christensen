@@ -21,6 +21,13 @@
   export let featuredLinks, categoryLinks;
 </script>
 
+<svelte:head>
+  <link
+      href="https://fonts.googleapis.com/css?family=Galindo|Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+  <title>Jack Shields Christensen</title>
+</svelte:head>
 
 <div class="outer-container">
   
