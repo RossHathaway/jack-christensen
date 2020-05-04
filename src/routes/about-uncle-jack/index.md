@@ -1,5 +1,7 @@
 <script context="module">
   import { genericPreloadForLinks } from 'helpers/genericPreloadForLinks'
+    import {getAllLinks} from 'helpers/getAllLinks'
+
 
   export async function preload(page) {
     return genericPreloadForLinks(page, this)

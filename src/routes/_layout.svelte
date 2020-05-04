@@ -1,12 +1,11 @@
 <script context="module">
   export async function preload() {
-    let featuredLinks = this.fetch('featured-topics.json').then(res => res.json());
-    let categoryLinks = this.fetch('categories.json').then(res => res.json());
+    let links = this.fetch('navLinks.json').then(res => res.json());
 
-    featuredLinks = await featuredLinks;
-    categoryLinks = await categoryLinks;
+    links = await links
+    console.log('links:', links)
 
-    return { featuredLinks, categoryLinks };
+    return { links };
   }
 </script>
 
@@ -18,7 +17,7 @@
 
   const logoSize = 200
 
-  export let featuredLinks, categoryLinks;
+  export let links;
 </script>
 
 <svelte:head>
@@ -31,7 +30,7 @@
 
 <div class="outer-container">
   
-  <Nav {logoSize} {...{featuredLinks, categoryLinks}}/>
+  <Nav {logoSize} {links}/>
   
   <div class="inner-container">
   <Title height={logoSize}/>
