@@ -3,11 +3,11 @@ import pathLib from 'path';
 import { makeReadableName } from './makeReadableNameFromPath';
 
 const pathsToMakeLinksForEvenIfIndexPage = ['src/routes'];
-const pathsToIgnore = ['navLinks.json.js'];
+const pathsToIgnore = ['navLinks.json.js']; // must match name property on Dirent object from readdir function
 
 export function getAllLinks(path) {
   const pathName = typeof path === 'object' ? path.name : path;
-  let links = [];
+  const links = [];
 
   try {
     const dirPath = removeFileEnding(pathName);
@@ -35,24 +35,15 @@ export function getAllLinks(path) {
       }
 
       const childFileName = removeFileEnding(FSChild.name);
-      const childPath = pathLib.join(path, childFileName); // is there full path available on dirent?
+      const childPath = pathLib.join(path, childFileName);
       const readableName = makeReadableName(childFileName);
 
-      if (FSChild.isFile()) {
-        links.push({
-          path: childPath,
-          name: readableName,
-          lastUrlSegment: childFileName,
-          children: null,
-        });
-      } else if (FSChild.isDirectory()) {
-        links.push({
-          path: childPath,
-          name: readableName,
-          lastUrlSegment: childFileName,
-          children: getAllLinks(childPath),
-        });
-      }
+      links.push({
+        path: childPath,
+        name: readableName,
+        lastUrlSegment: childFileName,
+        children: FSChild.isDirectory() ? getAllLinks(childPath) : null,
+      });
     }
     return links;
   } catch (err) {
