@@ -21,7 +21,6 @@ export function getAllLinks(path) {
 
     if (shouldIgnoreParent) {
       // if children array will have index page, make link without children so there are no links in acordion nav, only index page.
-      console.log(`ignoring path ${path.name}`);
       return null;
     }
 
