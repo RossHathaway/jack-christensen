@@ -1,6 +1,6 @@
 <script context="module">
   export async function preload() {
-    let links = this.fetch('navLinks.json').then(res => res.json());
+    let links = this.fetch('navLinks.json').then(res => res.json()).catch((e) => console.log('error fetching links in Nav', e));
 
     links = await links
     console.log('links:', links)

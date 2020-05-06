@@ -3,6 +3,7 @@ import pathLib from 'path';
 import { makeReadableName } from './makeReadableNameFromPath';
 
 const pathsToMakeLinksForEvenIfIndexPage = ['src/routes'];
+const pathsToIgnore = ['navLinks.json.js'];
 
 export function getAllLinks(path) {
   const pathName = typeof path === 'object' ? path.name : path;
@@ -14,20 +15,24 @@ export function getAllLinks(path) {
       withFileTypes: true,
     });
 
-    const shouldNotMakeLinks =
+    const shouldIgnoreParent =
       !pathsToMakeLinksForEvenIfIndexPage.includes(pathName) &&
       FSNodeChildren.some((sub) => sub.name.startsWith('index'));
 
-    if (shouldNotMakeLinks) {
+    if (shouldIgnoreParent) {
       // if children array will have index page, make link without children so there are no links in acordion nav, only index page.
-      console.log(`path ${path.name} has an index and we return null here`);
+      console.log(`ignoring path ${path.name}`);
       return null;
     }
 
     for (let i = 0; i < FSNodeChildren.length; i++) {
       const FSChild = FSNodeChildren[i];
+      const shouldIgnoreChild =
+        FSChild.name.startsWith('_') || pathsToIgnore.includes(FSChild.name);
 
-      if (FSChild.name.startsWith('_')) continue;
+      if (shouldIgnoreChild) {
+        continue;
+      }
 
       const childFileName = removeFileEnding(FSChild.name);
       const childPath = pathLib.join(path, childFileName); // is there full path available on dirent?
@@ -49,7 +54,6 @@ export function getAllLinks(path) {
         });
       }
     }
-    console.log('links from inside getAllLinks:', links);
     return links;
   } catch (err) {
     console.log('got an error in getLinks.js function getLinks', err);
