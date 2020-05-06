@@ -2,37 +2,45 @@ import fs from 'fs';
 import pathLib from 'path';
 import { makeReadableName } from './makeReadableNameFromPath';
 
-// rootdir/src/routes
+const pathsToMakeLinksForEvenIfIndexPage = ['src/routes'];
+
 export function getAllLinks(path) {
+  const pathName = typeof path === 'object' ? path.name : path;
   let links = [];
+
   try {
-    const folderPath = removeFileEnding(path);
-    const subFileOrFolders = fs.readdirSync(folderPath, {
+    const dirPath = removeFileEnding(pathName);
+    const FSNodeChildren = fs.readdirSync(dirPath, {
       withFileTypes: true,
     });
 
-    if (subFileOrFolders.some((path) => path.name.startsWith('index'))) {
+    const shouldNotMakeLinks =
+      !pathsToMakeLinksForEvenIfIndexPage.includes(pathName) &&
+      FSNodeChildren.some((sub) => sub.name.startsWith('index'));
+
+    if (shouldNotMakeLinks) {
       // if children array will have index page, make link without children so there are no links in acordion nav, only index page.
+      console.log(`path ${path.name} has an index and we return null here`);
       return null;
     }
 
-    for (let i = 0; i < subFileOrFolders.length; i++) {
-      const subFileOrFolder = subFileOrFolders[i];
+    for (let i = 0; i < FSNodeChildren.length; i++) {
+      const FSChild = FSNodeChildren[i];
 
-      if (subFileOrFolder.name.startsWith('_')) continue;
+      if (FSChild.name.startsWith('_')) continue;
 
-      const childFileName = removeFileEnding(subFileOrFolder);
+      const childFileName = removeFileEnding(FSChild.name);
       const childPath = pathLib.join(path, childFileName); // is there full path available on dirent?
       const readableName = makeReadableName(childFileName);
 
-      if (path.isFile()) {
+      if (FSChild.isFile()) {
         links.push({
           path: childPath,
           name: readableName,
           lastUrlSegment: childFileName,
           children: null,
         });
-      } else if (path.isDirectory()) {
+      } else if (FSChild.isDirectory()) {
         links.push({
           path: childPath,
           name: readableName,
@@ -41,6 +49,7 @@ export function getAllLinks(path) {
         });
       }
     }
+    console.log('links from inside getAllLinks:', links);
     return links;
   } catch (err) {
     console.log('got an error in getLinks.js function getLinks', err);
