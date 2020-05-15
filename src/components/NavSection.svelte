@@ -58,17 +58,27 @@
 
   ul {
     list-style: none;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  * {
+    color: white;
+    text-decoration: none;
   }
 
   input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+
     height: 1.5rem;
     width: 1.5rem;
+
     background-image: url('/triangle-isoceles-optimized.svg');
     background-repeat: no-repeat;
     background-position: center;
+
     transition: transform .3s;
     display: inline-block;
     outline: none;
