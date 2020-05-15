@@ -67,6 +67,9 @@
     background-image: url('/triangle-isoceles-optimized.svg');
     background-repeat: no-repeat;
     background-position: center;
+    transition: transform .3s;
+    display: inline-block;
+    outline: none;
   }
 
   input[type="checkbox"]:checked {
