@@ -55,6 +55,17 @@
 </div>
 
 <style>
+  * {
+    color: white;
+  }
+  
+  div {
+    width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+  }
 
   ul {
     list-style: none;
@@ -62,9 +73,14 @@
     padding: 1rem;
   }
 
-  * {
-    color: white;
-    text-decoration: none;
+  li {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  label {
+    min-width: calc(100% - 2rem);
   }
 
   input[type="checkbox"] {
@@ -72,8 +88,8 @@
     -webkit-appearance: none;
     -moz-appearance: none;
 
-    height: 1.5rem;
-    width: 1.5rem;
+    min-height: 1rem;
+    min-width: 1rem;
 
     background-image: url('/triangle-isoceles-optimized.svg');
     background-repeat: no-repeat;
