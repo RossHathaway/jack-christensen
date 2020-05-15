@@ -34,8 +34,8 @@
     children: [ [Object], [Object] ] } -->
     <li>
       {#if link.children}
-        <label>
-          <input type="checkbox" />
+      <input type="checkbox" name={link.name}/>
+        <label for={link.name}>
           {link.name}
         </label>
         <svelte:self links={link.children}></svelte:self>
@@ -74,6 +74,16 @@
 
   input[type="checkbox"]:checked {
     transform: rotate(90deg);
+  }
+
+  input[type="checkbox"] ~ div {
+    height: 0;
+    overflow: hidden;
+  }
+
+  input[type="checkbox"]:checked ~ div {
+    height: auto;
+
   }
 
 </style>
