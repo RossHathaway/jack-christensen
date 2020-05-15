@@ -56,27 +56,17 @@
 
   ul {
     list-style: none;
-    border: 3px solid black;
   }
 
   input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-  /* opacity: 0;
-  z-index: 1; */
-  }
-
-  input[type="checkbox"]:checked:before {
-  /* NOTE: Replace the url with a path to an SVG of a checkmark to get a checkmark icon */
-  background-image: url('triangle-isoceles-optimized.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  /* The size of the checkmark icon, you may/may not need this */
-  /* background-size: 25px;
-  border-radius: 2px;
-  background-color: #e7ffba;
-  color: white; */
+    height: 1.5rem;
+    width: 1.5rem;
+    background-image: url('/triangle-isoceles-optimized.svg');
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   input[type="checkbox"]:checked {
