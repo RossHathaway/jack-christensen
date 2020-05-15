@@ -34,14 +34,15 @@ export function getAllLinks(path) {
       }
 
       const childFileName = removeFileEnding(FSChild.name);
-      const childPath = pathLib.join(path, childFileName);
+      const childFullPath = pathLib.join(path, childFileName);
+      const childRelativePath = childFullPath.replace('src/routes/', '');
       const readableName = makeReadableName(childFileName);
 
       links.push({
-        path: childPath,
+        path: childRelativePath,
         name: readableName,
         lastUrlSegment: childFileName,
-        children: FSChild.isDirectory() ? getAllLinks(childPath) : null,
+        children: FSChild.isDirectory() ? getAllLinks(childFullPath) : null,
       });
     }
     return links;
