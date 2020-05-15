@@ -23,7 +23,7 @@
 
 </script>
 
-<div>
+<div style={`background-color: ${bgColor}`}>
 <strong>{title}</strong>
 <!-- aria-current={lastPathSection === folder ? "location" : undefined} -->
 <ul>
@@ -34,7 +34,7 @@
     children: [ [Object], [Object] ] } -->
     <li>
       {#if link.children}
-      <input type="checkbox" name={link.name}/>
+      <input type="checkbox" name={link.name} id={link.name}/>
         <label for={link.name}>
           {link.name}
         </label>
