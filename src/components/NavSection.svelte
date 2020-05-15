@@ -6,7 +6,9 @@
   export let title = null,
     folder = '',
     links = [],
-    bgColor = 'var(--second-darkest-hue)'
+    hasLightBgColor = true
+
+    const bgColor = hasLightBgColor ? 'var(--second-darkest-hue)' : 'var(--darkest-hue)'
 
   const { page } = stores();
   $: trimmedPath = $page.path.endsWith('/') ? $page.path.slice(0, -1) : $page.path;
@@ -38,7 +40,7 @@
         <label for={link.name}>
           {link.name}
         </label>
-        <svelte:self links={link.children}></svelte:self>
+        <svelte:self links={link.children} hasLightBgColor={!hasLightBgColor}></svelte:self>
 
       {:else}
         <a href={link.path} aria-current={urlSegments.includes(link.lastUrlSegment) ? "location" : undefined}>
