@@ -3,15 +3,12 @@
     let links = this.fetch('navLinks.json').then(res => res.json()).catch((e) => console.log('error fetching links in Nav', e));
 
     links = await links
-    console.log('links:', links)
 
     return { links };
   }
 </script>
 
 <script>
-  import Links from 'LinksList.svelte';
-  import { makeReadableName } from 'helpers/makeReadableNameFromPath';
   import Nav from '../components/Nav.svelte';
   import Title from '../components/Title.svelte'
 

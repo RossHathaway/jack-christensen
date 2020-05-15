@@ -9,6 +9,7 @@
     links = [];
 
   const { page } = stores();
+  
   $: trimmedPath = $page.path.endsWith('/') ? $page.path.slice(0, -1) : $page.path;
   $: urlSegments = trimmedPath.split('/');
   $: lastPathSection = urlSegments[urlSegments.length - 1];

@@ -1,31 +1,16 @@
 <script>
-  import LinksList from './LinksList.svelte';
+  import NavSection from './NavSection.svelte'
   import Logo from './Logo.svelte'
 
-  export let logoSize, featuredLinks, categoryLinks
+  export let logoSize, links
 
-// {path: '/', name: 'About This Site'},
-const homeSectionLinks = [{path: '/about-uncle-jack', name: 'About Uncle Jack', lastUrlSegment: 'about-uncle-jack'}]
 </script>
 
 <div class="outer-container">
   <Logo size={logoSize} />
-<nav>
-  <ul>
-    <li class="home">
-    <LinksList isNav links={homeSectionLinks} title="HOME"/> 
-  </li>
-  <li class="featured">
-    <LinksList isNav title="FEATURED TOPICS" folder="featured-topics" links={featuredLinks} /> 
-  </li>
-  <li class="categories">
-    <LinksList isNav title="CATEGORIES" folder="categories" links={categoryLinks} />
-  </li>
-  <li class="contact">
-    <LinksList isNav title="CONTACT" folder="contact" links={[]} />
-  </li>
-  </ul>
-</nav>
+  <nav>
+    <NavSection {links} />
+  </nav>
 </div>
 
 
