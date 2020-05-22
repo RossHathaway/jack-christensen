@@ -43,10 +43,17 @@ fields:
     max: 
     labelField: 
   label: document locations
-  description: List the folders that you want this document to be listed under. Starting
-    with the top level, such as "Featured Topics" or "Categories", then the next folder,
-    such as "Poems" or "Clean Air Team". If you want to add more categories underneath
-    a category, you can list the new category here and it will be created.
+  description: 'Add to this list to create a new url that this document will appear
+    under. There can be more than one url. If you want to view or edit the list of
+    url sections, click on the list item(s) below (there is no name shown on the item(s)).
+    This will display the list of url sections. You can add or edit url sections to
+    the list. <br><br>For example, for a document in the Frank Lloyd Wright folder,
+    you might want it to be listed under featured/frank-lloyd-wright/document-name
+    as well as content/architecture/document-name. This means you would add two lists
+    here. Each list would have two sections: "Featured" and "Frank Lloyd Wright" in
+    one list, and "Content" and "Architecture" in the other.<br><br>If you want to
+    create a new category, just list it here and it will be created in the site''s
+    menu.'
 pages:
 - src/routes/featured-topics/the-mature-american.md
 - src/routes/frank-lloyd-wright.md
