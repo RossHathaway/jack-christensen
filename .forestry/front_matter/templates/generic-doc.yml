@@ -19,3 +19,14 @@ fields:
   description: This will be used as the site description in Google's or other search
     engines' results page. Make sure to include any relevant keywords such as "travel",
     "Japan", etc.
+- name: document_locations
+  type: field_group_list
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: document locations
+  description: List the folders that you want this document to be listed under. Starting
+    with the top level, such as "Featured Topics" or "Categories", then the next folder,
+    such as "Poems" or "Clean Air Team". If you want to add more categories underneath
+    a category, you can list the new category here and it will be created.
