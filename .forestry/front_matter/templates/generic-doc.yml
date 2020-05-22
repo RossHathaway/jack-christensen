@@ -5,7 +5,7 @@ fields:
 - name: title
   type: text
   config:
-    required: false
+    required: true
   label: Title
 - name: description
   type: textarea
@@ -28,11 +28,11 @@ fields:
     - name: folder_name
       type: text
       config:
-        required: false
+        required: true
       label: Folder name
-      description: one section of the url (featured-topics)
+      description: one section of the url ("featured" or "frank-lloyd-wright")
     config:
-      min: 
+      min: 1
       max: 
       labelField: 
     label: Location
