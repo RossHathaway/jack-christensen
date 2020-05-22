@@ -68,6 +68,10 @@ figure {
   align-items: center;
 }
 
+.centered {
+  text-align: center;
+}
+
 /* @media (min-width: 400px) { */
 /* body {
     font-size: 16px;
