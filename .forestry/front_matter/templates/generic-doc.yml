@@ -7,3 +7,15 @@ fields:
   config:
     required: false
   label: Title
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: This will be used as the site description in Google's or other search
+    engines' results page. Make sure to include any relevant keywords such as "travel",
+    "Japan", etc.
