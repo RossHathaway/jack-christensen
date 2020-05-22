@@ -21,8 +21,25 @@ fields:
     "Japan", etc.
 - name: document_locations
   type: field_group_list
+  fields:
+  - name: location
+    type: field_group_list
+    fields:
+    - name: folder_name
+      type: text
+      config:
+        required: false
+      label: Folder name
+      description: one section of the url (featured-topics)
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Location
+    description: A list of folders starting with the highest level (featured topics,
+      categories, etc) that will determine the url of this document
   config:
-    min: 
+    min: 1
     max: 
     labelField: 
   label: document locations
