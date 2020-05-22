@@ -30,3 +30,5 @@ fields:
     with the top level, such as "Featured Topics" or "Categories", then the next folder,
     such as "Poems" or "Clean Air Team". If you want to add more categories underneath
     a category, you can list the new category here and it will be created.
+pages:
+- src/routes/featured-topics/the-mature-american.md
