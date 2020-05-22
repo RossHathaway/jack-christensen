@@ -30,7 +30,7 @@ fields:
       config:
         required: true
       label: Folder name
-      description: one section of the url ("featured" or "frank-lloyd-wright")
+      description: one section of the url ("Featured" or "Frank Lloyd Wright")
     config:
       min: 1
       max: 
