@@ -49,3 +49,4 @@ fields:
     a category, you can list the new category here and it will be created.
 pages:
 - src/routes/featured-topics/the-mature-american.md
+- src/routes/frank-lloyd-wright.md
