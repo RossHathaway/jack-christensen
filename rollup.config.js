@@ -56,7 +56,7 @@ export default {
       copy({
         targets: [
           {
-            src: '/test.svelte',
+            src: '/test.md',
             dest: 'src/routes',
           },
         ],
@@ -140,7 +140,7 @@ export default {
       copy({
         targets: [
           {
-            src: 'test.svelte',
+            src: 'test.md',
             dest: 'src/routes',
           },
         ],
