@@ -9,6 +9,7 @@ import pkg from './package.json';
 import { markdown } from 'svelte-preprocess-markdown';
 import alias from '@rollup/plugin-alias';
 import path from 'path';
+import copy from './src/helpers/rollup-plugin-copy-dynamic-destination';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -49,6 +50,14 @@ export default {
           {
             find: 'helpers',
             replacement: path.resolve(__dirname, 'src/helpers'),
+          },
+        ],
+      }),
+      copy({
+        targets: [
+          {
+            src: '/test.svelte',
+            dest: 'src/routes',
           },
         ],
       }),
@@ -125,6 +134,14 @@ export default {
           {
             find: 'helpers',
             replacement: path.resolve(__dirname, 'src/helpers'),
+          },
+        ],
+      }),
+      copy({
+        targets: [
+          {
+            src: 'test.svelte',
+            dest: 'src/routes',
           },
         ],
       }),
