@@ -49,7 +49,7 @@ async function generateCopyTarget(src, dest, { flatten, rename, transform }) {
 export default function copy(options = {}) {
   const {
     copyOnce = false,
-    flatten = true,
+    flatten = true, // may need to change to false
     hook = 'buildEnd',
     targets = [],
     verbose = false,
@@ -67,15 +67,16 @@ export default function copy(options = {}) {
       }
 
       const copyTargets = [];
-
       if (Array.isArray(targets) && targets.length) {
         for (const target of targets) {
           if (!isObject(target)) {
             throw new Error(`${stringify(target)} target must be an object`);
           }
-
+          
+          // determine dest by reading file and passing it to function to determine dest
           const { dest, rename, src, transform, ...restTargetOptions } = target;
 
+          // adjust case for no destination or no function to determine dest
           if (!src || !dest) {
             throw new Error(
               `${stringify(
@@ -96,13 +97,14 @@ export default function copy(options = {}) {
             );
           }
 
+          // might need to be removed
           const matchedPaths = await globby(src, {
             expandDirectories: false,
             onlyFiles: false,
             ...restPluginOptions,
             ...restTargetOptions,
           });
-
+// generates copy target
           if (matchedPaths.length) {
             for (const matchedPath of matchedPaths) {
               const generatedCopyTargets = Array.isArray(dest)
@@ -136,7 +138,7 @@ export default function copy(options = {}) {
 
         for (const copyTarget of copyTargets) {
           const { contents, dest, src, transformed } = copyTarget;
-
+// writes file
           if (transformed) {
             await fs.outputFile(dest, contents, restPluginOptions);
           } else {
