@@ -1,4 +1,4 @@
-```js exec
+<script>
   import { stores } from '@sapper/app';
   import Links from '../../../../components/LinksList.svelte';
 
@@ -6,7 +6,7 @@
   const currentPath = $page.path.endsWith('/') ? $page.path : $page.path + '/';
   const distantPassagesPath = `${currentPath}distant-passages`
   const triptychPath = `${currentPath}triptych`
-```
+</script>
 
 <h3 style="text-align: center;">SINGLE SENTENCE POEMS</h3> 
 WHEN I BECAME EIGHTY YEARS OLD on February 11th 2011,

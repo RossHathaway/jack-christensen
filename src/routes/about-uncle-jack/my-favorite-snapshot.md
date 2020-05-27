@@ -16,10 +16,10 @@ was carved to some extent by ancient people.
 <img src="/my-favorite-snapshot.png" alt="Jack at Hawaiian cultural site Ka-ule-o—Nanahoa">
 </div>
 
-```css style
+<style>
   div {
     display: flex;
     justify-content: center;
     padding: 1em 0;
   }
-```
+</style>

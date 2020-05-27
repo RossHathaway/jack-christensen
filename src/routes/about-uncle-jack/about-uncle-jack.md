@@ -19,7 +19,7 @@ My full name is Jack Shields Christensen and I was born in Wisconsin. I grew up 
 <strong>A BRIEF AUTOBIOGRAPHY</strong> entitled "My First Seventy-Five Years" is available upon request. 
 </p>
 
-```css style
+<style>
   figure {
     margin: 2em;
     max-width: 350px;
@@ -32,4 +32,4 @@ My full name is Jack Shields Christensen and I was born in Wisconsin. I grew up 
   } 
 
 
-```
+</style>

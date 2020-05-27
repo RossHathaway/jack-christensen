@@ -139,8 +139,8 @@ THEY BECOME LITTERETTES">
 <img src="dont-smoke-around-kids.svg" alt="don’t smoke
 around kids - it's child abuse">
 
-```css style
+<style>
 /* img {
   width: 100%;
 } */
-```
+</style>

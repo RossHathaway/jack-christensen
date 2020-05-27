@@ -235,12 +235,12 @@ someone suggested that he retire for some rest and a little nourishment. But
 he smiled and said, "Surely after sixty-two years of companionship, if I went
 away from her now, with the cremation unfinished, she would never forgive me."
 <!-- four dots -->
-```css style
+<style>
   div {
     display: flex;
   }
 
-  #gandhi-1 {
+  <!-- #gandhi-1 {
     padding: 0 1em 1em;
     align-self: start;
   }
@@ -257,5 +257,5 @@ away from her now, with the cremation unfinished, she would never forgive me."
   section {
   margin-bottom: 1em;
 }
-
-```
+ -->
+</style>
