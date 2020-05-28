@@ -239,22 +239,19 @@ away from her now, with the cremation unfinished, she would never forgive me."
   div {
     display: flex;
   }
-
   #gandhi-1 {
     padding: 0 1rem 1rem;
     align-self: start;
   }
-
   #gandhi-2 {
     width: 100%;
     padding: 1rem 0;
   }
-
   section:nth-of-type(1) {
     text-align: center;
 }
 
-  section {
+  <!-- section {
   margin-bottom: 1rem;
-}
+} -->
 </style>
