@@ -57,7 +57,9 @@ export default {
         dev,
         hydratable: true,
         emitCss: true,
-        preprocess: markdown(),
+        preprocess: mdsvex({
+          extension: '.md',
+        }),
       }),
       resolve({
         browser: true,
@@ -130,7 +132,9 @@ export default {
       }),
       svelte({
         extensions: ['.svelte', '.md'],
-        preprocess: markdown(),
+        preprocess: mdsvex({
+          extension: '.md',
+        }),
         generate: 'ssr',
         dev,
       }),

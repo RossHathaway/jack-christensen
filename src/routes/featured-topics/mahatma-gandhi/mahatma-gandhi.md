@@ -257,5 +257,4 @@ away from her now, with the cremation unfinished, she would never forgive me."
   section {
   margin-bottom: 1rem;
 }
-
 </style>
