@@ -250,8 +250,7 @@ away from her now, with the cremation unfinished, she would never forgive me."
   section:nth-of-type(1) {
     text-align: center;
 }
-
-  <!-- section {
+  section {
   margin-bottom: 1rem;
-} -->
+}
 </style>
