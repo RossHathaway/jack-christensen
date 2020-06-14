@@ -1,4 +1,5 @@
 import fs from 'fs';
+// gray-matter or gray-matter-from-file
 
 export default function copy(options = {}) {
   const {
@@ -47,7 +48,6 @@ function copyFile(target) {
           const startOfDocument = frontMatterSections[3];
 
           isWritingToFile = true;
-          // pause read stream if async??????????????????
           const dest = makeDestFromFrontMatter(frontMatterWithoutBoundaries);
           writeStream = fs.createWriteStream(dest);
           writeStream.write(startOfDocument);
@@ -65,6 +65,8 @@ function copyFile(target) {
           // no front matter; start writing file
           isWritingToFile = true;
           writeStream = fs.createWriteStream(/* need to accept target if we want to allow specified destinations */);
+
+          // TODO: account for first chunk if no front matter
         }
       }
     }
