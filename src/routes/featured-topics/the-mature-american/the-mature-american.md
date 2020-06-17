@@ -26,7 +26,6 @@ I have traveled a good deal in Concord.
 If I were confined to a corner of a garret all my days, the world would be just as large to me while I had my thoughts about me.
 </blockquote>
 
-<p>
 He was graduated from Harvard University in 1837. For a while he followed his father's profession of manufacturing pencils, and then with his brother, John, he organized a private school for boys. But he learned that a steady income need not be the fundamental purpose of a lifetime, and so instead of earning money regular1y at a tedious occupation that paid him more than he needed, he became financially self-sufficient by working at a variety of tasks he enjoyed and performed well: surveyor, carpenter, laborer, general handyman.
 
 <blockquote>
@@ -41,8 +40,8 @@ His most enduring friendship was with Ralph Waldo Emerson, fourteen years older 
 It is desirable that a man be clad so simply and that he live in all respects so compactly and preparedly that, if an enemy take the town, he can, like the old philosopher, walk out the gate empty-handed without anxiety.
 
 Beware of all enterprises that require new clothes. If you have any enterprise before you, try it in your old clothes.
-
 </blockquote>
+
 Thoreau’s viewpoints came neither off the top of his head nor from the tip of his tougue, but from the full depth and breadth of his character. He didn’t bow to the crowd or wait to hear what his latest convictions should be. He took no man’s word as law, and he wasn’t afraid to speak his own mind.
 
 <blockquote>
@@ -104,7 +103,7 @@ I wish to live ever as to derive my satisfactions and aspirations from the commo
 Men esteem truth remote, in the outskirts of the system, behind the farthest star, before Adam and after the last man. In eternity there is indeed something true and sublime. But all these times and places and occasions are now and here. God himself culminates in the present moment and will never be more divine in the lapse of all the ages.
 
 Let us settle ourselves and work and wedge our feet downward through the mud and slush of opinion and prejudice and tradition and delusion and appearance, through church and state, through poetry and philosophy and religion, till we come to a hard bottom which we can call reality and say: this is, and no mistake — and then begin.
-
+</blockquote>
 <!-- three circles -->
 
 <blockquote class="centered">
