@@ -8,6 +8,7 @@ Based on the default [Sapper](https://github.com/sveltejs/sapper)#Rollup templat
  - Folders within routes/ each have an index.svelte page that uses the Links component from src/components to list the other files in the same folder.
  - The data passed to the Links component when the site is being built is from the index.json.js file in the same folder which makes a server endpoint for when sapper is doing the build. This gets the filenames and routes for the other files in the parent folder.
 
+All server-side code will be run during build to produce a static site and will not run in production, which is why I use readdirSync instead of async and do not need to cache the files.
 
 ## Production mode and deployment
 

@@ -5,5 +5,55 @@ fields:
 - name: title
   type: text
   config:
-    required: false
+    required: true
   label: Title
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: This will be used as the site description in Google's or other search
+    engines' results page. Make sure to include any relevant keywords such as "travel",
+    "Japan", etc.
+- name: document_locations
+  type: field_group_list
+  fields:
+  - name: location
+    type: field_group_list
+    fields:
+    - name: folder_name
+      type: text
+      config:
+        required: true
+      label: Folder name
+      description: one section of the url ("Featured" or "Frank Lloyd Wright")
+    config:
+      min: 1
+      max: 
+      labelField: 
+    label: Location
+    description: A list of folders starting with the highest level (featured topics,
+      categories, etc) that will determine the url of this document
+  config:
+    min: 1
+    max: 
+    labelField: 
+  label: document locations
+  description: 'Add to this list to create a new url that this document will appear
+    under. There can be more than one url. If you want to view or edit the list of
+    url sections, click on the list item(s) below (there is no name shown on the item(s)).
+    This will display the list of url sections. You can add or edit url sections to
+    the list. <br><br>For example, for a document in the Frank Lloyd Wright folder,
+    you might want it to be listed under featured/frank-lloyd-wright/document-name
+    as well as content/architecture/document-name. This means you would add two lists
+    here. Each list would have two sections: "Featured" and "Frank Lloyd Wright" in
+    one list, and "Content" and "Architecture" in the other.<br><br>If you want to
+    create a new category, just list it here and it will be created in the site''s
+    menu.'
+pages:
+- src/routes/featured-topics/the-mature-american.md
+- src/routes/frank-lloyd-wright.md
