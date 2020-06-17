@@ -3,13 +3,31 @@
   import Logo from './Logo.svelte'
 
   export let logoSize, links
-
+  console.log('links:', links)
 </script>
 
 <div class="outer-container">
   <Logo size={logoSize} />
   <nav>
-    <NavSection {links} />
+    <!-- children: (2) [{…}, {…}]
+lastUrlSegment: "about-uncle-jack"
+name: "About Uncle Jack"
+path: "about-uncle-jack" -->
+  {#each links as link}
+    {#if link.name === "Index"}
+    <!-- no index page -->
+    {:else}
+      <div>
+      {#if link.name === "About Uncle Jack"}
+        <h3>HOME</h3>
+      {:else}
+        <h3>{link.name}</h3>
+      {/if}
+        <NavSection links={link.children ? link.children : []} />
+      </div>
+    {/if}
+  {/each}
+
   </nav>
 </div>
 
