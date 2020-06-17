@@ -1,4 +1,6 @@
+<script>
 import QuoteWrapper from '../../../components/AntiPollutionContainer.svelte'
+</script>
 
 <h2>USEFUL SLOGANS</h2>
 <p>FOR TWENTY YEARS The Clean Air Team awarded an annual cash prize of $100 to the winner of a month long, statewide contest for the best original one-line slogan to foster courtesy on the part of smokers. This competition was announced on the first of December yearly, with the deadline being midnight on the last day of that month. Participants could submit an unlimited number of entries. The $100 prize was presented during the first week of January, and then the winning slogan became our official "annual banner" throughout the new year. Here's a complete list of all winners, beginning with a pair of precontest slogans devised by members
