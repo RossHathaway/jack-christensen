@@ -22,23 +22,23 @@
     <!-- no index page -->
     {:else if link.name === "About Uncle Jack"}
       <div class="{link.path}">
-        <h3>HOME</h3>
+        <a href="/"><h2>HOME</h2></a>
         <NavSection links={link.children ? link.children : []} />
       </div>
       {:else if link.name === "Featured Topics"}
         <div class="{link.path}">
-          <h3>{link.name}</h3>
+          <a href="featured-topics"><h2>{link.name}</h2></a>
           <NavSection links={link.children ? link.children : []} />
         </div>
         {:else if link.name === "Categories"}
         <div class="{link.path}">
-          <h3>{link.name}</h3>
+          <a href="categories"><h2>{link.name}</h2></a>
           <NavSection hasLightBgColor={false} links={link.children ? link.children : []} />
         </div>
         {:else if link.name === "Contact"}
         <div class="{link.path}">
-          <h3>{link.name}</h3>
-          <NavSection hasLightBgColor={false} links={link.children ? link.children : []} />
+          <a href="contact"><h2>{link.name}</h2></a>
+          
         </div>        
     {/if}
   {/each}
@@ -68,6 +68,7 @@
 
   nav > div {
     color: white;
+    margin-bottom: 1rem;
   }
 
   nav > div.about-uncle-jack {
