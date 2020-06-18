@@ -55,10 +55,6 @@
 </div>
 
 <style>
-  * {
-    color: white;
-  }
-  
   div {
     width: 100%;
   }
@@ -70,13 +66,13 @@
   ul {
     list-style: none;
     margin: 0;
-    padding: 1rem;
   }
 
   li {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    padding: 0.25rem;
   }
 
   label {

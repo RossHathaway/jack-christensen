@@ -60,6 +60,7 @@
     display: flex;
     flex-direction: column;
     width: 20rem;
+    margin: 0 1rem;
   }
 
   a {
