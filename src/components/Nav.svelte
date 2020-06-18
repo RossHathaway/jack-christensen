@@ -62,6 +62,15 @@
     width: 20rem;
   }
 
+  a {
+    text-decoration: none;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
   :global(nav a[aria-current]) {
     border-bottom: 2px solid white;
   }
@@ -69,21 +78,14 @@
   nav > div {
     color: white;
     margin-bottom: 1rem;
+    padding: 0.5rem;
   }
 
-  nav > div.about-uncle-jack {
+  nav > div.about-uncle-jack, nav > div.featured-topics {
     background-color: var(--second-darkest-hue);
   }
 
-  nav > div.featured-topics {
-    background-color: var(--second-darkest-hue);
-  }
-
-  nav > div.categories {
-    background-color: var(--darkest-hue);
-  }
-
-  nav > div.contact {
+  nav > div.categories, nav > div.contact {
     background-color: var(--darkest-hue);
   }
 
