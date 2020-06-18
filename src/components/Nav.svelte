@@ -20,15 +20,26 @@
   {#each links as link}
     {#if link.name === "Index"}
     <!-- no index page -->
-    {:else}
+    {:else if link.name === "About Uncle Jack"}
       <div class="{link.path}">
-      {#if link.name === "About Uncle Jack"}
         <h3>HOME</h3>
-      {:else}
-        <h3>{link.name}</h3>
-      {/if}
         <NavSection links={link.children ? link.children : []} />
       </div>
+      {:else if link.name === "Featured Topics"}
+        <div class="{link.path}">
+          <h3>{link.name}</h3>
+          <NavSection links={link.children ? link.children : []} />
+        </div>
+        {:else if link.name === "Categories"}
+        <div class="{link.path}">
+          <h3>{link.name}</h3>
+          <NavSection hasLightBgColor={false} links={link.children ? link.children : []} />
+        </div>
+        {:else if link.name === "Contact"}
+        <div class="{link.path}">
+          <h3>{link.name}</h3>
+          <NavSection hasLightBgColor={false} links={link.children ? link.children : []} />
+        </div>        
     {/if}
   {/each}
 
