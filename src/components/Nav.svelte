@@ -4,7 +4,19 @@
 
   export let logoSize, links
 
-  console.log('links', links)
+  const processedLinks = []
+
+  for (let link of links) {
+    if (link.name === 'About Uncle Jack') {
+      processedLinks[0] = link
+    } else if (link.name === 'Featured Topics') {
+      processedLinks[1] = link
+    } else if (link.name === 'Categories') {
+      processedLinks[2] = link
+    } else if (link.name === 'Contact') {
+      processedLinks[3] = link
+    }
+  }
 
 </script>
 
@@ -17,10 +29,8 @@
 <div class="outer-container">
   <Logo size={logoSize} />
   <nav>
-  {#each links as link}
-    {#if link.name === "Index"}
-    <!-- no index page -->
-    {:else if link.name === "About Uncle Jack"}
+  {#each processedLinks as link}
+    {#if link.name === "About Uncle Jack"}
       <div class="{link.path}">
         <a href="/"><h2>HOME</h2></a>
         <NavSection links={link.children ? link.children : []} />
