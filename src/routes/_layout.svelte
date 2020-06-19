@@ -1,24 +1,20 @@
 <script context="module">
   export async function preload() {
-    let featuredLinks = this.fetch('featured-topics.json').then(res => res.json());
-    let categoryLinks = this.fetch('categories.json').then(res => res.json());
+    let links = this.fetch('navLinks.json').then(res => res.json()).catch((e) => console.log('error fetching links in Nav', e));
 
-    featuredLinks = await featuredLinks;
-    categoryLinks = await categoryLinks;
+    links = await links
 
-    return { featuredLinks, categoryLinks };
+    return { links };
   }
 </script>
 
 <script>
-  import Links from 'LinksList.svelte';
-  import { makeReadableName } from 'helpers/makeReadableNameFromPath';
   import Nav from '../components/Nav.svelte';
   import Title from '../components/Title.svelte'
 
   const logoSize = 200
 
-  export let featuredLinks, categoryLinks;
+  export let links;
 </script>
 
 <svelte:head>
@@ -31,7 +27,7 @@
 
 <div class="outer-container">
   
-  <Nav {logoSize} {...{featuredLinks, categoryLinks}}/>
+  <Nav {logoSize} {links}/>
   
   <div class="inner-container">
   <Title height={logoSize}/>

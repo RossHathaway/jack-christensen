@@ -1,31 +1,59 @@
 <script>
-  import LinksList from './LinksList.svelte';
+  import NavSection from './NavSection.svelte'
   import Logo from './Logo.svelte'
 
-  export let logoSize, featuredLinks, categoryLinks
+  export let logoSize, links
 
-// {path: '/', name: 'About This Site'},
-const homeSectionLinks = [{path: '/about-uncle-jack', name: 'About Uncle Jack', lastUrlSegment: 'about-uncle-jack'}]
+  const processedLinks = []
+
+  for (let link of links) {
+    if (link.name === 'About Uncle Jack') {
+      processedLinks[0] = link
+    } else if (link.name === 'Featured Topics') {
+      processedLinks[1] = link
+    } else if (link.name === 'Categories') {
+      processedLinks[2] = link
+    } else if (link.name === 'Contact') {
+      processedLinks[3] = link
+    }
+  }
+
 </script>
+
+<!-- {path: "about-uncle-jack", name: "About Uncle Jack", lastUrlSegment: "about-uncle-jack", children: Array(2)}
+1: {path: "categories", name: "Categories", lastUrlSegment: "categories", children: Array(17)}
+2: {path: "contact", name: "Contact", lastUrlSegment: "contact", children: null}
+3: {path: "featured-topics", name: "Featured Topics", lastUrlSegment: "featured-topics", children: Array(5)}
+4: {path: "index", name: "Index",  -->
 
 <div class="outer-container">
   <Logo size={logoSize} />
-<nav>
-  <ul>
-    <li class="home">
-    <LinksList isNav links={homeSectionLinks} title="HOME"/> 
-  </li>
-  <li class="featured">
-    <LinksList isNav title="FEATURED TOPICS" folder="featured-topics" links={featuredLinks} /> 
-  </li>
-  <li class="categories">
-    <LinksList isNav title="CATEGORIES" folder="categories" links={categoryLinks} />
-  </li>
-  <li class="contact">
-    <LinksList isNav title="CONTACT" folder="contact" links={[]} />
-  </li>
-  </ul>
-</nav>
+  <nav>
+  {#each processedLinks as link}
+    {#if link.name === "About Uncle Jack"}
+      <div class="{link.path}">
+        <a href="/"><h2>HOME</h2></a>
+        <NavSection links={link.children ? link.children : []} />
+      </div>
+      {:else if link.name === "Featured Topics"}
+        <div class="{link.path}">
+          <a href="featured-topics"><h2>{link.name}</h2></a>
+          <NavSection links={link.children ? link.children : []} />
+        </div>
+        {:else if link.name === "Categories"}
+        <div class="{link.path}">
+          <a href="categories"><h2>{link.name}</h2></a>
+          <NavSection hasLightBgColor={false} links={link.children ? link.children : []} />
+        </div>
+        {:else if link.name === "Contact"}
+        <div class="{link.path}">
+          <a href="contact"><h2>{link.name}</h2></a>
+          
+        </div>        
+    {/if}
+  {/each}
+
+  </nav>
 </div>
 
 
@@ -39,61 +67,37 @@ const homeSectionLinks = [{path: '/about-uncle-jack', name: 'About Uncle Jack', 
 
   nav {
     font-weight: 300;
-    padding: 0 1rem;
     display: flex;
     flex-direction: column;
-    /* max-width: 14rem; */
     width: 20rem;
+    margin: 0 1rem;
   }
-  ul {
+
+  a {
+    text-decoration: none;
+  }
+
+  h2 {
     margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  :global(nav > ul > li > div) {
-    color: white;
-    padding: 0.5rem;
-  }
-
-  :global(nav div > h2) {
     font-size: 1.5rem;
-    margin: 0;
   }
-
-  :global(nav a:visited) {
-    color: white;
-  }
-
 
   :global(nav a[aria-current]) {
     border-bottom: 2px solid white;
   }
 
-  .home, .featured {
-    background-color: var(--second-darkest-hue)
+  nav > div {
+    color: white;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
   }
 
-  .categories, .contact {
-    background-color: var(--darkest-hue)
+  nav > div.about-uncle-jack, nav > div.featured-topics {
+    background-color: var(--second-darkest-hue);
   }
 
-  .contact {
-    margin-bottom: 2rem;
+  nav > div.categories, nav > div.contact {
+    background-color: var(--darkest-hue);
   }
 
-  .contact a {
-    text-decoration: none;
-    display: block;
-  }
-
-  /* a:visited {
-    color: var(--second-darkest-hue);
-  } */
-  
-/*
-  .contact a:hover,
-  .contact a:active {
-      color: ?;
-    } */
 </style>
