@@ -55,5 +55,5 @@ fields:
     create a new category, just list it here and it will be created in the site''s
     menu.'
 pages:
-- src/routes/featured-topics/the-mature-american.md
+- src/routes/featured/the-mature-american.md
 - src/routes/frank-lloyd-wright.md
