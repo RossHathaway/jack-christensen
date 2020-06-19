@@ -36,8 +36,8 @@ fields:
       max: 
       labelField: 
     label: Location
-    description: A list of folders starting with the highest level (featured topics,
-      categories, etc) that will determine the url of this document
+    description: A list of folders starting with the highest level (featured,
+      content, etc) that will determine the url of this document
   config:
     min: 1
     max: 

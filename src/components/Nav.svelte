@@ -1,64 +1,25 @@
 <script>
-  import NavSection from './NavSection.svelte'
-  import Logo from './Logo.svelte'
+  import NavSection from "./NavSection.svelte";
+  import Logo from "./Logo.svelte";
 
-  export let logoSize, links
+  export let logoSize, links;
 
-  const processedLinks = []
+  const processedLinks = [];
 
   for (let link of links) {
-    if (link.name === 'About Uncle Jack') {
-      processedLinks[0] = link
-    } else if (link.name === 'Featured Topics') {
-      processedLinks[1] = link
-    } else if (link.name === 'Categories') {
-      processedLinks[2] = link
-    } else if (link.name === 'Contact') {
-      processedLinks[3] = link
+    if (link.name === "About Uncle Jack") {
+      processedLinks[0] = link;
+    } else if (link.name === "Featured") {
+      processedLinks[1] = link;
+    } else if (link.name === "Content") {
+      processedLinks[2] = link;
+    } else if (link.name === "Contact") {
+      processedLinks[3] = link;
     }
   }
-
 </script>
 
-<!-- {path: "about-uncle-jack", name: "About Uncle Jack", lastUrlSegment: "about-uncle-jack", children: Array(2)}
-1: {path: "categories", name: "Categories", lastUrlSegment: "categories", children: Array(17)}
-2: {path: "contact", name: "Contact", lastUrlSegment: "contact", children: null}
-3: {path: "featured-topics", name: "Featured Topics", lastUrlSegment: "featured-topics", children: Array(5)}
-4: {path: "index", name: "Index",  -->
-
-<div class="outer-container">
-  <Logo size={logoSize} />
-  <nav>
-  {#each processedLinks as link}
-    {#if link.name === "About Uncle Jack"}
-      <div class="{link.path}">
-        <a href="/"><h2>HOME</h2></a>
-        <NavSection links={link.children ? link.children : []} />
-      </div>
-      {:else if link.name === "Featured Topics"}
-        <div class="{link.path}">
-          <a href="featured-topics"><h2>{link.name}</h2></a>
-          <NavSection links={link.children ? link.children : []} />
-        </div>
-        {:else if link.name === "Categories"}
-        <div class="{link.path}">
-          <a href="categories"><h2>{link.name}</h2></a>
-          <NavSection hasLightBgColor={false} links={link.children ? link.children : []} />
-        </div>
-        {:else if link.name === "Contact"}
-        <div class="{link.path}">
-          <a href="contact"><h2>{link.name}</h2></a>
-          
-        </div>        
-    {/if}
-  {/each}
-
-  </nav>
-</div>
-
-
 <style>
-
   .outer-container {
     display: flex;
     flex-direction: column;
@@ -92,12 +53,53 @@
     padding: 0.5rem;
   }
 
-  nav > div.about-uncle-jack, nav > div.featured-topics {
+  nav > div.about-uncle-jack,
+  nav > div.featured {
     background-color: var(--second-darkest-hue);
   }
 
-  nav > div.categories, nav > div.contact {
+  nav > div.content,
+  nav > div.contact {
     background-color: var(--darkest-hue);
   }
-
 </style>
+
+<div class="outer-container">
+  <Logo size={logoSize} />
+  <nav>
+    {#each processedLinks as link}
+      {#if link.name === 'About Uncle Jack'}
+        <div class={link.path}>
+          <a href="/">
+            <h2>HOME</h2>
+          </a>
+          <NavSection links={link.children ? link.children : []} />
+        </div>
+      {:else if link.name === 'Featured'}
+        <div class={link.path}>
+          <a href="featured">
+            <h2>{link.name}</h2>
+          </a>
+          <NavSection links={link.children ? link.children : []} />
+        </div>
+      {:else if link.name === 'Content'}
+        <div class={link.path}>
+          <a href="content">
+            <h2>{link.name}</h2>
+          </a>
+          <NavSection
+            hasLightBgColor={false}
+            links={link.children ? link.children : []} />
+        </div>
+      {:else if link.name === 'Contact'}
+        <div class={link.path}>
+          <a href="contact">
+            <h2>{link.name}</h2>
+          </a>
+
+        </div>
+      {/if}
+    {/each}
+
+  </nav>
+</div>

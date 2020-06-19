@@ -4,7 +4,7 @@ description: Jack's description of his talk with Frank Lloyd Wright, the famous 
   Jack visited Frank at Frank's home in Michigan.
 document_locations:
 - location:
-  - folder_name: Categories
+  - folder_name: Content
   - folder_name: Architecture
 - location:
   - folder_name: Featured
