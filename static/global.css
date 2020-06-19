@@ -17,6 +17,7 @@ html {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
+  padding-inline-start: 0;
 }
 
 body {

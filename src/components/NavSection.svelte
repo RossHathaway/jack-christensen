@@ -66,6 +66,7 @@
   ul {
     list-style: none;
     margin: 0;
+    padding-inline-start: 0;
   }
 
   li {
