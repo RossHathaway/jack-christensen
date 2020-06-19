@@ -2,7 +2,7 @@
   export let status;
   export let error;
 
-  const dev = process.env.NODE_ENV === 'development';
+  const dev = process.env.NODE_ENV === "development";
 </script>
 
 <style>
@@ -31,11 +31,7 @@
 <svelte:head>
   <title>{status}</title>
 </svelte:head>
-
-<h1>{status}</h1>
-
-<p>{error.message}</p>
-
+<h2>Work in progress, check back later.</h2>
 {#if dev && error.stack}
-<pre>{error.stack}</pre>
+  <pre>{error.stack}</pre>
 {/if}
