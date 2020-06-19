@@ -77,25 +77,19 @@
         </div>
       {:else if link.name === 'Featured'}
         <div class={link.path}>
-          <a href="featured">
-            <h2>{link.name}</h2>
-          </a>
+          <h2>{link.name}</h2>
           <NavSection links={link.children ? link.children : []} />
         </div>
       {:else if link.name === 'Content'}
         <div class={link.path}>
-          <a href="content">
-            <h2>{link.name}</h2>
-          </a>
+          <h2>{link.name}</h2>
           <NavSection
             hasLightBgColor={false}
             links={link.children ? link.children : []} />
         </div>
       {:else if link.name === 'Contact'}
         <div class={link.path}>
-          <a href="contact">
-            <h2>{link.name}</h2>
-          </a>
+          <h2>{link.name}</h2>
 
         </div>
       {/if}
