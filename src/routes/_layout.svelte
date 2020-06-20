@@ -1,43 +1,23 @@
 <script context="module">
   export async function preload() {
-    let links = this.fetch('navLinks.json').then(res => res.json()).catch((e) => console.log('error fetching links in Nav', e));
+    let links = this.fetch("navLinks.json")
+      .then((res) => res.json())
+      .catch((e) => console.log("error fetching links in Nav", e));
 
-    links = await links
+    links = await links;
 
     return { links };
   }
 </script>
 
 <script>
-  import Nav from '../components/Nav.svelte';
-  import Title from '../components/Title.svelte'
+  import Nav from "../components/Nav.svelte";
+  import Title from "../components/Title.svelte";
 
-  const logoSize = 200
+  const logoSize = 180;
 
   export let links;
 </script>
-
-<svelte:head>
-  <link
-      href="https://fonts.googleapis.com/css?family=Galindo|Noto+Serif&display=swap"
-      rel="stylesheet"
-    />
-  <title>Jack Shields Christensen</title>
-</svelte:head>
-
-<div class="outer-container">
-  
-  <Nav {logoSize} {links}/>
-  
-  <div class="inner-container">
-  <Title height={logoSize}/>
-
-  <main>
-    <slot></slot>
-  </main>
-  </div>
-
-</div>
 
 <style>
   main {
@@ -58,3 +38,24 @@
     width: 100%;
   }
 </style>
+
+<svelte:head>
+  <link
+    href="https://fonts.googleapis.com/css?family=Galindo|Noto+Serif&display=swap"
+    rel="stylesheet" />
+  <title>Jack Shields Christensen</title>
+</svelte:head>
+
+<div class="outer-container">
+
+  <Nav {logoSize} {links} />
+
+  <div class="inner-container">
+    <Title height={logoSize} />
+
+    <main>
+      <slot />
+    </main>
+  </div>
+
+</div>
