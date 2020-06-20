@@ -30,7 +30,7 @@
     font-weight: 300;
     display: flex;
     flex-direction: column;
-    width: 20rem;
+    width: 18rem;
     margin: 0 1rem;
   }
 
