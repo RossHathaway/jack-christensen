@@ -1,4 +1,9 @@
-## Dancing Phantoms From Japan
+<div class="header">
+  <img src="DancingPhantomsFromJapanIcon.svg" alt="Japanese Character">
+<h2>
+  Dancing Phantoms From Japan
+</h2>
+</div>
 
 **PERFORMANCES AVAILABLE DURING AUGUST ANNUALLY**
 
@@ -48,8 +53,16 @@ at three o'clock, and an evening performance at eight.
 
 <style>
 
+  h2 {
+    text-decoration:underline;
+  }
+
   img {
     margin: 0.25rem;
+  }
+
+  .header > img {
+    float: left;
   }
 
   #pictures-section-1 {
