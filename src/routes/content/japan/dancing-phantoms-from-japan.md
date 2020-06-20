@@ -1,9 +1,9 @@
-<div class="header">
-  <img src="DancingPhantomsFromJapanIcon.svg" alt="Japanese Character">
+<!-- <div class="header"> -->
 <h2>
-  Dancing Phantoms From Japan
+  <img src="DancingPhantomsFromJapanIcon.svg" alt="Japanese Character" class="header">
+  <span>Dancing Phantoms From Japan</span>
 </h2>
-</div>
+<!-- </div> -->
 
 **PERFORMANCES AVAILABLE DURING AUGUST ANNUALLY**
 
@@ -54,16 +54,25 @@ at three o'clock, and an evening performance at eight.
 <style>
 
   h2 {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, auto) 1fr;
+    grid-column-gap: 0;
+    justify-items: center;
     text-decoration:underline;
+  }
+
+  h2 > span {
+    grid-column-start: 2;
+  }
+
+  h2 > img {
+    margin-right: auto;
   }
 
   img {
     margin: 0.25rem;
   }
 
-  .header > img {
-    float: left;
-  }
 
   #pictures-section-1 {
     position: relative;
