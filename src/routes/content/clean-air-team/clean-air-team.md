@@ -2,7 +2,6 @@
 <h3>ALL-VOLUNTEER PUBLIC SERVICE SINCE 1975</h3>
 
 <div class="contact-info">
-<span>TEL: (808) 528.0528</span> <!-- TODO: do you want phone number? -->
 
 <span>jacksc@hawaii.edu</span>
 </div>

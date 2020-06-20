@@ -1,7 +1,6 @@
 ## THE CLEAN AIR TEAM
 ALL-VOLUNTEER PUBLIC SERVICE SINCE 1975
 
-<!-- TEL: (808) 528.0528 www.unclejackinhawaii.com jacksca hawailedu -->
 ### "CHANT WALKING CAN HELP YOU"
 <div class="centered">
 FREE ACTIVITY AT TWO O'CLOCK<br>

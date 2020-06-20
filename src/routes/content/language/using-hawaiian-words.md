@@ -2,11 +2,6 @@
 <div class="centered">
  A STATEWIDE PUBLIC SERVICE SINCE 1974
 </div>
- 
-<!-- TODO: contact info -->
-<!-- 851 NORTH SCHOOL STREET, #505 - HONOLULU - HI 96817 -->
-
-<!-- TEL: (808) 528-0528 www.unc|ejackinhawaii.com jacksc@hawaii.edu -->
 
 ### "USING HAWAIIAN WORDS"
 
@@ -201,9 +196,6 @@ to say a word -— without having to figure it out all over again!
 ## The Program To Preserve Hawaiian Place Names
 
 A STATEWIDE PUBLIC SERVICE SINCE 1974
-851 NORTH SCHOOL STREET, #505 - HONOLULU - HI 96817
-<!-- TODO: contact info -->
-<!-- TEL: (808) 528-0528 www.unclejackinhawaii.com jacksc@hawaii.edu -->
 
 ### STANDARD REFERENCES FOR HAWAIIAN WORDS
 

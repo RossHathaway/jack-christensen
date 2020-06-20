@@ -1,8 +1,6 @@
 UNCLE JACK'S PUBLIC SERVICE PROJECTS
 ## The Clean Air Team & <br> The Program To Preserve Hawaiian Place Names
 
-<!-- 851 NORTH SCHOOL STREET, #505 • HONOLULU • HI 96817
-TEL: (808) 528•0528 www.unclejackinhawaii.com jacksc@hawaii.edu -->
 ### JAPANESE WISDOM SAYINGS 
 
 <div class="centered">

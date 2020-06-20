@@ -8,9 +8,7 @@ title: Obama's Neighborhood
 The Program To Preserve Hawaiian Place Names
 </h2>
 
-<!-- **851 NORTH SCHOOL STREET, #505 • HONOLULU • HI 96817  
- TEL: (808) 528•0528** [**www.unclejackinhawaii.com **](http://www.unclejackinhawaii.com/)[**jacksc@hawaii.edu**](mailto:jacksc@hawaii.edu) --> 
- <!-- TODO: check contact info -->
+<!--[**jacksc@hawaii.edu**](mailto:jacksc@hawaii.edu) --> 
 
 <h3>"PRESIDENT OBAMA'S NEIGHBORHOOD"</h3>
 
