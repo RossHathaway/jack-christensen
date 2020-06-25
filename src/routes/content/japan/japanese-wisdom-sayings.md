@@ -1,7 +1,19 @@
-UNCLE JACK'S PUBLIC SERVICE PROJECTS
-## The Clean Air Team & <br> The Program To Preserve Hawaiian Place Names
+<style>
+    header {
+        display: flex;
+    }
+</style>
 
-### JAPANESE WISDOM SAYINGS 
+<header> 
+<img src="hawaiian-person-left.svg" alt="">
+<div class="centered">
+UNCLE JACK'S PUBLIC SERVICE PROJECTS
+The Clean Air Team & <br> The Program To Preserve Hawaiian Place Names
+</div>
+<img src="hawaiian-person-right.svg" alt="">
+ </header>
+
+## JAPANESE WISDOM SAYINGS 
 
 <div class="centered">
 HANDOUT FOR UNCLE JACK'S LECTURES <br>
