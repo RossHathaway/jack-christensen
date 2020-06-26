@@ -106,10 +106,10 @@ Private excursions and lectures pay for these newspaper ads ...
 <p class="smaller-text">THE CLEAN AIR TEAM 528&#9679;0528</p>
 </QuoteWrapper>
 
-<img src="dont-be-litterbum.svg" alt="don't be a litter bum - it's trashy">
-<img src="ban-cigarettes.svg" alt="BAN FILTER CIGARETTES!
+<img src="anti-pollution/dont-be-litterbum.svg" alt="don't be a litter bum - it's trashy">
+<img src="anti-pollution/ban-cigarettes.svg" alt="BAN FILTER CIGARETTES!
 THEY BECOME LITTERETTES">
-<img src="dont-smoke-around-kids.svg" alt="don’t smoke
+<img src="anti-pollution/dont-smoke-around-kids.svg" alt="don’t smoke
 around kids - it's child abuse">
 
 <style>

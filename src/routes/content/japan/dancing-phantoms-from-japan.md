@@ -1,9 +1,7 @@
-<!-- <div class="header"> -->
 <h2>
-  <img src="DancingPhantomsFromJapanIcon.svg" alt="Japanese Character" class="header">
+  <img src="dancing-phantoms/DancingPhantomsFromJapanIcon.svg" alt="Japanese Character" class="header">
   <span>Dancing Phantoms From Japan</span>
 </h2>
-<!-- </div> -->
 
 **PERFORMANCES AVAILABLE DURING AUGUST ANNUALLY**
 
@@ -19,13 +17,13 @@ seen details of the traditional backstage Costume Ceremony. The program is fully
 <div id="pictures-section-1">
 
 <div>
-<img alt="Noh performer with mask" src="dancing-phantoms-from-japan-2.png" />
-<img alt="Noh performers getting ready" src="dancing-phantoms-from-japan-1.png" />
+<img alt="Noh performer with mask" src="dancing-phantoms/dancing-phantoms-from-japan-2.png" />
+<img alt="Noh performers getting ready" src="dancing-phantoms/dancing-phantoms-from-japan-1.png" />
 </div>
 
 <div>
-<img alt="Noh performer on stage" src="dancing-phantoms-from-japan-edited.png" />
-<img alt="photographer taking a picture of the costume area" src="dancing-phantoms-from-japan-4.png" />
+<img alt="Noh performer on stage" src="dancing-phantoms/dancing-phantoms-from-japan-edited.png" />
+<img alt="photographer taking a picture of the costume area" src="dancing-phantoms/dancing-phantoms-from-japan-4.png" />
 </div>
 
 </div>
@@ -42,9 +40,9 @@ seen details of the traditional backstage Costume Ceremony. The program is fully
 
 <div id="pictures-section-2">
 
-<img alt="Noh performer getting dressed" src="dancing-phantoms-from-japan-5.png" />
-<img alt="Noh performer in costume" src="dancing-phantoms-from-japan-6.png" />
-<img alt="speaker informing audience in Noh performance" src="dancing-phantoms-from-japan-7.png" />
+<img alt="Noh performer getting dressed" src="dancing-phantoms/dancing-phantoms-from-japan-5.png" />
+<img alt="Noh performer in costume" src="dancing-phantoms/dancing-phantoms-from-japan-6.png" />
+<img alt="speaker informing audience in Noh performance" src="dancing-phantoms/dancing-phantoms-from-japan-7.png" />
 
 </div>
 

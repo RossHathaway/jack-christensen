@@ -5,12 +5,12 @@
 </style>
 
 <header> 
-<img src="hawaiian-person-left.svg" alt="">
+<img src="logos/hawaiian-person-left.svg" alt="">
 <div class="centered">
 UNCLE JACK'S PUBLIC SERVICE PROJECTS
 The Clean Air Team & <br> The Program To Preserve Hawaiian Place Names
 </div>
-<img src="hawaiian-person-right.svg" alt="">
+<img src="logos/hawaiian-person-right.svg" alt="">
  </header>
 
 ## JAPANESE WISDOM SAYINGS 

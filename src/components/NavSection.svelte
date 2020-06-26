@@ -1,19 +1,23 @@
 <script>
-  import { stores } from '@sapper/app';
-  import { makeReadableName } from 'helpers/makeReadableNameFromPath';
-  import { splitUrlOnSlash } from 'helpers/splitUrlOnSlash'
+  import { stores } from "@sapper/app";
+  import { makeReadableName } from "helpers/makeReadableNameFromPath";
+  import { splitUrlOnSlash } from "helpers/splitUrlOnSlash";
 
   export let title = null,
-    folder = '',
+    folder = "",
     links = [],
-    hasLightBgColor = true
+    hasLightBgColor = true;
 
-    const bgColor = hasLightBgColor ? 'var(--second-darkest-hue)' : 'var(--darkest-hue)'
+  const bgColor = hasLightBgColor
+    ? "var(--second-darkest-hue)"
+    : "var(--darkest-hue)";
 
   const { page } = stores();
-  $: trimmedPath = $page.path.endsWith('/') ? $page.path.slice(0, -1) : $page.path;
-  $: urlSegments = trimmedPath.split('/');
-  let lastPathSection = ''
+  $: trimmedPath = $page.path.endsWith("/")
+    ? $page.path.slice(0, -1)
+    : $page.path;
+  $: urlSegments = trimmedPath.split("/");
+  let lastPathSection = "";
   $: lastPathSection = urlSegments[urlSegments.length - 1];
 
   if (title === null) {
@@ -21,38 +25,7 @@
       ? makeReadableName(folder).toUpperCase()
       : makeReadableName(lastPathSection);
   }
-
-
 </script>
-
-<div style={`background-color: ${bgColor}`}>
-<strong>{title}</strong>
-<!-- aria-current={lastPathSection === folder ? "location" : undefined} -->
-<ul>
-  {#each links as link}
-    <!-- { path: 'src/routes/about-uncle-jack',
-    name: 'About Uncle Jack',
-    lastUrlSegment: 'about-uncle-jack',
-    children: [ [Object], [Object] ] } -->
-    <li>
-      {#if link.children}
-      <input type="checkbox" name={link.name} id={link.name}/>
-        <label for={link.name}>
-          {link.name}
-        </label>
-        <svelte:self links={link.children} hasLightBgColor={!hasLightBgColor}></svelte:self>
-
-      {:else}
-        <a href={link.path} aria-current={urlSegments.includes(link.lastUrlSegment) ? "location" : undefined}>
-          {link.name}
-        </a>
-      {/if}
-    </li>
-
-  {/each}
-</ul>
-
-</div>
 
 <style>
   div {
@@ -88,11 +61,11 @@
     min-height: 1rem;
     min-width: 1rem;
 
-    background-image: url('/triangle-isoceles-optimized.svg');
+    background-image: url("logos/triangle-isoceles-optimized.svg");
     background-repeat: no-repeat;
     background-position: center;
 
-    transition: transform .3s;
+    transition: transform 0.3s;
     display: inline-block;
     outline: none;
   }
@@ -108,7 +81,34 @@
 
   input[type="checkbox"]:checked ~ div {
     height: auto;
-
   }
-
 </style>
+
+<div style={`background-color: ${bgColor}`}>
+  <strong>{title}</strong>
+  <!-- aria-current={lastPathSection === folder ? "location" : undefined} -->
+  <ul>
+    {#each links as link}
+      <!-- { path: 'src/routes/about-uncle-jack',
+    name: 'About Uncle Jack',
+    lastUrlSegment: 'about-uncle-jack',
+    children: [ [Object], [Object] ] } -->
+      <li>
+        {#if link.children}
+          <input type="checkbox" name={link.name} id={link.name} />
+          <label for={link.name}>{link.name}</label>
+          <svelte:self
+            links={link.children}
+            hasLightBgColor={!hasLightBgColor} />
+        {:else}
+          <a
+            href={link.path}
+            aria-current={urlSegments.includes(link.lastUrlSegment) ? 'location' : undefined}>
+            {link.name}
+          </a>
+        {/if}
+      </li>
+    {/each}
+  </ul>
+
+</div>
