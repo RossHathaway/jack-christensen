@@ -1,9 +1,40 @@
-## The Program To Preserve Hawaiian Place Names
-<div class="centered">
- A STATEWIDE PUBLIC SERVICE SINCE 1974
-</div>
+<script>
+    import Header from '../../../components/HeaderWithHawaiianPersonLogo.svelte'
+</script>
 
-### "USING HAWAIIAN WORDS"
+<style>
+    header {
+    display: flex;
+  }
+
+  header > .centered {
+    padding: 0 0.5rem;
+  }
+
+  header > .centered div:nth-child(1) {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  header > .centered div:nth-child(2) {
+    margin: 0.5rem 4rem 0;
+    padding: 0.5rem;
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: black;
+  }
+</style>
+
+<Header>
+    <div class="centered">
+      <div>
+        The Program To Preserve Hawaiian Place Names
+      </div>
+      <div>A STATEWIDE PUBLIC SERVICE SINCE 1974</div>
+    </div>
+</Header>
+
+## "USING HAWAIIAN WORDS"
 
 <div class="centered">
 FREE LECTURE PRESENTED BY SPECIAL ARRANGEMENT
