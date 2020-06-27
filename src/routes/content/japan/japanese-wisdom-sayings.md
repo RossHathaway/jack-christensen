@@ -2,18 +2,12 @@
     import Header from '../../../components/HeaderWithHawaiianPersonLogo.svelte'
 </script>
 
-<style>
-    header {
-        display: flex;
-    }
-</style>
-
 <Header /> 
 
 ## JAPANESE WISDOM SAYINGS 
 
 <div class="centered">
-HANDOUT FOR UNCLE JACK'S LECTURES <br>
+HANDOUT FOR UNCLE JACK'S LECTURES <br><br>
 Going To Japan On Your Own <br>
 A Quick Trip To Tokyo <br>
 Visiting Kyoto By Yourself <br>

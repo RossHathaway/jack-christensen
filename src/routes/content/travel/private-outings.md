@@ -1,5 +1,8 @@
-UNCLE JACK'S PUBLIC SERVICE PROJECTS
-## The Clean Air Team & <br> The Program To Preserve Hawaiian Place Names
+<script>
+    import Header from '../../../components/HeaderWithHawaiianPersonLogo.svelte'
+</script>
+
+<Header /> 
 
 ### PRIVATE OUTINGS
 

@@ -1,16 +1,13 @@
 ---
 title: Obama's Neighborhood
 ---
+<script>
+    import Header from '../../../components/HeaderWithHawaiianPersonLogo.svelte'
+</script>
 
-**UNCLE JACK’S PUBLIC SERVICE PROJECTS**
+<Header /> 
 
-<h2>The Clean Air Team & <br>
-The Program To Preserve Hawaiian Place Names
-</h2>
-
-<!--[**jacksc@hawaii.edu**](mailto:jacksc@hawaii.edu) --> 
-
-<h3>"PRESIDENT OBAMA'S NEIGHBORHOOD"</h3>
+<h2>"PRESIDENT OBAMA'S NEIGHBORHOOD"</h2>
 
 <div class="centered">
 GIVEN FREE ONCE A MONTH FROM 2008 THROUGH 2016
