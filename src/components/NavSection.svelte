@@ -61,7 +61,7 @@
     min-height: 1rem;
     min-width: 1rem;
 
-    background-image: url("logos/triangle-isoceles-optimized.svg");
+    background-image: url("/logos/triangle-isoceles-optimized.svg");
     background-repeat: no-repeat;
     background-position: center;
 
