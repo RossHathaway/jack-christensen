@@ -1,17 +1,14 @@
+<script>
+    import Header from '../../../components/HeaderWithHawaiianPersonLogo.svelte'
+</script>
+
 <style>
     header {
         display: flex;
     }
 </style>
 
-<header> 
-<img src="logos/hawaiian-person-left.svg" alt="">
-<div class="centered">
-UNCLE JACK'S PUBLIC SERVICE PROJECTS
-The Clean Air Team & <br> The Program To Preserve Hawaiian Place Names
-</div>
-<img src="logos/hawaiian-person-right.svg" alt="">
- </header>
+<Header /> 
 
 ## JAPANESE WISDOM SAYINGS 
 

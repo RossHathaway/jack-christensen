@@ -68,33 +68,33 @@ export default {
       commonjs(),
 
       legacy &&
-        babel({
-          extensions: ['.js', '.mjs', '.html', '.svelte'],
-          runtimeHelpers: true,
-          exclude: ['node_modules/@babel/**', '*.json'],
-          presets: [
-            [
-              '@babel/preset-env',
-              {
-                targets: '> 0.25%, not dead',
-              },
-            ],
+      babel({
+        extensions: ['.js', '.mjs', '.html', '.svelte'],
+        runtimeHelpers: true,
+        exclude: ['node_modules/@babel/**', '*.json'],
+        presets: [
+          [
+            '@babel/preset-env',
+            {
+              targets: '> 0.25%, not dead',
+            },
           ],
-          plugins: [
-            '@babel/plugin-syntax-dynamic-import',
-            [
-              '@babel/plugin-transform-runtime',
-              {
-                useESModules: true,
-              },
-            ],
+        ],
+        plugins: [
+          '@babel/plugin-syntax-dynamic-import',
+          [
+            '@babel/plugin-transform-runtime',
+            {
+              useESModules: true,
+            },
           ],
-        }),
+        ],
+      }),
 
       !dev &&
-        terser({
-          module: true,
-        }),
+      terser({
+        module: true,
+      }),
     ],
 
     onwarn,
@@ -145,7 +145,7 @@ export default {
     ],
     external: Object.keys(pkg.dependencies).concat(
       require('module').builtinModules ||
-        Object.keys(process.binding('natives'))
+      Object.keys(process.binding('natives'))
     ),
 
     onwarn,
