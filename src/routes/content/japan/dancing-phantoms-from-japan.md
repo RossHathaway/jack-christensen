@@ -15,7 +15,7 @@ seen details of the traditional backstage Costume Ceremony. The program is fully
 **ENLARGED CHARACTERS** are depicted in Noh theatricals because, rather than reflecting familiar reality, these plays aim at portraying situations that extend beyond common experience and everyday reasoning power. Yet the themes remain simple, emphasizing the essence of a single emotion: love, jealousy, revenge, filial devotion or the heroism of a warrior.
 
 <div id="pictures-section-1">
-
+{width}
 <div>
 <img alt="Noh performer with mask" src="dancing-phantoms/dancing-phantoms-from-japan-2.png" />
 <img alt="Noh performers getting ready" src="dancing-phantoms/dancing-phantoms-from-japan-1.png" />
@@ -48,6 +48,14 @@ seen details of the traditional backstage Costume Ceremony. The program is fully
 
 **DANCING PHANTOMS FROM JAPAN** is excellent for summer arts festivals that already have an established patronage, or it can be presented independently as a cultural event. The same program has been repeated three times during a single day — at ten o'clock in the morning, a matinee
 at three o'clock, and an evening performance at eight.
+
+<script>
+  import {onMount} from 'svelte'
+  let width
+
+  onMount(() => width = document.getElementsByTagName('main')[0].clientWidth)
+  
+</script>
 
 <style>
 
