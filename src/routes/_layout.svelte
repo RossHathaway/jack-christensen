@@ -29,6 +29,7 @@
   }
   .outer-container {
     display: flex;
+    min-width: 0;
     /* scroll ? */
   }
 
@@ -36,6 +37,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    min-width: 0;
   }
 </style>
 
@@ -50,7 +52,7 @@
 
   <Nav {logoSize} {links} />
 
-  <div class="inner-container">
+  <div class="inner-container" id="observe-resize">
     <Title height={logoSize} />
 
     <main>
