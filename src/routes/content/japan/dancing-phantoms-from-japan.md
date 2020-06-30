@@ -1,35 +1,31 @@
 <script>
-  import {onMount} from 'svelte'
+  import { onMount } from 'svelte'
   import ResizeObserver from 'resize-observer-polyfill';
  
-const ro = new ResizeObserver((entries, observer) => {
-    for (const entry of entries) {
-        const {left, top, width, height} = entry.contentRect;
+ onMount(function onDancingPhantomsMount() {
+   const ro = new ResizeObserver((entries, observer) => {
+       for (const entry of entries) {
+           const {left, top, width, height} = entry.contentRect;
+    
+           const section1 = document.getElementById('pictures-section-1')
+           const section1FirstChild = document.querySelector('#pictures-section-1 > div:first-of-type')
+           const section1SecondChild = document.querySelector('#pictures-section-1 > div:last-of-type')
+   
+           if (width < 930) {
+             section1.style.flexDirection = 'column'
+             section1FirstChild.style.alignItems = 'center'
+             section1SecondChild.style.alignItems = 'center'
+           } else {
+             section1.style.flexDirection = 'row'
+             section1FirstChild.style.alignItems = 'flex-end'
+             section1SecondChild.style.alignItems = 'flex-start'
+           }
+       }
+   });
+    
+   ro.observe(document.getElementById('observe-resize'));
+ })
  
-        const section1 = document.getElementById('pictures-section-1')
-        const section1FirstChild = document.querySelector('#pictures-section-1 > div:first-of-type')
-        const section1SecondChild = document.querySelector('#pictures-section-1 > div:last-of-type')
-
-        if (width < 930) {
-          section1.style.flexDirection = 'column'
-          section1FirstChild.style.alignItems = 'center'
-          section1SecondChild.style.alignItems = 'center'
-        } else {
-          section1.style.flexDirection = 'row'
-          section1FirstChild.style.alignItems = 'flex-end'
-          section1SecondChild.style.alignItems = 'flex-start'
-        }
-
-        // if (width < /* smaller width*/) {
-        //   document.getElementById('#pictures-section-2').style.flexDirection = 'column'
-        // } else {
-        //   document.getElementById('#pictures-section-2').style.flexDirection = 'row'
-        // }
-    }
-});
- 
-ro.observe(document.getElementById('observe-resize'));
-  
 </script>
 
 <style>
