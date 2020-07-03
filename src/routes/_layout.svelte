@@ -13,6 +13,7 @@
 <script>
   import Nav from "../components/Nav.svelte";
   import Title from "../components/Title.svelte";
+  import { doesRequireMainElement } from "helpers/requiresMainStore";
 
   const logoSize = 180;
 
@@ -55,9 +56,14 @@
   <div class="inner-container" id="observe-resize">
     <Title height={logoSize} />
 
-    <main>
+    <!-- If page has header component meant to be outside main element, it will have its own main element already and we will not add one here -->
+    {#if $doesRequireMainElement}
+      <main>
+        <slot />
+      </main>
+    {:else}
       <slot />
-    </main>
+    {/if}
   </div>
 
 </div>
