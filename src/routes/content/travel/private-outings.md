@@ -4,6 +4,8 @@
 
 <Header /> 
 
+<main>
+
 ### PRIVATE OUTINGS
 
 I STARTED CONDUCTING EXCURSIONS at age thirty-one as a part time venture in 1962 with a single offering, "The Honolulu Church & Temple Tour," and by now I'm The Aloha State's **oldest and only** individual personally escorting **twenty-one** original sightseeing outings on five different islands.
@@ -89,3 +91,4 @@ Few outsiders venture to this privately owned jewel with no traffic lights or fa
 
 ##### TOUR #20: HIKE TO KAUNOL&Umacr; RUINS
 This is a full day's trek from the Lana'i Airport. No ground transportation is required. But permission must be obtained in order to amble along dirt roads and trails to the remains of a former fishing village known as Kaunol&#363;, once a sporting retreat where King Kamehameha The Great required his warriors to show their bravery by jumping from a cliff into the sea.
+</main>

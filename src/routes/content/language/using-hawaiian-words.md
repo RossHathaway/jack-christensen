@@ -34,6 +34,8 @@
     </div>
 </Header>
 
+<main>
+
 ## "USING HAWAIIAN WORDS"
 
 <div class="centered">
@@ -312,3 +314,5 @@ MOLOKA'i & LANA'I, 5th Edition, 2002, 21x18 inches
 THE WEB SITE http://www.ulukau.org was announced in the spring of 2004
 as the first Hawaiian/English e—library. The site's dictionaries allow
 the user to type in any Hawaiian word to receive its English equivalent.
+
+</main>

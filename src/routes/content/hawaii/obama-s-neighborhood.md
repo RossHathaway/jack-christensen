@@ -7,6 +7,7 @@ title: Obama's Neighborhood
 
 <Header /> 
 
+<main>
 <h2>"PRESIDENT OBAMA'S NEIGHBORHOOD"</h2>
 
 <div class="centered">
@@ -53,6 +54,7 @@ was the hometown of the now internationally known personage
 and recipient of Sweden's Nobel Prize who is often welcomed
 as "global royalty" wherever he travels -- in recognition
 of his many personal achievements.
+</main>
 
 <style>
   .centered {
