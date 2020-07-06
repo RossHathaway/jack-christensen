@@ -40,18 +40,18 @@ h3 {
 }
 h1 {
   font-size: 3.125rem;
-  letter-spacing: 0.08em;
+  /* letter-spacing: 0.08em; */
   font-weight: bold;
 }
 
 h2 {
   font-size: 1.875rem;
-  letter-spacing: 0.1em;
+  /* letter-spacing: 0.1em; */
   font-weight: bold;
 }
 
 h3 {
-  letter-spacing: 0.06em;
+  /* letter-spacing: 0.06em; */
   font-weight: bold;
 }
 
