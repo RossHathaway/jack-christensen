@@ -27,12 +27,12 @@
 </style>
 
 <DocumentWrapper component="hawaiianPersonHeader">
-    <!-- <div class="centered">
+    <div class="centered" slot="header">
       <div>
         The Program To Preserve Hawaiian Place Names
       </div>
       <div>A STATEWIDE PUBLIC SERVICE SINCE 1974</div>
-    </div> -->
+    </div>
 
 
 

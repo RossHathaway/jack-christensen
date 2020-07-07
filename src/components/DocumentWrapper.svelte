@@ -11,7 +11,9 @@
   export let component = "default";
 </script>
 
-<svelte:component this={components[component]} />
+<svelte:component this={components[component]}>
+  <slot name="header" />
+</svelte:component>
 <main>
   <slot />
 </main>
