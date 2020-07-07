@@ -30,6 +30,14 @@ body {
   background-color: var(--main-bg-color);
 }
 
+main {
+  position: relative;
+  max-width: 800px;
+  padding: 0 2rem 2rem 2rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 strong {
   letter-spacing: 0.04em;
 }

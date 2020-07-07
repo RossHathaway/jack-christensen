@@ -21,13 +21,6 @@
 </script>
 
 <style>
-  main {
-    position: relative;
-    max-width: 800px;
-    padding: 0 2rem 2rem 2rem;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
   .outer-container {
     display: flex;
     min-width: 0;
@@ -55,15 +48,7 @@
 
   <div class="inner-container" id="observe-resize">
     <Title height={logoSize} />
-
-    <!-- If page has header component meant to be outside main element, it will have its own main element already and we will not add one here -->
-    {#if $doesRequireMainElement}
-      <main>
-        <slot />
-      </main>
-    {:else}
-      <slot />
-    {/if}
+    <slot />
   </div>
 
 </div>

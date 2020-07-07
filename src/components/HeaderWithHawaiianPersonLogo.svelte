@@ -1,15 +1,3 @@
-<script>
-  import { onDestroy } from "svelte";
-
-  import { doesRequireMainElement } from "helpers/requiresMainStore";
-
-  doesRequireMainElement.set(false);
-
-  onDestroy(function resetDoesRequireMainElement() {
-    doesRequireMainElement.set(true);
-  });
-</script>
-
 <style>
   header {
     display: flex;
