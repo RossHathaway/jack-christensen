@@ -54,6 +54,8 @@ and recipient of Sweden's Nobel Prize who is often welcomed
 as "global royalty" wherever he travels -- in recognition
 of his many personal achievements.
 
+</DocumentWrapper>
+
 <style>
   .centered {
     display: flex;
