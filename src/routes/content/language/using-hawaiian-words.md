@@ -1,5 +1,6 @@
 <script>
-    import Header from '../../../components/HeaderWithHawaiianPersonLogo.svelte'
+    import DocumentWrapper from '../../../components/DocumentWrapper.svelte'
+    
 </script>
 
 <style>
@@ -25,16 +26,15 @@
   }
 </style>
 
-<Header>
-    <div class="centered">
+<DocumentWrapper>
+    <!-- <div class="centered">
       <div>
         The Program To Preserve Hawaiian Place Names
       </div>
       <div>A STATEWIDE PUBLIC SERVICE SINCE 1974</div>
-    </div>
-</Header>
+    </div> -->
 
-<main>
+
 
 ## "USING HAWAIIAN WORDS"
 
@@ -315,4 +315,4 @@ THE WEB SITE http://www.ulukau.org was announced in the spring of 2004
 as the first Hawaiian/English e—library. The site's dictionaries allow
 the user to type in any Hawaiian word to receive its English equivalent.
 
-</main>
+</DocumentWrapper>
