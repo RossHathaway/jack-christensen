@@ -13,7 +13,6 @@
 <script>
   import Nav from "../components/Nav.svelte";
   import Title from "../components/Title.svelte";
-  import { doesRequireMainElement } from "helpers/requiresMainStore";
 
   const logoSize = 180;
 

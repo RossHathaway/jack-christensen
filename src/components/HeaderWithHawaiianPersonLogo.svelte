@@ -1,6 +1,7 @@
 <style>
   header {
     display: flex;
+    justify-content: space-evenly;
   }
 
   .centered {
@@ -32,7 +33,3 @@
   </slot>
   <img src="logos/hawaiian-person-right.svg" alt="" />
 </header>
-
-<main>
-  <slot />
-</main>

@@ -1,5 +1,5 @@
 <script>
-  import HeaderWithHawaiianPersonLogo from "components/HeaderWithHawaiianPersonLogo.svelte";
+  import HeaderWithHawaiianPersonLogo from "./HeaderWithHawaiianPersonLogo.svelte";
 
   const components = {
     hawaiianPersonHeader: HeaderWithHawaiianPersonLogo,
@@ -11,6 +11,7 @@
   export let component = "default";
 </script>
 
-<svelte:component this={components[component]}>
+<svelte:component this={components[component]} />
+<main>
   <slot />
-</svelte:component>
+</main>

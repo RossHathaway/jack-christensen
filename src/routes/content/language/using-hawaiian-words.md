@@ -26,7 +26,7 @@
   }
 </style>
 
-<DocumentWrapper>
+<DocumentWrapper component="hawaiianPersonHeader">
     <!-- <div class="centered">
       <div>
         The Program To Preserve Hawaiian Place Names
