@@ -3,34 +3,12 @@
     
 </script>
 
-<style>
-    header {
-    display: flex;
-  }
-
-  header > .centered {
-    padding: 0 0.5rem;
-  }
-
-  header > .centered div:nth-child(1) {
-    font-weight: bold;
-    font-size: 2rem;
-  }
-
-  header > .centered div:nth-child(2) {
-    margin: 0.5rem 4rem 0;
-    padding: 0.5rem;
-    border-width: 2px 0;
-    border-style: solid;
-    border-color: black;
-  }
-</style>
-
 <DocumentWrapper component="hawaiianPersonHeader">
     <div class="centered" slot="header">
       <div>
         The Program To Preserve Hawaiian Place Names
       </div>
+      <div class="middle-space">&nbsp;</div>
       <div>A STATEWIDE PUBLIC SERVICE SINCE 1974</div>
     </div>
 
