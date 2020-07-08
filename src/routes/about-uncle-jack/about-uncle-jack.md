@@ -1,8 +1,4 @@
-<script>
-  import DocumentWrapper from '../../components/DocumentWrapper.svelte'
-</script>
-
-<DocumentWrapper>
+<main>
 
 <h2>ABOUT UNCLE JACK</h2> 
 
@@ -18,7 +14,7 @@ My full name is Jack Shields Christensen and I was born in Wisconsin. I grew up 
 
 Click <a href="about-uncle-jack/my-first-seventy-five-years">here</a> to read a brief autobiography entitled "My First Seventy-Five Years". 
 
-</DocumentWrapper>
+</main>
 
 <style>
 

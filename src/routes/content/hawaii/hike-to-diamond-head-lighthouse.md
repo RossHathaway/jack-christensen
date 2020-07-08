@@ -2,6 +2,9 @@
 title: Hike to Diamond Head Lighthouse
 
 ---
+
+<main>
+
 <h2>"HIKE TO DIAMOND HEAD LIGHTHOUSE"</h2>
 
 <div class="centered">
@@ -23,6 +26,8 @@ OUR VOLUNTEER PROJECT HAS RECEIVED FOUR HONORS: A Certificate Of Recognition fro
 THE EVENT BEGAN as a civic beautification project during 1982-83 when members of The Clean Air Team, in cooperation with the State Parks Department, agreed to undertake a major cleanup campaign along the passage to the top of the most photographed peak in this archipelago.
 
 SENIOR MEMBERS of the team coordinated the efforts of hundreds of volunteers, including local residents, military personnel and visitors -- all cheerfully helping with this outdoor public service. To make the task attractive to more participants, our leaders researched historic facts about Diamond Head, which were compiled into a narration that was presented while the groups of litter pickers passed along a designated cleanup route where trash and many heavy articles had accumulated for decades along the Diamond Head Summit Trail -- in steep ravines and on the sides of sheer cliffs. Within a two year period several tons of ugly junk were bagged and dragged to collection stations.
+
+</main>
 
 <style>
   div.centered {

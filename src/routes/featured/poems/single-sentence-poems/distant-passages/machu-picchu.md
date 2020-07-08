@@ -1,3 +1,5 @@
+<main>
+
 ## Machu Picchu 
 As I hiked along an ancient passage <br />
 overlooking a plunging jungle ravine, <br />
@@ -16,3 +18,5 @@ and preside over this undisturbed site, <br />
 but I quickly relinquished my intention <br />
 of occupying that splendid seat -- <br />
 just then preempted by a black snake.
+
+</main>

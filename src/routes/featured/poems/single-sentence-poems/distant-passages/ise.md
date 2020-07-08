@@ -1,3 +1,5 @@
+<main>
+
 ## Ise 
 We stood among inquisitive, mystified people <br />
 looking through the transparent silk curtain <br />
@@ -26,3 +28,5 @@ on a gabled roof of reeds and thatched grass, <br />
 our erudite guide replied, "Wild things are <br />
 always honored here as natural ambassadors <br />
 and divine messengers coming from the gods."
+
+</main>

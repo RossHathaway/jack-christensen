@@ -1,3 +1,5 @@
+<main>
+
 ## Miyajima 
 To see the famous view, we rented a skiff <br />
 and rowed away from the Sacred Island of <br />
@@ -26,3 +28,5 @@ whereupon our obstreperous guest quickly <br />
 nabbed the bag and turned shoreward -­- <br />
 still chewing on the remaining stems <br />
 and paper stained with grape juice.
+
+</main>

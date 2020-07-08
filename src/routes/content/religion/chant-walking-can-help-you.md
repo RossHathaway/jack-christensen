@@ -1,3 +1,5 @@
+<main>
+
 ## THE CLEAN AIR TEAM
 ALL-VOLUNTEER PUBLIC SERVICE SINCE 1975
 
@@ -96,3 +98,5 @@ We humans, too, can perform lung compression under stressful conditions. The mor
 <div class="centered">
 Compiled By J.S. Christensen
 </div>
+
+</main>

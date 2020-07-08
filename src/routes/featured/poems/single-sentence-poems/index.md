@@ -7,6 +7,8 @@
   const triptychPath = `${currentPath}triptych`
 </script>
 
+<main>
+
 <h3 style="text-align: center;">SINGLE SENTENCE POEMS</h3> 
 <p>
 WHEN I BECAME EIGHTY YEARS OLD on February 11th 2011,
@@ -32,3 +34,5 @@ another travel fragment followed by my two longest sentences:
 1. <a href="{triptychPath}/uncouth-youth">Uncouth Youth</a>
 1. <a href="{triptychPath}/spring-green">Spring Green</a> 
 1. <a href="{triptychPath}/global-hero">Global Hero</a>
+
+</main>

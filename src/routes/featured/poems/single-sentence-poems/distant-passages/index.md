@@ -15,8 +15,10 @@
   const title = makeReadableName(lastPathSection)
 </script>
 
+<main>
 <h3 style="text-align: center;">DISTANT PASSAGES</h3> 
 
 Nine Travel Poems By J.S. Christensen
 
 <Links {...{links, title: false}}/>
+</main>

@@ -1,3 +1,5 @@
+<main>
+
 <div markdown="1">
 <section markdown="1">The most important movie
 you'll ever see!
@@ -235,6 +237,8 @@ someone suggested that he retire for some rest and a little nourishment. But
 he smiled and said, "Surely after sixty-two years of companionship, if I went
 away from her now, with the cremation unfinished, she would never forgive me."
 <!-- four dots -->
+</main>
+
 <style>
   div {
     display: flex;

@@ -1,8 +1,4 @@
-<script>
-  import DocumentWrapper from '../../components/DocumentWrapper.svelte'
-</script>
-
-<DocumentWrapper>
+<main>
 
 <h2>MY FAVORITE SNAPSHOT</h2>
 
@@ -19,7 +15,7 @@ was carved to some extent by ancient people.
 <img src="/my-favorite-snapshot.png" alt="Jack at Hawaiian cultural site Ka-ule-o—Nanahoa">
 </div>
 
-</DocumentWrapper>
+</main>
 
 <style>
   div {

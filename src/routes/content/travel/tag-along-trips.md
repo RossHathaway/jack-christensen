@@ -1,3 +1,5 @@
+<main>
+
 ## UNCLE JACK'S TAG ALONG TRIPS
 
 THESE PRIVATE EXCURSIONS feature truly exceptional places I enjoy revisiting. During and immediately after every trip, I revise the itinerary to make the next tour even more rewarding and pleasantly paced and economical, if possible.
@@ -56,3 +58,5 @@ our way to Thanjavur with its Brihadeshvara Temple regarded as India's greatest 
 One Week To Ten Days From Honolulu, Available November Through April
 
 Here we devote every evening to "casino crawling" for observing Sin City's gambling action, its preposterously artificial atmosphere of sparkling lights and architectural pretensions on a grand scale, everything designed primarily to produce glitzed-out theatrical and ersatz-monumental effects to bedazzle people who are delighted by materialistic displays of big money. In striking contrast to all this gaudy superficiality, our daylight hours are reserved for touring by automobile some truly inspirational places: Nevada's Red Rock Canyon and The Valley Of Fire and Hoover Dam, also Death Valley in California and some magnificent viewpoints along the south rim of Arizona's Grand Canyon.
+
+</main>
