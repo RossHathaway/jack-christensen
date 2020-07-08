@@ -1,10 +1,8 @@
 <script>
-    import Header from '../../../components/HeaderWithHawaiianPersonLogo.svelte'
+    import DocumentWrapper from '../../../components/DocumentWrapper.svelte'
 </script>
 
-<Header /> 
-
-<main>
+<DocumentWrapper component="hawaiianPersonHeaderAndFooter"> 
 
 ### PRIVATE OUTINGS
 
@@ -91,4 +89,5 @@ Few outsiders venture to this privately owned jewel with no traffic lights or fa
 
 ##### TOUR #20: HIKE TO KAUNOL&Umacr; RUINS
 This is a full day's trek from the Lana'i Airport. No ground transportation is required. But permission must be obtained in order to amble along dirt roads and trails to the remains of a former fishing village known as Kaunol&#363;, once a sporting retreat where King Kamehameha The Great required his warriors to show their bravery by jumping from a cliff into the sea.
-</main>
+
+</DocumentWrapper>
