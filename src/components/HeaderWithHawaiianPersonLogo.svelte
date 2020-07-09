@@ -6,11 +6,8 @@
     padding: 1rem;
   }
 
-  /* for the specific case of Using Hawaiian Words document: */
   header > :global(div) {
     display: flex;
-    flex-direction: column;
-    /* justify-content: space-evenly; */
   }
 
   header :global(.centered) {
@@ -22,10 +19,6 @@
 
   header :global(.centered > div) {
     flex: 1;
-  }
-
-  header :global(.centered > .middle-space) {
-    flex-grow: 4;
   }
 
   header :global(.centered div:nth-child(1)) {

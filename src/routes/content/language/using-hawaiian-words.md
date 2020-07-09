@@ -8,8 +8,9 @@
       <div>
         The Program To Preserve Hawaiian Place Names
       </div>
-      <div class="middle-space">&nbsp;</div>
+      <div>&nbsp;</div>
       <div>A STATEWIDE PUBLIC SERVICE SINCE 1974</div>
+      <div>&nbsp;</div>
     </div>
 
 
