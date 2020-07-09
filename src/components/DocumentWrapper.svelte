@@ -10,10 +10,11 @@
     linesLogo: LinesLogoWrapper,
     default: MainNoHeaderOrFooter,
   };
-  export let component = "default";
+  export let component = "default",
+    doubleBorder = false;
 </script>
 
-<svelte:component this={components[component]}>
+<svelte:component this={components[component]} {doubleBorder}>
   <div slot="header">
     <slot name="header">
       <div class="centered">

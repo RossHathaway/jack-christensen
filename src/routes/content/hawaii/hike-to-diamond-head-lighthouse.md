@@ -6,7 +6,7 @@ title: Hike to Diamond Head Lighthouse
   import DocumentWrapper from '../../../components/DocumentWrapper.svelte'
 </script>
 
-<DocumentWrapper component="linesLogo">
+<DocumentWrapper component="linesLogo" doubleBorder={true}>
 
 <h2>"HIKE TO DIAMOND HEAD LIGHTHOUSE"</h2>
 

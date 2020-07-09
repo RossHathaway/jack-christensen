@@ -5,10 +5,17 @@
 <style>
   main {
     border: 0.75rem solid black;
+    max-width: 1000px;
+    padding: 2rem 4rem;
   }
 
   main.doubleBorder {
-    /* inset box shadow */
+    box-shadow: inset 0 0 0 0.75rem var(--main-bg-color),
+      inset 0 0 0 1.5rem gray;
+    -webkit-box-shadow: inset 0 0 0 0.75rem var(--main-bg-color),
+      inset 0 0 0 1.5rem gray;
+    -moz-box-shadow: inset 0 0 0 0.75rem var(--main-bg-color),
+      inset 0 0 0 1.5rem gray;
   }
 </style>
 
