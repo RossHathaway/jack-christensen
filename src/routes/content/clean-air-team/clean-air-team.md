@@ -1,3 +1,9 @@
+<script>
+  import DocumentWrapper from '../../../components/DocumentWrapper.svelte'
+</script>
+
+<DocumentWrapper component="linesLogo">
+
 <h2>THE CLEAN AIR TEAM </h2>
 <h3>ALL-VOLUNTEER PUBLIC SERVICE SINCE 1975</h3>
 
@@ -39,9 +45,4 @@ and Lieutenant Colonel Glenn Sammins (USArmy).
 
 <strong>TODAY</strong> The Clean Air Team does not conduct membership campaigns or recruit new volunteer workers or solicit contributions toward the accumulation of a large general fund. Funding is obtained exclusively from private tours and lectures presented by co-founder "Uncle Jack" Christensen to cover the cost of placing paid antipollution ads in newspapers with statewide circulation and to print informative handouts given away at free events offered to the general public.
 
-<style>
-  .contact-info {
-    display: flex;
-    justify-content: space-around;
-  }
-</style>
+</DocumentWrapper>

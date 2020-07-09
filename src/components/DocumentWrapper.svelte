@@ -2,11 +2,12 @@
   import HeaderWithHawaiianPersonLogo from "./HeaderWithHawaiianPersonLogo.svelte";
   import HawaiianPersonHeaderAndFooter from "./HawaiianPersonHeaderFooter.svelte";
   import MainNoHeaderOrFooter from "./MainNoHeaderOrFooter.svelte";
+  import LinesLogoWrapper from "./LinesLogoWrapper.svelte";
 
   const components = {
     hawaiianPersonHeader: HeaderWithHawaiianPersonLogo,
     hawaiianPersonHeaderAndFooter: HawaiianPersonHeaderAndFooter,
-    // linesLogo:
+    linesLogo: LinesLogoWrapper,
     default: MainNoHeaderOrFooter,
   };
   export let component = "default";
