@@ -4,7 +4,18 @@
 </script>
 
 <Header>
-  <slot />
+  <div class="centered" slot="header">
+    <div>UNCLE JACK'S PUBLIC SERVICE PROJECTS</div>
+    <div>
+      The Clean Air Team &
+      <br />
+      The Program To Preserve Hawaiian Place Names
+    </div>
+  </div>
 </Header>
+
+<main>
+  <slot />
+</main>
 
 <Footer />
