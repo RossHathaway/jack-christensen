@@ -44,7 +44,7 @@
 
 <header>
   <img src="logos/hawaiian-person-left.svg" alt="" />
-  <slot name="header">
+  <slot name="header" />
   <img src="logos/hawaiian-person-right.svg" alt="" />
 </header>
 
