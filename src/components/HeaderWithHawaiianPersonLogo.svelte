@@ -45,15 +45,6 @@
 <header>
   <img src="logos/hawaiian-person-left.svg" alt="" />
   <slot name="header">
-    <div class="centered">
-      <div>UNCLE JACK'S PUBLIC SERVICE PROJECTS</div>
-      <div>
-        The Clean Air Team &
-        <br />
-        The Program To Preserve Hawaiian Place Names
-      </div>
-    </div>
-  </slot>
   <img src="logos/hawaiian-person-right.svg" alt="" />
 </header>
 
