@@ -1,4 +1,6 @@
 <script>
+  import LineLogo from "./LineLogo.svelte";
+
   export let doubleBorder;
 </script>
 
@@ -19,7 +21,10 @@
   }
 </style>
 
-<header />
+<header>
+  <LineLogo />
+  THE CLEAN AIR TEAM
+</header>
 
 <main class:doubleBorder>
   <slot />
