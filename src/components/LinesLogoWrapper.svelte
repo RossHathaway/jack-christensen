@@ -5,6 +5,18 @@
 </script>
 
 <style>
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 4px solid black;
+  }
+
+  header > div {
+    display: flex;
+    flex-direction: column;
+  }
+
   main {
     border: 0.75rem solid black;
     max-width: 1000px;
@@ -21,11 +33,14 @@
   }
 </style>
 
-<header>
-  <LineLogo />
-  THE CLEAN AIR TEAM
-</header>
-
 <main class:doubleBorder>
+  <header>
+    <LineLogo />
+
+    <div>
+      <div>THE CLEAN AIR TEAM</div>
+      <div>ALL-VOLUNTEER PUBLIC SERVICE SINCE 1975</div>
+    </div>
+  </header>
   <slot />
 </main>
