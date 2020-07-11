@@ -1,3 +1,5 @@
+<main>
+
 ## Inland Sea 
 When leaving the quiet, pine clad islet <br />
 where we'd rested overnight at an inn, <br />
@@ -25,3 +27,5 @@ with a fierce flash overhead -- <br />
 
 unleashed its lethal energies <br />
 upon a civilian population.
+
+</main>

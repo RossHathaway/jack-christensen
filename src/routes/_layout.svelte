@@ -20,13 +20,6 @@
 </script>
 
 <style>
-  main {
-    position: relative;
-    max-width: 800px;
-    padding: 0 2rem 2rem 2rem;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
   .outer-container {
     display: flex;
     min-width: 0;
@@ -54,10 +47,7 @@
 
   <div class="inner-container" id="observe-resize">
     <Title height={logoSize} />
-
-    <main>
-      <slot />
-    </main>
+    <slot />
   </div>
 
 </div>

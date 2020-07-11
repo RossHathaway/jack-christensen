@@ -1,3 +1,5 @@
+<main>
+
 <h2>MY FAVORITE SNAPSHOT</h2>
 
 **MY FAVORITE SNAPSHOT** was taken by Professor Winfield E. Nagley who later became chairman of the Philosophy Department at the University Of Hawai'i. I'm in my mid—twenties atop a phallic rock at the Hawaiian cultural site of Ka-ule-o—Nanahoa located approximately 1,500 feet above sea level on the world's highest ocean cliff, Moloka'i Island. Legend says this spot is where a man named Nanahoa and his wife Kawahuna were turned into stone.
@@ -12,6 +14,8 @@ was carved to some extent by ancient people.
 <div>
 <img src="/my-favorite-snapshot.png" alt="Jack at Hawaiian cultural site Ka-ule-o—Nanahoa">
 </div>
+
+</main>
 
 <style>
   div {

@@ -1,38 +1,19 @@
 <script>
-    import Header from '../../../components/HeaderWithHawaiianPersonLogo.svelte'
+    import DocumentWrapper from '../../../components/DocumentWrapper.svelte'
+    
 </script>
 
-<style>
-    header {
-    display: flex;
-  }
-
-  header > .centered {
-    padding: 0 0.5rem;
-  }
-
-  header > .centered div:nth-child(1) {
-    font-weight: bold;
-    font-size: 2rem;
-  }
-
-  header > .centered div:nth-child(2) {
-    margin: 0.5rem 4rem 0;
-    padding: 0.5rem;
-    border-width: 2px 0;
-    border-style: solid;
-    border-color: black;
-  }
-</style>
-
-<Header>
-    <div class="centered">
+<DocumentWrapper component="hawaiianPersonHeader">
+    <div class="centered" slot="header">
       <div>
         The Program To Preserve Hawaiian Place Names
       </div>
+      <div>&nbsp;</div>
       <div>A STATEWIDE PUBLIC SERVICE SINCE 1974</div>
+      <div>&nbsp;</div>
     </div>
-</Header>
+
+
 
 ## "USING HAWAIIAN WORDS"
 
@@ -312,3 +293,5 @@ MOLOKA'i & LANA'I, 5th Edition, 2002, 21x18 inches
 THE WEB SITE http://www.ulukau.org was announced in the spring of 2004
 as the first Hawaiian/English e—library. The site's dictionaries allow
 the user to type in any Hawaiian word to receive its English equivalent.
+
+</DocumentWrapper>

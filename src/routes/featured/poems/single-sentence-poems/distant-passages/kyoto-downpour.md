@@ -1,3 +1,5 @@
+<main>
+
 ## Kyoto Downpour 
 A few upright rocks amidst plain gray pebbles, <br />
 carefully selected to form a border surrounding <br />
@@ -28,3 +30,5 @@ all sorts of separate subjects and settings, <br />
 each picture enclosed by dream-like clouds, <br />
 painted in this classical manner by artists <br />
 who keep changing their point of view!
+
+</main>

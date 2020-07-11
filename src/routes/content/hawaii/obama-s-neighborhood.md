@@ -2,10 +2,10 @@
 title: Obama's Neighborhood
 ---
 <script>
-    import Header from '../../../components/HeaderWithHawaiianPersonLogo.svelte'
+import DocumentWrapper from '../../../components/DocumentWrapper.svelte'
 </script>
 
-<Header /> 
+<DocumentWrapper component="hawaiianPersonHeader">
 
 <h2>"PRESIDENT OBAMA'S NEIGHBORHOOD"</h2>
 
@@ -53,6 +53,8 @@ was the hometown of the now internationally known personage
 and recipient of Sweden's Nobel Prize who is often welcomed
 as "global royalty" wherever he travels -- in recognition
 of his many personal achievements.
+
+</DocumentWrapper>
 
 <style>
   .centered {

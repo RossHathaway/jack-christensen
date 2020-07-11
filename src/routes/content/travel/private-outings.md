@@ -1,8 +1,8 @@
 <script>
-    import Header from '../../../components/HeaderWithHawaiianPersonLogo.svelte'
+    import DocumentWrapper from '../../../components/DocumentWrapper.svelte'
 </script>
 
-<Header /> 
+<DocumentWrapper component="hawaiianPersonHeaderAndFooter"> 
 
 ### PRIVATE OUTINGS
 
@@ -13,7 +13,7 @@ My limited rambles are available for individuals or couples and small groups int
 The presentation of any tour -- regardless of the number of participants -- requires a single honorarium to pay for **ONE** of The Clean Air Team's antipollution ads to be published in The Honolulu Star-Advertiser at its prevailing insertion fee, plus any transportation expenses or associated costs.
 
 <figure>
-<img src="private-outings-beach.png" alt="Kahana Bay on the windward side of O'ahu">
+<img src="private-outings/private-outings-beach.png" alt="Kahana Bay on the windward side of O'ahu">
 <figcaption>Kahana Bay, Windward O'ahu</figcaption>
 </figure>
 
@@ -89,3 +89,5 @@ Few outsiders venture to this privately owned jewel with no traffic lights or fa
 
 ##### TOUR #20: HIKE TO KAUNOL&Umacr; RUINS
 This is a full day's trek from the Lana'i Airport. No ground transportation is required. But permission must be obtained in order to amble along dirt roads and trails to the remains of a former fishing village known as Kaunol&#363;, once a sporting retreat where King Kamehameha The Great required his warriors to show their bravery by jumping from a cliff into the sea.
+
+</DocumentWrapper>

@@ -81,6 +81,8 @@
   }
 </style>
 
+<main>
+
 <h2>
   <img src="dancing-phantoms/DancingPhantomsFromJapanIcon.svg" alt="Japanese Character" class="header">
   <span>Dancing Phantoms From Japan</span>
@@ -130,3 +132,5 @@ seen details of the traditional backstage Costume Ceremony. The program is fully
 
 **DANCING PHANTOMS FROM JAPAN** is excellent for summer arts festivals that already have an established patronage, or it can be presented independently as a cultural event. The same program has been repeated three times during a single day — at ten o'clock in the morning, a matinee
 at three o'clock, and an evening performance at eight.
+
+</main>

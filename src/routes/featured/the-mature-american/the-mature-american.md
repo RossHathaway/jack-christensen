@@ -1,4 +1,6 @@
-﻿<h2>THE MATURE AMERICAN</h2>
+﻿<main>
+
+<h2>THE MATURE AMERICAN</h2>
 
 <div class="centered">
 A PROFILE OF HENRY DAVID THOREAU
@@ -113,3 +115,5 @@ I moments live, who lived but years,
 And truth discern, who knew but learning's lore.
 <footer>— Henry David Thoreau</footer>
 </blockquote>
+
+</main>

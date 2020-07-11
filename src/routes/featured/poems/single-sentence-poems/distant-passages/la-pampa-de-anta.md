@@ -1,3 +1,5 @@
+<main>
+
 ## La Pampa de Anta 
 Yesterday's weather left watermarks <br />
 darkly down the rugged adobe wall <br />
@@ -28,3 +30,5 @@ roadside face recently emblazoned by <br />
 yet another of the multitudinous signs <br />
 blatantly advertising COLA drinks --<br />
 a visual bane and nationwide blight.
+
+</main>

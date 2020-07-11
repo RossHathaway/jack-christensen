@@ -1,3 +1,5 @@
+<main>
+
 <h2>ABOUT UNCLE JACK</h2> 
 
 <figure>
@@ -12,6 +14,7 @@ My full name is Jack Shields Christensen and I was born in Wisconsin. I grew up 
 
 Click <a href="about-uncle-jack/my-first-seventy-five-years">here</a> to read a brief autobiography entitled "My First Seventy-Five Years". 
 
+</main>
 
 <style>
 
