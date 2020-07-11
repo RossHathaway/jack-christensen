@@ -15,6 +15,19 @@
   header > div {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .primary-header-txt {
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 0.3rem;
+  }
+
+  .secondary-header-txt {
+    font-style: italic;
+    letter-spacing: 0.1rem;
   }
 
   main {
@@ -38,8 +51,10 @@
     <LineLogo />
 
     <div>
-      <div>THE CLEAN AIR TEAM</div>
-      <div>ALL-VOLUNTEER PUBLIC SERVICE SINCE 1975</div>
+      <div class="primary-header-txt">THE CLEAN AIR TEAM</div>
+      <div class="secondary-header-txt">
+        ALL-VOLUNTEER PUBLIC SERVICE SINCE 1975
+      </div>
     </div>
   </header>
   <slot />
