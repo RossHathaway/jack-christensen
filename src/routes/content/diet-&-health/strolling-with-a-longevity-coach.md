@@ -1,3 +1,22 @@
+<style>
+blockquote > footer {
+    float: right;
+}
+
+blockquote:after { 
+   content: '.'; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+table {
+    width: 100%;
+}
+
+</style>
+
 ## UNCLE JACK'S LATTER-DAY SOCIAL ROLE AS A LONGEVITY COACH
 
 <main>
@@ -19,7 +38,7 @@ As Recorded In The Old Testament
 
 </div>
 
-<blockquote class="centered">
+<blockquote>
 
 THE LORD said, My spirit shall not abide in man forever, for he is flesh his days shall be a hundred and twenty years.
 
