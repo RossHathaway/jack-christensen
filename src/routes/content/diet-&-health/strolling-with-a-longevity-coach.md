@@ -11,6 +11,28 @@ blockquote:after {
    clear: both;
 }
 
+li {
+  display: flex;
+}
+
+span:first-child {
+  order: 1;
+  margin-right: 4px;
+}
+
+span:last-child {
+  order: 3;
+  margin-left: 4px;
+}
+
+li::after {
+  content: "";
+  order: 2;
+  flex-grow: 1;
+  height: 1.1em;
+  border-bottom: 4px dotted black;
+}
+
 </style>
 
 ## UNCLE JACK'S LATTER-DAY SOCIAL ROLE AS A LONGEVITY COACH
@@ -43,30 +65,28 @@ THE LORD said, My spirit shall not abide in man forever, for he is flesh his day
 
 <ul>
 <li>
-LINEAGE AGE
+<span>LINEAGE</span> <span>AGE</span>
 </li>
-
-<li>930 Adam</li>
-<li>912 Seth (son of Adam)</li>
-<li>905 Enosh (son of Seth)</li>
-<li>910 Kenan (son of Enosh)</li>
-<li>895 Mahalalel (son of Kenan)</li>
-<li>962 Jared (son of Mahalalel)</li>
-<li>365 Enoch (son of Jared)</li>
-<li>969 Methuselah (son of Enoch)</li>
-<li>777 Lamech (son of Methuselah)</li>
-<li>950 Noah (son of Lamech)</li>
-<li>175 Abraham (first called Abram, son of Terah)</li>
-<li>127 Sarah (wife of Abraham)</li>
-<li>180 Isaac (son of Abraham and Sarah)</li>
-<li>147 Jacob (son of Isaac, twin of Esau)</li>
-<li>110 Joseph (son of Jacob)</li>
-<li>123 Aaron (brother of Moses)</li>
-<li>120 Moses ("his eye was not dim nor his force abated")</li>
-<li>110 Joshua</li>
-<li>130 Jehoiada</li>
-<li>140 Job</li>
-<li>
+<li> <span>Adam</span> <span>930</span></li>
+<li> <span>Seth (son of Adam)</span> <span>912</span></li>
+<li> <span>Enosh (son of Seth)</span> <span>905</span></li>
+<li> <span>Kenan (son of Enosh)</span> <span>910</span></li>
+<li> <span>Mahalalel (son of Kenan)</span> <span>895</span></li>
+<li> <span>Jared (son of Mahalalel)</span> <span>962</span></li>
+<li> <span>Enoch (son of Jared)</span> <span>365</span></li>
+<li> <span>Methuselah (son of Enoch)</span> <span>969</span></li>
+<li> <span>Lamech (son of Methuselah)</span> <span>777</span></li>
+<li> <span>Noah (son of Lamech)</span> <span>950</span></li>
+<li> <span>Abraham (first called Abram, son of Terah)</span> <span>175</span></li>
+<li> <span>Sarah (wife of Abraham)</span> <span>127</span></li>
+<li> <span>Isaac (son of Abraham and Sarah)</span> <span>180</span></li>
+<li> <span>Jacob (son of Isaac, twin of Esau)</span> <span>147</span></li>
+<li> <span>Joseph (son of Jacob)</span> <span>110</span></li>
+<li> <span>Aaron (brother of Moses)</span> <span>123</span></li>
+<li> <span>Moses ("his eye was not dim nor his force abated")</span> <span>120</span></li>
+<li> <span>Joshua</span> <span>110</span></li>
+<li> <span>Jehoiada</span> <span>130</span></li>
+<li> <span>Job</span> <span>140</span></li>
 </ul>
 
 <!-- four open circles -->
