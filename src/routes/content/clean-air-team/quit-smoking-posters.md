@@ -1,0 +1,62 @@
+<style>
+    section {
+        border: 10px solid black;
+        margin: 1rem;
+        padding: calc(0.5rem + 20px)
+    }
+
+    figcaption {
+        font-style: italic;
+    }
+
+    .byr-border {
+        box-shadow: inset 0 0 0 10px var(--yellow),
+      inset 0 0 0 20px #ed1c24;
+        -webkit-box-shadow: inset 0 0 0 10px var(--yellow),
+      inset 0 0 0 20px #ed1c24;
+        -moz-box-shadow: inset 0 0 0 10px var(--yellow),
+      inset 0 0 0 20px #ed1c24;
+    }
+
+    .bwr-border {
+        box-shadow: inset 0 0 0 10px white,
+      inset 0 0 0 20px #ed1c24;
+        -webkit-box-shadow: inset 0 0 0 10px white,
+      inset 0 0 0 20px #ed1c24;
+        -moz-box-shadow: inset 0 0 0 10px white,
+      inset 0 0 0 20px #ed1c24;
+    }
+</style>
+
+<main>
+    <section class="byr-border">
+        DANCING WITH CANCERETTES...
+    </section>
+    <section class="bwr-border">
+        <figure>
+            <figcaption>
+                THE KEY to personal behavior modification
+                and beneficial habit formation is simply your
+                immediate decision to complete the circle
+                of repetition or not to complete the circle
+                of repetition . . .
+                </figcaption>
+        </figure>
+    </section>
+    <section class="bwr-border">
+        <figure>
+            <figcaption>
+                BAD HABITS are only careless circles of repetitious,
+                conditioned behavior –– but they have the power
+                to keep us wanting what we no longer want.
+            </figcaption>
+        </figure>
+    </section>
+    <section class="byr-border">
+        <figure>
+            <figcaption>
+                Good habits are guardians, bad habits are barriers
+            </figcaption>
+        </figure>
+    </section>
+</main>
