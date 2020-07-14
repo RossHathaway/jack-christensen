@@ -19,11 +19,11 @@
     }
 
     .bwr-border {
-        box-shadow: inset 0 0 0 10px white,
+        box-shadow: inset 0 0 0 10px var(--main-bg-color),
       inset 0 0 0 20px #ed1c24;
-        -webkit-box-shadow: inset 0 0 0 10px white,
+        -webkit-box-shadow: inset 0 0 0 10px var(--main-bg-color),
       inset 0 0 0 20px #ed1c24;
-        -moz-box-shadow: inset 0 0 0 10px white,
+        -moz-box-shadow: inset 0 0 0 10px var(--main-bg-color),
       inset 0 0 0 20px #ed1c24;
     }
 </style>
