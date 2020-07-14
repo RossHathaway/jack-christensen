@@ -1,4 +1,8 @@
 <style>
+    main {
+        max-width: 100%;
+    }
+
     section {
         border: 10px solid black;
         margin: 1rem;
@@ -26,11 +30,25 @@
         -moz-box-shadow: inset 0 0 0 10px var(--main-bg-color),
       inset 0 0 0 20px #ed1c24;
     }
+
+    #dancing-cancerettes {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        font-family: Galindo, sans-serif;
+        font-size: 3rem;
+    }
+
+    #dancing-cancerettes > span {
+        margin-top: auto;
+    }
 </style>
 
 <main>
-    <section class="byr-border">
-        DANCING WITH CANCERETTES...
+    <section id="dancing-cancerettes" class="byr-border centered">
+        <span>DANCING WITH CANCERETTES...</span>
     </section>
     <section class="bwr-border">
         <figure>
