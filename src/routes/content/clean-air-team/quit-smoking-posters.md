@@ -15,6 +15,9 @@
 
     figcaption {
         font-style: italic;
+        font-size: 1.5rem;
+        max-width: 80%;
+        text-align: center;
     }
 
     .byr-border {
@@ -48,20 +51,27 @@
     #dancing-cancerettes > span {
         margin-top: auto;
     }
+
+    #key figcaption {
+        max-width: 32rem;
+        text-align: left;
+    }
 </style>
 
 <main>
     <section id="dancing-cancerettes" class="byr-border centered">
         <span>DANCING WITH CANCERETTES...</span>
     </section>
-    <section class="bwr-border">
+    <section id="key" class="bwr-border">
         <figure>
             <figcaption>
-                THE KEY to personal behavior modification
-                and beneficial habit formation is simply your
+
+                THE KEY to __personal behavior modification__
+                and __beneficial habit formation__ is simply your
                 immediate decision to complete the circle
                 of repetition or not to complete the circle
                 of repetition . . .
+
                 </figcaption>
         </figure>
     </section>
