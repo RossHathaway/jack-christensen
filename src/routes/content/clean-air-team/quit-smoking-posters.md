@@ -9,6 +9,10 @@
         padding: calc(0.5rem + 20px)
     }
 
+    img {
+        width: 100%;
+    }
+
     figcaption {
         font-style: italic;
     }
@@ -63,6 +67,7 @@
     </section>
     <section class="bwr-border">
         <figure>
+            <img alt="Japanese style painting" src="quit-smoking-posters/two-japanese-rings-painting.png">
             <figcaption>
                 BAD HABITS are only careless circles of repetitious,
                 conditioned behavior –– but they have the power
@@ -72,6 +77,7 @@
     </section>
     <section class="byr-border">
         <figure>
+        <img alt="Antaeus the giant protecting two people" src="quit-smoking-posters/antaeus-the-giant.png">
             <figcaption>
                 Good habits are guardians, bad habits are barriers
             </figcaption>
