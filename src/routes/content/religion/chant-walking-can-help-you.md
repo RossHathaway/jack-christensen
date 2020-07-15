@@ -1,7 +1,8 @@
-<main>
+<script>
+  import DocumentWrapper from '../../../components/DocumentWrapper.svelte'
+</script>
 
-## THE CLEAN AIR TEAM
-ALL-VOLUNTEER PUBLIC SERVICE SINCE 1975
+<DocumentWrapper component="linesLogo">
 
 ### "CHANT WALKING CAN HELP YOU"
 <div class="centered">
@@ -99,4 +100,4 @@ We humans, too, can perform lung compression under stressful conditions. The mor
 Compiled By J.S. Christensen
 </div>
 
-</main>
+</DocumentWrapper>
