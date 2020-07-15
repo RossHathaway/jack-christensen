@@ -1,3 +1,7 @@
+<script>
+    import AutoSuggestion from '../../../components/AutosuggestionLogo.svelte'
+</script>
+
 <style>
     main {
         max-width: 100%;
@@ -64,6 +68,8 @@
     </section>
     <section id="key" class="bwr-border">
         <figure>
+            <AutoSuggestion />
+
             <figcaption>
 
                 THE KEY to __personal behavior modification__
