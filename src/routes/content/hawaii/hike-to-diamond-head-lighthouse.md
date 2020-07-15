@@ -30,6 +30,50 @@ THE EVENT BEGAN as a civic beautification project during 1982-83 when members of
 
 SENIOR MEMBERS of the team coordinated the efforts of hundreds of volunteers, including local residents, military personnel and visitors -- all cheerfully helping with this outdoor public service. To make the task attractive to more participants, our leaders researched historic facts about Diamond Head, which were compiled into a narration that was presented while the groups of litter pickers passed along a designated cleanup route where trash and many heavy articles had accumulated for decades along the Diamond Head Summit Trail -- in steep ravines and on the sides of sheer cliffs. Within a two year period several tons of ugly junk were bagged and dragged to collection stations.
 
+<figure>
+<img src="diamond-head/army-volunteers-at-diamond-head.png" alt="Army volunteers prepare to rappel down to remove litter">
+<figcaption>
+Army volunteers prepare to rappel down the face of the peak to
+retrieve accumulated litter from the front profile of Diamond Head.
+</figcaption>
+</figure>
+
+<figure>
+<img src="diamond-head/navy-bringing-trash-can.png" alt="Navy bringing trash can to Diamond Head">
+<figcaption>
+Navy personnel haul up the first trash can to arrive at the summit.
+</figcaption>
+</figure>
+
+<figure>
+<img src="diamond-head/scrap-metal-on-crater-floor.png" alt="Abandoned car bodies and scrap metal heaped on the crater floor of Diamond Head">
+<figcaption>
+Abandoned car bodies and scrap metal heaped on the crater floor.
+</figcaption>
+</figure>
+
+<figure>
+<img src="diamond-head/trash-utility-poles-and-cables.png" alt="rusted cables and fallen utility poles await removal">
+<figcaption>
+Tangled, rusted cables and fallen utility poles await removal by
+the National Guard which supplied the necessary trucks, drivers and loaders.
+</figcaption>
+</figure>
+
+<figure>
+<img src="diamond-head/lumber-and-trash-bags.png" alt="Stacked lumber and bagged junk collected from alongside the trail.">
+<figcaption>
+Stacked lumber and bagged junk collected from alongside the trail.
+</figcaption>
+</figure>
+
+<figure>
+<img src="diamond-head/central-dump-site.png" alt="central dump site">
+<figcaption>
+Our central dump site eventually filled several truck loads.
+</figcaption>
+</figure>
+
 </DocumentWrapper>
 
 <style>
