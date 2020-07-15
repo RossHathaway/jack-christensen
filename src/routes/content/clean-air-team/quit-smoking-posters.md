@@ -22,20 +22,20 @@
 
     .byr-border {
         box-shadow: inset 0 0 0 10px var(--yellow),
-      inset 0 0 0 20px #ed1c24;
+      inset 0 0 0 20px var(--red);
         -webkit-box-shadow: inset 0 0 0 10px var(--yellow),
-      inset 0 0 0 20px #ed1c24;
+      inset 0 0 0 20px var(--red);
         -moz-box-shadow: inset 0 0 0 10px var(--yellow),
-      inset 0 0 0 20px #ed1c24;
+      inset 0 0 0 20px var(--red);
     }
 
     .bwr-border {
         box-shadow: inset 0 0 0 10px var(--main-bg-color),
-      inset 0 0 0 20px #ed1c24;
+      inset 0 0 0 20px var(--red);
         -webkit-box-shadow: inset 0 0 0 10px var(--main-bg-color),
-      inset 0 0 0 20px #ed1c24;
+      inset 0 0 0 20px var(--red);
         -moz-box-shadow: inset 0 0 0 10px var(--main-bg-color),
-      inset 0 0 0 20px #ed1c24;
+      inset 0 0 0 20px var(--red);
     }
 
     #dancing-cancerettes {
