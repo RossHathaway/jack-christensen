@@ -56,7 +56,11 @@
         margin-top: auto;
     }
 
-    #key figcaption {
+    #autosuggestion {
+        background-color: var(--yellow);
+    }
+
+    #autosuggestion figcaption {
         max-width: 32rem;
         text-align: left;
     }
@@ -66,7 +70,7 @@
     <section id="dancing-cancerettes" class="byr-border centered">
         <span>DANCING WITH CANCERETTES...</span>
     </section>
-    <section id="key" class="bwr-border">
+    <section id="autosuggestion" class="bwr-border">
         <figure>
             <AutoSuggestion />
 
