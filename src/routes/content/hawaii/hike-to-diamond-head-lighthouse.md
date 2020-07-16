@@ -77,10 +77,12 @@ Our central dump site eventually filled several truck loads.
 </figure>
 </section>
 
+<section id="alice-fraser">
+
 ### “HIKE T0 DIAMOND HEAD LIGHTHOUSE”
 A Continuing Tribute To The Memory Of Alice Fraser
 
- 
+ <img src="diamond-head/alice-fraser.png" alt="Alice Fraser, a member of the Clean Air Team">
 
 **ALICE FRASER** served for over a decade as a volunteer worker for many different
 outdoor activities of The Clean Air Team, beginning in 1986 until her death in
@@ -91,6 +93,7 @@ our antipollution Public Service Announcements broadcast on local television.
 In addition to helping with the team's environmental protection efforts, she
 assisted at many of our indoor events. Alice's cheerfulness is still fondly
 remembered by her fellow volunteer workers and all who knew her.
+</section>
 
 </DocumentWrapper>
 
@@ -107,7 +110,7 @@ remembered by her fellow volunteer workers and all who knew her.
     margin: 1rem;
   }
 
-  figure img {
+  img {
     max-width: 100%;
   }
 
@@ -115,5 +118,25 @@ remembered by her fellow volunteer workers and all who knew her.
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  #alice-fraser {
+    text-align: center;
+  }
+
+  #alice-fraser img {
+    max-width: 600px;
+  }
+
+  #alice-fraser p:last-of-type {
+    text-align: left;
+  }
+
+  #alice-fraser p:first-of-type {
+    margin-top: 0;
+  }
+
+  #alice-fraser h3 {
+    margin-bottom: 0;
   }
 </style>
