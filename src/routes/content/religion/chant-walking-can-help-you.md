@@ -4,6 +4,8 @@
 
 <DocumentWrapper component="linesLogo">
 
+<section id="cw-can-help">
+
 ### "CHANT WALKING CAN HELP YOU"
 <div class="centered">
 FREE ACTIVITY AT TWO O'CLOCK<br>
@@ -27,13 +29,21 @@ EVERYONE KNOWS how water brings joy into the play of children who are always fas
 
 And so this walking tour is not only The Clean Air Team's invitation to learn about Chant Walking, but also a gentle reminder of everyone's primary dependence upon our vital air and water supply which must be kept free of pollution.
 
-#### CHANT WALKING 
+</section>
+
+<section id="cw-15-min">
+
+### CHANT WALKING 
 <div class="centered">Fifteen To Thirty Minutes Daily</div>
 
 CHANTING ANY AFFIRMATION is enhanced by __rhythmic walking__ plus invigorating __deep breathing__. Add __natural body carriage__ and you have a most agreeable pastime that can be repeated along exactly the same route -- its details becoming old friends.
 Chanting can be performed at various levels of audibility, from normal speech to a mere murmur or whispering or only thinking the words with no sound at all. Another way of doing it, which you might like to try, is __sing chanting__.
 
-##### SUGGESTED CHANTS FOR BEGINNERS
+</section>
+
+<section id="suggested">
+
+### SUGGESTED CHANTS FOR BEGINNERS
 
 Always remember, fitness comes first.
 
@@ -57,13 +67,17 @@ It's easy to be considerate.
 
 I'm not a finished product.
 
-0 0 0 0
+<!-- TODO: four circles -->
 
 ALICE FRASER, a volunteer worker of The Clean Air Team for many years, told how she chanted only two words, **"Carry on ..."** during many long walks to cope with grief after the sudden death of her husband, Andy. So if an occasion arises in your life that's a terrific impasse and you really don't know what to do, just go Chant Walking, using any phrase temporarily as a starter until exactly the right wording for a helpful chant occurs to you.
 
 Don't be self-conscious about Chant Walking. There are plenty of people walking around jabbering into mobile phones. Simply write the lines of various chants on a 3x5 index card and hold it conspicuously, clasping your hands at your waist, with your thumbs together, pressing on the card. Glance down at it, now and then, as if you're occupied with memorizing something, and nobody will think anything of it.
 
-##### GO BEYOND THE CITY OFTEN -- TO WHEREVER YOU CAN BREATHE REALLY CLEAN AIR!
+</section>
+
+<section id="go-beyond-city">
+
+### GO BEYOND THE CITY OFTEN -- TO WHEREVER YOU CAN BREATHE REALLY CLEAN AIR!
 
 DO YOU KNOW that we humans are "bio-electric" creatures? Without the presence of certain levels of electricity in the air around us -- particularly in the form of __negative ions__ -- we can't absorb the oxygen we must have to stay alive. The air we breathe can have two kinds of __ion molecules__, positive or negative
 in electrical charge, and one of these types will always predominate in the atmospheric conditions where we happen to be breathing at the moment.
@@ -72,11 +86,15 @@ The electrical charge of an __ion molecule__ can switch back and forth between p
 
 Everyone realizes our cityscapes are congested with traffic and clutter, but we're relatively unaware of massive accumulations of __positive ions__ trapped in the canyons of concrete and glass we've created. Modern technology is a major factor in the distortion of our oxygen's natural electrical balance -­and this is a dangerous situation because __positive ions__ are known to damage human health.
 
-##### WANT TO FEEL BETTER?
+</section>
+
+<section id="want-to-feel-better">
+
+### WANT TO FEEL BETTER?
 
 WE THRIVE BEST by breathing __negative ions__ that help us absorb beneficial oxygen which invigorates our body. Without sufficient oxygen we'll fail to function properly. If our brain cells are deprived of it, we cease to be alert and our ability to reason fades rapidly.
 The surface of the earth itself always tends to be negatively charged. There are no __positive ions__ within the air of places where the soil is moist, such as forests or near streams or waterfalls and large bodies of water. If a few __positive ions__ happen to be present in droplets of moisture wafting into these
-areas, all of them are quickly absorbed, becoming beneficially negative. Thus moist atmospheres remain charged with __negative ions__ -- the ideal situation for humans as far as our air supply is concerned. You may not always notice, but you should immediately feel better where __negative ions__ predominate. Breathing is especially vitalized and more exhilarating when we're near moving water.
+areas, all of them are quickly absorbed, becoming beneficially negative. Thus moist atmospheres remain charged with __negative ions__ -- the ideal situation for humans as far as our air supply is concerned. You may not always notice, but you should immediately feel better where __negative ions__ predominate. Breathing is especially vitalized and more exhilarating when we're near **moving water**.
 
 Scientific research indicates that while __negative ions__ enhance our health -- __positive ions__ can make people sick. Dr. Albert Krueger, when a microbiologist and experimental pathologist at the University Of California, Berkeley, was the first person to discover that __negative ions__ are beneficial for us because they kill airborne bacteria associated with common colds, flu and other respiratory problems. His fellow researchers also determined that __negative ions__ produce a stimulating effect upon the specific kind of cells in our bodies which help us resist disease. A physician in Philadelphia demonstrated that when a machine generating __negative ions__ was placed in the hospital rooms of patients suffering from severe burns, these people reported much less pain and recovered faster. There was less tissue infection and less scarring, too. Further experiments
 by Dr. Kreuger proved that an excess of __positive ions__ in mammals causes an overproduction of serotonin that's known as the **stress hormone.** And when
@@ -84,7 +102,11 @@ too much of it is secreted into our bloodstream, it can create sudden changes in
 Certainly the kind of electricity in the air we breathe is important, and we should pursue the most advantageous atmospheric conditions available to us. If most of our time is confined to metropolitan Honolulu, we'll need to visit
 other localities as often as we can, such as forested areas and shorelines and wide-open places, where we're able to breathe deeply of the fresh air steadily brought to this archipelago by the Northeast Trade Winds which blow across the North Central Pacific Ocean, laden with __negative ions__.
 
-##### LUNG COMPRESSION
+</section>
+
+<section id="lung-compression">
+
+### LUNG COMPRESSION
 
 OUR BREATHING IS AUTOMATIC but we can control it for short periods. When most people are asked to take a deep breath, their exaggerated chest expansion isn't as necessary as they might think. If we want to obtain a greater supply of air than usual, it's actually a little easier and much more efficient for us to do the opposite -- concentrate on producing a stronger outflow of air.
 
@@ -96,8 +118,17 @@ It also knows that running and forcefully exhaling will cast out, through the lu
 
 We humans, too, can perform lung compression under stressful conditions. The more oxygen we bring into our system during a crisis, the greater strength we will have available to face whatever comes. For better health in general and especially during athletic training -- or if participating in a detoxification program -- we can practice lung compression, forcefully exhaling to the limit and then holding our breath as long as possible before letting air to rush back into our lungs. This consciously controlled method of breathing will draw more fatiguing toxins from our bloodstream than regular respiration does.
 
+</section>
+
 <div class="centered">
 Compiled By J.S. Christensen
 </div>
 
 </DocumentWrapper>
+
+<style>
+    #cw-15-min h3 {
+        margin-bottom: 0;
+    }
+
+</style>
