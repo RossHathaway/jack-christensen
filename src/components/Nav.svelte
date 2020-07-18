@@ -26,12 +26,38 @@
     align-items: center;
   }
 
+  #menu-toggle {
+    opacity: 0;
+  }
+
+  label[for="menu-toggle"] {
+    background-color: var(--second-darkest-hue);
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  label[for="menu-toggle"]::after {
+    content: "";
+    display: inline-block;
+
+    height: 2rem;
+    width: 2rem;
+
+    border: 2px solid white;
+    border-radius: 0.3rem;
+  }
+
   nav {
     font-weight: 300;
     display: flex;
     flex-direction: column;
     width: 18rem;
     margin: 0 1rem;
+  }
+
+  #menu-toggle:checked + nav {
+    width: 0 !important;
+    background-color: yellow;
   }
 
   a {
@@ -65,7 +91,12 @@
 </style>
 
 <div class="outer-container">
+
   <Logo size={logoSize} />
+
+  <label for="menu-toggle" onclick>hide menu</label>
+  <input type="checkbox" id="menu-toggle" />
+
   <nav>
     {#each processedLinks as link}
       {#if link.name === 'About Uncle Jack'}
