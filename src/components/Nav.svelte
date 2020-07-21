@@ -56,8 +56,8 @@
   }
 
   #menu-toggle:checked + nav {
-    width: 0 !important;
-    background-color: yellow;
+    width: 0;
+    overflow: hidden;
   }
 
   a {
