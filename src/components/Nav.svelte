@@ -46,14 +46,13 @@
     background-position: center;
     background-origin: content-box;
 
+    transform: rotate(180deg);
     transition: transform 0.3s;
 
     height: 2rem;
     width: 2rem;
 
     outline: none;
-    border: 2px solid white;
-    border-radius: 0.3rem;
   }
 
   nav {
@@ -64,7 +63,11 @@
     margin: 0 1rem;
   }
 
-  #menu-toggle:checked + nav {
+  #menu-toggle:checked ~ label[for="menu-toggle"]::after {
+    transform: rotate(0deg);
+  }
+
+  #menu-toggle:checked ~ nav {
     width: 0;
     overflow: hidden;
   }
@@ -103,8 +106,8 @@
 
   <Logo size={logoSize} />
 
-  <label for="menu-toggle" onclick>hide menu</label>
   <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" onclick>hide menu</label>
 
   <nav>
     {#each processedLinks as link}
