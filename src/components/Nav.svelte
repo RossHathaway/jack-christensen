@@ -39,10 +39,19 @@
   label[for="menu-toggle"]::after {
     content: "";
     display: inline-block;
+    padding: 0.25rem;
+
+    background-image: url("/logos/line-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box;
+
+    transition: transform 0.3s;
 
     height: 2rem;
     width: 2rem;
 
+    outline: none;
     border: 2px solid white;
     border-radius: 0.3rem;
   }
