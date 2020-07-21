@@ -61,6 +61,8 @@
     flex-direction: column;
     width: 18rem;
     margin: 0 1rem;
+    transform-origin: left;
+    transition: transform 0.3s;
   }
 
   #menu-toggle:checked ~ label[for="menu-toggle"]::after {
@@ -68,7 +70,7 @@
   }
 
   #menu-toggle:checked ~ nav {
-    width: 0;
+    transform: scaleX(0);
     overflow: hidden;
   }
 
