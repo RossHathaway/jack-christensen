@@ -34,12 +34,20 @@
     background-color: var(--second-darkest-hue);
     color: white;
     margin-bottom: 1rem;
+    width: 18rem;
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+
+    transform-origin: left;
+    transition: width 0.3s;
   }
 
   label[for="menu-toggle"]::after {
     content: "";
     display: inline-block;
     padding: 0.25rem;
+    margin-left: auto;
 
     background-image: url("/logos/line-arrow.svg");
     background-repeat: no-repeat;
@@ -57,12 +65,21 @@
 
   nav {
     font-weight: 300;
+
     display: flex;
     flex-direction: column;
+
     width: 18rem;
     margin: 0 1rem;
+
     transform-origin: left;
     transition: transform 0.3s;
+  }
+
+  #menu-toggle:checked ~ label[for="menu-toggle"] {
+    width: 10rem;
+    align-self: flex-start;
+    margin-left: 1rem;
   }
 
   #menu-toggle:checked ~ label[for="menu-toggle"]::after {
@@ -109,7 +126,7 @@
   <Logo size={logoSize} />
 
   <input type="checkbox" id="menu-toggle" />
-  <label for="menu-toggle" onclick>hide menu</label>
+  <label for="menu-toggle" onclick>Hide Menu</label>
 
   <nav>
     {#each processedLinks as link}
