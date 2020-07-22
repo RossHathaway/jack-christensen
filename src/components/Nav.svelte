@@ -63,6 +63,14 @@
     outline: none;
   }
 
+  #menu-toggle ~ label[for="menu-toggle"] #hide {
+    display: inline;
+  }
+
+  #menu-toggle ~ label[for="menu-toggle"] #show {
+    display: none;
+  }
+
   nav {
     font-weight: 300;
 
@@ -77,13 +85,21 @@
   }
 
   #menu-toggle:checked ~ label[for="menu-toggle"] {
-    width: 10rem;
+    width: 11rem;
     align-self: flex-start;
     margin-left: 1rem;
   }
 
   #menu-toggle:checked ~ label[for="menu-toggle"]::after {
     transform: rotate(0deg);
+  }
+
+  #menu-toggle:checked ~ label[for="menu-toggle"] #hide {
+    display: none;
+  }
+
+  #menu-toggle:checked ~ label[for="menu-toggle"] #show {
+    display: inline;
   }
 
   #menu-toggle:checked ~ nav {
@@ -126,7 +142,10 @@
   <Logo size={logoSize} />
 
   <input type="checkbox" id="menu-toggle" />
-  <label for="menu-toggle" onclick>Hide Menu</label>
+  <label for="menu-toggle" onclick>
+    <span id="hide">Hide Menu</span>
+    <span id="show">Show Menu</span>
+  </label>
 
   <nav>
     {#each processedLinks as link}
