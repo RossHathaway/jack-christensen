@@ -13,6 +13,8 @@
 
   h1 {
     margin: 0;
+    /* height: 100%; will this look better on mobile?*/
+    width: 100%;
   }
 
   svg {
