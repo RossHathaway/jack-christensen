@@ -14,8 +14,27 @@
   h1 {
     margin: 0;
   }
+
+  svg {
+    max-width: 800px;
+    min-width: 300px;
+  }
+
+  svg > text {
+    font-size: 3.125rem;
+    font-weight: bold;
+  }
 </style>
 
-<header style="--height:{height}px">
-  <h1>Jack Shields Christensen</h1>
+<!-- style="--height:{height}px" -->
+<header>
+  <h1>
+    <!-- width="800px"
+    height="300px" -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180">
+
+      <text x="110" y="110">Jack Shields Christensen</text>
+
+    </svg>
+  </h1>
 </header>
