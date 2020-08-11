@@ -26,11 +26,8 @@
   }
 </style>
 
-<!-- style="--height:{height}px" -->
-<header>
+<header style="--height:{height}px">
   <h1>
-    <!-- width="800px"
-    height="300px" -->
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180">
 
       <text x="110" y="110">Jack Shields Christensen</text>
