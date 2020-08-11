@@ -23,7 +23,7 @@
   }
 
   svg > text {
-    font-size: 3.125rem;
+    font-size: 50px;
     font-weight: bold;
   }
 </style>
