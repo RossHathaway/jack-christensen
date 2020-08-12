@@ -87,8 +87,7 @@
     width: 18rem;
     margin: 0 1rem;
 
-    transform-origin: left;
-    transition: transform 0.3s;
+    transition: transform 0.3s, width 0.5s;
   }
 
   #menu-toggle:checked ~ label[for="menu-toggle"] {
@@ -110,8 +109,9 @@
   }
 
   #menu-toggle:checked ~ nav {
-    transform: scaleX(0);
+    width: 0;
     overflow: hidden;
+    transform: translateX(-150%);
   }
 
   a {
