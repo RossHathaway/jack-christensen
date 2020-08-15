@@ -38,7 +38,6 @@
   }
 
   label[for="menu-toggle"] {
-    background-color: var(--second-darkest-hue);
     color: white;
     margin-bottom: 1rem;
     width: 18rem;
@@ -48,34 +47,6 @@
 
     transform-origin: left;
     transition: width 0.3s;
-  }
-
-  label[for="menu-toggle"]::after {
-    content: "";
-    display: inline-block;
-    padding: 0.25rem;
-    margin-left: auto;
-
-    background-image: url("/logos/line-arrow.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-origin: content-box;
-
-    transform: rotate(180deg);
-    transition: transform 0.3s;
-
-    height: 2rem;
-    width: 2rem;
-
-    outline: none;
-  }
-
-  #menu-toggle ~ label[for="menu-toggle"] #hide {
-    display: inline;
-  }
-
-  #menu-toggle ~ label[for="menu-toggle"] #show {
-    display: none;
   }
 
   nav {
@@ -101,18 +72,9 @@
     transform: rotate(0deg);
   }
 
-  #menu-toggle:checked ~ label[for="menu-toggle"] #hide {
-    display: none;
-  }
-
-  #menu-toggle:checked ~ label[for="menu-toggle"] #show {
-    display: inline;
-  }
-
   #menu-toggle:checked ~ nav {
     width: 0;
     overflow: hidden;
-    /* transform: translateX(-150%); */
   }
 
   a {
@@ -151,8 +113,22 @@
 
   <input type="checkbox" id="menu-toggle" />
   <label for="menu-toggle" onclick>
-    <span id="hide">Hide Menu</span>
-    <span id="show">Show Menu</span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 103.8 103.8"
+      height="392.5"
+      width="392.5">
+      <g
+        transform="translate(-79.8 -103.8)"
+        fill="none"
+        stroke="var(--second-darkest-hue)"
+        stroke-width="6.6"
+        stroke-linecap="round"
+        stroke-linejoin="round">
+        <rect ry="7.9" rx="7.9" y="107.1" x="83.1" height="97.2" width="97.2" />
+        <path d="M95.8 182h71.9M95.8 131.1h71.9M95.8 156.6h71.9" />
+      </g>
+    </svg>
   </label>
 
   <nav>
