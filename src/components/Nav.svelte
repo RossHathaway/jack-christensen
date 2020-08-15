@@ -113,11 +113,12 @@
 
   <input type="checkbox" id="menu-toggle" />
   <label for="menu-toggle" onclick>
+    <!-- height="392.5"
+      width="392.5" -->
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 103.8 103.8"
-      height="392.5"
-      width="392.5">
+      height="4rem">
       <g
         transform="translate(-79.8 -103.8)"
         fill="none"
