@@ -83,6 +83,7 @@
 
     display: flex;
     flex-direction: column;
+    align-self: flex-start;
 
     width: 18rem;
     margin: 0 1rem;
@@ -111,7 +112,7 @@
   #menu-toggle:checked ~ nav {
     width: 0;
     overflow: hidden;
-    transform: translateX(-150%);
+    /* transform: translateX(-150%); */
   }
 
   a {
