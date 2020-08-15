@@ -113,8 +113,6 @@
 
   <input type="checkbox" id="menu-toggle" />
   <label for="menu-toggle" onclick>
-    <!-- height="392.5"
-      width="392.5" -->
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 103.8 103.8"
@@ -123,7 +121,7 @@
         transform="translate(-79.8 -103.8)"
         fill="none"
         stroke="var(--second-darkest-hue)"
-        stroke-width="6.6"
+        stroke-width="9"
         stroke-linecap="round"
         stroke-linejoin="round">
         <rect ry="7.9" rx="7.9" y="107.1" x="83.1" height="97.2" width="97.2" />
