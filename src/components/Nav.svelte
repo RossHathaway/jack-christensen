@@ -44,6 +44,7 @@
     padding: 0.75rem;
     display: flex;
     align-items: center;
+    align-self: flex-start;
 
     transform-origin: left;
     transition: width 0.3s;
