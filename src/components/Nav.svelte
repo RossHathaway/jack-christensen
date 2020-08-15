@@ -38,15 +38,15 @@
   }
 
   label[for="menu-toggle"] {
-    color: white;
+    background-color: var(--main-bg-color);
     margin-bottom: 1rem;
     width: 18rem;
     padding: 0.75rem;
+
     display: flex;
     align-items: center;
     align-self: flex-start;
 
-    transform-origin: left;
     transition: width 0.3s;
   }
 
@@ -60,7 +60,7 @@
     width: 18rem;
     margin: 0 1rem;
 
-    transition: transform 0.3s, width 0.5s;
+    transition: width 0.5s;
   }
 
   #menu-toggle:checked ~ label[for="menu-toggle"] {
