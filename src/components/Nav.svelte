@@ -40,14 +40,9 @@
   label[for="menu-toggle"] {
     background-color: var(--main-bg-color);
     margin-bottom: 1rem;
-    width: 18rem;
-    padding: 0.75rem;
-
-    display: flex;
-    align-items: center;
+    margin-left: 1rem;
     align-self: flex-start;
-
-    transition: width 0.3s;
+    height: 80px;
   }
 
   nav {
@@ -60,17 +55,7 @@
     width: 18rem;
     margin: 0 1rem;
 
-    transition: width 0.5s;
-  }
-
-  #menu-toggle:checked ~ label[for="menu-toggle"] {
-    width: 11rem;
-    align-self: flex-start;
-    margin-left: 1rem;
-  }
-
-  #menu-toggle:checked ~ label[for="menu-toggle"]::after {
-    transform: rotate(0deg);
+    transition: width 0.3s;
   }
 
   #menu-toggle:checked ~ nav {
