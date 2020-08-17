@@ -34,7 +34,7 @@
   <title>Jack Shields Christensen</title>
 </svelte:head>
 
-<Title height={logoSize} />
+<Title {logoSize} />
 
 <div id="observe-resize">
   <Nav {links} />
