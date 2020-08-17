@@ -20,13 +20,7 @@
 </script>
 
 <style>
-  /* .outer-container {
-    display: flex;
-    min-width: 0;
-    /* scroll ? 
-  } */
-
-  .inner-container {
+  #observe-resize {
     display: flex;
     width: 100%;
     min-width: 0;
@@ -42,7 +36,7 @@
 
 <Title height={logoSize} />
 
-<div class="inner-container" id="observe-resize">
+<div id="observe-resize">
   <Nav {links} />
   <slot />
 </div>
