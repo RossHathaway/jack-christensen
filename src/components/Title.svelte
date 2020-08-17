@@ -10,16 +10,22 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: var(--height);
   }
 
+  /* logo */
+  header > div {
+    text-align: center;
+    width: 20rem;
+  }
+
+  /* text */
   h1 {
     margin: 0;
     /* height: 100%; will this look better on mobile?*/
     width: 100%;
   }
 
-  svg {
+  h1 > svg {
     max-width: 800px;
     min-width: 300px;
   }
@@ -31,7 +37,10 @@
 </style>
 
 <header>
-  <Logo size={logoSize} />
+  <div>
+    <Logo size={logoSize} />
+  </div>
+
   <h1>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180">
 
