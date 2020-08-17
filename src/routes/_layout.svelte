@@ -20,15 +20,14 @@
 </script>
 
 <style>
-  .outer-container {
+  /* .outer-container {
     display: flex;
     min-width: 0;
-    /* scroll ? */
-  }
+    /* scroll ? 
+  } */
 
   .inner-container {
     display: flex;
-    flex-direction: column;
     width: 100%;
     min-width: 0;
   }
@@ -41,13 +40,9 @@
   <title>Jack Shields Christensen</title>
 </svelte:head>
 
-<div class="outer-container">
+<Title height={logoSize} />
 
-  <Nav {logoSize} {links} />
-
-  <div class="inner-container" id="observe-resize">
-    <Title height={logoSize} />
-    <slot />
-  </div>
-
+<div class="inner-container" id="observe-resize">
+  <Nav {links} />
+  <slot />
 </div>

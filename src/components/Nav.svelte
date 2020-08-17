@@ -1,8 +1,7 @@
 <script>
   import NavSection from "./NavSection.svelte";
-  import Logo from "./Logo.svelte";
 
-  export let logoSize, links;
+  export let links;
 
   const processedLinks = [];
 
@@ -94,8 +93,6 @@
 </style>
 
 <div class="outer-container">
-
-  <Logo size={logoSize} />
 
   <input type="checkbox" id="menu-toggle" />
   <label for="menu-toggle" onclick>

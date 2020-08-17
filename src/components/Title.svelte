@@ -1,4 +1,6 @@
 <script>
+  import Logo from "./Logo.svelte";
+
   export let height;
 </script>
 
@@ -29,6 +31,7 @@
 </style>
 
 <header style="--height:{height}px">
+  <Logo size={height} />
   <h1>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180">
 
