@@ -20,8 +20,14 @@
 </script>
 
 <style>
-  #observe-resize {
+  .outer-container {
     display: flex;
+    min-width: 0;
+    /* scroll ? */
+  }
+  .inner-container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     min-width: 0;
   }
@@ -34,9 +40,13 @@
   <title>Jack Shields Christensen</title>
 </svelte:head>
 
-<Title {logoSize} />
+<div class="outer-container">
 
-<div id="observe-resize">
-  <Nav {links} />
-  <slot />
+  <Nav {logoSize} {links} />
+
+  <div class="inner-container" id="observe-resize">
+    <Title {logoSize} />
+    <slot />
+  </div>
+
 </div>

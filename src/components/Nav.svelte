@@ -1,7 +1,8 @@
 <script>
+  import Logo from "./Logo.svelte";
   import NavSection from "./NavSection.svelte";
 
-  export let links;
+  export let links, logoSize;
 
   const processedLinks = [];
 
@@ -23,6 +24,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  #logo :global(svg) {
+    /* text-align: center; */
+    max-width: var(--logo-size);
   }
 
   #menu-toggle {
@@ -93,6 +99,10 @@
 </style>
 
 <div class="outer-container">
+
+  <div id="logo" style="--logo-size:{logoSize}px">
+    <Logo />
+  </div>
 
   <input type="checkbox" id="menu-toggle" />
   <label for="menu-toggle" onclick>

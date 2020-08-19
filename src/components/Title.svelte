@@ -10,17 +10,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-  }
-
-  /* logo */
-  header > div {
-    text-align: center;
-    width: 20rem;
-  }
-
-  header > div > :global(svg) {
-    text-align: center;
-    max-width: var(--size);
+    height: var(--height);
   }
 
   /* text */
@@ -28,6 +18,9 @@
     margin: 0;
     /* height: 100%; will this look better on mobile?*/
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   h1 > svg {
@@ -41,10 +34,7 @@
   }
 </style>
 
-<header>
-  <div style="--size:{logoSize}px">
-    <Logo />
-  </div>
+<header style="--height:{logoSize}px">
 
   <h1>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180">
