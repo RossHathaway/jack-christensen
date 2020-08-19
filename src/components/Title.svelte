@@ -18,6 +18,11 @@
     width: 20rem;
   }
 
+  header > div > :global(svg) {
+    text-align: center;
+    max-width: var(--size);
+  }
+
   /* text */
   h1 {
     margin: 0;
@@ -37,8 +42,8 @@
 </style>
 
 <header>
-  <div>
-    <Logo size={logoSize} />
+  <div style="--size:{logoSize}px">
+    <Logo />
   </div>
 
   <h1>
