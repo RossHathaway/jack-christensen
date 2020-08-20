@@ -24,8 +24,7 @@
   }
 
   h1 > svg {
-    max-width: 800px;
-    min-width: 300px;
+    width: clamp(300px, 800px, 800px);
   }
 
   svg > text {

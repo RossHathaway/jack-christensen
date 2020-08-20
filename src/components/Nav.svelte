@@ -27,8 +27,13 @@
   }
 
   #logo :global(svg) {
-    /* text-align: center; */
-    max-width: var(--logo-size);
+    /* max-width: var(--logo-size);
+    min-width: calc(var(--logo-size) / 2); */
+    width: clamp(
+      calc(var(--logo-size) / 2),
+      var(--logo-size),
+      var(--logo-size)
+    );
   }
 
   #menu-toggle {
@@ -47,7 +52,7 @@
     margin-bottom: 1rem;
     margin-left: 1rem;
     align-self: flex-start;
-    height: 80px;
+    height: 70px;
   }
 
   nav {
@@ -109,7 +114,7 @@
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 103.8 103.8"
-      height="5rem">
+      height="70px">
       <g
         transform="translate(-79.8 -103.8)"
         fill="none"
