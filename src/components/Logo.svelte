@@ -25,7 +25,11 @@
     top: 80%;
     left: 80%;
     width: 65vw;
+    padding: 1rem;
     z-index: 2;
+
+    background-color: var(--darkest-hue);
+    color: white;
   }
 </style>
 
