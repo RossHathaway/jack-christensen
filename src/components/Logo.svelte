@@ -8,6 +8,12 @@
     display: none;
   }
 
+  button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+
   .open {
     visibility: visible;
     display: block;
