@@ -56,7 +56,7 @@
       lines 12-15 (page 62 of the Capricorn Books Edition, 1962).
     </p>
     <blockquote>
-      ”... a sound man shall so square the circle And circle the square as not
+      “... a sound man shall so square the circle And circle the square as not
       to injure, not to impede: The glow of his life shall not daze, It shall
       lead.”
     </blockquote>
