@@ -25,11 +25,13 @@
     top: 80%;
     left: 80%;
     width: 65vw;
-    padding: 1rem;
+    padding: 2.5rem;
     z-index: 2;
 
     background-color: var(--darkest-hue);
     color: white;
+    border: 0.5rem solid var(--darkest-hue);
+    box-shadow: inset 0 0 0 0.5rem white;
   }
 
   h2 {
