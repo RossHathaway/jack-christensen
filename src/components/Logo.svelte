@@ -31,28 +31,34 @@
     background-color: var(--darkest-hue);
     color: white;
   }
+
+  h2 {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+  }
 </style>
 
 <div>
 
   <section class:open>
-    Jack Shields Christensen (1931-2018) first developed this symbol of belief
-    in the mid-1970’s and used it continually since. It derived from his studies
-    of Taoism and the writings of Lao Tzu. Using the translation from Chinese by
-    Witter Bynner, The Way of Live According to Lao Tzu, an American Version,
-    1944, the symbol is his personal visual representation of Verse 58, lines
-    12-15 (page 62 of the Capricorn Books Edition, 1962). ”... a sound man shall
-    so square the circle And circle the square as not to injure, not to impede:
-    The glow of his life shall not daze, It shall lead.” And in his Earthling:
-    My Long Journey toward Spiritual Maturity, Part One: Elevation Of
-    Consciousness, in the section named Longhand Affirmations, Jack Shields
-    Christensen wrote: “Along your way to the high plateau of old age, you are
-    always confined within the circle of your consciousness and the square of
-    your Quadratic Balance. Quadratic Balance is our cultivated awareness of the
-    four components of humankind – physical, emotional, rational, spiritual –
-    which comprise our evolutionary fore-nature that we must respect
-    conscientiously if we are to advance in accord with The True Human
-    Movement.”
+    <h2>Jack Shields Christensen – Personal Religious Symbol</h2>
+    <span class="bold">Jack Shields Christensen</span>
+    (1931-2018) first developed this symbol of belief in the mid-1970’s and used
+    it continually since. It derived from his studies of Taoism and the writings
+    of Lao Tzu. Using the translation from Chinese by Witter Bynner, The Way of
+    Live According to Lao Tzu, an American Version, 1944, the symbol is his
+    personal visual representation of Verse 58, lines 12-15 (page 62 of the
+    Capricorn Books Edition, 1962). ”... a sound man shall so square the circle
+    And circle the square as not to injure, not to impede: The glow of his life
+    shall not daze, It shall lead.” And in his Earthling: My Long Journey toward
+    Spiritual Maturity, Part One: Elevation Of Consciousness, in the section
+    named Longhand Affirmations, Jack Shields Christensen wrote: “Along your way
+    to the high plateau of old age, you are always confined within the circle of
+    your consciousness and the square of your Quadratic Balance. Quadratic
+    Balance is our cultivated awareness of the four components of humankind –
+    physical, emotional, rational, spiritual – which comprise our evolutionary
+    fore-nature that we must respect conscientiously if we are to advance in
+    accord with The True Human Movement.”
   </section>
 
   <button
