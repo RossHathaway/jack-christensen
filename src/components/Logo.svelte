@@ -34,6 +34,12 @@
     box-shadow: inset 0 0 0 0.5rem white;
   }
 
+  .reverse-color {
+    background-color: var(--alt-bg-color-2);
+    color: var(--darkest-hue);
+    padding: 0.2rem 0.4rem;
+  }
+
   h2 {
     margin: 0.5rem;
     font-size: 1.5rem;
@@ -56,9 +62,15 @@
       lines 12-15 (page 62 of the Capricorn Books Edition, 1962).
     </p>
     <blockquote>
-      “... a sound man shall so square the circle And circle the square as not
-      to injure, not to impede: The glow of his life shall not daze, It shall
-      lead.”
+      “... a sound man shall so
+      <span class="reverse-color">square the circle</span>
+      <br />
+      <span class="reverse-color">And circle the square</span>
+      as not to injure, not to impede:
+      <br />
+      The glow of his life shall not daze,
+      <br />
+      It shall lead.”
     </blockquote>
 
     <p>
@@ -72,9 +84,11 @@
     </p>
     <blockquote>
       <p>
-        “Along your way to the high plateau of old age, you are always confined
-        within the circle of your consciousness and the square of your Quadratic
-        Balance.
+        “Along your way to the high plateau of old age,
+        <span class="reverse-color">
+          you are always confined within the circle of your consciousness and
+          the square of your Quadratic Balance.
+        </span>
       </p>
       <p>
         Quadratic Balance is our cultivated awareness of the four components of
