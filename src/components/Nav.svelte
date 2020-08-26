@@ -26,7 +26,7 @@
     align-items: center;
   }
 
-  #logo :global(svg) {
+  #logo > :global(button > svg) {
     /* max-width: var(--logo-size);
     min-width: calc(var(--logo-size) / 2); */
     width: clamp(

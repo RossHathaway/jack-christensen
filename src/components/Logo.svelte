@@ -26,9 +26,15 @@
   }
 
   .close-button {
-    color: white;
-    font-size: 1.25rem;
+    width: 3rem;
+    height: 3rem;
   }
+
+  .close-button > svg {
+    width: 3rem;
+    fill: green;
+  }
+  /* <!-- height="3rem" --> */
 
   .open {
     visibility: visible;
@@ -92,12 +98,8 @@
   </svg>
 
   <section class:open>
-    <button class="close-button">
-      close
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 103.8 103.8"
-        height="3rem">
+    <button class="close-button" aria-label="close description of Jack's logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.8 103.8">
         <g
           transform="translate(-79.8 -103.8)"
           fill="none"
