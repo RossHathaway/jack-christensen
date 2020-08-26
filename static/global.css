@@ -69,6 +69,12 @@ a {
   color: inherit;
 }
 
+button {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  margin: 0;
+}
+
 /* a:visited {
   color: var(--darkest-hue);
 } */
