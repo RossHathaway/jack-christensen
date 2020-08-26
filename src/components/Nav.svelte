@@ -1,8 +1,7 @@
 <script>
-  import Logo from "./Logo.svelte";
   import NavSection from "./NavSection.svelte";
 
-  export let links, logoSize;
+  export let links;
 
   const processedLinks = [];
 
@@ -20,20 +19,10 @@
 </script>
 
 <style>
-  .outer-container {
+  #nav-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  #logo > :global(button > svg) {
-    /* max-width: var(--logo-size);
-    min-width: calc(var(--logo-size) / 2); */
-    width: clamp(
-      calc(var(--logo-size) / 2),
-      var(--logo-size),
-      var(--logo-size)
-    );
   }
 
   #menu-toggle {
@@ -103,13 +92,9 @@
   }
 </style>
 
-<div class="outer-container">
+<div id="nav-container">
 
-  <div id="logo" style="--logo-size:{logoSize}px">
-    <Logo />
-  </div>
-
-  <input type="checkbox" id="menu-toggle" />
+  <!--   <input type="checkbox" id="menu-toggle" />
   <label for="menu-toggle" onclick>
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +111,7 @@
         <path d="M95.8 182h71.9M95.8 131.1h71.9M95.8 156.6h71.9" />
       </g>
     </svg>
-  </label>
+  </label> -->
 
   <nav>
     {#each processedLinks as link}

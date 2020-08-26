@@ -33,9 +33,13 @@
     border: none;
   }
 
-  #outer-button {
+  #logo {
     position: relative;
     padding: 0;
+  }
+
+  #logo > svg {
+    width: clamp(60px, 180px, 180px);
   }
 
   .close-button {
@@ -76,7 +80,7 @@
 </style>
 
 <button
-  id="outer-button"
+  id="logo"
   on:focus={() => {
     open = true;
   }}

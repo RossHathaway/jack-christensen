@@ -11,21 +11,37 @@
 </script>
 
 <script>
+  import Logo from "../components/Logo.svelte";
   import Nav from "../components/Nav.svelte";
   import Title from "../components/Title.svelte";
-
-  const logoSize = 180;
 
   export let links;
 </script>
 
 <style>
-  .outer-container {
-    display: flex;
+  #main-container {
+    display: grid;
+    grid-template-columns: 20rem auto 1fr;
+    justify-items: center;
     min-width: 0;
     /* scroll ? */
   }
-  .inner-container {
+
+  #main-container > :global(header) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  :global(#nav-container) {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+  #observe-resize {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -40,12 +56,13 @@
   <title>Jack Shields Christensen</title>
 </svelte:head>
 
-<div class="outer-container">
+<div id="main-container">
 
-  <Nav {logoSize} {links} />
+  <Logo />
+  <Title id="title" />
 
-  <div class="inner-container" id="observe-resize">
-    <Title {logoSize} />
+  <Nav {links} />
+  <div id="observe-resize">
     <slot />
   </div>
 
