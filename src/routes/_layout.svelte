@@ -19,6 +19,8 @@
 </script>
 
 <style>
+  /* 1000px used as breakpoint for switching layout and showing menu icon */
+
   #main-container {
     display: grid;
     grid-template-columns: 20rem auto 1fr;
@@ -46,6 +48,34 @@
     flex-direction: column;
     width: 100%;
     min-width: 0;
+  }
+
+  @media screen and (max-width: 1000px) {
+    /* logo description change? */
+    /* right side have menu icon with nav inside (fixed position with scrolling only appearing when needed) */
+
+    #main-container {
+      grid-template-columns: 90px auto 90px;
+    }
+
+    #main-container > :global(header) {
+      grid-column-end: 3;
+    }
+
+    :global(#nav-container) {
+      grid-column-start: 3;
+      grid-row-start: 1;
+    }
+
+    #observe-resize {
+      grid-column-start: 1;
+    }
+
+    :global(#logo > svg) {
+      min-width: 70px;
+      max-width: 70px;
+      /* becomes smaller than 70 px */
+    }
   }
 </style>
 
