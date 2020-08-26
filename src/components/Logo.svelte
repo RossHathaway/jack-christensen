@@ -15,6 +15,19 @@
     display: none;
   }
 
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-items: center;
+  }
+
+  header > h2 {
+    grid-column-start: 2;
+  }
+  header > button {
+    margin-left: auto;
+  }
+
   button {
     background-color: transparent;
     border: none;
@@ -31,7 +44,7 @@
   }
 
   .close-button > svg {
-    width: 3rem;
+    width: 2.5rem;
   }
 
   .open {
@@ -96,28 +109,33 @@
   </svg>
 
   <section class:open>
-    <button class="close-button" aria-label="close description of Jack's logo">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.8 103.8">
-        <g
-          transform="translate(-79.8 -103.8)"
-          fill="none"
-          stroke="white"
-          stroke-width="6.6"
-          stroke-linecap="round"
-          stroke-linejoin="round">
-          <rect
-            ry="7.9"
-            rx="7.9"
-            y="107.1"
-            x="83.1"
-            height="97.2"
-            width="97.2" />
-          <path d="M102.3 126.2l59 59M161.2 126.2l-59 59" />
-        </g>
-      </svg>
-    </button>
+    <header>
+      <h2>Jack Shields Christensen – Personal Religious Symbol</h2>
 
-    <h2>Jack Shields Christensen – Personal Religious Symbol</h2>
+      <button
+        class="close-button"
+        aria-label="close description of Jack's logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.8 103.8">
+          <g
+            transform="translate(-79.8 -103.8)"
+            fill="none"
+            stroke="white"
+            stroke-width="6.6"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect
+              ry="7.9"
+              rx="7.9"
+              y="107.1"
+              x="83.1"
+              height="97.2"
+              width="97.2" />
+            <path d="M102.3 126.2l59 59M161.2 126.2l-59 59" />
+          </g>
+        </svg>
+      </button>
+
+    </header>
     <p>
       <span class="bold">Jack Shields Christensen</span>
       (1931-2018) first developed this symbol of belief in the mid-1970’s and
