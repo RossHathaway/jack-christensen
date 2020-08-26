@@ -70,8 +70,8 @@ a {
 }
 
 button {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
+  font-family: inherit;
+  font-size: 100%;
   margin: 0;
 }
 

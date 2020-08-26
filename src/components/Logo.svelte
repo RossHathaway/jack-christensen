@@ -32,9 +32,7 @@
 
   .close-button > svg {
     width: 3rem;
-    fill: green;
   }
-  /* <!-- height="3rem" --> */
 
   .open {
     visibility: visible;
