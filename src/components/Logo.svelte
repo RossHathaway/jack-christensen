@@ -3,21 +3,31 @@
 </script>
 
 <style>
-  section {
-    visibility: hidden;
-    display: none;
-
+  * {
     font-family: Gelasio, serif;
     font-size: 1.25rem;
     letter-spacing: 0.02em;
     line-height: 1.5;
   }
 
+  section {
+    visibility: hidden;
+    display: none;
+  }
+
   button {
-    position: relative;
-    padding: 0;
     background-color: transparent;
     border: none;
+  }
+
+  #outer-button {
+    position: relative;
+    padding: 0;
+  }
+
+  .close-button {
+    color: white;
+    font-size: 1.25rem;
   }
 
   .open {
@@ -49,6 +59,7 @@
 </style>
 
 <button
+  id="outer-button"
   on:focus={() => {
     open = true;
   }}
@@ -58,6 +69,7 @@
   on:blur={() => {
     open = false;
   }}>
+  <!-- circle/square logo -->
   <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 308 308">
     <path
       d="M139.5 40.1c-12.2 1.6-22.7 4.8-35 10.9C91 57.6 84.6 62 74.6 71.8 31.1
@@ -80,6 +92,31 @@
   </svg>
 
   <section class:open>
+    <button class="close-button">
+      close
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 103.8 103.8"
+        height="3rem">
+        <g
+          transform="translate(-79.8 -103.8)"
+          fill="none"
+          stroke="white"
+          stroke-width="6.6"
+          stroke-linecap="round"
+          stroke-linejoin="round">
+          <rect
+            ry="7.9"
+            rx="7.9"
+            y="107.1"
+            x="83.1"
+            height="97.2"
+            width="97.2" />
+          <path d="M102.3 126.2l59 59M161.2 126.2l-59 59" />
+        </g>
+      </svg>
+    </button>
+
     <h2>Jack Shields Christensen – Personal Religious Symbol</h2>
     <p>
       <span class="bold">Jack Shields Christensen</span>

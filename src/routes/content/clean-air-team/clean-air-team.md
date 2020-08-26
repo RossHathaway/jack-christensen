@@ -4,9 +4,6 @@
 
 <DocumentWrapper component="linesLogo">
 
-<!-- <h2>THE CLEAN AIR TEAM </h2>
-<h3>ALL-VOLUNTEER PUBLIC SERVICE SINCE 1975</h3> -->
-
 <h3> A Brief History Of Our Accomplishments </h3>
 
 <strong>THE CLEAN AIR TEAM</strong> began as a self-sustaining group of volunteers who at first called themselves The Nonsmokers' Rights Council Of Hawai'i. An opening rally was well attended on November 15, 1975 at the Waikiki-Kapahulu Public Library. Thereafter, meetings were conducted every Saturday for twenty-five consecutive weeks until May, 1976, during which time our objectives were defined and public service projects launched.
