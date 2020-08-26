@@ -59,7 +59,7 @@
 <div id="main-container">
 
   <Logo />
-  <Title id="title" />
+  <Title />
 
   <Nav {links} />
   <div id="observe-resize">
