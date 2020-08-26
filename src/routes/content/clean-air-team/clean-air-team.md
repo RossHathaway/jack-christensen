@@ -4,8 +4,8 @@
 
 <DocumentWrapper component="linesLogo">
 
-<h2>THE CLEAN AIR TEAM </h2>
-<h3>ALL-VOLUNTEER PUBLIC SERVICE SINCE 1975</h3>
+<!-- <h2>THE CLEAN AIR TEAM </h2>
+<h3>ALL-VOLUNTEER PUBLIC SERVICE SINCE 1975</h3> -->
 
 <h3> A Brief History Of Our Accomplishments </h3>
 

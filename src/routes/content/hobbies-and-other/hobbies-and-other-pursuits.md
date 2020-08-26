@@ -1,7 +1,6 @@
 <main>
 
-## Uncle Jack's
-HOBBIES AND OTHER PURSUITS
+## UNCLE JACK'S HOBBIES AND OTHER PURSUITS
 <!-- TODO: four dots -->
 
 ### COACHING SESSIONS
