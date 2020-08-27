@@ -101,6 +101,11 @@
     }
 
     #menu-toggle:checked ~ nav {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 3;
+
       width: 18rem;
       margin: 0 1rem;
       height: auto;
