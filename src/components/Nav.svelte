@@ -98,17 +98,19 @@
       width: 0;
       height: 0;
       overflow: hidden;
+
+      position: absolute;
+      top: 1rem;
+      right: calc(50% - 9rem);
+      z-index: 3;
     }
 
     #menu-toggle:checked ~ nav {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      z-index: 3;
-
-      width: 18rem;
       margin: 0 1rem;
+      width: 18rem;
       height: auto;
+      max-width: 18rem;
+      max-height: auto;
     }
   }
 </style>
