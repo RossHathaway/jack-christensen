@@ -53,15 +53,10 @@
     flex-direction: column;
     align-self: flex-start;
 
-    width: 0;
-    overflow: hidden;
-
-    transition: width 0.3s;
-  }
-
-  #menu-toggle:checked ~ nav {
     width: 18rem;
     margin: 0 1rem;
+
+    transition: width 0.3s;
   }
 
   a {
@@ -97,6 +92,18 @@
     label[for="menu-toggle"],
     #menu-toggle {
       display: block;
+    }
+
+    nav {
+      width: 0;
+      height: 0;
+      overflow: hidden;
+    }
+
+    #menu-toggle:checked ~ nav {
+      width: 18rem;
+      margin: 0 1rem;
+      height: auto;
     }
   }
 </style>
