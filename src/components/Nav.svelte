@@ -34,6 +34,7 @@
     overflow: hidden;
     padding: 0;
     position: absolute;
+    display: none;
   }
 
   label[for="menu-toggle"] {
@@ -42,6 +43,7 @@
     margin-left: 1rem;
     align-self: flex-start;
     height: 70px;
+    display: none;
   }
 
   nav {
@@ -51,15 +53,15 @@
     flex-direction: column;
     align-self: flex-start;
 
-    width: 18rem;
-    margin: 0 1rem;
+    width: 0;
+    overflow: hidden;
 
     transition: width 0.3s;
   }
 
   #menu-toggle:checked ~ nav {
-    width: 0;
-    overflow: hidden;
+    width: 18rem;
+    margin: 0 1rem;
   }
 
   a {
@@ -90,11 +92,18 @@
   nav > div.contact {
     background-color: var(--darkest-hue);
   }
+
+  @media (max-width: 1000px) {
+    label[for="menu-toggle"],
+    #menu-toggle {
+      display: block;
+    }
+  }
 </style>
 
 <div id="nav-container">
 
-  <!--   <input type="checkbox" id="menu-toggle" />
+  <input type="checkbox" id="menu-toggle" />
   <label for="menu-toggle" onclick>
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +120,7 @@
         <path d="M95.8 182h71.9M95.8 131.1h71.9M95.8 156.6h71.9" />
       </g>
     </svg>
-  </label> -->
+  </label>
 
   <nav>
     {#each processedLinks as link}
