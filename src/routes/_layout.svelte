@@ -52,7 +52,7 @@
 
   @media screen and (max-width: 1000px) {
     #main-container {
-      grid-template-columns: 90px auto 90px;
+      grid-template-columns: 100px auto 100px;
     }
 
     #observe-resize {
@@ -69,9 +69,8 @@
     }
 
     :global(#logo > svg) {
-      min-width: 70px;
-      max-width: 70px;
-      /* becomes smaller than 70 px */
+      min-width: 100px;
+      max-width: 100px;
     }
   }
 </style>
