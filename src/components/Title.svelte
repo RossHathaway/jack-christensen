@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: var(--height);
   }
 
@@ -19,6 +18,7 @@
 
   h1 > svg {
     width: clamp(300px, 800px, 800px);
+    max-width: 100%;
   }
 
   svg > text {

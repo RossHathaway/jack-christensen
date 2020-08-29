@@ -51,14 +51,11 @@
   }
 
   @media screen and (max-width: 1000px) {
-    /* logo description change? */
-    /* right side have menu icon with nav inside (fixed position with scrolling only appearing when needed) */
-
     #main-container {
       grid-template-columns: 90px auto 90px;
     }
 
-    #main-container > :global(header) {
+    #observe-resize {
       grid-column-end: 3;
     }
 
@@ -67,8 +64,8 @@
       grid-row-start: 1;
     }
 
-    #observe-resize {
-      grid-column-start: 1;
+    #main-container > :global(header) {
+      grid-column-end: 3;
     }
 
     :global(#logo > svg) {
