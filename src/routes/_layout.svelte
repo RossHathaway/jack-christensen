@@ -19,8 +19,6 @@
 </script>
 
 <style>
-  /* 1000px used as breakpoint for switching layout and showing menu icon */
-
   #main-container {
     display: grid;
     grid-template-columns: 20rem auto 1fr;
@@ -56,7 +54,8 @@
     }
 
     #observe-resize {
-      grid-column-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 4;
     }
 
     :global(#nav-container) {
