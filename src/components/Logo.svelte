@@ -61,15 +61,13 @@
     padding: 2rem;
     z-index: 2;
 
-    background-color: var(--darkest-hue);
-    color: white;
+    background-color: white;
+    color: black;
     border: 0.5rem solid var(--darkest-hue);
-    box-shadow: inset 0 0 0 0.5rem white;
   }
 
   .reverse-color {
-    background-color: var(--alt-bg-color-2);
-    color: var(--darkest-hue);
+    background-color: var(--main-bg-color);
     padding: 0.2rem 0.4rem;
   }
 
