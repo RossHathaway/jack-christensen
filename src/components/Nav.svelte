@@ -89,6 +89,10 @@
   }
 
   @media (max-width: 1000px) {
+    #nav-container {
+      justify-content: center;
+    }
+
     label[for="menu-toggle"],
     #menu-toggle {
       display: block;
