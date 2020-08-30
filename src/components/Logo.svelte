@@ -21,6 +21,11 @@
     justify-items: center;
   }
 
+  p,
+  blockquote {
+    text-align: left;
+  }
+
   header > h2 {
     grid-column-start: 2;
   }
@@ -121,7 +126,7 @@
           <g
             transform="translate(-79.8 -103.8)"
             fill="none"
-            stroke="white"
+            stroke="var(--darkest-hue)"
             stroke-width="6.6"
             stroke-linecap="round"
             stroke-linejoin="round">
