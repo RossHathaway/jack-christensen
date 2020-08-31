@@ -162,8 +162,9 @@
         </div>
       {:else if link.name === 'Contact'}
         <div class={link.path}>
-          <h2>{link.name}</h2>
-
+          <a href="/contact">
+            <h2>{link.name}</h2>
+          </a>
         </div>
       {/if}
     {/each}
