@@ -92,7 +92,13 @@
   }
 
   #quote-with-logo > blockquote {
-    margin-left: 0;
+    margin-left: 0.5rem;
+  }
+
+  @media screen and (max-width: 700px) {
+    #quote-with-logo {
+      flex-direction: column;
+    }
   }
 </style>
 
