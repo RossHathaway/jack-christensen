@@ -39,8 +39,6 @@
 
   label[for="menu-toggle"] {
     background-color: var(--main-bg-color);
-    margin-bottom: 1rem;
-    margin-left: 1rem;
     align-self: flex-start;
     height: 55px;
     display: none;
