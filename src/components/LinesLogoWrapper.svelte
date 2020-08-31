@@ -1,5 +1,5 @@
 <script>
-  import LineLogo from "./LineLogo.svelte";
+  import LineLogo from "./logos/LineLogo.svelte";
 
   export let doubleBorder;
 </script>

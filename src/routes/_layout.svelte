@@ -11,7 +11,7 @@
 </script>
 
 <script>
-  import Logo from "../components/Logo.svelte";
+  import CircleSquareLogoButton from "../components/CircleSquareLogoButton.svelte";
   import Nav from "../components/Nav.svelte";
   import Title from "../components/Title.svelte";
 
@@ -83,7 +83,7 @@
 
 <div id="main-container">
 
-  <Logo />
+  <CircleSquareLogoButton />
   <Title />
 
   <Nav {links} />

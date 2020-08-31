@@ -1,5 +1,5 @@
 <script>
-    import AutoSuggestion from '../../../components/AutosuggestionLogo.svelte'
+    import AutoSuggestion from '../../../components/logos/AutosuggestionLogo.svelte'
 </script>
 
 <style>
