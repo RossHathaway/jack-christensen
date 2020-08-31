@@ -42,7 +42,7 @@
     margin-bottom: 1rem;
     margin-left: 1rem;
     align-self: flex-start;
-    height: 70px;
+    height: 55px;
     display: none;
   }
 
@@ -126,7 +126,7 @@
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 103.8 103.8"
-      height="70px">
+      height="55px">
       <g
         transform="translate(-79.8 -103.8)"
         fill="none"
