@@ -3,7 +3,7 @@ import pathLib from 'path';
 import { makeReadableName } from './makeReadableNameFromPath';
 
 const pathsToMakeLinksForEvenIfIndexPage = ['src/routes'];
-const pathsToIgnore = ['navLinks.json.js']; // must match name property on Dirent object from readdir function
+const pathsToIgnore = ['navLinks.json.js', '.gitkeep']; // must match name property on Dirent object from readdir function
 
 export function getAllLinks(path) {
   const pathName = typeof path === 'object' ? path.name : path;
