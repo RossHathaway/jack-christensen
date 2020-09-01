@@ -3,7 +3,7 @@ import pathLib from 'path';
 import { makeReadableName } from './makeReadableNameFromPath';
 
 const pathsToMakeLinksForEvenIfIndexPage = ['src/routes'];
-const pathsToIgnore = ['navLinks.json.js', '.gitkeep']; // must match name property on Dirent object from readdir function
+const pathsToIgnore = ['navLinks.json.js']; // must match name property on Dirent object from readdir function
 
 export function getAllLinks(path) {
   const pathName = typeof path === 'object' ? path.name : path;
@@ -27,7 +27,7 @@ export function getAllLinks(path) {
     for (let i = 0; i < FSNodeChildren.length; i++) {
       const FSChild = FSNodeChildren[i];
       const shouldIgnoreChild =
-        FSChild.name.startsWith('_') || pathsToIgnore.includes(FSChild.name);
+        FSChild.name.startsWith('_') || FSChild.name.startsWith('.') || pathsToIgnore.includes(FSChild.name);
 
       if (shouldIgnoreChild) {
         continue;
