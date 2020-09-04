@@ -49,6 +49,13 @@
     padding: 0.25rem;
   }
 
+  button {
+    background-color: inherit;
+    color: white;
+    width: 100%;
+    text-align: left;
+  }
+
   label {
     min-width: calc(100% - 2rem);
   }
@@ -95,8 +102,14 @@
     children: [ [Object], [Object] ] } -->
       <li>
         {#if link.children}
-          <input type="checkbox" name={link.name} id={link.name} />
+          <!-- <input type="checkbox" name={link.name} id={link.name} />
           <label for={link.name}>{link.name}</label>
+           -->
+          <button aria-pressed="false" aria-expanded="false">
+            <!-- on:click={() => set store for currentLink to link.path -->
+            {link.name}
+          </button>
+
           <svelte:self
             links={link.children}
             hasLightBgColor={!hasLightBgColor} />
