@@ -65,26 +65,18 @@
     background-position: center;
     float: right;
     transform: rotate(180deg);
-  }
-  /* button {
-    min-height: 1rem;
-    min-width: 1rem;
-
-
     transition: transform 0.3s;
-    display: inline-block;
-    outline: none;
-  } */
+  }
+
+  button + div {
+    height: 0;
+    overflow: hidden;
+  }
 
   /*
 
   input[type="checkbox"]:checked {
     transform: rotate(90deg);
-  }
-
-  input[type="checkbox"] ~ div {
-    height: 0;
-    overflow: hidden;
   }
 
   input[type="checkbox"]:checked ~ div {
