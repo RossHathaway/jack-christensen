@@ -56,26 +56,27 @@
     text-align: left;
   }
 
-  label {
-    min-width: calc(100% - 2rem);
-  }
-
-  input[type="checkbox"] {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-
-    min-height: 1rem;
-    min-width: 1rem;
-
+  button::after {
+    content: "";
+    height: 1.1em;
+    width: 1.1em;
     background-image: url("/logos/triangle-isoceles-optimized.svg");
     background-repeat: no-repeat;
     background-position: center;
+    float: right;
+    transform: rotate(180deg);
+  }
+  /* button {
+    min-height: 1rem;
+    min-width: 1rem;
+
 
     transition: transform 0.3s;
     display: inline-block;
     outline: none;
-  }
+  } */
+
+  /*
 
   input[type="checkbox"]:checked {
     transform: rotate(90deg);
@@ -88,7 +89,7 @@
 
   input[type="checkbox"]:checked ~ div {
     height: auto;
-  }
+  } */
 </style>
 
 <div style={`background-color: ${bgColor}`}>
