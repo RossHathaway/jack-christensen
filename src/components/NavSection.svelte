@@ -6,12 +6,16 @@
   export let title = null,
     folder = "",
     links = [],
-    hasLightBgColor = true;
+    hasLightBgColor = true,
+    isOpened = false;
+
+  let openedSectionPath = "";
 
   const bgColor = hasLightBgColor
     ? "var(--second-darkest-hue)"
     : "var(--darkest-hue)";
 
+  // move to module script?
   const { page } = stores();
   $: trimmedPath = $page.path.endsWith("/")
     ? $page.path.slice(0, -1)
@@ -19,6 +23,7 @@
   $: urlSegments = trimmedPath.split("/");
   let lastPathSection = "";
   $: lastPathSection = urlSegments[urlSegments.length - 1];
+  // --
 
   if (title === null) {
     title = folder
@@ -73,18 +78,17 @@
     overflow: hidden;
   }
 
-  /*
-
-  input[type="checkbox"]:checked {
-    transform: rotate(90deg);
-  }
-
-  input[type="checkbox"]:checked ~ div {
+  button + div.isOpened {
     height: auto;
-  } */
+  }
 </style>
 
-<div style={`background-color: ${bgColor}`}>
+<div
+  style={`background-color: ${bgColor}`}
+  class="{isOpened ? 'isOpened' : ''}
+  {$$props.class || ''}">
+  <!-- class passed down from parent, or no class if none was passed -->
+
   <strong>{title}</strong>
   <!-- aria-current={lastPathSection === folder ? "location" : undefined} -->
   <ul>
@@ -95,17 +99,19 @@
     children: [ [Object], [Object] ] } -->
       <li>
         {#if link.children}
-          <!-- <input type="checkbox" name={link.name} id={link.name} />
-          <label for={link.name}>{link.name}</label>
-           -->
-          <button aria-pressed="false" aria-expanded="false">
-            <!-- on:click={() => set store for currentLink to link.path -->
+          <button
+            aria-pressed={isOpened}
+            aria-expanded={isOpened}
+            on:click={() => {
+              openedSectionPath = link.path;
+            }}>
             {link.name}
           </button>
 
           <svelte:self
             links={link.children}
-            hasLightBgColor={!hasLightBgColor} />
+            hasLightBgColor={!hasLightBgColor}
+            isOpened={openedSectionPath.startsWith(link.path)} />
         {:else}
           <a
             href={link.path}
