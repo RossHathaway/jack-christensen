@@ -91,7 +91,7 @@
   <!-- class passed down from parent, or no class if none was passed -->
 
   <strong>{title}</strong>
-  <!-- aria-current={lastPathSection === folder ? "location" : undefined} -->
+
   <ul>
     {#each links as link}
       <!-- { path: 'src/routes/about-uncle-jack',
@@ -119,7 +119,7 @@
         {:else}
           <a
             href={link.path}
-            aria-current={urlSegments.includes(link.lastUrlSegment) ? 'location' : undefined}>
+            aria-current={lastPathSection === link.lastUrlSegment ? 'location' : undefined}>
             {link.name}
           </a>
         {/if}
