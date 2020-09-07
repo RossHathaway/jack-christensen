@@ -51,6 +51,11 @@
     padding: 0.25rem;
   }
 
+  span.empty {
+    color: var(--alt-bg-color-1);
+    size: 0.8em;
+  }
+
   button {
     background-color: inherit;
     color: white;
@@ -99,7 +104,7 @@
     lastUrlSegment: 'about-uncle-jack',
     children: [ [Object], [Object] ] } -->
       <li>
-        {#if link.children}
+        {#if link.children && link.children.length}
           <button
             aria-pressed={$openedSectionPath === link.path}
             aria-expanded={$openedSectionPath === link.path}
@@ -116,6 +121,8 @@
             links={link.children}
             hasLightBgColor={!hasLightBgColor}
             isOpenedChildren={$openedSectionPath.startsWith(link.path)} />
+        {:else if link.children && link.children.length === 0}
+          <span class="empty">{link.name} (coming soon)</span>
         {:else}
           <a
             href={link.path}
