@@ -61,6 +61,7 @@
     color: white;
     width: 100%;
     text-align: left;
+    cursor: pointer;
   }
 
   button::after {
