@@ -8,7 +8,7 @@
     folder = "",
     links = [],
     hasLightBgColor = true,
-    isOpened = false;
+    isOpenedChildren = false;
 
   const bgColor = hasLightBgColor
     ? "var(--second-darkest-hue)"
@@ -75,14 +75,18 @@
     overflow: hidden;
   }
 
-  button + div.isOpened {
+  button + div.isOpenedChildren {
     height: auto;
+  }
+
+  button.open::after {
+    transform: rotate(90deg);
   }
 </style>
 
 <div
   style={`background-color: ${bgColor}`}
-  class="{isOpened ? 'isOpened' : ''}
+  class="{isOpenedChildren ? 'isOpenedChildren' : ''}
   {$$props.class || ''}">
   <!-- class passed down from parent, or no class if none was passed -->
 
@@ -97,8 +101,9 @@
       <li>
         {#if link.children}
           <button
-            aria-pressed={isOpened}
-            aria-expanded={isOpened}
+            aria-pressed={$openedSectionPath === link.path}
+            aria-expanded={$openedSectionPath === link.path}
+            class:open={$openedSectionPath === link.path}
             on:click={() => {
               openedSectionPath.update((prev) =>
                 prev === link.path ? '' : link.path
@@ -110,7 +115,7 @@
           <svelte:self
             links={link.children}
             hasLightBgColor={!hasLightBgColor}
-            isOpened={$openedSectionPath.startsWith(link.path)} />
+            isOpenedChildren={$openedSectionPath.startsWith(link.path)} />
         {:else}
           <a
             href={link.path}
