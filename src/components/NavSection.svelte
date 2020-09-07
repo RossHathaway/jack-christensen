@@ -1,5 +1,6 @@
 <script>
   import { stores } from "@sapper/app";
+  import { openedSectionPath } from "./openedSectionPathStore.js";
   import { makeReadableName } from "helpers/makeReadableNameFromPath";
   import { splitUrlOnSlash } from "helpers/splitUrlOnSlash";
 
@@ -9,13 +10,10 @@
     hasLightBgColor = true,
     isOpened = false;
 
-  let openedSectionPath = "";
-
   const bgColor = hasLightBgColor
     ? "var(--second-darkest-hue)"
     : "var(--darkest-hue)";
 
-  // move to module script?
   const { page } = stores();
   $: trimmedPath = $page.path.endsWith("/")
     ? $page.path.slice(0, -1)
@@ -23,7 +21,6 @@
   $: urlSegments = trimmedPath.split("/");
   let lastPathSection = "";
   $: lastPathSection = urlSegments[urlSegments.length - 1];
-  // --
 
   if (title === null) {
     title = folder
@@ -103,7 +100,9 @@
             aria-pressed={isOpened}
             aria-expanded={isOpened}
             on:click={() => {
-              openedSectionPath = link.path;
+              openedSectionPath.update((prev) =>
+                prev === link.path ? '' : link.path
+              );
             }}>
             {link.name}
           </button>
@@ -111,7 +110,7 @@
           <svelte:self
             links={link.children}
             hasLightBgColor={!hasLightBgColor}
-            isOpened={openedSectionPath.startsWith(link.path)} />
+            isOpened={$openedSectionPath.startsWith(link.path)} />
         {:else}
           <a
             href={link.path}
