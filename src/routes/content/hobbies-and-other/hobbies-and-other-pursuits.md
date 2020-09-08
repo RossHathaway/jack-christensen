@@ -13,7 +13,7 @@ Aiming Toward A Productive Longevity
 Primitive Swimming For Immersion Emergencies
 
 ### TAG ALONG TRIPS
-**Traveling Beyond Tra—1a—1a Tourism**
+**Traveling Beyond Tra—la—la Tourism**
 
 California / Nevada / Arizona / New Mexico
 
