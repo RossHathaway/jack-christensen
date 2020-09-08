@@ -31,7 +31,7 @@
 <svelte:head>
   <title>{status}</title>
 </svelte:head>
-<h2>Work in progress, check back later.</h2>
+<h2>Page not found</h2>
 {#if dev && error.stack}
   <pre>{error.stack}</pre>
 {/if}
