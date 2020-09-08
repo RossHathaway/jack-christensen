@@ -1,6 +1,6 @@
 <style>
   svg {
-    max-width: 260px;
+    width: 260px;
   }
 </style>
 
