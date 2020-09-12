@@ -9,5 +9,10 @@ document_locations:
 - location:
   - folder_name: Featured
   - folder_name: Frank Lloyd Wright
+keywords:
+- interior decorating
+- houses
+- design
+- architecture
 
 ---
