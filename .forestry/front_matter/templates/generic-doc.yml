@@ -36,8 +36,8 @@ fields:
       max: 
       labelField: 
     label: Location
-    description: A list of folders starting with the highest level (featured,
-      content, etc) that will determine the url of this document
+    description: A list of folders starting with the highest level (featured, content,
+      etc) that will determine the url of this document
   config:
     min: 1
     max: 
@@ -54,6 +54,13 @@ fields:
     one list, and "Content" and "Architecture" in the other.<br><br>If you want to
     create a new category, just list it here and it will be created in the site''s
     menu.'
+- name: keywords
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Keywords
+  description: Keywords to use for searching
 pages:
-- src/routes/featured/the-mature-american.md
 - src/routes/frank-lloyd-wright.md
