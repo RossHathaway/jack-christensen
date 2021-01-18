@@ -123,7 +123,7 @@
             hasLightBgColor={!hasLightBgColor}
             isOpenedChildren={$openedSectionPath.startsWith(link.path)} />
         {:else if link.children && link.children.length === 0}
-          <span class="empty">{link.name} (coming soon)</span>
+          <span class="empty">{link.name}</span>
         {:else}
           <a
             href={link.path}
