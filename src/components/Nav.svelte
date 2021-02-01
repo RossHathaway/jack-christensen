@@ -81,7 +81,7 @@
     background-color: var(--second-darkest-hue);
   }
 
-  nav > div.content,
+  nav > div.contents,
   nav > div.contact {
     background-color: var(--darkest-hue);
   }
