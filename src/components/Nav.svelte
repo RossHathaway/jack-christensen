@@ -10,7 +10,7 @@
       processedLinks[0] = link;
     } else if (link.name === "Featured") {
       processedLinks[1] = link;
-    } else if (link.name === "Content") {
+    } else if (link.name === "Contents") {
       processedLinks[2] = link;
     } else if (link.name === "Contact") {
       processedLinks[3] = link;
@@ -153,7 +153,7 @@
           <h2>{link.name}</h2>
           <NavSection links={link.children ? link.children : []} />
         </div>
-      {:else if link.name === 'Content'}
+      {:else if link.name === 'Contents'}
         <div class={link.path}>
           <h2>{link.name}</h2>
           <NavSection
