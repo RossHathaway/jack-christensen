@@ -43,6 +43,7 @@
   #logo {
     position: relative;
     padding: 0;
+    cursor: pointer;
   }
 
   #logo > :global(svg) {
@@ -52,6 +53,7 @@
   .close-button {
     width: 3rem;
     height: 3rem;
+    cursor: pointer;
   }
 
   .close-button > svg {
@@ -71,6 +73,8 @@
     background-color: white;
     color: black;
     border: 0.5rem solid var(--darkest-hue);
+
+    cursor: auto;
   }
 
   .reverse-color {
