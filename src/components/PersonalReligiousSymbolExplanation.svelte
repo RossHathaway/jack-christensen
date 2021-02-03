@@ -61,4 +61,26 @@
     text-align: left;
   }
   
+  .reverse-color {
+    background-color: var(--main-bg-color);
+    padding: 0.2rem 0.4rem;
+  }
+
+  #quote-with-logo {
+    display: flex;
+  }
+
+  #quote-with-logo > :global(svg) {
+    width: 90px;
+  }
+
+  #quote-with-logo > blockquote {
+    margin-left: 0.5rem;
+  }
+
+  @media screen and (max-width: 700px) {
+    #quote-with-logo {
+      flex-direction: column;
+    }
+  }
   </style>
