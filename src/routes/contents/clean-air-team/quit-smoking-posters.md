@@ -68,7 +68,7 @@
 
 <main>
     <section id="dancing-cancerettes" class="byr-border centered">
-        <span>DANCING WITH CANCERETTES...</span>
+        <img src="quit-smoking-posters/dancing-with-cancerettes.png" alt="puppet person controlled by cigarettes"/>
     </section>
     <section id="autosuggestion" class="bwr-border">
         <figure>
