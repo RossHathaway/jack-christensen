@@ -42,20 +42,6 @@
       inset 0 0 0 20px var(--red);
     }
 
-    #dancing-cancerettes {
-        height: 90vh;
-        display: flex;
-        justify-content: center;
-        background-color: black;
-        color: white;
-        font-family: Galindo, sans-serif;
-        font-size: 3rem;
-    }
-
-    #dancing-cancerettes > span {
-        margin-top: auto;
-    }
-
     #autosuggestion {
         background-color: var(--yellow);
     }
@@ -67,7 +53,7 @@
 </style>
 
 <main>
-    <section id="dancing-cancerettes" class="byr-border centered">
+    <section class="byr-border centered">
         <img src="quit-smoking-posters/dancing-with-cancerettes.png" alt="puppet person controlled by cigarettes"/>
     </section>
     <section id="autosuggestion" class="bwr-border">
