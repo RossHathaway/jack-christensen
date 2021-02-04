@@ -13,6 +13,11 @@
         padding: calc(0.5rem + 20px)
     }
 
+    .no-padding-visible {
+        padding: calc(0.5rem + 10px);
+        display: flex;
+    }
+
     img {
         width: 100%;
     }
@@ -53,7 +58,7 @@
 </style>
 
 <main>
-    <section class="byr-border centered">
+    <section class="byr-border centered no-padding-visible">
         <img src="quit-smoking-posters/dancing-with-cancerettes.png" alt="puppet person controlled by cigarettes"/>
     </section>
     <section id="autosuggestion" class="bwr-border">
