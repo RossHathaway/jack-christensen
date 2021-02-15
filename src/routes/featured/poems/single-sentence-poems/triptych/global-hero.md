@@ -1,4 +1,8 @@
-<main>
+<script>
+  import PoemWrapper from '../../../../../components/PoemWrapper.svelte';
+</script>
+
+<PoemWrapper>
 
 ## Global Hero 
 
@@ -78,4 +82,4 @@ horizontally upon the site, as the <br />
 inconspicuous marker for this always <br />
 unassuming and reclusive celebrity.
 
-</main>
+</PoemWrapper>

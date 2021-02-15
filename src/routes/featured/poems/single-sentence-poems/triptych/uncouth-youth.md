@@ -1,4 +1,8 @@
-<main>
+<script>
+  import PoemWrapper from '../../../../../components/PoemWrapper.svelte';
+</script>
+
+<PoemWrapper>
 
 ## Uncouth Youth 
 It's chilly midnight, not the best <br />
@@ -29,4 +33,4 @@ time for me to see more of the <br />
 world -- possibly a group tour <br />
 overseas to the Korean Peninsula.
 
-</main>
+</PoemWrapper>

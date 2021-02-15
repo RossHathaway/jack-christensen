@@ -1,4 +1,8 @@
-<main>
+<script>
+  import PoemWrapper from '../../../../../components/PoemWrapper.svelte';
+</script>
+
+<PoemWrapper>
 
 ## Miyajima 
 To see the famous view, we rented a skiff <br />
@@ -29,4 +33,4 @@ nabbed the bag and turned shoreward -­- <br />
 still chewing on the remaining stems <br />
 and paper stained with grape juice.
 
-</main>
+</PoemWrapper>

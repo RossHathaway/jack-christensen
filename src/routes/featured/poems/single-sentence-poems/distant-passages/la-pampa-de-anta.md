@@ -1,4 +1,8 @@
-<main>
+<script>
+  import PoemWrapper from '../../../../../components/PoemWrapper.svelte';
+</script>
+
+<PoemWrapper>
 
 ## La Pampa de Anta 
 Yesterday's weather left watermarks <br />
@@ -31,4 +35,4 @@ yet another of the multitudinous signs <br />
 blatantly advertising COLA drinks --<br />
 a visual bane and nationwide blight.
 
-</main>
+</PoemWrapper>

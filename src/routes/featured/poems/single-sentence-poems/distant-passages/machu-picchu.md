@@ -1,4 +1,8 @@
-<main>
+<script>
+  import PoemWrapper from '../../../../../components/PoemWrapper.svelte';
+</script>
+
+<PoemWrapper>
 
 ## Machu Picchu 
 As I hiked along an ancient passage <br />
@@ -19,4 +23,4 @@ but I quickly relinquished my intention <br />
 of occupying that splendid seat -- <br />
 just then preempted by a black snake.
 
-</main>
+</PoemWrapper>

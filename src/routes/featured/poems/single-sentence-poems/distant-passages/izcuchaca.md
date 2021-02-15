@@ -1,4 +1,8 @@
-<main>
+<script>
+  import PoemWrapper from '../../../../../components/PoemWrapper.svelte';
+</script>
+
+<PoemWrapper>
 
 ## Izcuchaca 
 Passing through this Peruvian <br />
@@ -19,4 +23,4 @@ of tarnished copper <br />
 which pervades this <br />
 Andean farming area.
 
-</main>
+</PoemWrapper>

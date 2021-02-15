@@ -1,4 +1,8 @@
-<main>
+<script>
+  import PoemWrapper from '../../../../../components/PoemWrapper.svelte';
+</script>
+
+<PoemWrapper>
 
 ## The Sacred Valley Of The Incas 
 Happily chattering women and girls <br />
@@ -16,4 +20,4 @@ fantastic patchwork of abstract, <br />
 multicolored mounds that remain <br />
 unmoved by buffeting breezes.
 
-</main>
+</PoemWrapper>

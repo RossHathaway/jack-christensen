@@ -1,4 +1,8 @@
-<main>
+<script>
+  import PoemWrapper from '../../../../../components/PoemWrapper.svelte';
+</script>
+
+<PoemWrapper>
 
 ## Kyoto Downpour 
 A few upright rocks amidst plain gray pebbles, <br />
@@ -31,4 +35,4 @@ each picture enclosed by dream-like clouds, <br />
 painted in this classical manner by artists <br />
 who keep changing their point of view!
 
-</main>
+</PoemWrapper>

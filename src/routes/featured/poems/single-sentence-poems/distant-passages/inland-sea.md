@@ -1,4 +1,8 @@
-<main>
+<script>
+  import PoemWrapper from '../../../../../components/PoemWrapper.svelte';
+</script>
+
+<PoemWrapper>
 
 ## Inland Sea 
 When leaving the quiet, pine clad islet <br />
@@ -28,4 +32,4 @@ with a fierce flash overhead -- <br />
 unleashed its lethal energies <br />
 upon a civilian population.
 
-</main>
+</PoemWrapper>
