@@ -49,6 +49,8 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 0.25rem;
+    text-indent: -1.5rem;
+    padding-left: 1.75rem;
   }
 
   span.empty {
@@ -62,6 +64,7 @@
     width: 100%;
     text-align: left;
     cursor: pointer;
+    text-indent: -1.5rem;
   }
 
   button::after {
@@ -83,6 +86,7 @@
 
   button + div.isOpenedChildren {
     height: auto;
+    margin-left: -1.5rem;
   }
 
   button.open::after {
