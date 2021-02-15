@@ -67,7 +67,7 @@
   }
 
   :global(nav a[aria-current]) {
-    border-bottom: 2px solid white;
+    text-decoration: underline;
   }
 
   nav > div {
