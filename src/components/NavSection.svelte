@@ -109,16 +109,27 @@
     lastUrlSegment: 'about-uncle-jack',
     children: [ [Object], [Object] ] } -->
       <li>
-        {#if link.children && link.children.length}
+        {#if link.children && link.children.length === 0}
+          <span class="empty">{link.name}</span>
+
+        {:else if link.children && ((link.children.length === 1 && link.children[0].name === link.name))}
+          <a
+          href={link.children[0].path}
+          aria-current={lastPathSection === link.lastUrlSegment ? 'location' : undefined}>
+            {link.name}
+          </a>
+
+        {:else if link.children && link.children.length}
+
           <button
-            aria-pressed={$openedSectionPath === link.path}
-            aria-expanded={$openedSectionPath === link.path}
-            class:open={$openedSectionPath === link.path}
-            on:click={() => {
-              openedSectionPath.update((prev) =>
-                prev === link.path ? '' : link.path
-              );
-            }}>
+          aria-pressed={$openedSectionPath === link.path}
+          aria-expanded={$openedSectionPath === link.path}
+          class:open={$openedSectionPath === link.path}
+          on:click={() => {
+            openedSectionPath.update((prev) =>
+              prev === link.path ? '' : link.path
+            );
+          }}>
             {link.name}
           </button>
 
@@ -126,8 +137,7 @@
             links={link.children}
             hasLightBgColor={!hasLightBgColor}
             isOpenedChildren={$openedSectionPath.startsWith(link.path)} />
-        {:else if link.children && link.children.length === 0}
-          <span class="empty">{link.name}</span>
+
         {:else}
           <a
             href={link.path}
