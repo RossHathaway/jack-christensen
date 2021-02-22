@@ -2,6 +2,7 @@
   div {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
   }
 
   img {
