@@ -1,8 +1,6 @@
 <style>
   div {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    text-align: center;
   }
 
   img {
