@@ -19,6 +19,10 @@
     border-bottom: dotted black 4px;
   }
 
+  .break-word {
+    word-break: break-all;
+  }
+
   @media (min-width: 480px) {
     /* h1 {
       font-size: 4rem;
@@ -50,6 +54,6 @@
     your doing has been worthless."
   </p>
   <p>To communicate with the organizers of this website, please write to:</p>
-  <p>jscinfo@jackshieldschristensen.com</p>
+  <p class="break-word">jscinfo@jackshieldschristensen.com</p>
 
 </main>
