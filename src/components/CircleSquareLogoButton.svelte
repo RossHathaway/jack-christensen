@@ -77,6 +77,10 @@
   .open {
     padding: 0.75rem;
   }
+
+  .close-button {
+    float: right;/* does not work  */
+  }
 }
 
   h2 {
