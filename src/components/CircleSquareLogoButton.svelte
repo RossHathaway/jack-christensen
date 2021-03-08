@@ -88,6 +88,7 @@
     .open {
       padding: 0.75rem;
       top: 18%;
+      right: 5vw;
     }
   }
 
