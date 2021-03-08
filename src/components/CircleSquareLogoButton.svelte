@@ -73,6 +73,12 @@
     cursor: auto;
   }
 
+  @media screen and (max-width: 550px) {
+  .open {
+    padding: 0.75rem;
+  }
+}
+
   h2 {
     margin: 0.5rem 0;
     font-size: 1.5rem;
