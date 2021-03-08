@@ -60,8 +60,8 @@
     visibility: visible;
     display: block;
     position: absolute;
-    top: 80%;
-    left: 80%;
+    top: 25%;
+    left: 25%;
     width: 65vw;
     padding: 2rem;
     z-index: 2;
