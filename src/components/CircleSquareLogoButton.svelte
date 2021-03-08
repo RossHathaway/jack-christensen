@@ -42,7 +42,7 @@
     cursor: pointer;
   }
 
-  #logo > :global(svg) {
+  #logo ~ :global(svg) {
     width: clamp(60px, 180px, 180px);
   }
 
@@ -81,47 +81,49 @@
 
 <button
   id="logo"
-  on:focus={() => {
-    open = true;
+  on:click={() => {
+    open = !open;
   }}
-  on:hover={() => {
-    open = true;
-  }}
-  on:blur={() => {
-    open = false;
-  }}>
-  <!-- circle/square logo -->
+  >
+  <!-- display explanation of Jack's personal religious symbol -->
   <CircleSquareLogo />
-
-  <section class:open>
-    <header>
-      <h2>Jack Shields Christensen – Personal Religious Symbol</h2>
-
-      <button
-        class="close-button"
-        aria-label="close description of Jack's logo">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.8 103.8">
-          <g
-            transform="translate(-79.8 -103.8)"
-            fill="none"
-            stroke="var(--darkest-hue)"
-            stroke-width="6.6"
-            stroke-linecap="round"
-            stroke-linejoin="round">
-            <rect
-              ry="7.9"
-              rx="7.9"
-              y="107.1"
-              x="83.1"
-              height="97.2"
-              width="97.2" />
-            <path d="M102.3 126.2l59 59M161.2 126.2l-59 59" />
-          </g>
-        </svg>
-      </button>
-
-    </header>
-    <PersonalReligiousSymbolExplanation />
-
-  </section>
 </button>
+<!-- circle/square logo -->
+
+<section class:open>
+  <header>
+    <h2>
+      Jack Shields Christensen – Personal Religious Symbol
+    </h2>
+
+    <button
+      class="close-button"
+      aria-label="close description of Jack's logo"
+      on:click={() => {
+        open = !open;
+      }}
+      >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.8 103.8">
+        <g
+          transform="translate(-79.8 -103.8)"
+          fill="none"
+          stroke="var(--darkest-hue)"
+          stroke-width="6.6"
+          stroke-linecap="round"
+          stroke-linejoin="round">
+          <rect
+            ry="7.9"
+            rx="7.9"
+            y="107.1"
+            x="83.1"
+            height="97.2"
+            width="97.2" />
+          <path d="M102.3 126.2l59 59M161.2 126.2l-59 59" />
+        </g>
+      </svg>
+    </button>
+
+  </header>
+  <PersonalReligiousSymbolExplanation />
+
+</section>
