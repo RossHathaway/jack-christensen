@@ -62,7 +62,8 @@
     position: absolute;
     top: 25%;
     left: 25%;
-    width: 65vw;
+    max-width: 800px;
+    min-width: 250px;
     padding: 2rem;
     z-index: 2;
 
@@ -73,20 +74,28 @@
     cursor: auto;
   }
 
-  @media screen and (max-width: 550px) {
-  .open {
-    padding: 0.75rem;
-  }
-
+  
   .close-button {
     float: right;/* does not work  */
   }
-}
 
   h2 {
     margin: 0.5rem 0;
     font-size: 1.5rem;
   }
+
+  @media screen and (max-width: 550px) {
+    .open {
+      padding: 0.75rem;
+      top: 18%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .open {
+      left: 5vw;
+    }
+}
 </style>
 
 <button
