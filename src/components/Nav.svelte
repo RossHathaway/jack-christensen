@@ -103,8 +103,8 @@
       overflow: hidden;
 
       position: absolute;
-      top: 1rem;
-      right: calc(50% - 9rem);
+      top: calc(7vw + 60px);
+      right: 0;
       z-index: 3;
     }
 
