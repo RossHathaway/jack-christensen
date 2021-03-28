@@ -29,4 +29,11 @@ figure {
     padding-bottom: 1rem;
   } 
 
+  @media (max-width: 620px) {
+    figure {
+      float: none;
+      min-width: calc(100% - 64px)
+    }
+  }
+
 </style>
