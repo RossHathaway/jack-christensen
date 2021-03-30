@@ -1,4 +1,6 @@
 <main>
   To communicate with the organizers of this website, please write to:
-  jscinfo@jackshieldschristensen.com
+  <p class="break-word-all">
+    jscinfo@jackshieldschristensen.com
+  </p>
 </main>
