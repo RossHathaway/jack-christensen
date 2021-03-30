@@ -110,6 +110,10 @@ figure {
     font-style: italic;
 }
 
+.break-word-all {
+    word-break: break-all;
+}
+
 /* @media (min-width: 400px) { */
 /* body {
     font-size: 16px;
