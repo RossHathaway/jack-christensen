@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "compression": "^1.7.1",
-    "marked": "^0.8.0",
+    "marked": "^4.0.10",
     "polka": "next",
     "resize-observer-polyfill": "^1.5.1",
     "sirv": "^0.4.0"
