@@ -12,7 +12,7 @@ My full name is Jack Shields Christensen and I was born in Wisconsin. I grew up 
 
 **AGE SEVENTY-ONE,** I began to learn something completely new for me, practicing springboard and high platform diving with two coaches and members of the UH Precision Diving Team. Now I've become the oldest person in the 50th State who continues to perform dives from Olympic tower platforms, supervised by coaches on a regular schedule. 
 
-Click <a href="about-uncle-jack/my-first-seventy-five-years">here</a> to read a brief autobiography entitled "My First Seventy-Five Years". 
+<!-- Click <a href="about-uncle-jack/my-first-seventy-five-years">here</a> to read a brief autobiography entitled "My First Seventy-Five Years".  -->
 
 </main>
 
