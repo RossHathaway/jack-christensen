@@ -33,6 +33,11 @@
     border-style: solid;
     border-color: black;
   }
+
+  img {
+    max-height: 150px;
+    max-width: 120px;
+  }
 </style>
 
 <header>
