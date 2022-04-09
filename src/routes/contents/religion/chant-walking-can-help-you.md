@@ -1,5 +1,6 @@
 <script>
   import DocumentWrapper from '../../../components/DocumentWrapper.svelte'
+  import EndedIn2018 from '../../../components/EndedIn2018.svelte'
 </script>
 
 <DocumentWrapper component="linesLogo">
@@ -7,6 +8,9 @@
 <section id="cw-can-help">
 
 ### "CHANT WALKING CAN HELP YOU"
+
+<EndedIn2018 />
+
 <div class="centered">
 FREE ACTIVITY AT TWO O'CLOCK<br>
 ON THE FIRST FRIDAY OF EVERY MONTH

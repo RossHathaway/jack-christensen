@@ -4,11 +4,14 @@ title: Hike to Diamond Head Lighthouse
 ---
 <script>
   import DocumentWrapper from '../../../components/DocumentWrapper.svelte'
+  import EndedIn2018 from '../../../components/EndedIn2018.svelte'
 </script>
 
 <DocumentWrapper component="linesLogo" doubleBorder={true}>
 
 ## "HIKE TO DIAMOND HEAD LIGHTHOUSE"
+
+<EndedIn2018 />
 
 <div class="centered">
 TWO O'CLOCK ON THE FIRST SATURDAY OF EVERY MONTH

@@ -1,5 +1,7 @@
 <script>
   import DocumentWrapper from '../../components/DocumentWrapper.svelte'
+  import EndedIn2018 from '../../components/EndedIn2018.svelte'
+
 </script>
 
 <style>
@@ -12,6 +14,8 @@
 
 
 ## THREE FREE ACTIVITIES DURING THE FIRST WEEK OF EVERY MONTH
+
+<EndedIn2018 />
 
 FIRST FRIDAY: **"Chant Walking Can Help You"** 2:00 PM Learn how to practice Chant Walking right in the hectic center of the city. A special route is followed through selected sites that create an inspirational environment which produces an immediate feeling of well-being. The leader advocates deep breathing, natural body carriage and the psychological benefit of personal autosuggestion. Starts on the public sidewalk alongside the fountain in front of Saint Andrew's Cathedral on Beretania Street.
 
