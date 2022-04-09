@@ -6,12 +6,16 @@
 </script>
 
 <style>
-  * {
+  a  > :global(svg) {
+    width: clamp(60px, 180px, 180px);
+  }
+  /* {
     font-family: Gelasio, serif;
     font-size: 1.25rem;
     letter-spacing: 0.02em;
     line-height: 1.5;
   }
+
 
   section {
     visibility: hidden;
@@ -76,7 +80,7 @@
 
   
   .close-button {
-    float: right;/* does not work  */
+    float: right; /* does not work  *//*
   }
 
   h2 {
@@ -96,20 +100,55 @@
     .open {
       left: 5vw;
     }
-}
+  }
+  */
 </style>
 
-<button
+<!-- <button
   id="logo"
   on:click={() => {
     open = !open;
   }}
-  >
+  > -->
   <!-- display explanation of Jack's personal religious symbol -->
+  <a href="about-uncle-jack/personal-religious-symbol">
   <CircleSquareLogo />
-</button>
+</a>
+<!-- </button> -->
 <!-- circle/square logo -->
 
+<!-- <section class:open>
+  <header>
+    <h2>
+      Jack Shields Christensen – Personal Religious Symbol
+    </h2>
+
+    <button
+      class="close-button"
+      aria-label="close description of Jack's logo"
+      on:click={() => {
+        open = !open;
+      }}
+      >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.8 103.8">
+        <g
+          transform="translate(-79.8 -103.8)"
+          fill="none"
+          stroke="var(--darkest-hue)"
+          stroke-width="6.6"
+          stroke-linecap="round"
+          stroke-linejoin="round">
+          <rect
+            ry="7.9"
+            rx="7.9"
+            y="107.1"
+            x="83.1"
+            height="97.2"
+            width="97.2" />
+          <path d="M102.3 126.2l59 59M161.2 126.2l-59 59" />
+        </g>
+      </svg>
+    </button>
 <section class:open>
   <header>
     <h2>
@@ -147,3 +186,7 @@
   <PersonalReligiousSymbolExplanation />
 
 </section>
+  </header>
+  <PersonalReligiousSymbolExplanation />
+
+</section> -->
