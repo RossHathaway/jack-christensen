@@ -4,7 +4,7 @@
 
     <main>
 
-## Jack Shields Christensen – Personal Religious Symbol
+## Personal Religious Symbol
 
       <PersonalReligiousSymbolExplanation />
     </main>
