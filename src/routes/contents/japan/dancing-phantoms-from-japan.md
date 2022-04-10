@@ -50,6 +50,9 @@
     margin: 0.25rem;
   }
 
+  img.header {
+    max-height: 70px;
+  }
 
   #pictures-section-1 {
     position: relative;
