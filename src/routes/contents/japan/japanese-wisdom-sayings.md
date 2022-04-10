@@ -2,7 +2,7 @@
 import DocumentWrapper from '../../../components/DocumentWrapper.svelte'
 </script>
 
-<DocumentWrapper component="hawaiianPersonHeader">
+<main>
 
 ## JAPANESE WISDOM SAYINGS 
 
@@ -192,4 +192,5 @@ TAISEI WA RIJI NI IRAZU<br>
 ONORE NI HOSSEZARU TOKORO WO HITO NI HODOKOSU NAKARE<br>
 "What you do not wish done to you, do not to others."<br>
 (This saying came to Japan via the Chinese sage Confucius, an earlier version of The Golden Rule uttered by Jesus five centuries later in Galilee.)
-</DocumentWrapper>
+
+</main>
