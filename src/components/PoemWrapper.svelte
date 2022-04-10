@@ -2,7 +2,7 @@
     <slot />
     <br>
     <br>
-    <a href="/featured/poems/single-sentence-poems">Go back to list of Poems</a>
+    <a href="/featured/poems/single-sentence-poems">Return to Poem titles</a>
 </main>
 
 <style>
