@@ -64,7 +64,8 @@
     width: 100%;
     text-align: left;
     cursor: pointer;
-    text-indent: -1.5rem;
+    position: relative;
+    left: -1.5rem;
   }
 
   button::after {
