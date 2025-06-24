@@ -1,3 +1,14 @@
+<style>
+    .two-col-with-equals {
+        display: flex;
+        justify-content: center;
+    }
+
+    .equal-sign {
+        padding: 0 1rem;
+    }
+</style>
+
 <main>
 <div class="centered">
 <strong>MY MYSTICAL PATHWAYS IN JAPAN</strong>
@@ -8,15 +19,17 @@ LINKED PHYSICALLY AND PSYCHOLOGICALLY WITH MODERN TRANSPORTATION
 <blockquote class="centered">
 I'm underway,
 <br />
-venturing through My Second Lifetime while life itself
-<br />
-proceeds through me ...
-<br />
-<br />
-Go as far as you can see,
-and when you get there
-you'll see farther ...
+venturing through My Second Lifetime<br />
+while life itself proceeds through me ...
 </blockquote>
+
+<div style="display: flex; justify-content: center">
+<blockquote id="staggered-poem" style="width: 550px">
+<div style="text-align: left">Go as far as you can see,</div>
+<div style="text-align: center">and when you get there</div>
+<div style="text-align: right">you'll see farther ...</div>
+</blockquote>
+</div>
 
 When Japanese people take long rides on trains, their usual pastimes are eating, drinking and intently operating some electronic device. Instead of that, my <u>artistic mysticism</u> keeps me looking out the window and being keenly observant of whatever comes into view, concentrating on entering the <u>mystical environment</u> experienced by Vincent van Gogh -- through acute attentiveness to the various relationships of areas and forms, the details of patterns and textures, and the multiplicity of light and shadow and color.
 
@@ -63,14 +76,3 @@ Dewa mata. (See you later.)
 
 Yuibutsu Yobutsu / Only The Buddha Recognizes The Buddha
 </main>
-
-<style>
-.two-col-with-equals {
-    display: flex;
-    justify-content: center;
-}
-
-.equal-sign {
-    padding: 0 1rem;
-}
-</style>
