@@ -1,0 +1,93 @@
+<main>
+
+## FIRST MORNING IN TOKYO
+
+<u>Tokyo Station To Imperial Plaza</u>:
+
+This is the start of a full day outing, the morning half. Begin by entering Tokyo Station's YAESU EAST SIDE. Then locate the OPEN PASSAGEWAY that goes to the MARUNOUCHI WEST SIDE of the station. It's the only passage which does not have electronic gates at the entry point. When you follow it from east to west, it ends under the dome of the MARUNOUCHI NORTH ENTRANCE/EXIT where there are three outlets -- left, center and right. Go through the opening at right to a crosswalk with a traffic light.
+
+Cross ahead, then angle left on the sidewalk toward another traffic light at a major boulevard. When you are about half way there, stop and look left, viewing the central entrance on the Marunouchi side of Tokyo Station, an impressive and appropriate "centerpiece" for Japan's greatest city. Here is the busiest railway hub in the nation, with over 3,000 trains arriving and departing every day. The red brick facade was designed by Tatsuno Kingo (1854-1919) in French Renaissance style. Construction began in 1908 and continued six years. Opening in 1914, the wide structure had three floors and duplicate domes atop its north and south ends. Both domes were severely damaged by air raids in May, 1945 during WWII and not restored to their prewar condition until a colossal renovation of Tokyo Station lasting five years was finished in October, 2012 with the crowning cupola you see at center.
+
+The site faces the city's Marunouchi District which covers thirteen acres. The name means "within the enclosure" that refers to a stone wall finished in the early 1600s, which started from Edo Castle and surrounded this area that had been created by landfilling with soil hauled in to cover marshes of reeds. Inside the wall luxurious palaces were built and occupied by <u>daimyo</u>, feudal lords ruling various regions of Japan under Ieyasu Tokugawa (1543-1616), the first of the Tokugawa family <u>Shogun</u>, a title then held by Japan's governing individual as "the greatest military
+general and Lord Protector of the nation and its people." Later the wall was removed.
+
+After the establishment of the original railway station here in the mid-1870s, this district along its west side developed into the city's main banking section which it has remained ever since. Here, too, are office buildings for <u>zaibatsu</u> ("big business") founded mostly by powerful old families. Then came foreign firms and now important international corporations maintain a presence in this Marunouchi District of high profile commerce.
+
+<!-- Tokyo Morning Tour / 2 -->
+Landfilling also created portions of the city on the opposite east side of the station, including the adjacent, southward reaching districts of Nihonbashi, Kyobashi, Yaesu and Ginza. Much of the soil for these valuable grounds came from hills that were broken down and carried here from a part of town named eno ("upfield") located about two miles to the north. Those higher vantage points had overlooked useless swamplands that were gradually transformed into a newborn plain. Closer at hand was soil that became available for landfilling when additional moats were excavated around the castle. After a "landfilled wilderness" was completed, no streets were laid out in a checkerboard pattern, as was done at the inception of the older cities, Nara and Kyoto, over 300 miles west, their blocking having been planned in the Chinese manner. The only checkerboard areas existing in central Tokyo today are located on both sides of Tokyo Station. These blocks were delineated by a Britisher in the 1880s.
+
+Continue to the traffic light and cross ahead, going away from the station one short block to another traffic light, then one more block to the light at Hibiya-dori Avenue, the western boundary of the Marunouchi District and beginning of the Chiyoda District named for a fishing village where the foundation of the original Chiyoda Castle was placed in 1457, which later became the site of Edo Castle that preceded today's Imperial Palace Compound.
+
+Cross the road to the Wadakura Moat and continue over the antique wooden bridge. At the far end, follow the passage going between walls of fitted rocks, historic remnants of yesteryear's Wadakura Gateway, now leading left into the Imperial Plaza, its dominant feature a large rectangular pool with three identical fountains in a row, bordered by twenty-six lower spouts. This grand display of activated waters was installed to commemorate the 1956 wedding of Crown Prince Akikito. He was the first future Emperor Of Japan to marry a commoner, Michiko Shoda, after meeting her on a tennis court. When he became the 125th Emperor in 1989, Akihito represented a chronology of emperors, eight being women, reaching back to the nation's founding in 600 B.C. by the Emperor Jimmu, legendary descendent of The Sun Goddess, Amaterasu-Omikami. Although factual details about Japan's earliest twenty-five emperors are shrouded in myth, there exists evidence of an unbroken ancestral lineage from A.D. 500 -- the world's oldest hereditary monarchy.
+
+At the center of the plaza there's a low bridge you cross toward some seats under the trees. Pause here, looking back at the additional fountains across from the major pond, and watch the repeated performance cycles animating the waters.
+
+<!-- Tokyo Morning Tour / 3 -->
+
+Continue out the exit between the trees to busy Uchibori-dori Boulevard where you turn right along the sidewalk a few paces to where the Wadakura Moat ends. Stand here and you might see swans, ducks and turtles. Most moats and garden ponds in Japan have thriving populations of colorful <u>koi</u> (carp) that become large and powerful. Human breeding of this fish began in China centuries ago. Hundreds of differently patterned types, such as the Dragon Fish, are treasured for diverse markings. Among the most popular <u>koi</u> are those with metallic colors. Patient breeding produces bold spots of solid colors on contrasting backgrounds. Certain natural arrangements of scales also are enhanced by breeding. The most spectacular combinations are seen in the majestic "brocade carp." It has been observed that <u>koi</u> never fight among themselves and may live over a hundred years. Fortunately, these valuable "ornamental carp" are generally considered too bony for use as food for humans.
+
+The Imperial Palace Compound is across the street, and from here you can view an old guardhouse with white walls covered by a roof of dark tiles, standing upon stonework of Kikyo Moat, a short section of the border surrounding 250 landscaped acres of the compound controlled by The Imperial Household Agency.
+
+<u>Imperial Plaza To Nijubashi</u>:
+
+Return through the Imperial Plaza and again cross over the wooden Wadakura Bridge to Hibiya-dori Avenue. Next turn right along the sidewalk to the corner where you cross ahead in the same direction, going from Wadakura Moat to Babasaki Moat. Follow the walkway beside the water until you reach a cross street with traffic lights. Here you're adjacent to the Meiji Seimei Insurance Company Building, a distinctive gray structure built during 1934 in Greco-Roman style with tall columns along the front and twelve artistic lanterns of metal and glass. It is said this building was constructed over the birthplace of Ando Hiroshige (1797-1856), a famous artist whose woodblock prints depict daily life and rural scenes in the Edo Period.
+
+Turn right on the major bridge across the moat and proceed through Kokyo Gaien, a spacious park with many trimmed pines inhabited by crows. These trees were transplanted in 1889 from each of Japan's different prefectures.
+
+When you come to chibori-dori Boulevard, go ahead through an open area to a small guardhouse with a round roof. This is the most popular viewpoint for photos of Nijubashi. Its name means Double Bridge. The lower span is built of stone, crossing a short moat, and the upper span was constructed of iron supported by arches of German steel, crossing the same moat. The graceful beauty of both bridges is greatly enhanced by elegant sets of multiple lanterns.
+
+<!-- Tokyo Morning Tour / 4 -->
+
+You may walk a short way uphill to the beginning of the first bridge that crosses to a massive gate with shut doors. This is as near as the public can get to the upper precinct where the sequestered residence of the Emperor is ensconced in a quiet natural environment occupied exclusively by one of the most cloistered of all royal families. Because this property is located at the core of metropolitan Tokyo, it could be the most valuable real estate in the world.
+
+Japan is the only one of modern nations still referring to its figurehead as Emperor (<u>tenno</u>, "heavenly sovereign"), although after the end of The Pacific War, as part of the surrender, Emperor Hirohito withdrew from his right to rule, by renouncing what he called "the false conception that the Emperor is divine." Under the postwar constitution of 1947 the Emperor is officially recognized as "the symbol of the state and of the unity of the people." Thus, any individual who inherits this position has no political authority but continues to be regarded as a renowned personage essential for participation in certain traditional ceremonies that are time-honored cultural and societal observances, also officiating at dignified rituals of the ancient, highly respected Japanese indigenous religion of Shinto.
+
+<u>Nijubashi To Imperial Hotel</u>:
+
+Backtrack the way you came, crossing Uchibori-dori Boulevard, cross on its right side to the traffic light at Babasaki-dori. the walls of Babasaki Moat, extending north/south, intersect with the walls of Hibiya Moat coming from the west, both moats ending at that corner.
+
+Proceed ahead to the next block which starts with the Daiichi Seinei Building that in 1945 became the Headquarters Of The Supreme Commander For Allied Powers, General Douglas McArthur, during the United States occupation of Japan. His office was unadorned, kept in Spartan military style on the sixth floor.
+
+Continue in the same direction across a major intersection, and you'll see the trees of Hibiya Park starting at right. Go ahead three short blocks to the Imperial Hotel at left. Enter the lobby where, alongside the front windows, a display case holds a model of the original hotel designed by American
+architect Frank Lloyd Wright who came to Japan for the first time in 1905 for preliminary discussions of a hotel project. He returned six more times for lengthy stays between 1915-22 to oversee progress of his most ambitious undertaking until that time in his long and illustrious career. During a work day at the site, he experienced a terrific earthquake which <!-- Tokyo Morning Tour / 5 --> proved the "floating foundation" he had invented was indeed quakeproof. A year after the hotel's opening, he received a telegram at his home in Wisconsin, informing him that the Imperial Hotel was one of the few structures which did not suffer severe damage when The Great Kanto Earthquake struck urban Tokyo at noon on September 1, 1923. Most of the city was devastated. Also listed among buildings that miraculously withstood the catastrophe was Tokyo Station. Many structures collapsed while much the metropolis went up in flames. Two decades later both those buildings again held up throughout repeated firebombings from U.S. aircraft -- in winter, 1944 and spring, 1945 -- during the climax of WWII when Tokyo was almost totally destroyed.
+
+Go up the grand staircase to the vestibule of the cocktail lounge featuring some interior details restored from the original Imperial Hotel which was demolished in the 1960s to make way for the present highrise of the same name.
+
+<u>Imperial Hotel To Tokyo International Forum</u>:
+
+Retrace your steps back to the street with a traffic light where you twice crossed the vehicle bridge over the moat during your detour to Nujubashi at left. Now turn right and proceed past an alley and two cross streets to Tokyo International Forum that occupies an entire block on the right where you continue alongside five flag poles in a row, then enter through an open passage in a glass wall.
+
+This magnificent complex has five linked structures used for the exchange of information and culture, designed by American architect Rafael Vinoly and completed in 1966. You're at one end of The Glass Hall that's a hundred feet wide and 693 feet long, with an atrium arching 198 feet over the main lobby for the entire facility which combines meeting rooms, auditoriums, theaters, museums and art galleries.
+
+Looking upward inside The Glass Hall, you are overwhelmed by this imaginative structure's vast football-shaped dome that suggests the interior of an inverted ship's hull --or being in the belly of a gigantic, transparent whale. At the peak an elongated spine is supported by enormous pillars, one at each end. Suspended walkways cross the vast space overhead. You wonder how anyone planned such an ingenious engineering feat which had to be approved by supervisors with the audacity to actually build this unconventional, innovative, marvelous phenomenon.
+
+Toward your left you'll see a gently inclined ramp alongside a curving wall. Proceed up this ramp terminating at windows overlooking the Chuo ("central") portion of the city. The famous Ginza District is toward the right.
+
+<!-- Tokyo Morning Tour / 6 -->
+
+Ginza means "silver seat" because a mint for manufacturing silver coins was established in this area by the <u>shogun</u> in 1612. The Ginza's main artery is Chuo-dori ("center street") running from the southern Shimbashi District on your right, became the city's first "downtown" section occupied mostly by craftsmen and merchants. Chuo-dori was the first pavea street in Tokyo and where the first brick buildings were erected. The silver mint which gave the area its name 15 long gone, but near the end of the 1800s the term Ginza became a new word for western styles of dressing that were flooding into Japan and sold on The Ginza which remains a fashion center with swank department stores and smaller but prestigious shops, also restaurants along a posh eight block stretch of Chuo-dori often compared with Manhattan's Fifth Avenue. The Japanese invented department stores in 1650. Today street level windows of every depato display alluring, ever-changing arrangements of current merchandise cleverly presented with the creative zeal and style of a major art form.
+
+There are numerous side streets and alleyways throughout The Ginza and Nihonbashi crammed with retail businesses and eateries. Anyone eager to experience The Ginza should head for its
+"4-Chome Intersection" located at Chuo-dori and Harumi-dori, bursting with activity and reached easily by taxi or subway or on foot. Saturdays and Sundays and holidays, the northward part of Chuo-dori going toward Nihonbash is closed to vehicle traffic. It becoming a pedestrian mall for thousands of strolling customers. Here and there, some shops set up temporary stalls on sidewalks, and vendors sell refreshments from decorated carts. Restaurants sometimes place tables in the middle of the pavement with seating provided for weary walkers.
+
+But if it's raining on the morning of the days designated for pedestrians only, Chuo-dori stays open to vehicles, jammed as usual with traffic, and all the wet sidewalks are crowded with dauntless shoppers carrying packages beneath umbrellas.
+
+<u>Tokyo International Forum To Tokyo Station</u>:
+
+Continue along the top floor to another observation area. Then take one of the centrally located elevators down, by pushing button B1F. When you step out, head left to the long escalator near the massive pillar at the far end of the lobby. Ride up to ground level, then through the opening in the glass wall. Proceed beyond the flagpoles and trees to a traffic light where you cross to the JR Yurakucho Station which is small and easy to use. Go up to the platform for northbound trains. Ride any to the next stop, Tokyo Station, where you walk from your <!-- Tokyo Morning Tour / 7 --> car downstairs and follow overhead signs to the YAESU EAST EXIT ENTRANCE. Pass through the gate and while still inside the station look for the Daimaru Department Store. Since it's lunch time, you'll find an unbelievable selection of items available in the Diamaru Basement Market. From there, return up to ground level and go outside the station where you'll see an exterior escalator connecting to a pleasant, elevated terrace that's a good spot to enjoy anything you have purchased.
+
+Of course, the most Japanese thing you can eat is rice. According to author James A. Michener who has written a great deal about Japan:
+
+<blockquote>
+There is no parallel in history to Japan's fanatical dependence upon rice. This is due to its geography being more mountainous than any other major nation on earth. Such terrain made inevitable the partition of land into small, manageable areas -- together with the development of feudalism as the logical form of government. Slopes were terraced by farmers so water could be led in by gravity. The extent to which the political system became dependent upon the cultivation of rice is difficult to believe. The efficacy of every economic decision was judged by one criterion: would it produce more rice? Peasants were kept tied to the land to grow rice. It constituted the major exchange value so that a man was known by the amount of rice to which he was entitled every year. For centuries before the advent of monetary standards, rice was apportioned to everyone because taxes and tributes were paid in rice.
+
+<footer>(Paraphrased from his book, <u>The Floating World</u>)</footer>
+
+</blockquote>
+
+Today the planting, transplanting and harvesting of rice is still accompanied by religious and secular rites. In the paddies, farmers offer prayers and flowers to their local rice god, scatter toasted rice and pour rice wine into the soil,
+in symbolic purification of the fields.
+
+After two thousand years of eating rice primarily, the intestines of Japanese have grown one foot longer than those of other peoples, and their stomachs have dropped several inches within their abdomen. They prefer to eat a short-grained white variety, highly refined. At meals the Japanese person is an uncompromising aesthete, and a self-respecting individual does not consider food proper, be it only rice with pickles and tea, unless it is served in style, thus preserving their talent for making every meal an elegant experience.
+
+</main>
