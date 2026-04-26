@@ -124,18 +124,10 @@
   <label for="menu-toggle" onclick>
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 103.8 103.8"
-      height="55px">
-      <g
-        transform="translate(-79.8 -103.8)"
-        fill="none"
-        stroke="var(--second-darkest-hue)"
-        stroke-width="9"
-        stroke-linecap="round"
-        stroke-linejoin="round">
-        <rect ry="7.9" rx="7.9" y="107.1" x="83.1" height="97.2" width="97.2" />
-        <path d="M95.8 182h71.9M95.8 131.1h71.9M95.8 156.6h71.9" />
-      </g>
+      viewBox="0 0 24 24"
+      height="55px"
+      fill="var(--second-darkest-hue)">
+      <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
     </svg>
   </label>
 
