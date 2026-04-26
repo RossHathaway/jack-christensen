@@ -13,7 +13,7 @@
     return page.subscribe(($p) => {
       if ($p.path !== prevPath) {
         menuToggle.checked = false;
-        prevPath = $p.path;
+        // prevPath = $p.path;
       }
     });
   });
