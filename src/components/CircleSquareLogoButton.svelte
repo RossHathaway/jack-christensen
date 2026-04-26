@@ -7,7 +7,7 @@
 
 <style>
   a  > :global(svg) {
-    width: clamp(60px, 180px, 180px);
+    width: clamp(60px, 18vw, 180px);
   }
   /* {
     font-family: Gelasio, serif;
