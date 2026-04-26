@@ -1,7 +1,22 @@
 <script>
+  import { onMount } from "svelte";
+  import { stores } from "@sapper/app";
   import NavSection from "./NavSection.svelte";
 
   export let links;
+
+  const { page } = stores();
+  let menuToggle;
+
+  onMount(() => {
+    let prevPath = $page.path;
+    return page.subscribe(($p) => {
+      if ($p.path !== prevPath) {
+        menuToggle.checked = false;
+        // prevPath = $p.path;
+      }
+    });
+  });
 
   const processedLinks = [];
 
@@ -120,7 +135,7 @@
 
 <div id="nav-container">
 
-  <input type="checkbox" id="menu-toggle" />
+  <input type="checkbox" id="menu-toggle" bind:this={menuToggle} />
   <label for="menu-toggle" onclick>
     <svg
       xmlns="http://www.w3.org/2000/svg"
