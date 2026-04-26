@@ -6,39 +6,20 @@
     height: var(--height);
   }
 
-  /* text */
   h1 {
     margin: 0;
-    /* height: 100%; will this look better on mobile?*/
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  h1 > svg {
-    width: clamp(300px, 800px, 800px);
-    max-width: 600px;
-  }
-
-  svg > text {
-    font-size: 50px;
+    font-size: clamp(1.75rem, 5vw, 3.125rem);
     font-weight: bold;
-  }
-
-  @media (max-width: 800px) {
-    h1 > svg {
-      max-width: 100%;
-    }
+    text-align: center;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 </style>
 
 <header>
-  <h1>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 180">
-
-      <text x="10" y="110">Jack Shields Christensen</text>
-
-    </svg>
-  </h1>
+  <h1>Jack Shields Christensen</h1>
 </header>
