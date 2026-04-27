@@ -9,6 +9,12 @@
   a  > :global(svg) {
     width: clamp(60px, 18vw, 180px);
   }
+
+  @media screen and (max-width: 1000px) {
+    a > :global(svg) {
+      width: 80px;
+    }
+  }
   /* {
     font-family: Gelasio, serif;
     font-size: 1.25rem;
