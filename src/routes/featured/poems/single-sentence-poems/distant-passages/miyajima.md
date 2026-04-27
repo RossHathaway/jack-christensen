@@ -12,7 +12,7 @@ out to The Great Gateway with wing-like <br />
 crossbeams atop two tall pillars hewn <br />
 from the trunks of single trees painted <br />
 vermilion and placed adjacent to the <br />
-seashore's "floating" Shinto Shrine that <br />
+seashore’s “floating” Shinto Shrine that <br />
 now seemed to be rising upon its pilings <br />
 as the tide subsided, and here we let
 
@@ -23,7 +23,7 @@ stumps of sawed-off antlers, wading our <br />
 way from a cove and presently placing <br />
 his head into the boat, brazenly tame, <br />
 receiving from us a few cordial pats -- <br />
-­when suddenly that fat stag's yellow <br />
+­when suddenly that fat stag’s yellow <br />
 teeth started ripping our bag apart -- <br />
 ­so we fed him enough grapes to satisfy his <br />
 stubborn voracity and skiff-rocking <br />

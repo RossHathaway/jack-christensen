@@ -9,12 +9,12 @@ title: Hike to Diamond Head Lighthouse
 
 <DocumentWrapper component="linesLogo" doubleBorder={true}>
 
-## "HIKE TO DIAMOND HEAD LIGHTHOUSE"
+## “HIKE TO DIAMOND HEAD LIGHTHOUSE”
 
 <EndedIn2018 />
 
 <div class="centered">
-TWO O'CLOCK ON THE FIRST SATURDAY OF EVERY MONTH
+TWO O’CLOCK ON THE FIRST SATURDAY OF EVERY MONTH
 
 Meet The Leader At The Bare Feet Of The Mahatma Gandhi Statue Under The Huge Banyan Tree Near The Entrance To Honolulu Zoo
 </div>
@@ -22,13 +22,13 @@ Meet The Leader At The Bare Feet Of The Mahatma Gandhi Statue Under The Huge Ban
 
 **THIS OUTING** has been conducted by volunteer leaders since April 17, 1982. It features an array of picturesque places as the group proceeds through the entire length of beautiful Kapi'olani Park and past The Gold Coast, and then we ascend a gentle incline to the Diamond Head Lighthouse that stands atop the Kuilei Cliffs which rise 145 feet above the shoreline.
 
-**ALONG THE WAY** accurate facts are given about this scenic and historic area where walkers are introduced to some grand old trees planted over a hundred years ago. The event ends at the fifty-five-foot tower that we do not enter. There's a city bus stop here so participants can board a bus and return to Waikiki -- or walk back to the starting point in about thirty minutes.
+**ALONG THE WAY** accurate facts are given about this scenic and historic area where walkers are introduced to some grand old trees planted over a hundred years ago. The event ends at the fifty-five-foot tower that we do not enter. There’s a city bus stop here so participants can board a bus and return to Waikiki -- or walk back to the starting point in about thirty minutes.
 
-**EVERYONE IS REMINDED** that this activity holds the record as the 50th State's oldest, regularly scheduled, all-volunteer Litter Control Project. However, nobody is required to do this if they'd rather not. We don't think of it as a chore because picking up litter gives everybody a chance to get a little extra exercise by adding some healthy bending and stretching as we walk.
+**EVERYONE IS REMINDED** that this activity holds the record as the 50th State’s oldest, regularly scheduled, all-volunteer Litter Control Project. However, nobody is required to do this if they’d rather not. We don’t think of it as a chore because picking up litter gives everybody a chance to get a little extra exercise by adding some healthy bending and stretching as we walk.
 
 ### BACKGROUND
 
-**OUR VOLUNTEER PROJECT HAS RECEIVED FOUR HONORS:** A Certificate Of Recognition from the Mayor Of Honolulu, together with a Letter Of Commendation from the Governor Of Hawai'i, followed by a "Take Pride In America" citation from the State Department Of Land And Natural Resources, in conjunction with a National Letter Of Merit from the office of the United States Secretary Of The Interior.
+**OUR VOLUNTEER PROJECT HAS RECEIVED FOUR HONORS:** A Certificate Of Recognition from the Mayor Of Honolulu, together with a Letter Of Commendation from the Governor Of Hawai'i, followed by a “Take Pride In America” citation from the State Department Of Land And Natural Resources, in conjunction with a National Letter Of Merit from the office of the United States Secretary Of The Interior.
 
 **THE EVENT BEGAN** as a civic beautification project during 1982-83 when members of The Clean Air Team, in cooperation with the State Parks Department, agreed to undertake a major cleanup campaign along the passage to the top of the most photographed peak in this archipelago.
 
@@ -93,8 +93,8 @@ outdoor activities of The Clean Air Team, beginning in 1986 until her death in
 all the way to the summit of Diamond Head every Saturday throughout an entire
 year without a single absence. She also appeared as spokesperson for some of
 our antipollution Public Service Announcements broadcast on local television.
-In addition to helping with the team's environmental protection efforts, she
-assisted at many of our indoor events. Alice's cheerfulness is still fondly
+In addition to helping with the team’s environmental protection efforts, she
+assisted at many of our indoor events. Alice’s cheerfulness is still fondly
 remembered by her fellow volunteer workers and all who knew her.
 </section>
 

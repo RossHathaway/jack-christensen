@@ -5,7 +5,7 @@
 <PoemWrapper>
 
 ## Uncouth Youth 
-It's chilly midnight, not the best <br />
+It’s chilly midnight, not the best <br />
 time to be standing alone on the <br />
 westbound side of a highway where <br />
 vehicles are seldom passing while <br />
@@ -27,8 +27,8 @@ and New Jersey, then down
 to Florida, thus finishing <br />
 this last year of my teens <br />
 with a final fling, expecting <br />
-notification from Uncle Sam's <br />
-Draft Board, saying it's about <br />
+notification from Uncle Sam’s <br />
+Draft Board, saying it’s about <br />
 time for me to see more of the <br />
 world -- possibly a group tour <br />
 overseas to the Korean Peninsula.

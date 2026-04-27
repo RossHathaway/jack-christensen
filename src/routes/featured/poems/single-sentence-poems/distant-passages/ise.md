@@ -9,7 +9,7 @@ We stood among inquisitive, mystified people <br />
 looking through the transparent silk curtain <br />
 covering the entrance to the fenced enclosure, <br />
 as near as you may peer at the inner precinct <br />
-of Japan's highly venerated Geku Outer Shrine <br />
+of Japan’s highly venerated Geku Outer Shrine <br />
 protected by four ranks of tall wooden walls, <br />
 unpainted because no building in the successive <br />
 courtyards is touched by preservatives, since <br />
@@ -29,8 +29,8 @@ and when I remarked on a cluster of weeds <br />
 and fir sprouts growing out of a moist spot
 
 on a gabled roof of reeds and thatched grass, <br />
-our erudite guide replied, "Wild things are <br />
+our erudite guide replied, “Wild things are <br />
 always honored here as natural ambassadors <br />
-and divine messengers coming from the gods."
+and divine messengers coming from the gods.”
 
 </PoemWrapper>

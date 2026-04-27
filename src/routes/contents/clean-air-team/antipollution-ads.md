@@ -5,24 +5,24 @@ import QuoteWrapper from '../../../components/AntiPollutionContainer.svelte'
 <main>
 
 <h2>USEFUL SLOGANS</h2>
-<p>FOR TWENTY YEARS The Clean Air Team awarded an annual cash prize of $100 to the winner of a month long, statewide contest for the best original one-line slogan to foster courtesy on the part of smokers. This competition was announced on the first of December yearly, with the deadline being midnight on the last day of that month. Participants could submit an unlimited number of entries. The $100 prize was presented during the first week of January, and then the winning slogan became our official "annual banner" throughout the new year. Here's a complete list of all winners, beginning with a pair of precontest slogans devised by members
+<p>FOR TWENTY YEARS The Clean Air Team awarded an annual cash prize of $100 to the winner of a month long, statewide contest for the best original one-line slogan to foster courtesy on the part of smokers. This competition was announced on the first of December yearly, with the deadline being midnight on the last day of that month. Participants could submit an unlimited number of entries. The $100 prize was presented during the first week of January, and then the winning slogan became our official “annual banner” throughout the new year. Here’s a complete list of all winners, beginning with a pair of precontest slogans devised by members
 of The Clean Air Team:
 
-1976 - Mahalo For Not Smoking (Mahalo is Hawaiian for "thanks") 
+1976 - Mahalo For Not Smoking (Mahalo is Hawaiian for “thanks”) 
 
 1977 - Foul Air Is Bad For Humans 
 
-1978 - Don't Put Your Cloud Of Smoke Between Us (First contest) 
+1978 - Don’t Put Your Cloud Of Smoke Between Us (First contest) 
 
 1979 - We Need More Outspoken CLEAN AIR ADDICTS!
 
-1980 - Clean Air Doesn't Need Additives
+1980 - Clean Air Doesn’t Need Additives
 
-1981 - Show Others You Care, Don't Poison The Air
+1981 - Show Others You Care, Don’t Poison The Air
 
-1982 - If You Smoke, Don't Breathe It To A Soul
+1982 - If You Smoke, Don’t Breathe It To A Soul
 
-1983 - It's Time For The Ashtray To Go The Way Of The Spitoon 
+1983 - It’s Time For The Ashtray To Go The Way Of The Spitoon 
 
 1984 - Be Defensive When Smokers Are Offensive
 
@@ -47,13 +47,13 @@ of The Clean Air Team:
 
 1994 - Pass Up The CANCERettes
 
-1995 - Smoking Privately Is SUICIDAL, In Public It's HOMICIDAL 
+1995 - Smoking Privately Is SUICIDAL, In Public It’s HOMICIDAL 
 
 1996 - Outlaw Poison-Puffing In Public Places
 
 1997 - Stop Allowing Indoor Air Pollution
 
-1998 - Don't just say "pollution" -- say POLLUTION PEOPLE 
+1998 - Don’t just say “pollution” -- say POLLUTION PEOPLE 
 
 1999 - Pollution People Should Be Kicked Off The Planet! 
 
@@ -75,22 +75,22 @@ Private excursions and lectures pay for these newspaper ads ...
 
 <QuoteWrapper justify="center">
 <p>REMINDER: </p>
-<p>DON'T BE A LITTER-BUM </p>
-<p>(IT'S TRASHY) </p>
+<p>DON’T BE A LITTER-BUM </p>
+<p>(IT’S TRASHY) </p>
 <p class="smaller-text">THE CLEAN AIR TEAM 528&#9679;0528</p>
 </QuoteWrapper>
 
 <QuoteWrapper justify="flex-end">
 <p>REMINDER: </p>
 <p class="smaller-text">IF YOU LOVE HAWAII... </p>
-<p class="smaller-text">DON'T THROW RUBBISH IN HER FACE </p>
+<p class="smaller-text">DON’T THROW RUBBISH IN HER FACE </p>
 <p class="smaller-text">THE CLEAN AIR TEAM 528&#9679;0528</p>
 </QuoteWrapper>
 
 <QuoteWrapper justify="flex-start">
 <p>REMINDER: </p>
-<p>DON'T JUST SAY "POLLUTION" </p>
-<p>SAY "POLLUTION PEOPLE" </p>
+<p>DON’T JUST SAY “POLLUTION” </p>
+<p>SAY “POLLUTION PEOPLE” </p>
 <p class="smaller-text">THE CLEAN AIR TEAM 528&#9679;0528</p>
 </QuoteWrapper>
 
@@ -103,8 +103,8 @@ Private excursions and lectures pay for these newspaper ads ...
 
 <QuoteWrapper justify="flex-end">
 <p>REMINDER: </p>
-<p>DON'T SMOKE AROUND KIDS </p>
-<p>(IT'S CHILD ABUSE) </p>
+<p>DON’T SMOKE AROUND KIDS </p>
+<p>(IT’S CHILD ABUSE) </p>
 <p class="smaller-text">THE CLEAN AIR TEAM 528&#9679;0528</p>
 </QuoteWrapper>
 
