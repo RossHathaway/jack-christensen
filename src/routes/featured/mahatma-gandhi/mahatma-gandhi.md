@@ -1,6 +1,7 @@
 <main>
 
 <div markdown="1">
+<img src="/ghandi-1.png" alt="Ben Kingsley and Candice Bergen in Mahatma Gandhi movie" id="gandhi-1">
 <section markdown="1">The most important movie
 you'll ever see!
 <br><br>
@@ -24,7 +25,6 @@ Also
 <br>
 <strong>GANDHI'S HUMOR</strong>
 </section>
-<img src="/ghandi-1.png" alt="Ben Kingsley and Candice Bergen in Mahatma Gandhi movie" id="gandhi-1">
 </div>
 
 <section>
