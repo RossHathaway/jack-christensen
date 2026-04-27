@@ -48,7 +48,7 @@ li::after {
 
 WHEN I REACHED age eighty-six I crossed the upper borderline which entitles one to be a "longevity coach" for younger individuals -- because professional gerontologists classify senior citizens according to three categories: people between the ages of 65-75 are called __the young old__, persons from 76-85 become upgraded to membership among __the old old__, and those eighty-six and over are __the eldest of the elderly__. Upon entering that stage of my life, I began to wear a sports whistle on a cord around my neck, having decided to spend my remaining Golden Years as a volunteer "longevity coach" and an especially wary whistle-blower against The American Suicide Diet.
 
-!['Jack at University of Hawaii Pool'](uncle-jack-on-diving-tower.png)
+!['Jack at University of Hawaiʻi Pool'](uncle-jack-on-diving-tower.png)
 
 **MY CONSTANT MOBILITY** during many years giving tours and excursions brought lots of opportunities to reduce my food consumption along the byways. And thus I gradually formulated **My Geriatric Diet** that I continue to refine by personal experimentation -- convincing me further of the rule __Less Is Best__!
 
