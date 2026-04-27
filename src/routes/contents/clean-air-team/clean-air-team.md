@@ -12,7 +12,7 @@
 placards displaying the bold statement, <strong>FOUL AIR IS BAD FOR HUMANS.</strong> Next local merchants received free two sided, red, white and blue signs for their windows
 and glass doors, bearing the reminder, <strong>Thank you for not smoking while shopping.</strong>
 
-<strong>IN MARCH OF 1976</strong> we completed a supermarket survey on O'ahu and The Big Island. During this personal opinion poll 4,437 people waiting in checkout lines were asked, <strong>"Are you for or against smoking in food stores?"</strong> The final tally told the public, through the media, that over two thirds of the responding shoppers would prefer a total ban on smoking in food stores.
+<strong>IN MARCH OF 1976</strong> we completed a supermarket survey on Oʻahu and The Big Island. During this personal opinion poll 4,437 people waiting in checkout lines were asked, <strong>"Are you for or against smoking in food stores?"</strong> The final tally told the public, through the media, that over two thirds of the responding shoppers would prefer a total ban on smoking in food stores.
 
 <strong>A FULL COLOR PHOTO-POSTER</strong> was printed in 1977 to help youngsters avoid the air pollution of ETS (Environmental Tobacco Smoke) forced on them by inconsiderate smokers. This poster featured an appealing picture of attractive elementary school kids, all wearing colorful Hawaiian lei. Above them were the words <strong>PLEASE DON'T SMOKE AROUND CHILDREN,</strong> and below the photo we placed a health alert: "Researchers have discovered breathing problems and acute respiratory illness are more frequent among children whose parents smoke in the home."
 

@@ -30,7 +30,7 @@ with the Honolulu residency of the most famous person born
 in Hawaiʻi who became our Nation's 44th Commander In Chief.
 
 ACCURATE BACKGROUND FACTS are narrated chronologically at
-certain sites in the Punahou and Pawa'a and Makiki districts
+certain sites in the Punahou and Pawaʻa and Makiki districts
 which formed the **Hawaiʻi nei** (immediate limited environment)
 of “Barry" Obama, as he was known in his teen-age years.
 

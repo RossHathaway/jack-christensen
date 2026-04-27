@@ -20,7 +20,7 @@ Meet The Leader At The Bare Feet Of The Mahatma Gandhi Statue Under The Huge Ban
 </div>
 <!-- TODO: 4 dots -->
 
-**THIS OUTING** has been conducted by volunteer leaders since April 17, 1982. It features an array of picturesque places as the group proceeds through the entire length of beautiful Kapi'olani Park and past The Gold Coast, and then we ascend a gentle incline to the Diamond Head Lighthouse that stands atop the Kuilei Cliffs which rise 145 feet above the shoreline.
+**THIS OUTING** has been conducted by volunteer leaders since April 17, 1982. It features an array of picturesque places as the group proceeds through the entire length of beautiful Kapiʻolani Park and past The Gold Coast, and then we ascend a gentle incline to the Diamond Head Lighthouse that stands atop the Kuilei Cliffs which rise 145 feet above the shoreline.
 
 **ALONG THE WAY** accurate facts are given about this scenic and historic area where walkers are introduced to some grand old trees planted over a hundred years ago. The event ends at the fifty-five-foot tower that we do not enter. There's a city bus stop here so participants can board a bus and return to Waikiki -- or walk back to the starting point in about thirty minutes.
 
