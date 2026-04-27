@@ -240,12 +240,14 @@ away from her now, with the cremation unfinished, she would never forgive me."
 </main>
 
 <style>
-  div {
-    display: flex;
+  div::after {
+    content: "";
+    display: table;
+    clear: both;
   }
   #gandhi-1 {
-    padding: 0 1rem 1rem;
-    align-self: start;
+    float: right;
+    padding: 0 0 1rem 1rem;
   }
   #gandhi-2 {
     width: 100%;
