@@ -247,7 +247,6 @@ away from her now, with the cremation unfinished, she would never forgive me."
   }
   #gandhi-1 {
     float: right;
-    max-width: 50%;
     padding: 0 0 1rem 1rem;
   }
   #gandhi-2 {
