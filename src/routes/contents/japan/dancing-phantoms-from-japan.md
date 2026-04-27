@@ -121,7 +121,7 @@ seen details of the traditional backstage Costume Ceremony. The program is fully
 
 **CLOSELY ASSOCIATED** with Japan's indigenous religion of Shinto and with Buddhism introduced there during the sixth century, Noh itself has become a nearly religious art  , now regularly produced in only a few custom-built theaters. Occasionally, special outdoor programs are staged at shrines and temples.
 
-**MEMBERS OF THE AUDIENCE** seldom are permitted backstage to view the elaborate dressing of the actors during their ritualistic Costume Ceremony which was presented in public for the first time anywhere in the world, including Japan, at the premiere of this program on August 9, 1980 in the East-West Center's Kennedy Theater at the University Of Hawai'i in Honolulu.
+**MEMBERS OF THE AUDIENCE** seldom are permitted backstage to view the elaborate dressing of the actors during their ritualistic Costume Ceremony which was presented in public for the first time anywhere in the world, including Japan, at the premiere of this program on August 9, 1980 in the East-West Center's Kennedy Theater at the University Of Hawaiʻi in Honolulu.
 
 **DANCING PHANTOMS FROM JAPAN** continues inviting audiences to observe a captivating display of creativity as our team of Master Dressers, from the renowned Kanze Kaikan Noh Theater in Kyoto, sets about transforming their fellow professionals into vivid "dancing phantoms" who are then prepared to take command of the stage and perform with marvelous grace.
 

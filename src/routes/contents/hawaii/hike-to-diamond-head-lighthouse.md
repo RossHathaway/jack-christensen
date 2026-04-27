@@ -28,7 +28,7 @@ Meet The Leader At The Bare Feet Of The Mahatma Gandhi Statue Under The Huge Ban
 
 ### BACKGROUND
 
-**OUR VOLUNTEER PROJECT HAS RECEIVED FOUR HONORS:** A Certificate Of Recognition from the Mayor Of Honolulu, together with a Letter Of Commendation from the Governor Of Hawai'i, followed by a "Take Pride In America" citation from the State Department Of Land And Natural Resources, in conjunction with a National Letter Of Merit from the office of the United States Secretary Of The Interior.
+**OUR VOLUNTEER PROJECT HAS RECEIVED FOUR HONORS:** A Certificate Of Recognition from the Mayor Of Honolulu, together with a Letter Of Commendation from the Governor Of Hawaiʻi, followed by a "Take Pride In America" citation from the State Department Of Land And Natural Resources, in conjunction with a National Letter Of Merit from the office of the United States Secretary Of The Interior.
 
 **THE EVENT BEGAN** as a civic beautification project during 1982-83 when members of The Clean Air Team, in cooperation with the State Parks Department, agreed to undertake a major cleanup campaign along the passage to the top of the most photographed peak in this archipelago.
 

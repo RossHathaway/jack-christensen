@@ -67,7 +67,7 @@ Leilehua High School, Wahiawa, O'ahu<br>
 Waimea Elementary School, Kaua'i<br>
 Kapa'a Intermediate School, Kaua'i<br>
 Kaua'i High School, Lihu'e (Four sessions)<br>
-Hui Ho'oﬁlu 'Olelo Hawai'i, Hilo (Hawaiian Language Club)<br>
+Hui Ho'oﬁlu 'Olelo Hawaiʻi, Hilo (Hawaiian Language Club)<br>
 The Henry Opﬁkaha'ia School, Hilo<br>
 (One private evening session for students, teachers, parents)<br>
 Hilo High School (Two sessions)<br>
@@ -82,7 +82,7 @@ Pu'uhonua O Honaunau, National Historic Park, Kona<br>
 Kona Rotary Club, Kailua—Kona (Dinner meeting for members)<br>
 Our Lady Of Sorrows School, Wahiawa, O'ahu<br>
 Kalakaua Intermediate School, Honolulu (Three sessions)<br>
-Hawai'i School For Girls, Diamond Head (Two outdoor sessions)<br>
+Hawaiʻi School For Girls, Diamond Head (Two outdoor sessions)<br>
 Committee For The Preservation & Study Of Hawaiian Language,
 Art & Culture, Bishop Museum, Honolulu (Invitational)<br>
 Tenney Theater, Saint Andrew's Cathedral, Honolulu<br>
@@ -214,7 +214,7 @@ A STATEWIDE PUBLIC SERVICE SINCE 1974
 HAWAIIAN DICTIONARY<br>
 Hawaiian-English and English—Hawaiian<br>
 By Mary Kawena Pukui and Samuel H. Elbert<br>
-University Of Hawai'i Press, 1986, Revised and Enlarged Edition
+University Of Hawaiʻi Press, 1986, Revised and Enlarged Edition
 Cloth, 600 pages<br>
 [The result of decades of compilation, research and analysis, this book is the
 definitive and authoritative reference for Hawaiian vocabulary. It consists of
@@ -225,7 +225,7 @@ NEW POCKET HAWAIIAN DICTIONARY<br>
 With A Concise Hawaiian Grammar<br>
 By Mary Kawena Pukui and Samuel H. Elbert,<br>
 With Esther T. Mo‘okini and Yu Mapuana Nishizawa<br>
-University Of Hawai'i Press, 1992<br>
+University Of Hawaiʻi Press, 1992<br>
 Paperback, 272 pages<br>
 [This condensed version of the unabridged __Hawaiian Dictionary__ contains the most
 frequently used 6,000 Hawaiian words, plus 4,800 English words, as well as 750
@@ -252,7 +252,7 @@ Paperback, 96 pages with maps<br>
 MAMAKA KAIAO: A Modern Hawaiian Vocabulary<br>
 Created & Compiled By Kamike Hua'olelo with support from<br>
 Hale Kuamo'o & 'Aha Pﬁnana Leo<br>
-University Of Hawai'i Press, 2003<br>
+University Of Hawaiʻi Press, 2003<br>
 Cloth, $42.00 / Paperback, $15.95 / 414 pages<br>
 [The title translates as "carrying forward into a new era." Published in both
 Hawaiian and English, this companion to the Hawaiian Dictionary contains more
@@ -268,7 +268,7 @@ for accuracy, and elements are included from similar Polynesian Languages.]
 
 REFERENCE MAPS OF THE ISLANDS 0F HAWAI'I<br>
 By James A. Bier<br>
-University Of Hawai'i Press, folded paper sheets<br>
+University Of Hawaiʻi Press, folded paper sheets<br>
 [These five full-color shaded relief maps of six islands include large—scale
 insets of towns and also show detailed networks of roads, the locations of
 parks and beaches and hiking trails, cultural sites, and natural points of

@@ -56,7 +56,7 @@ WHEN I REACHED age eighty-six I crossed the upper borderline which entitles one 
 
 **ATTAINING AN ADVANCED OLD AGE** is often envisioned as a listless sitting around hoping to live past a hundred years. But I'm advocating __a productive longevity__ and not merely "life extension" which is often just a prolonged waiting-to-die situation. I don't tout any popular HEALTH and FITNESS methods because there are too many persons giving that kind of advice -- who are killing themselves in other ways, such as enslavement to electronic devices and not attending to the careful conserving/directing of their energies. So my primary pitch as a "longevity coach" cites a basic law in the biological evolution of humankind: __Good enough is as good as anything needs to be__. Everything about us, it seems to me, remains able to thrive and proceed upon that fundamental foundation.
 
-PHOTO: Uncle Jack at age eighty, atop the ten-meter-high Olympic platform (33 feet tall), University Of Hawai'i At Manoa, Honolulu.
+PHOTO: Uncle Jack at age eighty, atop the ten-meter-high Olympic platform (33 feet tall), University Of Hawaiʻi At Manoa, Honolulu.
 
 <div class="centered">
 

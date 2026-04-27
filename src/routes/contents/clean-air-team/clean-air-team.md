@@ -6,7 +6,7 @@
 
 <h3> A Brief History Of Our Accomplishments </h3>
 
-<strong>THE CLEAN AIR TEAM</strong> began as a self-sustaining group of volunteers who at first called themselves The Nonsmokers' Rights Council Of Hawai'i. An opening rally was well attended on November 15, 1975 at the Waikiki-Kapahulu Public Library. Thereafter, meetings were conducted every Saturday for twenty-five consecutive weeks until May, 1976, during which time our objectives were defined and public service projects launched.
+<strong>THE CLEAN AIR TEAM</strong> began as a self-sustaining group of volunteers who at first called themselves The Nonsmokers' Rights Council Of Hawaiʻi. An opening rally was well attended on November 15, 1975 at the Waikiki-Kapahulu Public Library. Thereafter, meetings were conducted every Saturday for twenty-five consecutive weeks until May, 1976, during which time our objectives were defined and public service projects launched.
 
 <strong>THE GROUP'S FIRST EFFORTS</strong> included the design, manufacture and distribution of badges saying <strong>Mahalo for not smoking</strong> and the printing of glossy red and white
 placards displaying the bold statement, <strong>FOUL AIR IS BAD FOR HUMANS.</strong> Next local merchants received free two sided, red, white and blue signs for their windows
@@ -21,7 +21,7 @@ and glass doors, bearing the reminder, <strong>Thank you for not smoking while s
 <strong>AN EXTRA CONTEST</strong> was conducted in 1979 when we gave $100 for an original one
 line answer to the question, <strong>"Do you mind if I smoke?"</strong> Over a thousand entries were received during that thirty day competition, and our judges selected the quip: <strong>"Do you mind waiting until I finish breathing?"</strong>
 
-<strong>AT THE BEGINNING OF 1980</strong> The Nonsmokers' Rights Council Of Hawai'i started the decade by changing its name to <strong>The Clean Air Team.</strong> As the 50th State's most outspoken "clean air addicts" we produced Public Service Announcements for
+<strong>AT THE BEGINNING OF 1980</strong> The Nonsmokers' Rights Council Of Hawaiʻi started the decade by changing its name to <strong>The Clean Air Team.</strong> As the 50th State's most outspoken "clean air addicts" we produced Public Service Announcements for
 local radio stations. These brief messages depicted smoking as the most common form of air pollution in the world -- but also the most easily controlled in public places, through legislative measures.
 
 <strong>IN THE OPENING MONTHS OF 1981</strong> we produced our first 30-second television spot, followed by two 10-second spots in 1982, plus two more 30-second spots in 1983. And for the next five years we continued broadcasting our TV and radio messages throughout the Hawaiian Islands.
