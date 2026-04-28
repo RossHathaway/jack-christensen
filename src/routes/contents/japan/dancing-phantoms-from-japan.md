@@ -54,6 +54,13 @@
     max-height: 70px;
   }
 
+  @media screen and (max-width: 550px) {
+    img.header {
+      width: auto;
+      height: 2.5rem;
+    }
+  }
+
   #pictures-section-1 {
     position: relative;
     left: -100px;
