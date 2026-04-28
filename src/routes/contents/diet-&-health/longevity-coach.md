@@ -1,9 +1,17 @@
 <style>
 img {
-    max-width: 350px;
+    max-width: 100%;
     width: 350px;
     float: right;
     margin: 1.5rem 0 1.5rem 1.5rem;
+}
+
+@media screen and (max-width: 400px) {
+    img {
+        float: none;
+        width: 100%;
+        margin: 1.5rem 0;
+    }
 }
 
 blockquote > footer {
