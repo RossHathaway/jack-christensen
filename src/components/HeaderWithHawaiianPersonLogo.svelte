@@ -38,6 +38,27 @@
     max-height: 150px;
     max-width: 120px;
   }
+
+  @media screen and (max-width: 600px) {
+    header {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    img {
+      max-height: 80px;
+      max-width: 70px;
+    }
+
+    header :global(.centered div:nth-child(1)) {
+      font-size: 1.2rem;
+    }
+
+    header :global(.centered div:nth-child(3)) {
+      margin: 0.25rem 0.5rem 0;
+    }
+  }
 </style>
 
 <header>
