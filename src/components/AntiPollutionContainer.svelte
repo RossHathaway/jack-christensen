@@ -65,7 +65,7 @@
     font-size: 16px;
     color: #231f20;
     line-height: normal;
-    max-height: 50px;
+    max-height: 75px;
   }
 
   foreignObject :global(.smaller-text) {
