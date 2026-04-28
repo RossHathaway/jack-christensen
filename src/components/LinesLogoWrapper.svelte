@@ -45,7 +45,7 @@
     }
 
     main.doubleBorder {
-      padding: 2rem;
+      padding: 1.75rem;
     }
 
     header {
@@ -72,7 +72,7 @@
       inset 0 0 0 1.5rem gray;
     -moz-box-shadow: inset 0 0 0 0.75rem var(--main-bg-color),
       inset 0 0 0 1.5rem gray;
-    padding: 3rem 4rem;
+    padding: 2.5rem 4rem;
   }
 </style>
 
