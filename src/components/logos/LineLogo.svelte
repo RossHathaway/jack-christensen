@@ -1,6 +1,7 @@
 <style>
   svg {
     width: 260px;
+    max-width: 100%;
   }
 </style>
 

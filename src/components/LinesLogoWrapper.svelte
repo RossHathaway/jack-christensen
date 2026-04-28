@@ -34,6 +34,30 @@
     border: 0.75rem solid black;
     max-width: 1000px;
     padding: 2rem 4rem;
+    width: 100%;
+  }
+
+  @media (max-width: 600px) {
+    main {
+      padding: 1rem;
+      border-width: 0.4rem;
+    }
+
+    header {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .primary-header-txt {
+      font-size: 1.3rem;
+      letter-spacing: 0.1rem;
+    }
+
+    .secondary-header-txt {
+      font-size: 0.85rem;
+      letter-spacing: 0.05rem;
+    }
   }
 
   main.doubleBorder {
