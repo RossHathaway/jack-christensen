@@ -44,6 +44,10 @@
       border-width: 0.4rem;
     }
 
+    main.doubleBorder {
+      padding: 2rem;
+    }
+
     header {
       flex-wrap: wrap;
       justify-content: center;
@@ -68,6 +72,7 @@
       inset 0 0 0 1.5rem gray;
     -moz-box-shadow: inset 0 0 0 0.75rem var(--main-bg-color),
       inset 0 0 0 1.5rem gray;
+    padding: 3rem 4rem;
   }
 </style>
 
