@@ -61,6 +61,13 @@
     display: flex;
   }
 
+  @media (max-width: 999px) {
+    #pictures-section-1 {
+      left: 0;
+      width: 100%;
+    }
+  }
+
   #pictures-section-1 div {
     height: 880px;
     display: flex;
