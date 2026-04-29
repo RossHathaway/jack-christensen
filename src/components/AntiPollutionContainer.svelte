@@ -30,7 +30,7 @@
       stroke="#231f20"
       stroke-width="3.75"
     />
-    <foreignObject class="node" x="101" y="28" width="75%" height="1">
+    <foreignObject class="node" x="101" y="28" width="75%" height="70">
       <body xmlns="http://www.w3.org/1999/xhtml">
         <slot></slot>
       </body>
@@ -65,7 +65,7 @@
     font-size: 16px;
     color: #231f20;
     line-height: normal;
-    max-height: 75px;
+    height: 100%;
   }
 
   foreignObject :global(.smaller-text) {
