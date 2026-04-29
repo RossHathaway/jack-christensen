@@ -40,6 +40,7 @@
 
   h2 > span {
     grid-column-start: 2;
+    margin-left: 0.5rem;
   }
 
   h2 > img {
