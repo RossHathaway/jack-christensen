@@ -30,7 +30,7 @@
       stroke="#231f20"
       stroke-width="3.75"
     />
-    <foreignObject class="node" x="101" y="28" width="75%" height="1">
+    <foreignObject overflow="visible" class="node" x="101" y="10" width="75%" height="88">
       <body xmlns="http://www.w3.org/1999/xhtml">
         <slot></slot>
       </body>
@@ -49,23 +49,22 @@
     flex-grow: 1;
   }
 
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
   foreignObject {
     overflow: visible;
     text-align: center;
   }
 
-  foreignObject body {
+  foreignObject :global(body) {
     font-family: Galindo, sans-serif;
     font-size: 16px;
     color: #231f20;
     line-height: normal;
-    max-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   foreignObject :global(.smaller-text) {
