@@ -38,14 +38,24 @@
     width: 100%;
   }
 
-  @media (max-width: 600px) {
+  main.doubleBorder {
+    box-shadow: inset 0 0 0 0.75rem var(--main-bg-color),
+      inset 0 0 0 1.5rem gray;
+    -webkit-box-shadow: inset 0 0 0 0.75rem var(--main-bg-color),
+      inset 0 0 0 1.5rem gray;
+    -moz-box-shadow: inset 0 0 0 0.75rem var(--main-bg-color),
+      inset 0 0 0 1.5rem gray;
+    padding: 2.5rem 4rem;
+  }
+
+    @media (max-width: 600px) {
     main {
       padding: 1rem;
       border-width: 0.4rem;
     }
 
     main.doubleBorder {
-      padding: 1.75rem;
+      padding: 2rem;
     }
 
     header {
@@ -63,16 +73,6 @@
       font-size: 0.85rem;
       letter-spacing: 0.05rem;
     }
-  }
-
-  main.doubleBorder {
-    box-shadow: inset 0 0 0 0.75rem var(--main-bg-color),
-      inset 0 0 0 1.5rem gray;
-    -webkit-box-shadow: inset 0 0 0 0.75rem var(--main-bg-color),
-      inset 0 0 0 1.5rem gray;
-    -moz-box-shadow: inset 0 0 0 0.75rem var(--main-bg-color),
-      inset 0 0 0 1.5rem gray;
-    padding: 2.5rem 4rem;
   }
 </style>
 
