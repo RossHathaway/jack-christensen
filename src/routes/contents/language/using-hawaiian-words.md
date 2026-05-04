@@ -15,7 +15,7 @@
 
 
 
-## "USING HAWAIIAN WORDS"
+## “USING HAWAIIAN WORDS”
 
 <div class="centered">
 FREE LECTURE PRESENTED BY SPECIAL ARRANGEMENT
@@ -28,7 +28,7 @@ BUSINESS GROUPS
 
 **THIS HELPFUL SESSION** has been conducted by volunteer speakers
 since April, 1974 as the easiest and fastest way to find out how to cope with saying and writing individual Hawaiian words.
-It's complete in a single sitting that lasts just one hour -- not a series of classes for learning conversational Hawaiian.
+It’s complete in a single sitting that lasts just one hour -- not a series of classes for learning conversational Hawaiian.
 
 The informal lecture ranks as the first and still the foremost
 presentation of its kind for the general public, explaining
@@ -61,7 +61,7 @@ Wai'anae Intermediate School, O'ahu<br>
 KITV—4 News Staff, Honolulu (For television newscasters only)<br>
 Aloha Airlines Cabin Attendants, Honolulu International Airport<br>
 Ma'ili Elementary School, O'ahu (Faculty only)<br>
-Tourism Industry Employees' Class, Visitors Bureau, Waikiki<br>
+Tourism Industry Employees’ Class, Visitors Bureau, Waikiki<br>
 Waialua Elementary School, O'ahu<br>
 Leilehua High School, Wahiawa, O'ahu<br>
 Waimea Elementary School, Kaua'i<br>
@@ -85,7 +85,7 @@ Kalakaua Intermediate School, Honolulu (Three sessions)<br>
 Hawai'i School For Girls, Diamond Head (Two outdoor sessions)<br>
 Committee For The Preservation & Study Of Hawaiian Language,
 Art & Culture, Bishop Museum, Honolulu (Invitational)<br>
-Tenney Theater, Saint Andrew's Cathedral, Honolulu<br>
+Tenney Theater, Saint Andrew’s Cathedral, Honolulu<br>
 (Eight evening sessions for the general public)<br>
 Waimea Falls Park, O'ahu (Evening session for staff and guests)<br>
 Windward School For Adults, Kailua, O'ahu (Evening session)<br>
@@ -104,7 +104,7 @@ the Hawaiian Language. Ability in conversational Hawaiian is
 not required because our primary goal is simply to cover the
 basic guidelines of how to write and say individual Hawaiian
 words. Your presenter will be following a standard procedure,
-step-by—step, without departing from what we've learned works
+step-by—step, without departing from what we’ve learned works
 best, from our experience before thousands of listeners. So
 please refrain from interrupting the speaker to ask questions
 that may come to mind —- because every question which occurs
@@ -123,33 +123,33 @@ about eighty—five percent of the place names are traditional
 ones which many people consider Fiftieth State Treasures.
 
 Hawaiian place names have beautifully melodious sounds when
-they're pronounced accurately. But unfortunately we have
+they’re pronounced accurately. But unfortunately we have
 two prevalent problems regarding Hawaiian terms here in
 Alohaland —— mispronunciation and careless typography.
 
 Newcomers arrive daily, bringing foreign language backgrounds
 with them. So there are all sorts of peculiar ways somebody
-might say Hawaiian words. But everyone surely agrees there's
-only one way to say Hawaiian words right and that's the true
+might say Hawaiian words. But everyone surely agrees there’s
+only one way to say Hawaiian words right and that’s the true
 Hawaiian way, of course. Anything else sounds like a false
 note in the ears of those who know the difference. And with
 the current increase of popular interest in Hawaiian culture,
 there are growing numbers of people who do know the difference.
 In fact, it has become a status symbol these days to be able
-to write and say Hawaiian words with confidence as "somebody
-who belongs here." There's really only one reason people are
+to write and say Hawaiian words with confidence as “somebody
+who belongs here.” There’s really only one reason people are
 unconcerned about preserving Hawaiian place names -- they just
-can't be bothered. However, it's not difficult to learn the
+can’t be bothered. However, it’s not difficult to learn the
 correct usage of ONLY the particular Hawaiian terms which you
-encounter frequently in the conduct your daily life. You'll
+encounter frequently in the conduct your daily life. You’ll
 need to learn merely those FAMILIAR WORDS comprising your own
 __Personal Hawaiian Vocabulary__. If we consider how often we see,
 hear and say certain Hawaiian terms, it will be an easy matter
 for anyone to compile a list of words which can be regarded as
-immediate features of one's local environment. Thus, different
+immediate features of one’s local environment. Thus, different
 individuals will make different lists, according to their own
 situation and the range of their activities. Start with ten
-place names or street names —- and you're on your way!
+place names or street names —- and you’re on your way!
 
  
 
@@ -186,7 +186,7 @@ categories for quick reference, according to basic topics such
 as __Proper Names__ or __Street Names__ or __Town Names__ or __Botanical Names__
 or __Names Of Channels Between Islands__, etc.
 
-ALWAYS LOOK UP THE MEANING of any word you include. If there's
+ALWAYS LOOK UP THE MEANING of any word you include. If there’s
 no literal translation, insert the notation: (meaning lost).
 
 SOUND PATTERNS that first appeared in the 1965 publication
@@ -194,13 +194,13 @@ __Instant Hawaiian Pocket Dictionary__ have been incorporated
 into this program because these easy phonetic renderings
 in English, indicating how to say a Hawaiian word right,
 can be applied to any Hawaiian term. This is a valuable
-aid to pronunciation which you'll be able to construct by
-yourself after attending today's session. Each syllable
+aid to pronunciation which you’ll be able to construct by
+yourself after attending today’s session. Each syllable
 is shown as a unit of sound separated by dashes. Syllables
 needing stress appear in CAPS while unstressed syllables are
 in lower case. Keep watching how this is done so you can apply
 helpful SOUND PATTERNS to your own __Personal Hawaiian Vocabulary__.
-It's the key item for quick reference, indicating exactly how
+It’s the key item for quick reference, indicating exactly how
 to say a word -— without having to figure it out all over again!
 
 <!-- 0 O O dots -->
@@ -229,7 +229,7 @@ University Of Hawai'i Press, 1992<br>
 Paperback, 272 pages<br>
 [This condensed version of the unabridged __Hawaiian Dictionary__ contains the most
 frequently used 6,000 Hawaiian words, plus 4,800 English words, as well as 750
-"Hawaiianized" English names. A condensed grammar outlines in clear and simple
+“Hawaiianized” English names. A condensed grammar outlines in clear and simple
 terms the structure of the language and the position of Hawaiian within the
 Polynesian language family.]
 
@@ -254,13 +254,13 @@ Created & Compiled By Kamike Hua'olelo with support from<br>
 Hale Kuamo'o & 'Aha Pﬁnana Leo<br>
 University Of Hawai'i Press, 2003<br>
 Cloth, $42.00 / Paperback, $15.95 / 414 pages<br>
-[The title translates as "carrying forward into a new era." Published in both
+[The title translates as “carrying forward into a new era.” Published in both
 Hawaiian and English, this companion to the Hawaiian Dictionary contains more
 than 1,000 new and contemporary Hawaiian terms essential to the continuation
 and growth of the Hawaiian Language. These words were created, collected and approved by the Hawaiian Lexicon Committee, from 1987 through 2003. Members
 of the committee generally meet four to six times each year to discuss terms
 related to new fields of knowledge which are not found in the Pukui & Elbert
-standard dictionary. Useful words from other languages are "Hawaiianized"
+standard dictionary. Useful words from other languages are “Hawaiianized”
 into suitable terms. Also certain Hawaiian words are updated and revised
 for accuracy, and elements are included from similar Polynesian Languages.]
 
@@ -291,7 +291,7 @@ MOLOKA'i & LANA'I, 5th Edition, 2002, 21x18 inches
 <!-- three dots -->
 
 THE WEB SITE http://www.ulukau.org was announced in the spring of 2004
-as the first Hawaiian/English e—library. The site's dictionaries allow
+as the first Hawaiian/English e—library. The site’s dictionaries allow
 the user to type in any Hawaiian word to receive its English equivalent.
 
 </DocumentWrapper>

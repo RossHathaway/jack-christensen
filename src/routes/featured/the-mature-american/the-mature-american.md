@@ -28,7 +28,7 @@ I have traveled a good deal in Concord.
 If I were confined to a corner of a garret all my days, the world would be just as large to me while I had my thoughts about me.
 </blockquote>
 
-He was graduated from Harvard University in 1837. For a while he followed his father's profession of manufacturing pencils, and then with his brother, John, he organized a private school for boys. But he learned that a steady income need not be the fundamental purpose of a lifetime, and so instead of earning money regular1y at a tedious occupation that paid him more than he needed, he became financially self-sufficient by working at a variety of tasks he enjoyed and performed well: surveyor, carpenter, laborer, general handyman.
+He was graduated from Harvard University in 1837. For a while he followed his father’s profession of manufacturing pencils, and then with his brother, John, he organized a private school for boys. But he learned that a steady income need not be the fundamental purpose of a lifetime, and so instead of earning money regular1y at a tedious occupation that paid him more than he needed, he became financially self-sufficient by working at a variety of tasks he enjoyed and performed well: surveyor, carpenter, laborer, general handyman.
 
 <blockquote>
 Those slight labors which afford me a livelihood, and by which I am serviceable to my contemporaries, are as yet a pleasure to me, and I am not often reminded that they are a necessity. But I foresee that if my wants should be much increased, the labor required to supply them would become a drugery. If I should sell both my forenoons and afternoons to society, as most appear to do, there would be nothing left worth living for. I trust that I shall never thus sell my birthright for a mess of pottage.
@@ -69,15 +69,15 @@ Our life is frittered away by detail. Simplicity, simplicity, simplicity. I say,
 
 Be ever so little distracted, your thoughts so little confused, your engagements so few, your attention so free, your existence so mundane, that in all places and in all hours you can hear the sound of crickets in those seasons when they are to be heard.
 </blockquote>
-Emerson owned a few acres of wooded property along the shore of Walden Pond two miles south of Concord, and in 184-5 he allowed twenty-eight year old Henry to build a frame cabin close beside the pond where he lived alone two years, a mile from any neighbor. Thoreau constructed his small dwelling mostly from used materials. It measured ten by fifteen feet, with walls eight feet high, the outside covered with boards and shingles, plastered within. He placed a large window on each side of the rectangular room, a brick fireplace at one end and a door at the other. The cash outlay for this "snug harbor in the woods" he figured at exactly twenty-eight dollars, twelve and a half cents.
+Emerson owned a few acres of wooded property along the shore of Walden Pond two miles south of Concord, and in 184-5 he allowed twenty-eight year old Henry to build a frame cabin close beside the pond where he lived alone two years, a mile from any neighbor. Thoreau constructed his small dwelling mostly from used materials. It measured ten by fifteen feet, with walls eight feet high, the outside covered with boards and shingles, plastered within. He placed a large window on each side of the rectangular room, a brick fireplace at one end and a door at the other. The cash outlay for this “snug harbor in the woods” he figured at exactly twenty-eight dollars, twelve and a half cents.
 
 <blockquote>
 The cost of a thing is the amount of life which is required to be exchanged for it, immediately or in the long run.
 
 It would be some advantage to live a primative and frontier life, though in the midst of an outward civilization, if only to learn what are the gross necessaries of life and what methods have been taken to obtain them.
 </blockquote>
-Thoreau's cabin was not a sleazy, escapist hideaway. According to Emerson,
-"He knew how to be poor without a hint of squalor."
+Thoreau’s cabin was not a sleazy, escapist hideaway. According to Emerson,
+“He knew how to be poor without a hint of squalor.”
 
 <blockquote>
 A man is rich in proportion to the number of things he can afford to leave alone.
@@ -86,7 +86,7 @@ Shall we always study to obtain more things and not sometimes to be content with
 
 With respect to luxuries and comforts, the wisest have ever lived a more simple and meager life than the poor.
 </blockquote>
-Walden Pond, half a mile long and a mile and three quarters around, with its greatest depth at a hundred and two feet, remained remarkably clear and pure in Thoreau*s day. Writing in his journal, he mentions at various times the typical trees in the woods — pine, beech, oak, elm, spruce, hemlock, holly, juniper, dogwood, hickory, maple, chestnut, apple and cherry. As the seasons passed he also lived among goldenrods, lilacs, grapes, berries and toadstools. His visitors were red squirrels, woodchucks, raccoons, muskrats, minks, foxes, meadow mice, hares, bees, spiders and warring ants. The pond itself was home to water-bugs, ducks, turtles, bullfrogs, eels and leaping fish — bass and trout and jeweled pickerel. Overhead were fish hawks and marsh hawks, hoot owls and cat owls and barrel owls, geese, pigeons, partridges, sparrows, white bellied swallows, red-wings, bluebirds, blue jays, robins, one solitary loon, and "the singing of a brown thrasher high in the birch."
+Walden Pond, half a mile long and a mile and three quarters around, with its greatest depth at a hundred and two feet, remained remarkably clear and pure in Thoreau's day. Writing in his journal, he mentions at various times the typical trees in the woods — pine, beech, oak, elm, spruce, hemlock, holly, juniper, dogwood, hickory, maple, chestnut, apple and cherry. As the seasons passed he also lived among goldenrods, lilacs, grapes, berries and toadstools. His visitors were red squirrels, woodchucks, raccoons, muskrats, minks, foxes, meadow mice, hares, bees, spiders and warring ants. The pond itself was home to water-bugs, ducks, turtles, bullfrogs, eels and leaping fish — bass and trout and jeweled pickerel. Overhead were fish hawks and marsh hawks, hoot owls and cat owls and barrel owls, geese, pigeons, partridges, sparrows, white bellied swallows, red-wings, bluebirds, blue jays, robins, one solitary loon, and “the singing of a brown thrasher high in the birch.”
 
 <blockquote>
 I went to the woods because I wished to live deliberately, to front only the essential facts of life, and see if I could not learn what it had to teach, and not, when I came to die, discover that I had not lived. I did not wish to live what is not life — living is so dear — nor did I wish to practice resignation unless it was quite necessary. I wanted to live deep, to live sturdily, to cut a broad swath and shave close, to drive life into a corner, and reduce it to its lowest terms, and if it proved to be mean, why then to get the whole and genuine meanness of it — or if it were sublime, to know it by experience.
@@ -112,7 +112,7 @@ Let us settle ourselves and work and wedge our feet downward through the mud and
 I hearing get, who had but ears,
 And sight, who had but eyes before;
 I moments live, who lived but years,
-And truth discern, who knew but learning's lore.
+And truth discern, who knew but learning’s lore.
 <footer>— Henry David Thoreau</footer>
 </blockquote>
 
