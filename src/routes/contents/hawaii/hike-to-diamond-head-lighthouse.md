@@ -20,7 +20,7 @@ Meet The Leader At The Bare Feet Of The Mahatma Gandhi Statue Under The Huge Ban
 </div>
 <!-- TODO: 4 dots -->
 
-**THIS OUTING** has been conducted by volunteer leaders since April 17, 1982. It features an array of picturesque places as the group proceeds through the entire length of beautiful Kapi'olani Park and past The Gold Coast, and then we ascend a gentle incline to the Diamond Head Lighthouse that stands atop the Kuilei Cliffs which rise 145 feet above the shoreline.
+**THIS OUTING** has been conducted by volunteer leaders since April 17, 1982. It features an array of picturesque places as the group proceeds through the entire length of beautiful Kapiʻolani Park and past The Gold Coast, and then we ascend a gentle incline to the Diamond Head Lighthouse that stands atop the Kuilei Cliffs which rise 145 feet above the shoreline.
 
 **ALONG THE WAY** accurate facts are given about this scenic and historic area where walkers are introduced to some grand old trees planted over a hundred years ago. The event ends at the fifty-five-foot tower that we do not enter. There's a city bus stop here so participants can board a bus and return to Waikiki -- or walk back to the starting point in about thirty minutes.
 
@@ -28,7 +28,7 @@ Meet The Leader At The Bare Feet Of The Mahatma Gandhi Statue Under The Huge Ban
 
 ### BACKGROUND
 
-**OUR VOLUNTEER PROJECT HAS RECEIVED FOUR HONORS:** A Certificate Of Recognition from the Mayor Of Honolulu, together with a Letter Of Commendation from the Governor Of Hawai'i, followed by a "Take Pride In America" citation from the State Department Of Land And Natural Resources, in conjunction with a National Letter Of Merit from the office of the United States Secretary Of The Interior.
+**OUR VOLUNTEER PROJECT HAS RECEIVED FOUR HONORS:** A Certificate Of Recognition from the Mayor Of Honolulu, together with a Letter Of Commendation from the Governor Of Hawaiʻi, followed by a "Take Pride In America" citation from the State Department Of Land And Natural Resources, in conjunction with a National Letter Of Merit from the office of the United States Secretary Of The Interior.
 
 **THE EVENT BEGAN** as a civic beautification project during 1982-83 when members of The Clean Air Team, in cooperation with the State Parks Department, agreed to undertake a major cleanup campaign along the passage to the top of the most photographed peak in this archipelago.
 
