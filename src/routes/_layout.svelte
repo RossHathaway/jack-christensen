@@ -21,7 +21,7 @@
 <style>
   #main-container {
     display: grid;
-    grid-template-columns: 20rem auto 1fr;
+    grid-template-columns: 19rem auto 1fr;
     justify-items: center;
     min-width: 0;
     /* scroll ? */
