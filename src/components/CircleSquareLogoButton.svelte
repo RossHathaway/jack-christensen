@@ -1,6 +1,6 @@
 <script>
   import CircleSquareLogo from "./logos/CircleSquareLogo.svelte";
-  import PersonalReligiousSymbolExplanation from "./PersonalReligiousSymbolExplanation.svelte";
+  // import PersonalReligiousSymbolExplanation from "./PersonalReligiousSymbolExplanation.svelte";
 
   let open = false;
 </script>
@@ -8,6 +8,10 @@
 <style>
   a  > :global(svg) {
     width: clamp(60px, 18vw, 180px);
+  }
+
+  a {
+    padding-left: 1rem
   }
 
   @media screen and (max-width: 1000px) {

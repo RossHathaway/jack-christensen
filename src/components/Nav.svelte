@@ -67,7 +67,7 @@
     align-self: flex-start;
 
     width: 18rem;
-    margin: 0 1rem;
+    margin: 0 0 0 1rem;
 
     transition: width 0.3s;
   }

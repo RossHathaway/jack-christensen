@@ -32,30 +32,35 @@
   }
 
   main {
-    border: 0.75rem solid black;
+    box-shadow: inset 0 0 0 0.75rem var(--main-bg-color),
+      inset 0 0 0 1.5rem black;
+    -webkit-box-shadow: inset 0 0 0 0.75rem var(--main-bg-color),
+      inset 0 0 0 1.5rem black;
+    -moz-box-shadow: inset 0 0 0 0.75rem var(--main-bg-color)
+       inset 0 0 0 1.5rem black;
     max-width: 1000px;
     padding: 2rem 4rem;
     width: 100%;
+    margin-top: -.75rem;
   }
 
   main.doubleBorder {
-    box-shadow: inset 0 0 0 0.75rem var(--main-bg-color),
-      inset 0 0 0 1.5rem gray;
-    -webkit-box-shadow: inset 0 0 0 0.75rem var(--main-bg-color),
-      inset 0 0 0 1.5rem gray;
-    -moz-box-shadow: inset 0 0 0 0.75rem var(--main-bg-color),
-      inset 0 0 0 1.5rem gray;
+    box-shadow: inset 0 0 0 0.75rem var(--main-bg-color), inset 0 0 0 1.5rem black,
+      inset 0 0 0 2.25rem var(--main-bg-color), inset 0 0 0 3rem gray;
+    -webkit-box-shadow: inset 0 0 0 0.75rem var(--main-bg-color), inset 0 0 0 1.5rem black,
+      inset 0 0 0 2.25rem var(--main-bg-color), inset 0 0 0 3rem gray;
+    -moz-box-shadow: inset 0 0 1.5rem var(--main-bg-color), inset 0 0 0 1.5rem black,
+      inset 0 0 0 2.25rem var(--main-bg-color), inset 0 0 0 3rem gray;
     padding: 2.5rem 4rem;
   }
 
     @media (max-width: 600px) {
     main {
-      padding: 1rem;
-      border-width: 0.4rem;
+      padding: 2rem;
     }
 
     main.doubleBorder {
-      padding: 2rem;
+      padding: 3.5rem;
     }
 
     header {
