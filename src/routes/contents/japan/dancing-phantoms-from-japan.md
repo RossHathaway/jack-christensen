@@ -32,8 +32,8 @@
 
   h2 {
     display: grid;
-    grid-template-columns: 1fr repeat(3, auto) 1fr;
-    grid-column-gap: 0;
+    grid-template-columns: 1fr auto 1fr;
+    grid-column-gap: 1.5rem;
     justify-items: center;
     text-decoration:underline;
   }
@@ -42,16 +42,23 @@
     grid-column-start: 2;
   }
 
-  h2 > img {
-    margin-right: auto;
-  }
-
   img {
     margin: 0.25rem;
   }
 
   img.header {
     max-height: 70px;
+  }
+
+  @media screen and (max-width: 630px) {
+    h2 {
+      grid-column-gap: .75rem;
+    }
+
+    img.header {
+      width: auto;
+      height: 2.5rem;
+    }
   }
 
   #pictures-section-1 {
