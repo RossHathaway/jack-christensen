@@ -29,7 +29,7 @@
 <main>
 
   <div>
-    <img alt="Jack in Hawaii" src="uncle-jack-on-diving-tower.png" />
+    <img alt="Jack in Hawaiʻi" src="uncle-jack-on-diving-tower.png" />
   </div>
 
   <p>

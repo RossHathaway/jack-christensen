@@ -48,7 +48,7 @@ costumed dolls the intrepid flier had
 
 acquired during his many international <br />
 trips -- their residence located near <br />
-the vacated little Palapala Ho'omau <br />
+the vacated little Palapala Hoʻomau <br />
 Hawaiian Church which they had helped <br />
 restore, including the addition of a <br />
 tall stained glass window across the <br />

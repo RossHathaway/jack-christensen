@@ -57,38 +57,38 @@ to more than eighty audiences at the following locations:
 Roosevelt High School, Honolulu<br>
 (Three sessions in one day during April, 1974)<br>
 Hawaiian Mission Elementary School, Honolulu<br>
-Wai'anae Intermediate School, O'ahu<br>
+Waiʻanae Intermediate School, Oʻahu<br>
 KITV—4 News Staff, Honolulu (For television newscasters only)<br>
 Aloha Airlines Cabin Attendants, Honolulu International Airport<br>
-Ma'ili Elementary School, O'ahu (Faculty only)<br>
+Maʻili Elementary School, Oʻahu (Faculty only)<br>
 Tourism Industry Employees' Class, Visitors Bureau, Waikiki<br>
-Waialua Elementary School, O'ahu<br>
-Leilehua High School, Wahiawa, O'ahu<br>
-Waimea Elementary School, Kaua'i<br>
-Kapa'a Intermediate School, Kaua'i<br>
-Kaua'i High School, Lihu'e (Four sessions)<br>
-Hui Ho'oﬁlu 'Olelo Hawai'i, Hilo (Hawaiian Language Club)<br>
-The Henry Opﬁkaha'ia School, Hilo<br>
+Waialua Elementary School, Oʻahu<br>
+Leilehua High School, Wahiawa, Oʻahu<br>
+Waimea Elementary School, Kauaʻi<br>
+Kapaʻa Intermediate School, Kauaʻi<br>
+Kauaʻi High School, Lihuʻe (Four sessions)<br>
+Hui Hoʻoﬁlu ʻOlelo Hawaiʻi, Hilo (Hawaiian Language Club)<br>
+The Henry Opﬁkahaʻia School, Hilo<br>
 (One private evening session for students, teachers, parents)<br>
 Hilo High School (Two sessions)<br>
 Waiakea Intermediate School, Hilo<br>
-Kapi'olani Elementary School, Hilo<br>
-Hawaiian Civic Club, Na'alehu, Big Island<br>
+Kapiʻolani Elementary School, Hilo<br>
+Hawaiian Civic Club, Naʻalehu, Big Island<br>
 (One evening session for members and friends)<br>
 Thelma Parker Memorial Library, Kamuela, Big Island<br>
 (Afternoon session)<br>
-Pu'uhonua O Honaunau, National Historic Park, Kona<br>
+Puʻuhonua O Honaunau, National Historic Park, Kona<br>
 (Evening session)<br>
 Kona Rotary Club, Kailua—Kona (Dinner meeting for members)<br>
-Our Lady Of Sorrows School, Wahiawa, O'ahu<br>
+Our Lady Of Sorrows School, Wahiawa, Oʻahu<br>
 Kalakaua Intermediate School, Honolulu (Three sessions)<br>
-Hawai'i School For Girls, Diamond Head (Two outdoor sessions)<br>
+Hawaiʻi School For Girls, Diamond Head (Two outdoor sessions)<br>
 Committee For The Preservation & Study Of Hawaiian Language,
 Art & Culture, Bishop Museum, Honolulu (Invitational)<br>
 Tenney Theater, Saint Andrew's Cathedral, Honolulu<br>
 (Eight evening sessions for the general public)<br>
-Waimea Falls Park, O'ahu (Evening session for staff and guests)<br>
-Windward School For Adults, Kailua, O'ahu (Evening session)<br>
+Waimea Falls Park, Oʻahu (Evening session for staff and guests)<br>
+Windward School For Adults, Kailua, Oʻahu (Evening session)<br>
 Arcadia Retirement Residence, Honolulu (Evening session)<br>
 Waikiki Public Library, Honolulu<br>
 (Thirty—eight consecutive Saturday afternoon sessions)<br>
@@ -214,7 +214,7 @@ A STATEWIDE PUBLIC SERVICE SINCE 1974
 HAWAIIAN DICTIONARY<br>
 Hawaiian-English and English—Hawaiian<br>
 By Mary Kawena Pukui and Samuel H. Elbert<br>
-University Of Hawai'i Press, 1986, Revised and Enlarged Edition
+University Of Hawaiʻi Press, 1986, Revised and Enlarged Edition
 Cloth, 600 pages<br>
 [The result of decades of compilation, research and analysis, this book is the
 definitive and authoritative reference for Hawaiian vocabulary. It consists of
@@ -225,7 +225,7 @@ NEW POCKET HAWAIIAN DICTIONARY<br>
 With A Concise Hawaiian Grammar<br>
 By Mary Kawena Pukui and Samuel H. Elbert,<br>
 With Esther T. Mo‘okini and Yu Mapuana Nishizawa<br>
-University Of Hawai'i Press, 1992<br>
+University Of Hawaiʻi Press, 1992<br>
 Paperback, 272 pages<br>
 [This condensed version of the unabridged __Hawaiian Dictionary__ contains the most
 frequently used 6,000 Hawaiian words, plus 4,800 English words, as well as 750
@@ -235,7 +235,7 @@ Polynesian language family.]
 
  
 
-PLACE NAMES 0F HAWAI'I<br>
+PLACE NAMES 0F HAWAIʻI<br>
 By Mary Kawena Pukui, Samuel H. Elbert and Esther T. Mo‘okini<br>
 University Of Hawai‘i Press, 1974, Revised Edition<br>
 Paperback, 310 pages with maps<br>
@@ -243,16 +243,16 @@ Paperback, 310 pages with maps<br>
 analysis of more than 4,000 Hawaiian place names that reward the reader with
 interesting facts on geography, mythology, history, linguistics and poetry.]
 
-POCKET PLACE NAMES OF HAWAI'I<br>
+POCKET PLACE NAMES OF HAWAIʻI<br>
 By Mary Kawena Pukui, Samuel H. Elbert and Esther T. Mo‘okini<br>
 University Of Hawai‘i Press, 1989<br>
 Paperback, 96 pages with maps<br>
 [Abridged and updated version of Place Names Of Hawai‘i]
 
 MAMAKA KAIAO: A Modern Hawaiian Vocabulary<br>
-Created & Compiled By Kamike Hua'olelo with support from<br>
-Hale Kuamo'o & 'Aha Pﬁnana Leo<br>
-University Of Hawai'i Press, 2003<br>
+Created & Compiled By Kamike Huaʻolelo with support from<br>
+Hale Kuamoʻo & ʻAha Pﬁnana Leo<br>
+University Of Hawaiʻi Press, 2003<br>
 Cloth, $42.00 / Paperback, $15.95 / 414 pages<br>
 [The title translates as "carrying forward into a new era." Published in both
 Hawaiian and English, this companion to the Hawaiian Dictionary contains more
@@ -266,9 +266,9 @@ for accuracy, and elements are included from similar Polynesian Languages.]
 
 <!-- TODO: 3 dots -->
 
-REFERENCE MAPS OF THE ISLANDS 0F HAWAI'I<br>
+REFERENCE MAPS OF THE ISLANDS 0F HAWAIʻI<br>
 By James A. Bier<br>
-University Of Hawai'i Press, folded paper sheets<br>
+University Of Hawaiʻi Press, folded paper sheets<br>
 [These five full-color shaded relief maps of six islands include large—scale
 insets of towns and also show detailed networks of roads, the locations of
 parks and beaches and hiking trails, cultural sites, and natural points of
@@ -278,15 +278,15 @@ charts are printed with the macrons and glottal stops of complete Hawaiian
 spelling to facilitate correct pronunciation and accurate interpretation.
 Each map is fully indexed.]
 
-O'AHU, 7th Edition, 2007, 28x25 inches
+OʻAHU, 7th Edition, 2007, 28x25 inches
 
-HAWAI'I, 8th Edition, 2010, 24x30 inches
+HAWAIʻI, 8th Edition, 2010, 24x30 inches
 
 MAUI, 8th Edition, 2008, 24x18s inches
 
-KAUA'i, 7th Edition, 2004, 22x14s inches
+KAUAʻi, 7th Edition, 2004, 22x14s inches
 
-MOLOKA'i & LANA'I, 5th Edition, 2002, 21x18 inches
+MOLOKAʻi & LANAʻI, 5th Edition, 2002, 21x18 inches
 
 <!-- three dots -->
 

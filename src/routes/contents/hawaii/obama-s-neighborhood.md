@@ -27,11 +27,11 @@ THE 90-MINUTE TOUR originated in October, 2008 at the height
 of the Presidential Campaign and continues to be conducted
 privately as the sole “on the spot" review of sites connected
 with the Honolulu residency of the most famous person born
-in Hawai'i who became our Nation's 44th Commander In Chief.
+in Hawaiʻi who became our Nation's 44th Commander In Chief.
 
 ACCURATE BACKGROUND FACTS are narrated chronologically at
-certain sites in the Punahou and Pawa'a and Makiki districts
-which formed the **Hawai'i nei** (immediate limited environment)
+certain sites in the Punahou and Pawaʻa and Makiki districts
+which formed the **Hawaiʻi nei** (immediate limited environment)
 of “Barry" Obama, as he was known in his teen-age years.
 
 SEE THE HOSPITAL where Barack Hussein Obama, Jr. came into
