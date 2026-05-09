@@ -7,8 +7,8 @@
 ## Global Hero 
 
 Charles Lindbergh, an unknown aviator, <br />
-was popularly labeled "Lucky Lindy" <br />
-and "The Lone Eagle" in 1927 when at <br />
+was popularly labeled “Lucky Lindy” <br />
+and “The Lone Eagle” in 1927 when at <br />
 age twenty-five he became the first <br />
 pilot to fly solo in a single-engine <br />
 aircraft nonstop over the Atlantic, <br />
@@ -29,7 +29,7 @@ peaceful eastern end of Maui Island <br />
 where the terminally ill patient was <br />
 staying in a modest cottage with his <br />
 wife, writer Anne Morrow Lindbergh, <br />
-because the attending doctor didn't <br />
+because the attending doctor didn’t <br />
 have time for driving back and forth <br />
 along the narrow, zigzag, coast road <br />
 between his hospice in Hdna village

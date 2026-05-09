@@ -1,6 +1,6 @@
 <main>
 
-## UNCLE JACK'S HOBBIES AND OTHER PURSUITS
+## UNCLE JACK’S HOBBIES AND OTHER PURSUITS
 <!-- TODO: four dots -->
 
 ### COACHING SESSIONS
@@ -28,22 +28,22 @@ Concord, Massachusetts / Washington, D.C.
 ### STAGE PRODUCTIONS & CARPET PERFORMANCES
 Dancing Phantoms From Japan
 
-Handel's Sixty Minute Messiah
+Handel’s Sixty Minute Messiah
 
 The Thirty Minute Messiah Christmas Chorus
 
-Bernstein's CANDIDE As Oratorio
+Bernstein’s CANDIDE As Oratorio
 
-Lenny's Energy!
+Lenny’s Energy!
 
-Gershwin's PORGY & BESS Undressed
+Gershwin’s PORGY & BESS Undressed
 
 Theatrical Reading Workshop
 
 ### LECTURES
 How James Michener Wrote Best Sellers
 
-Thomas Jefferson's Tribal Bible
+Thomas Jefferson’s Tribal Bible
 
 Robert Ingersoll, An American Existentialist
 
@@ -51,7 +51,7 @@ Frank Lloyd Wright, Revolutionary Evolutionist
 
 Vincent van Gogh & Jack London
 
-Joseph Campbell's Immense Importance
+Joseph Campbell’s Immense Importance
 
 Outgrowing A Kiddie Religion
 
@@ -77,7 +77,7 @@ Seeing Some Amazing Places In Peru
 
 An Easy Trip To India
 
-Mahatma Gandhi's Fasting & Dietary Guidelines
+Mahatma Gandhi’s Fasting & Dietary Guidelines
 
 Seven Kinds Of Vegetarians
 
