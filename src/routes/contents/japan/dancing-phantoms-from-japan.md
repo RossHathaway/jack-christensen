@@ -61,13 +61,6 @@
     display: flex;
   }
 
-  @media (max-width: 999px) {
-    #pictures-section-1 {
-      left: 0;
-      width: 100%;
-    }
-  }
-
   #pictures-section-1 div {
     height: 880px;
     display: flex;
@@ -82,6 +75,18 @@
 
   #pictures-section-1 > div:last-of-type {
       align-items: flex-start;
+  }
+
+    @media (max-width: 1000px) {
+    #pictures-section-1 {
+      left: 0;
+      width: 100%;
+    }
+
+      #pictures-section-1 div {
+        height: auto;
+        justify-content: flex-start;
+  }
   }
 
   #pictures-section-2 {
