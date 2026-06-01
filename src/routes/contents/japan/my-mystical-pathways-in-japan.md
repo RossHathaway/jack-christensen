@@ -2,6 +2,7 @@
     .two-col-with-equals {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .equal-sign {
@@ -24,7 +25,7 @@ while life itself proceeds through me ...
 </blockquote>
 
 <div style="display: flex; justify-content: center">
-<blockquote id="staggered-poem" style="width: 550px">
+<blockquote id="staggered-poem" style="width: min(550px, 100%)">
 <div style="text-align: left">Go as far as you can see,</div>
 <div style="text-align: center">and when you get there</div>
 <div style="text-align: right">you'll see farther ...</div>
