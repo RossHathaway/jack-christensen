@@ -11,66 +11,11 @@
 </script>
 
 <script>
-  import { onMount } from 'svelte';
   import CircleSquareLogoButton from "../components/CircleSquareLogoButton.svelte";
   import Nav from "../components/Nav.svelte";
   import Title from "../components/Title.svelte";
 
   export let links;
-
-  const OKINA = 'ʻ';
-
-  function processOkina() {
-    const walker = document.createTreeWalker(
-      document.body,
-      NodeFilter.SHOW_TEXT,
-      {
-        acceptNode(node) {
-          const parent = node.parentElement;
-          if (!parent) return NodeFilter.FILTER_REJECT;
-          const tag = parent.tagName.toLowerCase();
-          if (tag === 'script' || tag === 'style') return NodeFilter.FILTER_REJECT;
-          if (parent.classList.contains('okina')) return NodeFilter.FILTER_REJECT;
-          return node.nodeValue.includes(OKINA)
-            ? NodeFilter.FILTER_ACCEPT
-            : NodeFilter.FILTER_REJECT;
-        }
-      }
-    );
-
-    const nodes = [];
-    while (walker.nextNode()) nodes.push(walker.currentNode);
-
-    nodes.forEach(textNode => {
-      const parts = textNode.nodeValue.split(OKINA);
-      const frag = document.createDocumentFragment();
-      parts.forEach((part, i) => {
-        if (i > 0) {
-          const span = document.createElement('span');
-          span.className = 'okina';
-          span.textContent = OKINA;
-          frag.appendChild(span);
-        }
-        if (part) frag.appendChild(document.createTextNode(part));
-      });
-      textNode.parentNode.replaceChild(frag, textNode);
-    });
-  }
-
-  onMount(() => {
-    processOkina();
-
-    let rafId;
-    const observer = new MutationObserver(() => {
-      cancelAnimationFrame(rafId);
-      rafId = requestAnimationFrame(processOkina);
-    });
-
-    const sapperEl = document.getElementById('sapper');
-    if (sapperEl) observer.observe(sapperEl, { childList: true, subtree: true });
-
-    return () => observer.disconnect();
-  });
 </script>
 
 <style>

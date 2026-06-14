@@ -21,6 +21,45 @@ const onwarn = (warning, onwarn) =>
 const dedupe = (importee) =>
   importee === 'svelte' || importee.startsWith('svelte/');
 
+// Rehype plugin: wrap every U+02BB (ʻokina) in <span class="okina"> so that
+// the CSS can give it the correct font and layout, avoiding the overlap caused
+// by Gelasio's near-zero advance width for this character.
+function wrapOkina() {
+  const OKINA = 'ʻ'; // U+02BB modifier letter turned comma
+
+  function processNode(node) {
+    if (!node.children) return;
+    const newChildren = [];
+    for (const child of node.children) {
+      if (child.type === 'text' && child.value.includes(OKINA)) {
+        const parts = child.value.split(OKINA);
+        parts.forEach((part, i) => {
+          if (i > 0) {
+            newChildren.push({
+              type: 'element',
+              tagName: 'span',
+              properties: { className: ['okina'] },
+              children: [{ type: 'text', value: OKINA }],
+            });
+          }
+          if (part) newChildren.push({ type: 'text', value: part });
+        });
+      } else {
+        processNode(child);
+        newChildren.push(child);
+      }
+    }
+    node.children = newChildren;
+  }
+
+  return (tree) => processNode(tree);
+}
+
+const mdsvexOptions = {
+  extension: '.md',
+  rehypePlugins: [wrapOkina],
+};
+
 export default {
   client: {
     input: config.client.input(),
@@ -57,9 +96,7 @@ export default {
         dev,
         hydratable: true,
         emitCss: true,
-        preprocess: mdsvex({
-          extension: '.md',
-        }),
+        preprocess: mdsvex(mdsvexOptions),
       }),
       resolve({
         browser: true,
@@ -132,9 +169,7 @@ export default {
       }),
       svelte({
         extensions: ['.svelte', '.md'],
-        preprocess: mdsvex({
-          extension: '.md',
-        }),
+        preprocess: mdsvex(mdsvexOptions),
         generate: 'ssr',
         dev,
       }),
