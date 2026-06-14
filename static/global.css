@@ -116,7 +116,9 @@ figure {
 }
 
 .okina {
-    letter-spacing: 0.2em;
+    font-family: 'Noto Serif', serif;
+    display: inline-block;
+    min-width: 0.45em;
 }
 
 /* @media (min-width: 400px) { */
