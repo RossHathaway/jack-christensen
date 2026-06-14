@@ -115,6 +115,10 @@ figure {
     word-break: break-all;
 }
 
+.okina {
+    letter-spacing: 0.2em;
+}
+
 /* @media (min-width: 400px) { */
 /* body {
     font-size: 16px;
