@@ -1,6 +1,6 @@
 <main>
 
-<div markdown="1">
+<div markdown="1" id="first-container">
 <section markdown="1">The most important movie
 you'll ever see!
 <br><br>
@@ -240,7 +240,7 @@ away from her now, with the cremation unfinished, she would never forgive me."
 </main>
 
 <style>
-  div {
+  #first-container {
     display: flex;
   }
   #gandhi-1 {
@@ -257,4 +257,10 @@ away from her now, with the cremation unfinished, she would never forgive me."
   section {
   margin-bottom: 1rem;
 }
+
+  @media screen and (max-width: 700px) {
+    #first-container {
+      flex-direction: column;
+    }
+  }
 </style>
