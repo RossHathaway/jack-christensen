@@ -115,6 +115,12 @@ figure {
     word-break: break-all;
 }
 
+.okina {
+    font-family: 'Noto Serif', serif;
+    display: inline-block;
+    min-width: 0.45em;
+}
+
 /* @media (min-width: 400px) { */
 /* body {
     font-size: 16px;

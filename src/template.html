@@ -20,6 +20,18 @@
   <!-- This contains the contents of the <svelte:head> component, if
 	     the current page has one -->
   %sapper.head%
+  <style>
+    /* Override Gelasio's U+02BB (ʻokina) with Noto Serif, which has correct advance
+       width for this character. Must come after %sapper.head% so it wins the cascade. */
+    @font-face {
+      font-family: 'Gelasio';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notoserif/v33/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCjwA.ttf) format('truetype');
+      unicode-range: U+02BB;
+    }
+  </style>
 </head>
 
 <body>
