@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="theme-color" content="#333333" />
+
+  <!-- Content uses root-relative asset paths (e.g. "dancing-phantoms/x.png"),
+       which the old Sapper build resolved against the site root via <base>. -->
+  <base href="/" />
+
+  <link rel="stylesheet" href="/global.css" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" type="image/svg+xml" href="/logos/favicon-jack-c.svg" />
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Gelasio|Galindo|Noto+Serif&display=swap"
+    rel="stylesheet" />
+  <title>Jack Shields Christensen</title>
+
+  <style>
+    /* Override Gelasio's U+02BB (ʻokina) with Noto Serif, which has correct advance
+       width for this character. */
+    @font-face {
+      font-family: 'Gelasio';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notoserif/v33/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCjwA.ttf) format('truetype');
+      unicode-range: U+02BB;
+    }
+
+    /* ---- Page shell (was _layout.svelte) ---- */
+    #main-container {
+      display: grid;
+      grid-template-columns: 19rem auto 1fr;
+      justify-items: center;
+      min-width: 0;
+    }
+
+    #main-container > #site-title {
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+
+    #nav-container {
+      grid-column-start: 1;
+      grid-row-start: 2;
+    }
+
+    #observe-resize {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      min-width: 0;
+    }
+
+    /* ---- Logo button (was CircleSquareLogoButton.svelte) ---- */
+    #logo-link {
+      padding-left: 1rem;
+    }
+
+    #logo-link > svg {
+      width: clamp(60px, 18vw, 180px);
+    }
+
+    /* ---- Title (was Title.svelte) ---- */
+    #site-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #site-title h1 {
+      margin: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: clamp(1.75rem, 5vw, 3.125rem);
+      font-weight: bold;
+      text-align: center;
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
+
+    /* ---- Nav (was Nav.svelte) ---- */
+    #nav-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #menu-toggle {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      width: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      display: none;
+    }
+
+    label[for="menu-toggle"] {
+      background-color: var(--main-bg-color);
+      align-self: flex-start;
+      height: 55px;
+      display: none;
+    }
+
+    nav {
+      font-weight: 300;
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+      width: 18rem;
+      margin: 0 0 0 1rem;
+      transition: width 0.3s;
+    }
+
+    nav a {
+      text-decoration: none;
+    }
+
+    nav h2 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    nav a[aria-current] {
+      text-decoration: underline;
+    }
+
+    nav > div {
+      color: white;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+    }
+
+    nav > div.about-uncle-jack,
+    nav > div.featured {
+      background-color: var(--second-darkest-hue);
+    }
+
+    nav > div.contents,
+    nav > div.contact {
+      background-color: var(--darkest-hue);
+    }
+
+    /* ---- Nav sections / accordion (was NavSection.svelte) ---- */
+    .nav-section {
+      width: 100%;
+    }
+
+    .nav-section a {
+      text-decoration: none;
+    }
+
+    .nav-section ul {
+      list-style: none;
+      margin: 0;
+      padding-inline-start: 0;
+    }
+
+    .nav-section li {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0.25rem;
+      text-indent: -1.5rem;
+      padding-left: 1.75rem;
+    }
+
+    .nav-section span.empty {
+      color: var(--alt-bg-color-1);
+    }
+
+    .nav-section button {
+      background-color: inherit;
+      color: white;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      position: relative;
+      left: -1.5rem;
+    }
+
+    .nav-section button::after {
+      content: "";
+      height: 1.1em;
+      width: 1.1em;
+      background-image: url("/logos/triangle-isoceles-optimized.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      float: right;
+      transform: rotate(180deg);
+      transition: transform 0.3s;
+    }
+
+    .nav-section button + div {
+      height: 0;
+      overflow: hidden;
+    }
+
+    .nav-section button + div.isOpenedChildren {
+      height: auto;
+      margin-left: -1.5rem;
+    }
+
+    .nav-section button.open::after {
+      transform: rotate(90deg);
+    }
+
+    @media screen and (max-width: 1000px) {
+      #main-container {
+        grid-template-columns: 80px auto 80px;
+      }
+
+      #observe-resize {
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+
+      #nav-container {
+        grid-column-start: 3;
+        grid-row-start: 1;
+      }
+
+      #main-container > #site-title {
+        grid-column-end: 3;
+      }
+
+      #logo-link > svg {
+        width: 80px;
+        min-width: 80px;
+        max-width: 90px;
+      }
+
+      label[for="menu-toggle"],
+      #menu-toggle {
+        display: block;
+      }
+
+      nav {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+        top: calc(7vw + 60px);
+        right: 0;
+        z-index: 3;
+      }
+
+      #menu-toggle:checked ~ nav {
+        margin: 0 1rem;
+        width: 18rem;
+        height: auto;
+        max-width: 18rem;
+        max-height: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  {%- set currentLast = page.url | lastSegment %}
+  <div id="main-container">
+
+    <a id="logo-link" href="/about-uncle-jack/personal-religious-symbol" aria-label="Jack's personal religious symbol">
+      {%- include "partials/circle-square-logo.njk" %}
+    </a>
+
+    <header id="site-title">
+      <h1>Jack Shields Christensen</h1>
+    </header>
+
+    {%- include "partials/nav.njk" %}
+
+    <div id="observe-resize">
+      {{ content | safe }}
+    </div>
+
+  </div>
+
+  <script>
+    document.querySelectorAll('#nav-container .nav-section > ul > li > button').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var panel = btn.nextElementSibling;
+        var open = btn.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(open));
+        btn.setAttribute('aria-pressed', String(open));
+        if (panel) panel.classList.toggle('isOpenedChildren', open);
+      });
+    });
+  </script>
+</body>
+
+</html>

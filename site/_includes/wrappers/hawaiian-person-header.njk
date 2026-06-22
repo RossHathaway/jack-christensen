@@ -1,0 +1,78 @@
+---
+layout: base.njk
+---
+<style>
+#observe-resize header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding: 1rem;
+  }
+#observe-resize header > div {
+    display: flex;
+  }
+#observe-resize header .centered {
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+#observe-resize header .centered > div {
+    flex: 1;
+  }
+#observe-resize header .centered div:nth-child(1) {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+#observe-resize header .centered div:nth-child(3) {
+    margin: 0.5rem 4rem 0;
+    padding: 0.5rem;
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: black;
+  }
+#observe-resize header img {
+    max-height: 150px;
+    max-width: 120px;
+  }
+@media screen and (max-width: 600px) {
+#observe-resize header {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+#observe-resize header img {
+      max-height: 80px;
+      max-width: 70px;
+    }
+#observe-resize header .centered div:nth-child(1) {
+      font-size: 1.2rem;
+    }
+#observe-resize header .centered div:nth-child(3) {
+      margin: 0.25rem 0.5rem 0;
+    }
+}
+</style>
+
+<header>
+  <img src="/logos/hawaiian-person-left.svg" alt="" />
+  <div>
+    {%- if headerContent %}
+    {{ headerContent | safe }}
+    {%- else %}
+    <div class="centered">
+      <div>UNCLE JACK'S PUBLIC SERVICE PROJECTS</div>
+      <div>
+        The Clean Air Team &amp;
+        <br />
+        The Program To Preserve Hawaiian Place Names
+      </div>
+    </div>
+    {%- endif %}
+  </div>
+  <img src="/logos/hawaiian-person-right.svg" alt="" />
+</header>
+
+<main>
+  {{ content | safe }}
+</main>

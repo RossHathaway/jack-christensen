@@ -121,6 +121,67 @@ figure {
     min-width: 0.45em;
 }
 
+/* "(Ended in 2018)" note (was EndedIn2018.svelte) */
+.ended-in-2018 {
+    color: red;
+    text-align: center;
+    margin-top: -25px;
+}
+
+/* Poem collection listing (was LinksList.svelte) */
+.links-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links-list li {
+    padding: 0.5rem;
+}
+
+.links-list a {
+    text-decoration: none;
+    display: block;
+}
+
+/* Antipollution ad frame (was AntiPollutionContainer.svelte) */
+.anti-pollution-container-wrap {
+    display: flex;
+    justify-content: var(--justify);
+    margin-bottom: 2rem;
+}
+
+.anti-pollution-container {
+    flex-grow: 1;
+    max-width: 580px;
+}
+
+.anti-pollution-container foreignObject {
+    overflow: visible;
+    text-align: center;
+}
+
+.anti-pollution-container foreignObject body {
+    font-family: Galindo, sans-serif;
+    font-size: 16px;
+    color: #231f20;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.anti-pollution-container foreignObject .smaller-text {
+    font-size: 14px;
+    margin: 0;
+}
+
+.anti-pollution-container foreignObject p {
+    margin: 0;
+}
+
 /* @media (min-width: 400px) { */
 /* body {
     font-size: 16px;

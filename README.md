@@ -1,18 +1,37 @@
-# Jack Christensen
+# Jack Shields Christensen
 
-Based on the default [Sapper](https://github.com/sveltejs/sapper)#Rollup template.
+A static memorial site commemorating the life and work of Jack Shields Christensen,
+built with [Eleventy (11ty)](https://www.11ty.dev/). (Previously built with Svelte/Sapper.)
 
 ## Structure
 
- - .md files in src/routes are processed by the svelte-preprocess-markdown library to make *.svelte files. 
- - Folders within routes/ each have an index.svelte page that uses the Links component from src/components to list the other files in the same folder.
- - The data passed to the Links component when the site is being built is from the index.json.js file in the same folder which makes a server endpoint for when sapper is doing the build. This gets the filenames and routes for the other files in the parent folder.
+- `site/` — the Eleventy input directory.
+  - `site/**/*.md` — content pages. Their URLs mirror the folder structure
+    (e.g. `site/contents/japan/first-morning-in-tokyo.md` → `/contents/japan/first-morning-in-tokyo/`).
+  - `site/_data/nav.js` — builds the sidebar navigation tree by scanning the
+    content folders. A folder containing an `index` page collapses to a single
+    link; an empty folder (just a `.gitkeep`) renders as a disabled label.
+  - `site/_includes/base.njk` — the page shell (logo, title, nav, content region).
+  - `site/_includes/partials/` — reusable markup (nav, logos, the antipollution
+    ad frame, the personal religious symbol explanation).
+  - `site/_includes/wrappers/` — page layouts that add headers/footers around the
+    content (the former Svelte `DocumentWrapper`, `PoemWrapper`, etc.).
+- `static/` — assets (CSS, images, logos, manifest) copied to the site root.
+- `.eleventy.js` — Eleventy config: passthrough copy, markdown options, the
+  ʻokina wrapping transform, and the `quoteWrapper` / `poemList` shortcodes.
 
-All server-side code will be run during build to produce a static site and will not run in production, which is why I use readdirSync instead of async and do not need to cache the files.
+Page-level `<style>` blocks are scoped to the content region (`#observe-resize`)
+so they behave like the old component-scoped Svelte styles and don't leak into
+the shared navigation/header.
 
-## Production mode and deployment
+## Development
 
-To start a production version of this app, run `npm run export`. This will make a static version of the app. There is no need to run `npm start` or similar commands after when deploying on Now v2. The default folder this will export to is `__sapper__/export`.
+- `npm install` — install dependencies.
+- `npm run dev` — serve locally with live reload at <http://localhost:8080>.
+- `npm run build` — build the static site into `_site/`.
+- `npm test` — run the Cypress smoke tests against the dev server.
 
-You can deploy your application to any environment that supports Node 8 or above. 
+## Deployment
 
+`npm run build` produces a fully static site in `_site/` that can be deployed to
+any static host.

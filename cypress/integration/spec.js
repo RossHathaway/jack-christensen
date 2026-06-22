@@ -1,19 +1,24 @@
-describe('Sapper template app', () => {
-	beforeEach(() => {
-		cy.visit('/')
+describe('Jack Shields Christensen site', () => {
+	it('has the correct <h1> on the home page', () => {
+		cy.visit('/');
+		cy.contains('h1', 'Jack Shields Christensen');
 	});
 
-	it('has the correct <h1>', () => {
-		cy.contains('h1', 'Great success!')
+	it('shows the four nav sections', () => {
+		cy.visit('/');
+		cy.get('nav').contains('HOME');
+		cy.get('nav').contains('Featured');
+		cy.get('nav').contains('Contents');
+		cy.get('nav').contains('Contact');
 	});
 
-	it('navigates to /about', () => {
-		cy.get('nav a').contains('about').click();
-		cy.url().should('include', '/about');
+	it('navigates to a content page', () => {
+		cy.visit('/contents/japan/favorite-japanese-sayings');
+		cy.contains('h2', 'FAVORITE JAPANESE SAYINGS');
 	});
 
-	it('navigates to /blog', () => {
-		cy.get('nav a').contains('blog').click();
-		cy.url().should('include', '/blog');
+	it('renders a poem with a return link', () => {
+		cy.visit('/featured/poems/single-sentence-poems/distant-passages/ise');
+		cy.contains('a', 'Return to Poem titles');
 	});
 });

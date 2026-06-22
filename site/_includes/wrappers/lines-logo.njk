@@ -1,0 +1,74 @@
+---
+layout: base.njk
+---
+<style>
+#observe-resize header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.5rem;
+    border-bottom: 4px solid black;
+  }
+#observe-resize header > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+#observe-resize .primary-header-txt {
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 0.3rem;
+  }
+#observe-resize .secondary-header-txt {
+    font-style: italic;
+    letter-spacing: 0.1rem;
+  }
+#observe-resize main {
+    box-shadow: inset 0 0 0 0.75rem var(--main-bg-color),
+      inset 0 0 0 1.5rem black;
+    max-width: 1000px;
+    padding: 2rem 4rem;
+    width: 100%;
+    margin-top: -0.75rem;
+  }
+#observe-resize main.doubleBorder {
+    box-shadow: inset 0 0 0 0.75rem var(--main-bg-color), inset 0 0 0 1.5rem black,
+      inset 0 0 0 2.25rem var(--main-bg-color), inset 0 0 0 3rem gray;
+    padding: 2.5rem 4rem;
+  }
+@media (max-width: 600px) {
+#observe-resize main {
+      padding: 2rem;
+    }
+#observe-resize main.doubleBorder {
+      padding: 3.5rem;
+    }
+#observe-resize header {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+#observe-resize .primary-header-txt {
+      font-size: 1.3rem;
+      letter-spacing: 0.1rem;
+    }
+#observe-resize .secondary-header-txt {
+      font-size: 0.85rem;
+      letter-spacing: 0.05rem;
+    }
+}
+</style>
+
+<main class="{{ 'doubleBorder' if doubleBorder }}">
+  <header>
+    {%- include "partials/line-logo.njk" %}
+    <div>
+      <div class="primary-header-txt">THE CLEAN AIR TEAM</div>
+      <div class="secondary-header-txt">
+        ALL-VOLUNTEER PUBLIC SERVICE SINCE 1975
+      </div>
+    </div>
+  </header>
+  {{ content | safe }}
+</main>
