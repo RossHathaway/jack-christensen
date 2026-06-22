@@ -13,7 +13,7 @@ with his bare feet dangling <br />
 over a silt-filled stream, <br />
 who eats an ear of tan corn <br />
 with ocher-colored speckles, <br />
-and the boy's dusky skin
+and the boy’s dusky skin
 
 and his monotone clothes <br />
 and those worn boards <br />
