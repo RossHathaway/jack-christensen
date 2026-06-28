@@ -1,3 +1,6 @@
+---
+permalink: /about-uncle-jack/
+---
 <main>
 
 <h2>ABOUT UNCLE JACK</h2> 

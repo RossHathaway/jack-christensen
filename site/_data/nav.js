@@ -50,8 +50,15 @@ function getAllLinks(relPath) {
     const childFileName = removeFileEnding(child.name);
     const childRel = relPath ? `${relPath}/${childFileName}` : childFileName;
 
+    // A file sharing its parent folder's name (e.g. about-uncle-jack/
+    // about-uncle-jack.md) represents that folder's page and is served at the
+    // folder URL, so link to the folder instead of the doubled path.
+    const parentSeg = relPath.split("/").pop() || "";
+    const linkPath =
+      !child.isDirectory() && childFileName === parentSeg ? relPath : childRel;
+
     links.push({
-      path: childRel,
+      path: linkPath,
       name: makeReadableName(childFileName),
       lastUrlSegment: childFileName,
       children: child.isDirectory() ? getAllLinks(childRel) : null,
