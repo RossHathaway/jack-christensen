@@ -1,3 +1,6 @@
+---
+permalink: /featured/mahatma-gandhi/
+---
 <main>
 
 <div id="first-container">

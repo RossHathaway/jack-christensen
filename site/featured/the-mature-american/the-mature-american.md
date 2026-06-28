@@ -1,3 +1,6 @@
+---
+permalink: /featured/the-mature-american/
+---
 <main>
 
 <h2>THE MATURE AMERICAN</h2>
