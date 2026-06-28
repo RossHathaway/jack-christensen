@@ -1,5 +1,6 @@
 ---
 layout: wrappers/lines-logo.njk
+permalink: /contents/clean-air-team/
 ---
 <h3> A Brief History Of Our Accomplishments </h3>
 
