@@ -1,0 +1,55 @@
+{% macro navSection(links, light) %}
+<div class="nav-section" style="background-color: {{ 'var(--second-darkest-hue)' if light else 'var(--darkest-hue)' }}">
+  <ul>
+    {%- for link in links %}
+    <li>
+      {%- if link.children and (link.children | length) === 0 %}
+      <span class="empty">{{ link.name }}</span>
+      {%- elif link.children and (link.children | length) === 1 and link.children[0].name === link.name %}
+      <a href="/{{ link.path }}"{{ ' aria-current="location"' | safe if currentLast === link.lastUrlSegment }}>{{ link.name }}</a>
+      {%- elif link.children and (link.children | length) %}
+      <button type="button" aria-expanded="false" aria-pressed="false">{{ link.name }}</button>
+      {{ navSection(link.children, not light) }}
+      {%- else %}
+      <a href="/{{ link.path }}"{{ ' aria-current="location"' | safe if currentLast === link.lastUrlSegment }}>{{ link.name }}</a>
+      {%- endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+</div>
+{% endmacro %}
+
+<div id="nav-container">
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" aria-label="Toggle navigation menu">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="55px" fill="var(--second-darkest-hue)">
+      <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+    </svg>
+  </label>
+
+  <nav>
+    {%- if nav.aboutUncleJack %}
+    <div class="about-uncle-jack">
+      <a href="/"><h2>HOME</h2></a>
+      {{ navSection(nav.aboutUncleJack.children or [], true) }}
+    </div>
+    {%- endif %}
+    {%- if nav.featured %}
+    <div class="featured">
+      <h2>{{ nav.featured.name }}</h2>
+      {{ navSection(nav.featured.children or [], true) }}
+    </div>
+    {%- endif %}
+    {%- if nav.contents %}
+    <div class="contents">
+      <h2>{{ nav.contents.name }}</h2>
+      {{ navSection(nav.contents.children or [], false) }}
+    </div>
+    {%- endif %}
+    {%- if nav.contact %}
+    <div class="contact">
+      <a href="/contact"><h2>{{ nav.contact.name }}</h2></a>
+    </div>
+    {%- endif %}
+  </nav>
+</div>
