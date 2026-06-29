@@ -155,16 +155,12 @@ figure {
     max-width: 580px;
 }
 
-.anti-pollution-container foreignObject {
-    overflow: visible;
-    text-align: center;
-}
-
-.anti-pollution-container foreignObject body {
+.anti-pollution-container body {
     font-family: Galindo, sans-serif;
     font-size: 16px;
     color: #231f20;
     line-height: normal;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -173,12 +169,12 @@ figure {
     padding: 0;
 }
 
-.anti-pollution-container foreignObject .smaller-text {
+.anti-pollution-container .smaller-text {
     font-size: 14px;
     margin: 0;
 }
 
-.anti-pollution-container foreignObject p {
+.anti-pollution-container body p {
     margin: 0;
 }
 
