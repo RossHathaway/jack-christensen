@@ -56,15 +56,17 @@ module.exports = function (eleventyConfig) {
   // Paired shortcode reproducing the AntiPollutionContainer Svelte component.
   eleventyConfig.addPairedShortcode("quoteWrapper", function (content, justify) {
     // Emit with no blank/whitespace-only lines so markdown-it treats the whole
-    // SVG as a single raw HTML block (foreignObject/body are not block tags and
-    // would otherwise get wrapped in <p>).
+    // SVG as a single raw HTML block (foreignObject is not a block tag and would
+    // otherwise get wrapped in <p>). Use a <div> (not <body>) inside the
+    // foreignObject: the HTML parser drops a nested <body> element and reparents
+    // its children, which would strip the font/flex styling.
     const html = `<div class="anti-pollution-container-wrap" style="--justify:${justify}">
 <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 433 105" class="anti-pollution-container">
 ${antiPollutionPath}
 <foreignObject overflow="visible" class="node" x="101" y="10" width="75%" height="88">
-<body xmlns="http://www.w3.org/1999/xhtml">
+<div class="ad-body" xmlns="http://www.w3.org/1999/xhtml">
 ${content}
-</body>
+</div>
 </foreignObject>
 </svg>
 </div>`;
