@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getSiblingLinks } from '../helpers/navLinks.js';
+
+// Every file in src/content becomes a page at the matching URL, exactly like
+// the old src/routes tree under Sapper. A folder's index page is served at
+// the folder's own URL and receives links to its sibling pages (what the old
+// index.json.js endpoints provided).
+export async function getStaticPaths() {
+  const modules = import.meta.glob('../content/**/*.{svx,svelte}', {
+    eager: true,
+  });
+
+  const paths = [];
+  for (const [file, mod] of Object.entries(modules)) {
+    const route = file
+      .replace('../content/', '')
+      .replace(/\.(svx|svelte)$/, '');
+
+    // These routes have dedicated pages in src/pages.
+    if (route === 'index') continue;
+    if (route === 'contents/japan/dancing-phantoms-from-japan') continue;
+
+    const isFolderIndex = route.endsWith('/index');
+    const folderRoute = isFolderIndex ? route.slice(0, -'/index'.length) : null;
+
+    paths.push({
+      params: { slug: isFolderIndex ? folderRoute : route },
+      props: {
+        Content: mod.default,
+        links: isFolderIndex ? getSiblingLinks(folderRoute) : undefined,
+      },
+    });
+  }
+  return paths;
+}
+
+const { Content, links } = Astro.props;
+---
+
+<BaseLayout>
+  <Content {links} currentPath={Astro.url.pathname} />
+</BaseLayout>

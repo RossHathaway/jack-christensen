@@ -1,0 +1,15 @@
+<script>
+  import Links from '../../../../../components/LinksList.svelte';
+
+  let { links = [], currentPath = '/' } = $props();
+</script>
+
+<main>
+
+<h3 style="text-align: center;">TRIPTYCH</h3> 
+
+Three Rambling Poems By J.S. Christensen
+<Links {links} {currentPath} title={false} />
+
+</main>
+

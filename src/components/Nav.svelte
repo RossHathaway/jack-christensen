@@ -1,21 +1,16 @@
 <script>
-  import { onMount } from "svelte";
-  import { stores } from "@sapper/app";
   import NavSection from "./NavSection.svelte";
 
-  export let links;
+  let { links, currentPath = "/" } = $props();
 
-  const { page } = stores();
-  let menuToggle;
-
-  onMount(() => {
-    let prevPath = $page.path;
-    return page.subscribe(($p) => {
-      if ($p.path !== prevPath) {
-        menuToggle.checked = false;
-        // prevPath = $p.path;
-      }
-    });
+  // Every navigation is a full page load now, so the accordion starts closed
+  // unless we open the section that contains the current page.
+  const trimmedPath = currentPath.endsWith("/")
+    ? currentPath.slice(0, -1)
+    : currentPath;
+  const urlSegments = trimmedPath.split("/").filter(Boolean);
+  const nav = $state({
+    openedSectionPath: urlSegments.slice(0, -1).join("/"),
   });
 
   const processedLinks = [];
@@ -135,8 +130,8 @@
 
 <div id="nav-container">
 
-  <input type="checkbox" id="menu-toggle" bind:this={menuToggle} />
-  <label for="menu-toggle" onclick>
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
@@ -153,19 +148,21 @@
           <a href="/">
             <h2>HOME</h2>
           </a>
-          <NavSection links={link.children ? link.children : []} />
+          <NavSection links={link.children ? link.children : []} {currentPath} {nav} />
         </div>
       {:else if link.name === 'Featured'}
         <div class={link.path}>
           <h2>{link.name}</h2>
-          <NavSection links={link.children ? link.children : []} />
+          <NavSection links={link.children ? link.children : []} {currentPath} {nav} />
         </div>
       {:else if link.name === 'Contents'}
         <div class={link.path}>
           <h2>{link.name}</h2>
           <NavSection
             hasLightBgColor={false}
-            links={link.children ? link.children : []} />
+            links={link.children ? link.children : []}
+            {currentPath}
+            {nav} />
         </div>
       {:else if link.name === 'Contact'}
         <div class={link.path}>

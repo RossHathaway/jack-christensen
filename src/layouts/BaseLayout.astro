@@ -1,0 +1,114 @@
+---
+import CircleSquareLogoButton from '../components/CircleSquareLogoButton.svelte';
+import Nav from '../components/Nav.svelte';
+import Title from '../components/Title.svelte';
+import { getAllLinks } from '../helpers/navLinks.js';
+
+const { title = 'Jack Shields Christensen' } = Astro.props;
+const links = getAllLinks();
+const currentPath = Astro.url.pathname;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="theme-color" content="#333333" />
+
+    <!-- The content pages use root-relative URLs without a leading slash
+         (e.g. src="diamond-head/foo.png"), which Sapper resolved via an
+         injected <base>. Keep that behavior. -->
+    <base href="/" />
+
+    <link rel="stylesheet" href="global.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" type="image/png" href="logos/favicon-jack-c.svg" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Gelasio|Galindo|Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>{title}</title>
+
+    <style is:inline>
+      /* Override Gelasio's U+02BB (ʻokina) with Noto Serif, which has correct advance
+         width for this character. Declared last so it wins the cascade. */
+      @font-face {
+        font-family: 'Gelasio';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/notoserif/v33/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCjwA.ttf) format('truetype');
+        unicode-range: U+02BB;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="main-container">
+      <CircleSquareLogoButton />
+      <Title />
+
+      <Nav client:load {links} {currentPath} />
+      <div id="observe-resize">
+        <slot />
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  #main-container {
+    display: grid;
+    grid-template-columns: 19rem auto 1fr;
+    justify-items: center;
+    min-width: 0;
+    /* scroll ? */
+  }
+
+  #main-container > :global(header) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  :global(#nav-container) {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+  #observe-resize {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+  }
+
+  @media screen and (max-width: 1000px) {
+    #main-container {
+      grid-template-columns: 80px auto 80px;
+    }
+
+    #observe-resize {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+
+    :global(#nav-container) {
+      grid-column-start: 3;
+      grid-row-start: 1;
+    }
+
+    #main-container > :global(header) {
+      grid-column-end: 3;
+    }
+
+    :global(#logo > svg) {
+      min-width: 90px;
+      max-width: 90px;
+    }
+  }
+</style>

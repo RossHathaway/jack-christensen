@@ -1,26 +1,27 @@
 <script>
-  import { stores } from "@sapper/app";
-  import { openedSectionPath } from "./openedSectionPathStore.js";
-  import { makeReadableName } from "helpers/makeReadableNameFromPath";
-  import { splitUrlOnSlash } from "helpers/splitUrlOnSlash";
+  import NavSection from "./NavSection.svelte";
+  import { makeReadableName } from "../helpers/makeReadableNameFromPath.js";
 
-  export let title = null,
+  let {
+    title = null,
     folder = "",
     links = [],
     hasLightBgColor = true,
-    isOpenedChildren = false;
+    isOpenedChildren = false,
+    currentPath = "/",
+    nav,
+    class: className = "",
+  } = $props();
 
   const bgColor = hasLightBgColor
     ? "var(--second-darkest-hue)"
     : "var(--darkest-hue)";
 
-  const { page } = stores();
-  $: trimmedPath = $page.path.endsWith("/")
-    ? $page.path.slice(0, -1)
-    : $page.path;
-  $: urlSegments = trimmedPath.split("/");
-  let lastPathSection = "";
-  $: lastPathSection = urlSegments[urlSegments.length - 1];
+  const trimmedPath = currentPath.endsWith("/")
+    ? currentPath.slice(0, -1)
+    : currentPath;
+  const urlSegments = trimmedPath.split("/");
+  const lastPathSection = urlSegments[urlSegments.length - 1];
 
   if (title === null) {
     title = folder
@@ -98,14 +99,14 @@
 <div
   style={`background-color: ${bgColor}`}
   class="{isOpenedChildren ? 'isOpenedChildren' : ''}
-  {$$props.class || ''}">
+  {className}">
   <!-- class passed down from parent, or no class if none was passed -->
 
   <strong>{title}</strong>
 
   <ul>
     {#each links as link}
-      <!-- { path: 'src/routes/about-uncle-jack',
+      <!-- { path: 'about-uncle-jack',
     name: 'About Uncle Jack',
     lastUrlSegment: 'about-uncle-jack',
     children: [ [Object], [Object] ] } -->
@@ -123,21 +124,22 @@
         {:else if link.children && link.children.length}
 
           <button
-          aria-pressed={$openedSectionPath === link.path}
-          aria-expanded={$openedSectionPath === link.path}
-          class:open={$openedSectionPath === link.path}
-          on:click={() => {
-            openedSectionPath.update((prev) =>
-              prev === link.path ? '' : link.path
-            );
+          aria-pressed={nav.openedSectionPath === link.path}
+          aria-expanded={nav.openedSectionPath === link.path}
+          class:open={nav.openedSectionPath === link.path}
+          onclick={() => {
+            nav.openedSectionPath =
+              nav.openedSectionPath === link.path ? '' : link.path;
           }}>
             {link.name}
           </button>
 
-          <svelte:self
+          <NavSection
             links={link.children}
             hasLightBgColor={!hasLightBgColor}
-            isOpenedChildren={$openedSectionPath.startsWith(link.path)} />
+            isOpenedChildren={nav.openedSectionPath.startsWith(link.path)}
+            {currentPath}
+            {nav} />
 
         {:else}
           <a

@@ -31,15 +31,15 @@
       stroke-width="3.75"
     />
     <foreignObject overflow="visible" class="node" x="101" y="10" width="75%" height="88">
-      <body xmlns="http://www.w3.org/1999/xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="fo-body">
         <slot></slot>
-      </body>
+      </div>
     </foreignObject>
   </svg>
 </div>
 
 <style>
-  div {
+  div:not(.fo-body) {
     display: flex;
     justify-content: var(--justify);
     margin-bottom: 2rem;
@@ -54,7 +54,7 @@
     text-align: center;
   }
 
-  foreignObject :global(body) {
+  foreignObject .fo-body {
     font-family: Galindo, sans-serif;
     font-size: 16px;
     color: #231f20;
