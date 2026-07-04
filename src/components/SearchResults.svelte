@@ -38,17 +38,61 @@
     search(q);
   }
 
+  // Same folding as the API: lowercase, accents removed, ʻokina and
+  // apostrophes dropped, with a map from folded positions back to the
+  // original string so matches can be located in the displayed snippet.
+  function fold(original) {
+    let folded = '';
+    const starts = [];
+    const ends = [];
+    let index = 0;
+    for (const char of original) {
+      const foldedChar = char
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[ʻ‘’']/g, '')
+        .toLowerCase();
+      for (const c of foldedChar) {
+        folded += c;
+        starts.push(index);
+        ends.push(index + char.length);
+      }
+      index += char.length;
+    }
+    return { folded, starts, ends };
+  }
+
   // Splits a snippet into plain and matched parts so matches can be
-  // rendered inside <mark> without touching innerHTML.
+  // rendered inside <mark> without touching innerHTML. The API returns
+  // folded terms, so matching runs on the folded snippet and the ranges
+  // are mapped back to the original text.
   function highlight(snippet, terms) {
     if (!terms.length) return [{ text: snippet, hit: false }];
-    const escaped = terms.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
-    // Word-start matches only, mirroring how the API counts matches.
-    const matcher = new RegExp(`\\b(${escaped.join('|')})`, 'gi');
-    return snippet
-      .split(matcher)
-      .filter((part) => part !== '')
-      .map((part) => ({ text: part, hit: terms.includes(part.toLowerCase()) }));
+    const { folded, starts, ends } = fold(snippet);
+
+    const ranges = [];
+    for (const term of terms) {
+      const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const matcher = new RegExp(`\\b${escaped}`, 'g'); // word-start, like the API
+      let match;
+      while ((match = matcher.exec(folded)) !== null) {
+        if (match[0].length === 0) break;
+        ranges.push([starts[match.index], ends[match.index + match[0].length - 1]]);
+      }
+    }
+    ranges.sort((a, b) => a[0] - b[0]);
+
+    const parts = [];
+    let position = 0;
+    for (const [start, end] of ranges) {
+      if (end <= position) continue; // overlaps a previous match
+      const from = Math.max(start, position);
+      if (from > position) parts.push({ text: snippet.slice(position, from), hit: false });
+      parts.push({ text: snippet.slice(from, end), hit: true });
+      position = end;
+    }
+    if (position < snippet.length) parts.push({ text: snippet.slice(position), hit: false });
+    return parts;
   }
 
   if (query.trim()) search(query.trim());
