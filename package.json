@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "node scripts/build-search-index.mjs && astro build",
+    "build:search-index": "node scripts/build-search-index.mjs",
     "preview": "astro preview",
     "start": "astro preview",
     "cy:run": "cypress run",

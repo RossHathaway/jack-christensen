@@ -84,6 +84,18 @@
     text-decoration: underline;
   }
 
+  form.search {
+    margin-bottom: 1rem;
+  }
+
+  form.search input {
+    width: 100%;
+    box-sizing: border-box;
+    font: inherit;
+    padding: 0.4rem 0.6rem;
+    border: 1px solid var(--second-darkest-hue);
+  }
+
   nav > div {
     color: white;
     margin-bottom: 1rem;
@@ -146,6 +158,15 @@
   </label>
 
   <nav>
+    <form class="search" role="search" action="/search" method="get">
+      <input
+        type="search"
+        name="q"
+        placeholder="Search"
+        aria-label="Search"
+        required />
+    </form>
+
     {#each processedLinks as link}
       {#if link.name === 'About Uncle Jack'}
         <div class={link.path}>

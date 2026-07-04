@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SearchResults from '../components/SearchResults.svelte';
+---
+
+<!-- client:only because the component reads location.search and calls the
+     /api/search serverless function; there is nothing useful to prerender. -->
+<BaseLayout title="Search — Jack Shields Christensen">
+  <SearchResults client:only="svelte" />
+</BaseLayout>

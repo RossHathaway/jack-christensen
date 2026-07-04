@@ -4,4 +4,5 @@ yarn-error.log
 /cypress/screenshots/
 /dist/
 /.astro/
+/api/_search-index.json
 .vscode
