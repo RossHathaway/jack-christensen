@@ -162,8 +162,8 @@
       <input
         type="search"
         name="q"
-        placeholder="Search all pages"
-        aria-label="Search all pages"
+        placeholder="Search"
+        aria-label="Search"
         required />
     </form>
 
