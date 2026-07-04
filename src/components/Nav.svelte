@@ -3,15 +3,7 @@
 
   let { links, currentPath = "/" } = $props();
 
-  // Every navigation is a full page load now, so the accordion starts closed
-  // unless we open the section that contains the current page.
-  const trimmedPath = currentPath.endsWith("/")
-    ? currentPath.slice(0, -1)
-    : currentPath;
-  const urlSegments = trimmedPath.split("/").filter(Boolean);
-  const nav = $state({
-    openedSectionPath: urlSegments.slice(0, -1).join("/"),
-  });
+  const nav = $state({ openedSectionPath: "" });
 
   const processedLinks = [];
 
