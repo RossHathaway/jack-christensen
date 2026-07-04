@@ -37,6 +37,22 @@ function routeForFile(file) {
   return '/' + rel;
 }
 
+// Named entities used in the content, so snippets show real characters.
+const NAMED_ENTITIES = {
+  nbsp: ' ', amp: '&', lt: '<', gt: '>', quot: '"', apos: "'",
+  ldquo: '“', rdquo: '”', lsquo: '‘', rsquo: '’',
+  hellip: '…', mdash: '—', ndash: '–',
+  Amacr: 'Ā', amacr: 'ā', Emacr: 'Ē', emacr: 'ē', Imacr: 'Ī', imacr: 'ī',
+  Omacr: 'Ō', omacr: 'ō', Umacr: 'Ū', umacr: 'ū',
+};
+
+function decodeEntities(text) {
+  return text
+    .replace(/&#x([0-9a-f]+);/gi, (_, hex) => String.fromCodePoint(parseInt(hex, 16)))
+    .replace(/&#(\d+);/g, (_, dec) => String.fromCodePoint(Number(dec)))
+    .replace(/&([a-zA-Z]+);/g, (_, name) => NAMED_ENTITIES[name] ?? ' ');
+}
+
 // Reduces an .svx or .svelte source to its title and readable text.
 function extractPage(source) {
   let title = null;
@@ -61,15 +77,16 @@ function extractPage(source) {
       title = heading[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
     }
   }
+  if (title) title = decodeEntities(title);
 
-  const text = source
+  const text = decodeEntities(source
     .replace(/\{[#/:@][^}]*\}/g, ' ') // svelte logic blocks
     .replace(/\{[^}]*\}/g, ' ') // svelte expressions
     .replace(/<[^>]+>/g, ' ') // html / component tags
     .replace(/!\[([^\]]*)\]\([^)]*\)/g, ' $1 ') // markdown images -> alt text
     .replace(/\[([^\]]*)\]\([^)]*\)/g, ' $1 ') // markdown links -> link text
     .replace(/^#{1,6}\s+/gm, '')
-    .replace(/[*_`~]+/g, '')
+    .replace(/[*_`~]+/g, ''))
     .replace(/\s+/g, ' ')
     .trim();
 
