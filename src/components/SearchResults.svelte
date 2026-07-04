@@ -103,7 +103,9 @@
   section {
     width: 100%;
     max-width: 42rem;
+    margin: 0 auto;
     padding: 0 1rem 2rem;
+    box-sizing: border-box;
   }
 
   form {
