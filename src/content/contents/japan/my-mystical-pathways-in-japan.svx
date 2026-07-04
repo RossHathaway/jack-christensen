@@ -1,3 +1,8 @@
+---
+title: My Mystical Pathways in Japan
+description: Uncle Jack on the True Human Movement, Jiriki Zen, and using Japan’s artworks and sacred places as gateways into The Mystical Frontier.
+---
+
 <style>
     .two-col-with-equals {
         display: flex;

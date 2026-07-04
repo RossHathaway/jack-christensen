@@ -1,3 +1,8 @@
+---
+title: Quit Smoking Posters
+description: The Clean Air Team’s quit-smoking posters, built on personal autosuggestion and the choice to complete or break the circle of habit repetition.
+---
+
 <script>
     import AutoSuggestion from '../../../components/logos/AutosuggestionLogo.svelte'
 </script>

@@ -5,6 +5,9 @@ import SearchResults from '../components/SearchResults.svelte';
 
 <!-- client:only because the component reads location.search and calls the
      /api/search serverless function; there is nothing useful to prerender. -->
-<BaseLayout title="Search — Jack Shields Christensen">
+<BaseLayout
+  title="Search"
+  description="Search the writings, poems, tours, and projects of Jack Shields Christensen."
+>
   <SearchResults client:only="svelte" />
 </BaseLayout>

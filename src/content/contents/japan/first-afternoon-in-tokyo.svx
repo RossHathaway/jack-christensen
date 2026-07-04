@@ -1,3 +1,8 @@
+---
+title: First Afternoon in Tokyo
+description: A self-guided afternoon walk from Tokyo Station to Nihonbashi, with turn-by-turn directions and the history of Japan Bridge and the surrounding districts.
+---
+
 <main>
 
 ## FIRST AFTERNOON IN TOKYO

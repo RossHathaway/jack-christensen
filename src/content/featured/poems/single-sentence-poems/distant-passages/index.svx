@@ -1,3 +1,8 @@
+---
+title: Distant Passages
+description: Nine single-sentence travel poems by J.S. Christensen, written as souvenirs from journeys to Japan and Peru.
+---
+
 <script>
   import Links from '../../../../../components/LinksList.svelte';
 

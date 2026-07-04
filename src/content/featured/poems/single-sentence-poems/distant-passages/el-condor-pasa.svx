@@ -1,3 +1,8 @@
+---
+title: El Condor Pasa
+description: A single-sentence poem by J.S. Christensen — playing dead beneath soaring condors at Colca Canyon, Peru, and a strange coincidence discovered back home.
+---
+
 <script>
   import PoemWrapper from '../../../../../components/PoemWrapper.svelte';
 </script>

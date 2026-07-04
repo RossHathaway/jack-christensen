@@ -1,3 +1,8 @@
+---
+title: Antipollution Ads
+description: Two decades of winning entries from the Clean Air Team’s annual statewide contest for the best one-line slogan to foster courtesy on the part of smokers.
+---
+
 <script>
 import QuoteWrapper from '../../../components/AntiPollutionContainer.svelte'
 </script>

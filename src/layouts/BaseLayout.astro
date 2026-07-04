@@ -4,7 +4,12 @@ import Nav from '../components/Nav.svelte';
 import Title from '../components/Title.svelte';
 import { getAllLinks } from '../helpers/navLinks.js';
 
-const { title = 'Jack Shields Christensen' } = Astro.props;
+// Page-specific <title> and meta description for SEO. Content pages set
+// these via frontmatter (see src/pages/[...slug].astro); dedicated pages
+// pass them as props. Without a title, the bare site name is used.
+const SITE_TITLE = 'Jack Shields Christensen';
+const { title, description } = Astro.props;
+const fullTitle = title ? `${title} | ${SITE_TITLE}` : SITE_TITLE;
 const links = getAllLinks();
 const currentPath = Astro.url.pathname;
 ---
@@ -28,7 +33,8 @@ const currentPath = Astro.url.pathname;
       rel="stylesheet"
     />
 
-    <title>{title}</title>
+    <title>{fullTitle}</title>
+    {description && <meta name="description" content={description} />}
 
     <style is:inline>
       /* Override Gelasio's U+02BB (ʻokina) with Noto Serif, which has correct advance

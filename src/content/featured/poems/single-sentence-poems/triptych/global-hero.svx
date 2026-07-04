@@ -1,3 +1,8 @@
+---
+title: Global Hero
+description: A single-sentence poem by J.S. Christensen — Charles Lindbergh, The Lone Eagle, and the fame that followed his 1927 solo flight.
+---
+
 <script>
   import PoemWrapper from '../../../../../components/PoemWrapper.svelte';
 </script>

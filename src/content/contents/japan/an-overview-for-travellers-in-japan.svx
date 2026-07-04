@@ -1,3 +1,8 @@
+---
+title: An Overview for Travelers in Japan
+description: Uncle Jack’s overview for travelers in Japan — how Taoism, Shinto, and a neutral state of mind can deepen a journey through Japanese culture.
+---
+
 <style>
     #quote-1 {
         display: flex;

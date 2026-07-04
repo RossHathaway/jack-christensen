@@ -1,3 +1,8 @@
+---
+title: Chant Walking Can Help You
+description: A free first-Friday activity in downtown Honolulu teaching Chant Walking — deep breathing, natural body carriage, and personal autosuggestion along an inspirational route.
+---
+
 <script>
   import DocumentWrapper from '../../../components/DocumentWrapper.svelte'
   import EndedIn2018 from '../../../components/EndedIn2018.svelte'

@@ -1,3 +1,8 @@
+---
+title: Personal Religious Symbol
+description: The personal religious symbol of Jack Shields Christensen, derived from his studies of Taoism and Verse 58 of Lao Tzu — to square the circle and circle the square.
+---
+
 <script>
   import PersonalReligiousSymbolExplanation from "../../components/PersonalReligiousSymbolExplanation.svelte";
 </script>

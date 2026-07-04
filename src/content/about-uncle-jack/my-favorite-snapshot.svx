@@ -1,3 +1,8 @@
+---
+title: My Favorite Snapshot
+description: Uncle Jack’s favorite photograph, taken in his mid-twenties atop the phallic rock of Ka-ule-o-Nanahoa on Molokaʻi, and the Hawaiian legends behind the site.
+---
+
 <main>
 
 <h2>MY FAVORITE SNAPSHOT</h2>

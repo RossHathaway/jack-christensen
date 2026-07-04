@@ -1,3 +1,8 @@
+---
+title: Private Outings
+description: Twenty-one original sightseeing outings personally escorted by Uncle Jack on five Hawaiian islands, from the Heart of Honolulu tour to neighbor island fly-drive trips.
+---
+
 <script>
     import DocumentWrapper from '../../../components/DocumentWrapper.svelte'
 </script>

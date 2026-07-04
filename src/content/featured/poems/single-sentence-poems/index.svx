@@ -1,3 +1,8 @@
+---
+title: Single Sentence Poems
+description: Twelve poems by J.S. Christensen, each crafted as a single sentence, arranged in two collections — Distant Passages and Triptych.
+---
+
 <script>
   const currentPath = '/featured/poems/single-sentence-poems/'
   const distantPassagesPath = `${currentPath}distant-passages`

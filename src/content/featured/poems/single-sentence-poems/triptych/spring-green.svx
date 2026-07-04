@@ -1,3 +1,8 @@
+---
+title: Spring Green
+description: A single-sentence poem by J.S. Christensen — meeting Frank Lloyd Wright at his Wisconsin home on the architect’s eighty-seventh birthday.
+---
+
 <script>
   import PoemWrapper from '../../../../../components/PoemWrapper.svelte';
 </script>

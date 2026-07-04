@@ -1,3 +1,8 @@
+---
+title: Ise
+description: A single-sentence poem by J.S. Christensen — peering toward the inner precinct of Japan’s venerated Geku Outer Shrine at Ise.
+---
+
 <script>
   import PoemWrapper from '../../../../../components/PoemWrapper.svelte';
 </script>

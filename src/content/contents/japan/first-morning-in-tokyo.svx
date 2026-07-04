@@ -1,3 +1,8 @@
+---
+title: First Morning in Tokyo
+description: A self-guided morning walk from Tokyo Station to the Imperial Plaza, with turn-by-turn directions and the history of the Marunouchi district.
+---
+
 <main>
 
 ## FIRST MORNING IN TOKYO

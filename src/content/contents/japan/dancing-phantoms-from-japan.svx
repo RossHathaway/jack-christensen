@@ -1,3 +1,8 @@
+---
+title: Dancing Phantoms From Japan
+description: An introduction to the classical Noh dance-drama of Japan presented by Uncle Jack, with performances available during August annually.
+---
+
 <script>
   import { onMount } from 'svelte'
 

@@ -1,3 +1,8 @@
+---
+title: Mahatma Gandhi
+description: A brief cine-survey of Sir Richard Attenborough’s film Gandhi starring Ben Kingsley, by J.S. Christensen, together with a collection of Gandhi’s humor.
+---
+
 <main>
 
 <div markdown="1" id="first-container">
