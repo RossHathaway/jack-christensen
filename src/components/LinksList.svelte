@@ -1,31 +1,31 @@
 <script>
-  import { stores } from '@sapper/app';
-  import { makeReadableName } from 'helpers/makeReadableNameFromPath';
-  import { splitUrlOnSlash } from 'helpers/splitUrlOnSlash'
+  import { makeReadableName } from '../helpers/makeReadableNameFromPath.js';
 
-  export let isNav = false,
+  let {
+    isNav = false,
     folder = '',
     title = null,
-    links = [];
+    links = [],
+    currentPath = '/',
+  } = $props();
 
-  const { page } = stores();
-  
-  $: trimmedPath = $page.path.endsWith('/') ? $page.path.slice(0, -1) : $page.path;
-  $: urlSegments = trimmedPath.split('/');
-  $: lastPathSection = urlSegments[urlSegments.length - 1];
+  const trimmedPath = currentPath.endsWith('/')
+    ? currentPath.slice(0, -1)
+    : currentPath;
+  const urlSegments = trimmedPath.split('/');
+  const lastPathSection = urlSegments[urlSegments.length - 1];
 
   if (title === null) {
     title = folder
       ? makeReadableName(folder).toUpperCase()
       : makeReadableName(lastPathSection);
   }
-
 </script>
 <div class="{folder}">
   <h2>
     {#if isNav}
-    <a rel="prefetch" 
-      href="/{folder}" 
+    <a
+      href="/{folder}"
       aria-current={lastPathSection === folder ? "location" : undefined}>
       {title}
     </a>
@@ -34,8 +34,8 @@
   <ul>
     {#each links as link}
     <li>
-      <a rel="prefetch" 
-        href="{link.path}" 
+      <a
+        href="{link.path}"
         aria-current={urlSegments.includes(link.lastUrlSegment) ? "location" : undefined}
         >
           {link.name}

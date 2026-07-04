@@ -12,9 +12,11 @@
   };
   export let component = "default",
     doubleBorder = false;
+
+  $: Wrapper = components[component];
 </script>
 
-<svelte:component this={components[component]} {doubleBorder}>
+<Wrapper {doubleBorder}>
   <div slot="header">
     <slot name="header">
       <div class="centered">
@@ -28,4 +30,4 @@
     </slot>
   </div>
   <slot />
-</svelte:component>
+</Wrapper>

@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Content from '../../../content/contents/japan/dancing-phantoms-from-japan.svx';
+---
+
+<!-- This page restyles itself with a ResizeObserver, so it hydrates. -->
+<BaseLayout>
+  <Content client:load />
+</BaseLayout>

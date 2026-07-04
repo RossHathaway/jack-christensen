@@ -1,21 +1,20 @@
 <script>
-  import { onMount } from "svelte";
-  import { stores } from "@sapper/app";
   import NavSection from "./NavSection.svelte";
 
-  export let links;
+  let { links, currentPath = "/" } = $props();
 
-  const { page } = stores();
-  let menuToggle;
+  // Sections start closed on a fresh visit, but a section the visitor opened
+  // stays open across page navigations (which are full page loads now).
+  const STORAGE_KEY = "nav-opened-section";
+  const nav = $state({
+    openedSectionPath:
+      typeof sessionStorage !== "undefined"
+        ? (sessionStorage.getItem(STORAGE_KEY) ?? "")
+        : "",
+  });
 
-  onMount(() => {
-    let prevPath = $page.path;
-    return page.subscribe(($p) => {
-      if ($p.path !== prevPath) {
-        menuToggle.checked = false;
-        // prevPath = $p.path;
-      }
-    });
+  $effect(() => {
+    sessionStorage.setItem(STORAGE_KEY, nav.openedSectionPath);
   });
 
   const processedLinks = [];
@@ -135,8 +134,8 @@
 
 <div id="nav-container">
 
-  <input type="checkbox" id="menu-toggle" bind:this={menuToggle} />
-  <label for="menu-toggle" onclick>
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
@@ -153,19 +152,21 @@
           <a href="/">
             <h2>HOME</h2>
           </a>
-          <NavSection links={link.children ? link.children : []} />
+          <NavSection links={link.children ? link.children : []} {currentPath} {nav} />
         </div>
       {:else if link.name === 'Featured'}
         <div class={link.path}>
           <h2>{link.name}</h2>
-          <NavSection links={link.children ? link.children : []} />
+          <NavSection links={link.children ? link.children : []} {currentPath} {nav} />
         </div>
       {:else if link.name === 'Contents'}
         <div class={link.path}>
           <h2>{link.name}</h2>
           <NavSection
             hasLightBgColor={false}
-            links={link.children ? link.children : []} />
+            links={link.children ? link.children : []}
+            {currentPath}
+            {nav} />
         </div>
       {:else if link.name === 'Contact'}
         <div class={link.path}>

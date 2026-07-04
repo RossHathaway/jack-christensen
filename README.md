@@ -1,18 +1,23 @@
 # Jack Christensen
 
-Based on the default [Sapper](https://github.com/sveltejs/sapper)#Rollup template.
+Built with [Astro](https://astro.build) and [Svelte 5](https://svelte.dev), migrated from the original Sapper/Rollup setup.
 
 ## Structure
 
- - .md files in src/routes are processed by the svelte-preprocess-markdown library to make *.svelte files. 
- - Folders within routes/ each have an index.svelte page that uses the Links component from src/components to list the other files in the same folder.
- - The data passed to the Links component when the site is being built is from the index.json.js file in the same folder which makes a server endpoint for when sapper is doing the build. This gets the filenames and routes for the other files in the parent folder.
+- `src/content/` mirrors the site's URL structure. `.svx` files are markdown processed by [mdsvex](https://mdsvex.pngwn.io), so they can embed Svelte components, `<script>` blocks, and scoped `<style>` blocks just like the old Sapper `.md` routes.
+- `src/pages/[...slug].astro` turns every file in `src/content/` into a static page. A folder's `index.svx` is served at the folder's own URL and receives `links` to its sibling pages as a prop (replacing the old `index.json.js` server endpoints).
+- `src/layouts/BaseLayout.astro` replaces `src/template.html` + `src/routes/_layout.svelte`: it renders the header, the title, and the nav, and injects `<base href="/">` so the content's root-relative URLs keep working.
+- The accordion nav tree is generated at build time by `src/helpers/navLinks.js`, which scans `src/content/` the same way the old `navLinks.json.js` endpoint scanned `src/routes/`.
+- Almost everything is prerendered static HTML. Only two islands hydrate in the browser: the nav (`client:load` in the layout, for the accordion and mobile menu) and the Dancing Phantoms page (which repositions images with a `ResizeObserver`).
+- The ʻokina (U+02BB) is wrapped in `<span class="okina">` at build time by a rehype plugin in `svelte.config.js`, so CSS can give it a font with a correct advance width.
 
-All server-side code will be run during build to produce a static site and will not run in production, which is why I use readdirSync instead of async and do not need to cache the files.
+## Commands
 
-## Production mode and deployment
+- `npm run dev` — dev server at http://localhost:4321
+- `npm run build` — static build to `dist/`
+- `npm run preview` — serve the built site locally
+- `npm test` — runs the dev server and the Cypress specs (requires Cypress installed)
 
-To start a production version of this app, run `npm run export`. This will make a static version of the app. There is no need to run `npm start` or similar commands after when deploying on Now v2. The default folder this will export to is `__sapper__/export`.
+## Deployment
 
-You can deploy your application to any environment that supports Node 8 or above. 
-
+`npm run build` produces a fully static site in `dist/` that can be deployed to any static host.
