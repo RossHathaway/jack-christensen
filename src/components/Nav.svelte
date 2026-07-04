@@ -3,7 +3,19 @@
 
   let { links, currentPath = "/" } = $props();
 
-  const nav = $state({ openedSectionPath: "" });
+  // Sections start closed on a fresh visit, but a section the visitor opened
+  // stays open across page navigations (which are full page loads now).
+  const STORAGE_KEY = "nav-opened-section";
+  const nav = $state({
+    openedSectionPath:
+      typeof sessionStorage !== "undefined"
+        ? (sessionStorage.getItem(STORAGE_KEY) ?? "")
+        : "",
+  });
+
+  $effect(() => {
+    sessionStorage.setItem(STORAGE_KEY, nav.openedSectionPath);
+  });
 
   const processedLinks = [];
 

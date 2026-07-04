@@ -7,10 +7,8 @@
     folder = "",
     links = [],
     hasLightBgColor = true,
-    isOpenedChildren = false,
     currentPath = "/",
     nav,
-    class: className = "",
   } = $props();
 
   const bgColor = hasLightBgColor
@@ -23,10 +21,8 @@
   const urlSegments = trimmedPath.split("/");
   const lastPathSection = urlSegments[urlSegments.length - 1];
 
-  if (title === null) {
-    title = folder
-      ? makeReadableName(folder).toUpperCase()
-      : makeReadableName(lastPathSection);
+  if (title === null && folder) {
+    title = makeReadableName(folder).toUpperCase();
   }
 </script>
 
@@ -97,12 +93,11 @@
 </style>
 
 <div
-  style={`background-color: ${bgColor}`}
-  class="{isOpenedChildren ? 'isOpenedChildren' : ''}
-  {className}">
-  <!-- class passed down from parent, or no class if none was passed -->
+  style={`background-color: ${bgColor}`}>
 
-  <strong>{title}</strong>
+  {#if title}
+    <strong>{title}</strong>
+  {/if}
 
   <ul>
     {#each links as link}
@@ -134,12 +129,15 @@
             {link.name}
           </button>
 
-          <NavSection
-            links={link.children}
-            hasLightBgColor={!hasLightBgColor}
-            isOpenedChildren={nav.openedSectionPath.startsWith(link.path)}
-            {currentPath}
-            {nav} />
+          <!-- The wrapper div must be a literal sibling of the button so the
+               scoped `button + div` collapse rules aren't pruned as unused. -->
+          <div class:isOpenedChildren={nav.openedSectionPath.startsWith(link.path)}>
+            <NavSection
+              links={link.children}
+              hasLightBgColor={!hasLightBgColor}
+              {currentPath}
+              {nav} />
+          </div>
 
         {:else}
           <a
