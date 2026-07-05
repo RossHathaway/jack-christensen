@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config';
+import { unified } from '@astrojs/markdown-remark';
 import mdx from '@astrojs/mdx';
 import svelte from '@astrojs/svelte';
 
@@ -42,5 +43,15 @@ function wrapOkina() {
 // are MDX; Svelte remains only for the hydrated islands (Nav, SearchResults).
 export default defineConfig({
   output: 'static',
-  integrations: [mdx({ rehypePlugins: [wrapOkina] }), svelte()],
+  // The unified (remark/rehype) processor instead of Astro's default one:
+  // custom plugins only run through `markdown.processor`, and the MDX
+  // integration inherits this pipeline. `dashes: true` matches mdsvex's
+  // typography from the old .svx content (`--` becomes an em dash).
+  markdown: {
+    processor: unified({
+      smartypants: { dashes: true },
+      rehypePlugins: [wrapOkina],
+    }),
+  },
+  integrations: [mdx(), svelte()],
 });

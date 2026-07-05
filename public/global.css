@@ -69,6 +69,10 @@ h3 {
 img {
     min-height: 0;
     width: 100%;
+    /* Optimized images carry intrinsic width/height attributes; without
+       height:auto the attribute height would win over the scaled width
+       and distort the aspect ratio. */
+    height: auto;
 }
 
 @media screen and (max-width: 550px) {
