@@ -1,3 +1,8 @@
+---
+title: About Uncle Jack
+description: Jack Shields Christensen tells his own story — from Wisconsin to Hawaiʻi, decades of classes at the University of Hawaiʻi, and platform diving into his eighties.
+---
+
 <main>
 
 <h2>ABOUT UNCLE JACK</h2> 

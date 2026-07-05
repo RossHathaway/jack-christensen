@@ -1,3 +1,8 @@
+---
+title: Miyajima
+description: A single-sentence poem by J.S. Christensen — rowing a skiff out to Miyajima’s Great Gateway and sharing grapes with a brazenly tame deer.
+---
+
 <script>
   import PoemWrapper from '../../../../../components/PoemWrapper.svelte';
 </script>

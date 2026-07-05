@@ -1,3 +1,8 @@
+---
+title: La Pampa de Anta
+description: A single-sentence poem by J.S. Christensen — scenes after rain at La Pampa de Anta, Peru.
+---
+
 <script>
   import PoemWrapper from '../../../../../components/PoemWrapper.svelte';
 </script>

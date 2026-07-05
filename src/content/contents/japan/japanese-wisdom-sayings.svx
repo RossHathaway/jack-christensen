@@ -1,3 +1,8 @@
+---
+title: Japanese Wisdom Sayings
+description: A collection of Japanese wisdom sayings on old age and experience, a handout from Uncle Jack’s lectures on traveling in Japan.
+---
+
 <script>
 import DocumentWrapper from '../../../components/DocumentWrapper.svelte'
 </script>

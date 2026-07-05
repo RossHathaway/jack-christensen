@@ -1,3 +1,8 @@
+---
+title: Longevity Coach
+description: Jack’s approach to maximize well-being into old age.
+---
+
 <style>
 img {
     max-width: 100%;

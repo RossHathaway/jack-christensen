@@ -1,5 +1,6 @@
 ---
 title: Obama's Neighborhood
+description: Jack’s guided excursion through the Honolulu neighborhood where Barack Obama grew up, led by a guide who lived in the same area during the 1970s.
 ---
 <script>
 import DocumentWrapper from '../../../components/DocumentWrapper.svelte'

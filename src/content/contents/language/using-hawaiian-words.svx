@@ -1,3 +1,8 @@
+---
+title: Using Hawaiian Words
+description: A free lecture on Hawaiian words and place names from The Program to Preserve Hawaiian Place Names, a statewide public service since 1974. The easiest way to find out how to say and write individual Hawaiian words.
+---
+
 <script>
     import DocumentWrapper from '../../../components/DocumentWrapper.svelte'
     

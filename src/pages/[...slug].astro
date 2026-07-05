@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getSiblingLinks } from '../helpers/navLinks.js';
+import { makeReadableName } from '../helpers/makeReadableNameFromPath.js';
 
 // Every file in src/content becomes a page at the matching URL, exactly like
 // the old src/routes tree under Sapper. A folder's index page is served at
@@ -23,11 +24,20 @@ export async function getStaticPaths() {
 
     const isFolderIndex = route.endsWith('/index');
     const folderRoute = isFolderIndex ? route.slice(0, -'/index'.length) : null;
+    const slug = isFolderIndex ? folderRoute : route;
+
+    // The <title> and meta description come from the page's own metadata:
+    // YAML frontmatter in .svx files (mdsvex exports it as `metadata`) or an
+    // `export const metadata = {...}` module script in .svelte files. A page
+    // without one still gets a unique title derived from its file name.
+    const metadata = mod.metadata ?? {};
 
     paths.push({
-      params: { slug: isFolderIndex ? folderRoute : route },
+      params: { slug },
       props: {
         Content: mod.default,
+        title: metadata.title ?? makeReadableName(slug.split('/').at(-1)),
+        description: metadata.description,
         links: isFolderIndex ? getSiblingLinks(folderRoute) : undefined,
       },
     });
@@ -35,9 +45,9 @@ export async function getStaticPaths() {
   return paths;
 }
 
-const { Content, links } = Astro.props;
+const { Content, links, title, description } = Astro.props;
 ---
 
-<BaseLayout>
+<BaseLayout {title} {description}>
   <Content {links} currentPath={Astro.url.pathname} />
 </BaseLayout>

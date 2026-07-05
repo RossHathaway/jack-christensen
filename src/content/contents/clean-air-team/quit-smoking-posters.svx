@@ -1,3 +1,8 @@
+---
+title: Quit Smoking Posters
+description: The Clean Air Team’s quit-smoking posters which inspire smokers to quit.
+---
+
 <script>
     import AutoSuggestion from '../../../components/logos/AutosuggestionLogo.svelte'
 </script>

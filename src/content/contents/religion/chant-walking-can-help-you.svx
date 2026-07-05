@@ -1,3 +1,8 @@
+---
+title: Chant Walking Can Help You
+description: Jack's method of chant walking: breath techniques, affirmations, and the benefits of fresh air.
+---
+
 <script>
   import DocumentWrapper from '../../../components/DocumentWrapper.svelte'
   import EndedIn2018 from '../../../components/EndedIn2018.svelte'

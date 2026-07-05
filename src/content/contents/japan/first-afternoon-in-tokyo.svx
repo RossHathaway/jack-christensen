@@ -1,3 +1,8 @@
+---
+title: First Afternoon in Tokyo
+description: A self-guided afternoon walk starting at and returning to Tokyo Station including Nihonbashi, Mitsukoshi Department Store, Ozu Washi Paper Store museum, Takashimaya Depato, Maruzen bookstore, Yaesu Book Center, and the history ofthe surrounding area.
+---
+
 <main>
 
 ## FIRST AFTERNOON IN TOKYO

@@ -11,6 +11,22 @@ Built with [Astro](https://astro.build) and [Svelte 5](https://svelte.dev), migr
 - Almost everything is prerendered static HTML. Only two islands hydrate in the browser: the nav (`client:load` in the layout, for the accordion and mobile menu) and the Dancing Phantoms page (which repositions images with a `ResizeObserver`).
 - The ʻokina (U+02BB) is wrapped in `<span class="okina">` at build time by a rehype plugin in `svelte.config.js`, so CSS can give it a font with a correct advance width.
 
+## SEO: page titles & descriptions
+
+Every page gets a unique `<title>` and `<meta name="description">`, rendered by `src/layouts/BaseLayout.astro`. To change them, edit the YAML frontmatter at the top of the page's file in `src/content/`:
+
+```yaml
+---
+title: Hike to Diamond Head Lighthouse
+description: A free guided walk on the first Saturday of every month...
+---
+```
+
+- `title` becomes `<title>Title | Jack Shields Christensen</title>`; `description` becomes the meta description. The search index also prefers the frontmatter `title`.
+- If a `.svx` file has no frontmatter `title`, the page still gets one derived from its file name (via `makeReadableName`); with no `description`, the meta tag is simply omitted.
+- The two `.svelte` content pages can't carry frontmatter, so they export the same data from a module script instead (see `src/content/contact.svelte`); the home page's description lives in `src/pages/index.astro`.
+- The dedicated pages (`src/pages/index.astro`, `search.astro`, `404.astro`) pass `title`/`description` straight to `BaseLayout`.
+
 ## Search
 
 Site search is powered by a Vercel serverless function:

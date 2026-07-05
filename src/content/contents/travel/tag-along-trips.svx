@@ -1,3 +1,8 @@
+---
+title: Tag Along Trips
+description: Jack's designed trips to Japan, Peru, India, and the Mojave Desert.
+---
+
 <main>
 
 ## UNCLE JACK’S TAG ALONG TRIPS

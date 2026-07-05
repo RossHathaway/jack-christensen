@@ -1,3 +1,8 @@
+---
+title: Kyoto Downpour
+description: A single-sentence poem by J.S. Christensen — rain revealing unseen details in the rocks of a Kyoto tea house garden.
+---
+
 <script>
   import PoemWrapper from '../../../../../components/PoemWrapper.svelte';
 </script>

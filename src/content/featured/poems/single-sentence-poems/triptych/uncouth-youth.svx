@@ -1,3 +1,8 @@
+---
+title: Uncouth Youth
+description: A single-sentence poem by J.S. Christensen — hitchhiking across Texas at midnight in 1950, at the end of a final teenage adventure.
+---
+
 <script>
   import PoemWrapper from '../../../../../components/PoemWrapper.svelte';
 </script>

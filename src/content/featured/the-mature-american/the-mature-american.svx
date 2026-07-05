@@ -1,4 +1,9 @@
-﻿<main>
+---
+title: The Mature American
+description: A profile of Henry David Thoreau, 1817-1862, based upon his own words, by J.S. Christensen and Robert Boom.
+---
+
+<main>
 
 <h2>THE MATURE AMERICAN</h2>
 

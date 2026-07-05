@@ -1,3 +1,8 @@
+---
+title: The Sacred Valley of the Incas
+description: A single-sentence poem by J.S. Christensen — women washing laundry on the banks of the Urubamba River in the Sacred Valley of the Incas.
+---
+
 <script>
   import PoemWrapper from '../../../../../components/PoemWrapper.svelte';
 </script>

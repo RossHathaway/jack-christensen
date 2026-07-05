@@ -1,3 +1,8 @@
+---
+title: Guidance Reminders for Daily Review
+description: Uncle Jack’s collected spiritual advice for daily life.
+---
+
 <main>
 
 <h2>GUIDANCE REMINDERS FOR DAILY REVIEW</h2> 

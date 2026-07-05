@@ -1,3 +1,8 @@
+---
+title: Machu Picchu
+description: A single-sentence poem by J.S. Christensen — hiking an ancient passage above a plunging jungle ravine at Machu Picchu.
+---
+
 <script>
   import PoemWrapper from '../../../../../components/PoemWrapper.svelte';
 </script>

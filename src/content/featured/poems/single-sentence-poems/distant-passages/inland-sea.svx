@@ -1,3 +1,8 @@
+---
+title: Inland Sea
+description: A single-sentence poem by J.S. Christensen — departing a quiet pine-clad islet on Japan’s Inland Sea.
+---
+
 <script>
   import PoemWrapper from '../../../../../components/PoemWrapper.svelte';
 </script>

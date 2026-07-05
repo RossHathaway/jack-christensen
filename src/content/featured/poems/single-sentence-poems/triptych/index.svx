@@ -1,3 +1,8 @@
+---
+title: Triptych
+description: Three rambling single-sentence poems by J.S. Christensen — Global Hero, Spring Green, and Uncouth Youth.
+---
+
 <script>
   import Links from '../../../../../components/LinksList.svelte';
 

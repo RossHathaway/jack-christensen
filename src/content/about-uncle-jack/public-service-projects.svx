@@ -1,3 +1,8 @@
+---
+title: Public Service Projects
+description: Activities Uncle Jack led in Honolulu — Chant Walking, a spiritual practice, the Hike to Diamond Head Lighthouse, and Strolling With a Longevity Coach, where Jack coached participants in diet and well-being.
+---
+
 <script>
   import DocumentWrapper from '../../components/DocumentWrapper.svelte'
   import EndedIn2018 from '../../components/EndedIn2018.svelte'
