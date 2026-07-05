@@ -1,11 +1,25 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Index from '../content/index.svelte';
+import divingTower from '../assets/uncle-jack-on-diving-tower.png';
 
 const description =
   'The website of Jack Shields Christensen, “Uncle Jack” of Honolulu — a compilation of his writings, poems, tours, and public service projects, offered to anyone who shares his interests.';
 ---
 
 <BaseLayout {description}>
-  <Index />
+  <!-- <Image /> only works in .astro files, so the optimized portrait is
+       rendered here and slotted into the Svelte page, which displays it at
+       up to 400 CSS pixels. -->
+  <Index>
+    <Image
+      src={divingTower}
+      alt="Jack in Hawaiʻi"
+      width={400}
+      densities={[1, 2]}
+      loading="eager"
+      fetchpriority="high"
+    />
+  </Index>
 </BaseLayout>

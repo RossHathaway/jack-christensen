@@ -1,11 +1,19 @@
+<script>
+  // The portrait arrives as slotted content because src/pages/index.astro
+  // renders it with Astro's <Image /> component, which cannot run inside a
+  // Svelte component.
+  let { children } = $props();
+</script>
+
 <style>
   div {
     text-align: center;
   }
 
-  img {
+  div :global(img) {
     width: 100%;
     max-width: 400px;
+    height: auto;
     margin: 0 0 1rem 0;
   }
 
@@ -29,7 +37,7 @@
 <main>
 
   <div>
-    <img alt="Jack in Hawaiʻi" src="uncle-jack-on-diving-tower.png" />
+    {@render children?.()}
   </div>
 
   <p>
