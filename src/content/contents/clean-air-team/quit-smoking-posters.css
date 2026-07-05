@@ -1,0 +1,53 @@
+.page-quit-smoking-posters main {
+        max-width: 100%;
+    }
+
+    .page-quit-smoking-posters section {
+        border: 10px solid black;
+        margin: 1rem;
+        padding: calc(0.5rem + 20px)
+    }
+
+    .page-quit-smoking-posters .no-padding-visible {
+        padding: calc(0.5rem + 10px);
+        display: flex;
+    }
+
+    .page-quit-smoking-posters img {
+        width: 100%;
+      height: auto;
+}
+
+    .page-quit-smoking-posters figcaption {
+        font-style: italic;
+        font-size: 1.5rem;
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .page-quit-smoking-posters .byr-border {
+        box-shadow: inset 0 0 0 10px var(--yellow),
+      inset 0 0 0 20px var(--red);
+        -webkit-box-shadow: inset 0 0 0 10px var(--yellow),
+      inset 0 0 0 20px var(--red);
+        -moz-box-shadow: inset 0 0 0 10px var(--yellow),
+      inset 0 0 0 20px var(--red);
+    }
+
+    .page-quit-smoking-posters .bwr-border {
+        box-shadow: inset 0 0 0 10px var(--main-bg-color),
+      inset 0 0 0 20px var(--red);
+        -webkit-box-shadow: inset 0 0 0 10px var(--main-bg-color),
+      inset 0 0 0 20px var(--red);
+        -moz-box-shadow: inset 0 0 0 10px var(--main-bg-color),
+      inset 0 0 0 20px var(--red);
+    }
+
+    .page-quit-smoking-posters #autosuggestion {
+        background-color: var(--yellow);
+    }
+
+    .page-quit-smoking-posters #autosuggestion figcaption {
+        max-width: 32rem;
+        text-align: left;
+    }

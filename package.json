@@ -14,9 +14,9 @@
     "test": "run-p --race dev cy:run"
   },
   "dependencies": {
+    "@astrojs/mdx": "^7.0.2",
     "@astrojs/svelte": "^9.0.1",
     "astro": "^7.0.6",
-    "mdsvex": "^0.12.7",
     "svelte": "^5.56.4"
   },
   "devDependencies": {

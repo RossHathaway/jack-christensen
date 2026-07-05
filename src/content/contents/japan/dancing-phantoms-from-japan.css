@@ -1,0 +1,71 @@
+.page-dancing-phantoms-from-japan h2 {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-column-gap: 1.5rem;
+    justify-items: center;
+    text-decoration:underline;
+  }
+
+  .page-dancing-phantoms-from-japan h2 > span {
+    grid-column-start: 2;
+  }
+
+  .page-dancing-phantoms-from-japan img {
+    margin: 0.25rem;
+  }
+
+  .page-dancing-phantoms-from-japan img.header {
+    max-height: 70px;
+  }
+
+  @media screen and (max-width: 630px) {
+    .page-dancing-phantoms-from-japan h2 {
+      grid-column-gap: .75rem;
+    }
+
+    .page-dancing-phantoms-from-japan img.header {
+      width: auto;
+      height: 2.5rem;
+    }
+  }
+
+  .page-dancing-phantoms-from-japan #pictures-section-1 {
+    position: relative;
+    left: -100px;
+    width: calc(100% + 200px);
+    display: flex;
+  }
+
+  .page-dancing-phantoms-from-japan #pictures-section-1 div {
+    height: 880px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+  }
+
+  .page-dancing-phantoms-from-japan #pictures-section-1 > div:first-of-type {
+      align-items: flex-end;
+  }
+
+  .page-dancing-phantoms-from-japan #pictures-section-1 > div:last-of-type {
+      align-items: flex-start;
+  }
+
+    @media (max-width: 1000px) {
+    .page-dancing-phantoms-from-japan #pictures-section-1 {
+      left: 0;
+      width: 100%;
+    }
+
+      .page-dancing-phantoms-from-japan #pictures-section-1 div {
+        height: auto;
+        justify-content: flex-start;
+  }
+  }
+
+  .page-dancing-phantoms-from-japan #pictures-section-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }

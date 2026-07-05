@@ -1,9 +1,39 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import Content, { metadata } from '../../../content/contents/japan/dancing-phantoms-from-japan.svx';
+import Content, { frontmatter } from '../../../content/contents/japan/dancing-phantoms-from-japan.mdx';
 ---
 
-<!-- This page restyles itself with a ResizeObserver, so it hydrates. -->
-<BaseLayout title={metadata.title} description={metadata.description}>
-  <Content client:load />
+<BaseLayout title={frontmatter.title} description={frontmatter.description}>
+  <Content />
 </BaseLayout>
+
+<!-- The picture grid switches between row and column layout based on the
+     content area's width (not the viewport's, which a media query would
+     measure), so it watches #observe-resize with a ResizeObserver. -->
+<script>
+  const ro = new ResizeObserver((entries) => {
+    for (const entry of entries) {
+      const { width } = entry.contentRect;
+
+      const section1 = document.getElementById('pictures-section-1');
+      const section1FirstChild = document.querySelector(
+        '#pictures-section-1 > div:first-of-type'
+      );
+      const section1SecondChild = document.querySelector(
+        '#pictures-section-1 > div:last-of-type'
+      );
+
+      if (width < 930) {
+        section1.style.flexDirection = 'column';
+        section1FirstChild.style.alignItems = 'center';
+        section1SecondChild.style.alignItems = 'center';
+      } else {
+        section1.style.flexDirection = 'row';
+        section1FirstChild.style.alignItems = 'flex-end';
+        section1SecondChild.style.alignItems = 'flex-start';
+      }
+    }
+  });
+
+  ro.observe(document.getElementById('observe-resize'));
+</script>

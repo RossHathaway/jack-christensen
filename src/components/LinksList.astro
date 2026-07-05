@@ -1,0 +1,75 @@
+---
+import { makeReadableName } from '../helpers/makeReadableNameFromPath.js';
+
+const {
+  isNav = false,
+  folder = '',
+  title: titleProp = null,
+  links = [],
+  currentPath = '/',
+} = Astro.props;
+
+const trimmedPath = currentPath.endsWith('/')
+  ? currentPath.slice(0, -1)
+  : currentPath;
+const urlSegments = trimmedPath.split('/');
+const lastPathSection = urlSegments[urlSegments.length - 1];
+
+const title =
+  titleProp ??
+  (folder
+    ? makeReadableName(folder).toUpperCase()
+    : makeReadableName(lastPathSection));
+---
+<div class={folder}>
+  <h2>
+    {
+      isNav ? (
+        <a
+          href={`/${folder}`}
+          aria-current={lastPathSection === folder ? 'location' : undefined}
+        >
+          {title}
+        </a>
+      ) : (
+        title
+      )
+    }
+  </h2>
+  <ul>
+    {
+      links.map((link) => (
+        <li>
+          <a
+            href={link.path}
+            aria-current={
+              urlSegments.includes(link.lastUrlSegment) ? 'location' : undefined
+            }
+          >
+            {link.name}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<style>
+  div {
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    padding: 0.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    display: block;
+  }
+</style>

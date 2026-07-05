@@ -1,0 +1,13 @@
+.page-an-overview-for-travellers-in-japan #quote-1 {
+        display: flex;
+        justify-content: center;
+    }
+    .page-an-overview-for-travellers-in-japan #quote-1 blockquote {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: max-content;
+    }
+    .page-an-overview-for-travellers-in-japan #quote-1 footer {
+        margin-left: auto;
+    }

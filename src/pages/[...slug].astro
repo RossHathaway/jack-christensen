@@ -3,20 +3,18 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { getSiblingLinks } from '../helpers/navLinks.js';
 import { makeReadableName } from '../helpers/makeReadableNameFromPath.js';
 
-// Every file in src/content becomes a page at the matching URL, exactly like
-// the old src/routes tree under Sapper. A folder's index page is served at
-// the folder's own URL and receives links to its sibling pages (what the old
-// index.json.js endpoints provided).
+// Every MDX file in src/content becomes a page at the matching URL, exactly
+// like the old src/routes tree under Sapper. A folder's index page is served
+// at the folder's own URL and receives links to its sibling pages (what the
+// old index.json.js endpoints provided).
 export async function getStaticPaths() {
-  const modules = import.meta.glob('../content/**/*.{svx,svelte}', {
+  const modules = import.meta.glob('../content/**/*.mdx', {
     eager: true,
   });
 
   const paths = [];
   for (const [file, mod] of Object.entries(modules)) {
-    const route = file
-      .replace('../content/', '')
-      .replace(/\.(svx|svelte)$/, '');
+    const route = file.replace('../content/', '').replace(/\.mdx$/, '');
 
     // These routes have dedicated pages in src/pages.
     if (route === 'index') continue;
@@ -26,18 +24,24 @@ export async function getStaticPaths() {
     const folderRoute = isFolderIndex ? route.slice(0, -'/index'.length) : null;
     const slug = isFolderIndex ? folderRoute : route;
 
-    // The <title> and meta description come from the page's own metadata:
-    // YAML frontmatter in .svx files (mdsvex exports it as `metadata`) or an
-    // `export const metadata = {...}` module script in .svelte files. A page
-    // without one still gets a unique title derived from its file name.
-    const metadata = mod.metadata ?? {};
+    // The <title> and meta description come from the page's YAML frontmatter
+    // (MDX exports it as `frontmatter`). A page without one still gets a
+    // unique title derived from its file name.
+    const frontmatter = mod.frontmatter ?? {};
+
+    // Per-page styles live in a .css file imported by the page's MDX and are
+    // scoped by this class on the page's wrapper element (the replacement
+    // for mdsvex's Svelte-scoped <style> blocks). Folder index pages use the
+    // file name, matching their extracted css files.
+    const pageClass = `page-${isFolderIndex ? 'index' : slug.split('/').at(-1)}`;
 
     paths.push({
       params: { slug },
       props: {
         Content: mod.default,
-        title: metadata.title ?? makeReadableName(slug.split('/').at(-1)),
-        description: metadata.description,
+        pageClass,
+        title: frontmatter.title ?? makeReadableName(slug.split('/').at(-1)),
+        description: frontmatter.description,
         links: isFolderIndex ? getSiblingLinks(folderRoute) : undefined,
       },
     });
@@ -45,9 +49,11 @@ export async function getStaticPaths() {
   return paths;
 }
 
-const { Content, links, title, description } = Astro.props;
+const { Content, pageClass, links, title, description } = Astro.props;
 ---
 
 <BaseLayout {title} {description}>
-  <Content {links} currentPath={Astro.url.pathname} />
+  <div class={pageClass}>
+    <Content {links} currentPath={Astro.url.pathname} />
+  </div>
 </BaseLayout>

@@ -1,0 +1,9 @@
+.page-my-mystical-pathways-in-japan .two-col-with-equals {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .page-my-mystical-pathways-in-japan .equal-sign {
+        padding: 0 1rem;
+    }

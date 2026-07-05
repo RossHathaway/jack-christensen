@@ -14,13 +14,19 @@ export function getAllLinks(dir = CONTENT_ROOT) {
   // A folder that contains an index page is represented by that single page,
   // so it gets no child links in the accordion nav. The content root is the
   // exception: its index page is the home page, not a folder listing.
-  if (dir !== CONTENT_ROOT && entries.some((e) => e.name.startsWith('index'))) {
+  if (
+    dir !== CONTENT_ROOT &&
+    entries.some((e) => e.name.startsWith('index') && e.name.endsWith('.mdx'))
+  ) {
     return null;
   }
 
   const links = [];
   for (const entry of entries) {
     if (entry.name.startsWith('_') || entry.name.startsWith('.')) continue;
+    // Only MDX files are pages; folders may also hold extracted per-page
+    // .css files, which must not become nav links.
+    if (entry.isFile() && !entry.name.endsWith('.mdx')) continue;
 
     const childFileName = removeFileEnding(entry.name);
     const routePath = path
@@ -46,7 +52,13 @@ export function getSiblingLinks(folderRoute) {
   const dir = path.join(CONTENT_ROOT, folderRoute);
   return fs
     .readdirSync(dir, { withFileTypes: true })
-    .filter((e) => e.isFile() && !e.name.startsWith('index') && !e.name.startsWith('.'))
+    .filter(
+      (e) =>
+        e.isFile() &&
+        e.name.endsWith('.mdx') &&
+        !e.name.startsWith('index') &&
+        !e.name.startsWith('.')
+    )
     .map((e) => {
       const childFileName = removeFileEnding(e.name);
       return {
