@@ -40,6 +40,16 @@ main {
     box-sizing: border-box;
 }
 
+/* The per-page wrapper element (see src/pages/[...slug].astro). Content used
+   to render directly into the flex column #observe-resize, where the auto
+   margins above shrink-wrap <main> to its content width before centering;
+   the wrapper must keep that flex formatting context or every <main>
+   inflates to the full 800px max-width. */
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
 strong {
     letter-spacing: 0.04em;
 }

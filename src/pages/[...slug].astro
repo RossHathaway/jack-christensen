@@ -53,7 +53,7 @@ const { Content, pageClass, links, title, description } = Astro.props;
 ---
 
 <BaseLayout {title} {description}>
-  <div class={pageClass}>
+  <div class:list={['page', pageClass]}>
     <Content {links} currentPath={Astro.url.pathname} />
   </div>
 </BaseLayout>
