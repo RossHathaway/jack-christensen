@@ -1,6 +1,6 @@
 ---
 title: Hobbies and Other Pursuits
-description: A guide to Uncle Jack’s hobbies and other pursuits, from coaching sessions in calisthenics, handwriting, and swimming to tag along trips beyond tra-la-la tourism.
+description: A guide to Uncle Jack’s hobbies and other pursuits including coaching sessions, lectures, guided transformative travelling, and musical and theatre productions.
 ---
 
 <main>

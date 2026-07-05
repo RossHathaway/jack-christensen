@@ -1,6 +1,6 @@
 ---
 title: Public Service Projects
-description: Three free activities Uncle Jack led in Honolulu during the first week of every month — Chant Walking, the Hike to Diamond Head Lighthouse, and Strolling With a Longevity Coach.
+description: Activities Uncle Jack led in Honolulu — Chant Walking, a spiritual practice, the Hike to Diamond Head Lighthouse, and Strolling With a Longevity Coach, where Jack coached participants in diet and well-being.
 ---
 
 <script>

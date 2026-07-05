@@ -1,6 +1,6 @@
 ---
 title: Longevity Coach
-description: Uncle Jack’s latter-day social role as a longevity coach, advocating a productive longevity through his Geriatric Diet and the rule that less is best.
+description: Jack’s approach to maximize well-being into old age.
 ---
 
 <style>

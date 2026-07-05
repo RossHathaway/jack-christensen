@@ -1,6 +1,6 @@
 ---
 title: Favorite Japanese Sayings
-description: Uncle Jack’s continuing collection of favorite Japanese sayings with translations, given to participants on his October tag along trips to Japan.
+description: Uncle Jack’s continuing collection of favorite Japanese sayings with translations, useful for trips to Japan.
 ---
 
 <main>

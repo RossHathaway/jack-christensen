@@ -1,6 +1,6 @@
 ---
 title: La Pampa de Anta
-description: A single-sentence poem by J.S. Christensen — a muddy road, an adobe wall, and a sleeping dog after rain at La Pampa de Anta, Peru.
+description: A single-sentence poem by J.S. Christensen — scenes after rain at La Pampa de Anta, Peru.
 ---
 
 <script>

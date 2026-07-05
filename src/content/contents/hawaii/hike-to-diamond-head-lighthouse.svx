@@ -1,6 +1,6 @@
 ---
 title: Hike to Diamond Head Lighthouse
-description: A free guided walk on the first Saturday of every month through Kapiʻolani Park to the Diamond Head Lighthouse — the 50th State’s oldest all-volunteer litter control project, running since 1982.
+description: The history of the Hike to Diamond Head Lighthouse through Kapiʻolani Park - the 50th State’s oldest all-volunteer litter control project, running since 1982.
 
 ---
 <script>

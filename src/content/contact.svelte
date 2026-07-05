@@ -4,7 +4,7 @@
   export const metadata = {
     title: 'Contact',
     description:
-      'How to contact the organizers of jackshieldschristensen.com, the website of Jack Shields Christensen.',
+      'How to contact the organizers of this site',
   };
 </script>
 

@@ -1,6 +1,6 @@
 ---
 title: Forty Top-Rated Spots Guaranteed to Please
-description: Uncle Jack’s forty favorite places in Japan, arranged by area from Tokyo to Kyoto and beyond, with free attractions and closely related sites marked.
+description: Jack’s forty favorite places in Japan, arranged by area including Tokyo, Sakura, Omiya, Nikko, Kyoto, Nara, Ise, Shiga, Himeji, and Hiroshima, many of which are free.
 ---
 
 <main>

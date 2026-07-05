@@ -1,6 +1,6 @@
 ---
 title: Tag Along Trips
-description: Uncle Jack’s private excursions beyond tra-la-la tourism — tag along on his scheduled trips, or he tags along as guest and escort on a journey planned just for you.
+description: Jack's designed trips to Japan, Peru, India, and the Mojave Desert.
 ---
 
 <main>

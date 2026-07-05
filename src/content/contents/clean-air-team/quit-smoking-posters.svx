@@ -1,6 +1,6 @@
 ---
 title: Quit Smoking Posters
-description: The Clean Air Team’s quit-smoking posters, built on personal autosuggestion and the choice to complete or break the circle of habit repetition.
+description: The Clean Air Team’s quit-smoking posters which inspire smokers to quit.
 ---
 
 <script>

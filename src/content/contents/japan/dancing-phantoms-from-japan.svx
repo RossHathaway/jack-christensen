@@ -1,6 +1,6 @@
 ---
 title: Dancing Phantoms From Japan
-description: An introduction to the classical Noh dance-drama of Japan presented by Uncle Jack, with performances available during August annually.
+description: An introduction to the classical Noh dance-drama of Japan presented by Uncle Jack, with looks behind-the-scenes and examples of famous Noh performances.
 ---
 
 <script>

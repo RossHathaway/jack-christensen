@@ -1,6 +1,8 @@
 ---
 title: Private Outings
-description: Twenty-one original sightseeing outings personally escorted by Uncle Jack on five Hawaiian islands, from the Heart of Honolulu tour to neighbor island fly-drive trips.
+description: 21 original sightseeing outings guided by Uncle Jack on 5 Hawaiian islands including Jack's favorite scenic and historic sites on Oʻahu, and fly-drive trips to special places which are ideal spots for single-day visits on Molokaʻi, Lānaʻi, Kauaʻi, or The Big Island.
+
+.
 ---
 
 <script>
