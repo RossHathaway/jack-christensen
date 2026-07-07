@@ -31,9 +31,11 @@ export async function getStaticPaths() {
 
     // Per-page styles live in a .css file imported by the page's MDX and are
     // scoped by this class on the page's wrapper element (the replacement
-    // for mdsvex's Svelte-scoped <style> blocks). Folder index pages use the
-    // file name, matching their extracted css files.
-    const pageClass = `page-${isFolderIndex ? 'index' : slug.split('/').at(-1)}`;
+    // for mdsvex's Svelte-scoped <style> blocks). Folder index pages are
+    // scoped by the folder name — never `page-index`, which belongs to the
+    // home page: Astro can bundle several pages' styles into one shared
+    // stylesheet, so a shared class name would leak styles across pages.
+    const pageClass = `page-${slug.split('/').at(-1)}`;
 
     paths.push({
       params: { slug },
