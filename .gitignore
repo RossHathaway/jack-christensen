@@ -5,4 +5,6 @@ yarn-error.log
 /dist/
 /.astro/
 /api/_search-index.json
+/visual-regression/shots/
+/visual-regression/report/
 .vscode

@@ -1,0 +1,112 @@
+# Visual regression: screenshot every page of the site on the PR branch and
+# on the base branch, diff them with Playwright + pixelmatch, and publish a
+# summary of the differences.
+#
+# Runs on Blacksmith (drop-in replacement for GitHub-hosted runners — only
+# `runs-on` and the setup-node/cache actions change).
+name: Visual Regression
+
+on:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      base_ref:
+        description: 'Base ref to compare against'
+        required: false
+        default: 'master'
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  visual-regression:
+    runs-on: blacksmith-4vcpu-ubuntu-2404
+    timeout-minutes: 20
+    env:
+      BASE_REF: ${{ github.event_name == 'pull_request' && github.base_ref || (inputs.base_ref || 'master') }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: useblacksmith/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Cache Playwright browsers
+        uses: useblacksmith/cache@v5
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Build and capture branch (head) screenshots
+        run: |
+          npm run build
+          node visual-regression/capture.mjs --dist dist --out visual-regression/shots/head
+
+      - name: Build and capture base screenshots
+        run: |
+          git worktree add ../base "origin/${BASE_REF}"
+          cd ../base
+          npm ci
+          npm run build
+          node "$GITHUB_WORKSPACE/visual-regression/capture.mjs" \
+            --dist dist \
+            --out "$GITHUB_WORKSPACE/visual-regression/shots/base"
+
+      - name: Compare screenshots
+        run: |
+          node visual-regression/compare.mjs \
+            --base visual-regression/shots/base \
+            --head visual-regression/shots/head \
+            --out visual-regression/report \
+            --base-label "${BASE_REF}" \
+            --head-label "${GITHUB_HEAD_REF:-${GITHUB_REF_NAME}}"
+
+      - name: Publish summary
+        if: always()
+        run: |
+          if [ -f visual-regression/report/summary.md ]; then
+            cat visual-regression/report/summary.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload screenshots and diffs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: visual-regression-report
+          path: |
+            visual-regression/report/
+            visual-regression/shots/
+          retention-days: 14
+
+      - name: Comment summary on PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = 'visual-regression/report/summary.md';
+            if (!fs.existsSync(path)) return;
+            const marker = '<!-- visual-regression-summary -->';
+            const body = marker + '\n' + fs.readFileSync(path, 'utf8') +
+              `\n_Diff images are in the \`visual-regression-report\` artifact on this run._`;
+            const { data: comments } = await github.rest.issues.listComments({
+              ...context.repo,
+              issue_number: context.issue.number,
+            });
+            const existing = comments.find(c => c.body.startsWith(marker));
+            if (existing) {
+              await github.rest.issues.updateComment({ ...context.repo, comment_id: existing.id, body });
+            } else {
+              await github.rest.issues.createComment({ ...context.repo, issue_number: context.issue.number, body });
+            }
