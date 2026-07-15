@@ -2,8 +2,8 @@
 
 Screenshots every page of the built site with Playwright and diffs a branch
 against a base branch with pixelmatch. CI runs this on every pull request via
-`.github/workflows/visual-regression.yml` on Blacksmith runners and posts the
-summary to the PR.
+`.github/workflows/visual-regression.yml` on GitHub-hosted runners and posts
+the summary to the PR.
 
 ## Running locally
 

@@ -1,9 +1,6 @@
 # Visual regression: screenshot every page of the site on the PR branch and
 # on the base branch, diff them with Playwright + pixelmatch, and publish a
 # summary of the differences.
-#
-# Runs on Blacksmith (drop-in replacement for GitHub-hosted runners — only
-# `runs-on` and the setup-node/cache actions change).
 name: Visual Regression
 
 on:
@@ -21,7 +18,7 @@ permissions:
 
 jobs:
   visual-regression:
-    runs-on: blacksmith-4vcpu-ubuntu-2404
+    runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
       BASE_REF: ${{ github.event_name == 'pull_request' && github.base_ref || (inputs.base_ref || 'master') }}
@@ -31,7 +28,7 @@ jobs:
           fetch-depth: 0
 
       - name: Set up Node
-        uses: useblacksmith/setup-node@v5
+        uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
@@ -40,7 +37,7 @@ jobs:
         run: npm ci
 
       - name: Cache Playwright browsers
-        uses: useblacksmith/cache@v5
+        uses: actions/cache@v4
         with:
           path: ~/.cache/ms-playwright
           key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
