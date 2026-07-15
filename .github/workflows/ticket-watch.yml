@@ -1,0 +1,56 @@
+name: World Cup ticket watch
+
+on:
+  schedule:
+    # Every 30 minutes. GitHub cron is best-effort; runs may lag a few minutes.
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ticket-watch
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r ticket-watcher/requirements.txt
+
+      # Persist the "already alerted" state between runs so the same deal
+      # doesn't email every 30 minutes.
+      - name: Restore alert state
+        uses: actions/cache/restore@v4
+        with:
+          path: ticket-watcher/.state
+          key: ticket-watch-state-${{ github.run_id }}
+          restore-keys: |
+            ticket-watch-state-
+
+      - name: Check ticket prices
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_TO: rosswh@pm.me
+          SEATGEEK_CLIENT_ID: ${{ secrets.SEATGEEK_CLIENT_ID }}
+          TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
+        run: python ticket-watcher/check_tickets.py
+
+      - name: Save alert state
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: ticket-watcher/.state
+          key: ticket-watch-state-${{ github.run_id }}

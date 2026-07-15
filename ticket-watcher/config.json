@@ -1,0 +1,26 @@
+{
+  "threshold_usd": 700,
+  "keywords": ["england", "france"],
+  "pages": [
+    {
+      "site": "StubHub",
+      "url": "https://www.stubhub.com/fifa-world-cup-tickets"
+    },
+    {
+      "site": "SeatGeek (web)",
+      "url": "https://seatgeek.com/fifa-world-cup-tickets"
+    },
+    {
+      "site": "TickPick",
+      "url": "https://www.tickpick.com/fifa-world-cup-tickets/"
+    },
+    {
+      "site": "Gametime",
+      "url": "https://gametime.co/fifa-world-cup-tickets"
+    },
+    {
+      "site": "Vivid Seats",
+      "url": "https://www.vividseats.com/fifa-world-cup-tickets"
+    }
+  ]
+}

@@ -6,3 +6,5 @@ yarn-error.log
 /.astro/
 /api/_search-index.json
 .vscode
+ticket-watcher/.state/
+ticket-watcher/__pycache__/
