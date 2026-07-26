@@ -40,3 +40,21 @@
   .page-hike-to-diamond-head-lighthouse #alice-fraser h3 {
     margin-bottom: 0;
   }
+
+/* MDX wraps bare text runs in <p> elements (mdsvex left them as plain text),
+   whose margins opened extra space here; restore the original tight layout. */
+.page-hike-to-diamond-head-lighthouse figcaption p {
+    margin: 0;
+}
+
+.page-hike-to-diamond-head-lighthouse div.centered p:first-of-type {
+    margin: 0;
+}
+
+.page-hike-to-diamond-head-lighthouse #alice-fraser p {
+    margin-top: 0;
+}
+
+.page-hike-to-diamond-head-lighthouse #alice-fraser p:first-of-type {
+    margin-bottom: 0;
+}
