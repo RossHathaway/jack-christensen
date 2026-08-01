@@ -11,9 +11,3 @@
     .page-an-overview-for-travellers-in-japan #quote-1 footer {
         margin-left: auto;
     }
-
-/* MDX wraps the quote text in a <p> (mdsvex left it bare text inside the
-   blockquote); drop the paragraph margins so the quotes stay tight. */
-.page-an-overview-for-travellers-in-japan blockquote p {
-    margin: 0;
-}

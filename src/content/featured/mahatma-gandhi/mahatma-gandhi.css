@@ -22,10 +22,3 @@
       flex-direction: column;
     }
   }
-
-/* MDX wraps the blank-line-separated text in this poster-style block into
-   real <p> elements; mdsvex left it as one text run with <br /> gaps, so
-   collapse the paragraph margins to keep the original compact spacing. */
-.page-mahatma-gandhi #first-container section p {
-  margin: 0;
-}
