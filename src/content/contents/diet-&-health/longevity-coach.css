@@ -40,6 +40,10 @@
   margin-left: 4px;
 }
 
+.page-longevity-coach span.okina {
+  margin: 0;
+}
+
 .page-longevity-coach li::after {
   content: "";
   order: 2;
