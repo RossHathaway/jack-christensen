@@ -3,18 +3,26 @@
 
   let { links, currentPath = "/" } = $props();
 
-  // Sections start closed on a fresh visit, but a section the visitor opened
-  // stays open across page navigations (which are full page loads now).
-  const STORAGE_KEY = "nav-opened-section";
+  // Sections start closed on a fresh visit, but sections the visitor opened
+  // stay open across page navigations (which are full page loads now).
+  const STORAGE_KEY = "nav-opened-sections";
+
+  function loadOpenedSectionPaths() {
+    if (typeof sessionStorage === "undefined") return [];
+    try {
+      const stored = JSON.parse(sessionStorage.getItem(STORAGE_KEY) ?? "[]");
+      return Array.isArray(stored) ? stored : [];
+    } catch {
+      return [];
+    }
+  }
+
   const nav = $state({
-    openedSectionPath:
-      typeof sessionStorage !== "undefined"
-        ? (sessionStorage.getItem(STORAGE_KEY) ?? "")
-        : "",
+    openedSectionPaths: loadOpenedSectionPaths(),
   });
 
   $effect(() => {
-    sessionStorage.setItem(STORAGE_KEY, nav.openedSectionPath);
+    sessionStorage.setItem(STORAGE_KEY, JSON.stringify(nav.openedSectionPaths));
   });
 
   const processedLinks = [];

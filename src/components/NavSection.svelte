@@ -119,19 +119,20 @@
         {:else if link.children && link.children.length}
 
           <button
-          aria-pressed={nav.openedSectionPath === link.path}
-          aria-expanded={nav.openedSectionPath === link.path}
-          class:open={nav.openedSectionPath === link.path}
+          aria-pressed={nav.openedSectionPaths.includes(link.path)}
+          aria-expanded={nav.openedSectionPaths.includes(link.path)}
+          class:open={nav.openedSectionPaths.includes(link.path)}
           onclick={() => {
-            nav.openedSectionPath =
-              nav.openedSectionPath === link.path ? '' : link.path;
+            nav.openedSectionPaths = nav.openedSectionPaths.includes(link.path)
+              ? nav.openedSectionPaths.filter((path) => path !== link.path)
+              : [...nav.openedSectionPaths, link.path];
           }}>
             {link.name}
           </button>
 
           <!-- The wrapper div must be a literal sibling of the button so the
                scoped `button + div` collapse rules aren't pruned as unused. -->
-          <div class:isOpenedChildren={nav.openedSectionPath.startsWith(link.path)}>
+          <div class:isOpenedChildren={nav.openedSectionPaths.includes(link.path)}>
             <NavSection
               links={link.children}
               hasLightBgColor={!hasLightBgColor}
