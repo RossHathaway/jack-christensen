@@ -87,6 +87,14 @@ function wrapOkina() {
 // are MDX; Svelte remains only for the hydrated islands (Nav, SearchResults).
 export default defineConfig({
   output: 'static',
+  // Pages named after their own folder used to be served with the segment
+  // repeated; keep the old URLs working.
+  redirects: {
+    '/about-uncle-jack/about-uncle-jack': '/about-uncle-jack',
+    '/contents/clean-air-team/clean-air-team': '/contents/clean-air-team',
+    '/featured/mahatma-gandhi/mahatma-gandhi': '/featured/mahatma-gandhi',
+    '/featured/the-mature-american/the-mature-american': '/featured/the-mature-american',
+  },
   // The unified (remark/rehype) processor instead of Astro's default one:
   // custom plugins only run through `markdown.processor`, and the MDX
   // integration inherits this pipeline. `dashes: true` matches mdsvex's

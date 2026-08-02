@@ -34,6 +34,12 @@ function routeForFile(file) {
     .join('/');
   if (rel === 'index') return '/';
   if (rel.endsWith('/index')) return '/' + rel.slice(0, -'/index'.length);
+  // A page named after its own folder is served at the folder's URL
+  // (see src/pages/[...slug].astro).
+  const segments = rel.split('/');
+  if (segments.length > 1 && segments.at(-1) === segments.at(-2)) {
+    return '/' + segments.slice(0, -1).join('/');
+  }
   return '/' + rel;
 }
 

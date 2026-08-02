@@ -29,8 +29,14 @@ export function getAllLinks(dir = CONTENT_ROOT) {
     if (entry.isFile() && !entry.name.endsWith('.mdx')) continue;
 
     const childFileName = removeFileEnding(entry.name);
+    // A page named after its own folder is served at the folder's URL
+    // (see src/pages/[...slug].astro), so its link drops the repeated segment.
+    const isFolderNamesake =
+      entry.isFile() &&
+      dir !== CONTENT_ROOT &&
+      childFileName === path.basename(dir);
     const routePath = path
-      .relative(CONTENT_ROOT, path.join(dir, childFileName))
+      .relative(CONTENT_ROOT, isFolderNamesake ? dir : path.join(dir, childFileName))
       .split(path.sep)
       .join('/');
 
