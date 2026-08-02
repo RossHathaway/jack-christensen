@@ -1,0 +1,12 @@
+.page-antipollution-ads img {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.page-antipollution-ads #payment-section {
+  display: block;
+  font-style: italic;
+  font-size: 2rem;
+  margin: 1rem 0 2rem;
+  text-align: center;
+}

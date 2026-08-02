@@ -1,0 +1,24 @@
+---
+import CircleSquareLogo from './logos/CircleSquareLogo.astro';
+---
+
+<!-- links to explanation of Jack's personal religious symbol -->
+<a href="about-uncle-jack/personal-religious-symbol">
+  <CircleSquareLogo />
+</a>
+
+<style>
+  a > :global(svg) {
+    width: clamp(60px, 18vw, 180px);
+  }
+
+  a {
+    padding-left: 1rem;
+  }
+
+  @media screen and (max-width: 1000px) {
+    a > :global(svg) {
+      width: 80px;
+    }
+  }
+</style>

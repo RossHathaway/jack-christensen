@@ -1,11 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Index from '../content/index.svelte';
+import Index from '../content/index.mdx';
 
 const description =
   'The website of Jack Shields Christensen, “Uncle Jack” of Honolulu — a compilation of his writings, poems, tours, and public service projects, offered to anyone who shares his interests.';
 ---
 
 <BaseLayout {description}>
-  <Index />
+  <div class="page page-index">
+    <Index />
+  </div>
 </BaseLayout>

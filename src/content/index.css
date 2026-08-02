@@ -1,0 +1,20 @@
+.page-index div {
+  text-align: center;
+}
+
+.page-index img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 0 1rem 0;
+}
+
+.page-index p {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.page-index .border {
+  padding-bottom: 1rem;
+  border-bottom: dotted black 4px;
+}

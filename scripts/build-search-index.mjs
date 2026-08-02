@@ -19,7 +19,7 @@ function collectContentFiles(dir) {
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) {
       files.push(...collectContentFiles(full));
-    } else if (/\.(svx|svelte)$/.test(entry.name)) {
+    } else if (/\.mdx$/.test(entry.name)) {
       files.push(full);
     }
   }
@@ -29,7 +29,7 @@ function collectContentFiles(dir) {
 function routeForFile(file) {
   const rel = path
     .relative(CONTENT_ROOT, file)
-    .replace(/\.(svx|svelte)$/, '')
+    .replace(/\.mdx$/, '')
     .split(path.sep)
     .join('/');
   if (rel === 'index') return '/';
@@ -54,14 +54,14 @@ function decodeEntities(text) {
 }
 
 function componentImports(source, fromFile) {
-  return [...source.matchAll(/import\s+(\w+)\s+from\s+['"]([^'"]+\.svelte)['"]/g)]
+  return [...source.matchAll(/import\s+(\w+)\s+from\s+['"]([^'"]+\.astro)['"]/g)]
     .map((m) => ({
       name: m[1],
       file: path.resolve(path.dirname(fromFile), m[2]),
     }));
 }
 
-// Reduces an .svx or .svelte file to its title and readable text. Text
+// Reduces an .mdx (or imported .astro) file to its title and readable text. Text
 // rendered by an imported component belongs to the page too, so component
 // text is inlined — but only for components unique to a single page
 // (see uniquePageComponents below); components shared between pages are
@@ -85,7 +85,9 @@ function extractFile(file, { inlineComponents, inlineAll = false, visited = new 
   source = source
     .replace(/<script[\s\S]*?<\/script>/gi, ' ')
     .replace(/<style[\s\S]*?<\/style>/gi, ' ')
-    .replace(/<!--[\s\S]*?-->/g, ' ');
+    .replace(/<!--[\s\S]*?-->/g, ' ')
+    .replace(/\{\/\*[\s\S]*?\*\/\}/g, ' ') // JSX comments
+    .replace(/^(import|export)\s[^\n]*$/gm, ' '); // MDX module lines
 
   if (!title) {
     const heading =

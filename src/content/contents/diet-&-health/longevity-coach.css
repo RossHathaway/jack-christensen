@@ -1,0 +1,53 @@
+.page-longevity-coach img {
+    max-width: 100%;
+    width: 350px;
+    height: auto;
+    float: right;
+    margin: 1.5rem 0 1.5rem 1.5rem;
+}
+
+@media screen and (max-width: 400px) {
+    .page-longevity-coach img {
+        float: none;
+        width: 100%;
+        margin: 1.5rem 0;
+    }
+}
+
+.page-longevity-coach blockquote > footer {
+    float: right;
+}
+
+.page-longevity-coach blockquote:after { 
+   content: '.'; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+.page-longevity-coach li {
+  display: flex;
+}
+
+.page-longevity-coach span:first-child {
+  order: 1;
+  margin-right: 4px;
+}
+
+.page-longevity-coach span:last-child {
+  order: 3;
+  margin-left: 4px;
+}
+
+.page-longevity-coach span.okina {
+  margin: 0;
+}
+
+.page-longevity-coach li::after {
+  content: "";
+  order: 2;
+  flex-grow: 1;
+  height: 1.1em;
+  border-bottom: 4px dotted black;
+}

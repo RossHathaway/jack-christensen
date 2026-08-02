@@ -1,0 +1,8 @@
+.page-single-sentence-poems main {
+  text-align: left;
+}
+
+/* The poem links sit a bit in from the left edge of the prose. */
+.page-single-sentence-poems ol {
+  padding-left: 3rem;
+}

@@ -1,0 +1,49 @@
+---
+title: Quit Smoking Posters
+description: The Clean Air Team’s quit-smoking posters which inspire smokers to quit.
+---
+import './quit-smoking-posters.css';
+import AutoSuggestion from '../../../components/logos/AutosuggestionLogo.astro';
+import { Image } from 'astro:assets';
+import imgDancingWithCancerettes from '../../../assets/quit-smoking-posters/dancing-with-cancerettes.png';
+import imgTwoJapaneseRingsPainting from '../../../assets/quit-smoking-posters/two-japanese-rings-painting.png';
+import imgAntaeusTheGiant from '../../../assets/quit-smoking-posters/antaeus-the-giant.png';
+
+<main>
+    <section class="byr-border centered no-padding-visible">
+        <Image src={imgDancingWithCancerettes} alt="puppet person controlled by cigarettes" />
+    </section>
+    <section id="autosuggestion" class="bwr-border">
+        <figure>
+            <AutoSuggestion />
+
+            <figcaption>
+
+                THE KEY to __personal behavior modification__
+                and __beneficial habit formation__ is simply your
+                immediate decision to complete the circle
+                of repetition or not to complete the circle
+                of repetition . . .
+
+                </figcaption>
+        </figure>
+    </section>
+    <section class="bwr-border">
+        <figure>
+            <Image src={imgTwoJapaneseRingsPainting} alt="Japanese style painting" />
+            <figcaption>
+                BAD HABITS are only careless circles of repetitious,
+                conditioned behavior –– but they have the power
+                to keep us wanting what we no longer want.
+            </figcaption>
+        </figure>
+    </section>
+    <section class="byr-border">
+        <figure>
+        <Image src={imgAntaeusTheGiant} alt="Antaeus the giant protecting two people" />
+            <figcaption>
+                Good habits are guardians, bad habits are barriers
+            </figcaption>
+        </figure>
+    </section>
+</main>

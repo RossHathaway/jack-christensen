@@ -4,12 +4,13 @@ Built with [Astro](https://astro.build) and [Svelte 5](https://svelte.dev), migr
 
 ## Structure
 
-- `src/content/` mirrors the site's URL structure. `.svx` files are markdown processed by [mdsvex](https://mdsvex.pngwn.io), so they can embed Svelte components, `<script>` blocks, and scoped `<style>` blocks just like the old Sapper `.md` routes.
-- `src/pages/[...slug].astro` turns every file in `src/content/` into a static page. A folder's `index.svx` is served at the folder's own URL and receives `links` to its sibling pages as a prop (replacing the old `index.json.js` server endpoints).
+- `src/content/` mirrors the site's URL structure. `.mdx` files are markdown that can embed the shared `.astro` components from `src/components/`. Photos live in `src/assets/` and are rendered through Astro's `<Image />` component (or optimized markdown images), which converts them to appropriately sized WebP at build time.
+- A page's styles live in a sibling `.css` file imported by its `.mdx`, with every selector prefixed by a `.page-<name>` class that `[...slug].astro` puts on the page's wrapper element (the replacement for mdsvex's Svelte-scoped `<style>` blocks).
+- `src/pages/[...slug].astro` turns every `.mdx` file in `src/content/` into a static page. A folder's `index.mdx` is served at the folder's own URL and receives `links` to its sibling pages as a prop (replacing the old `index.json.js` server endpoints).
 - `src/layouts/BaseLayout.astro` replaces `src/template.html` + `src/routes/_layout.svelte`: it renders the header, the title, and the nav, and injects `<base href="/">` so the content's root-relative URLs keep working.
 - The accordion nav tree is generated at build time by `src/helpers/navLinks.js`, which scans `src/content/` the same way the old `navLinks.json.js` endpoint scanned `src/routes/`.
-- Almost everything is prerendered static HTML. Only two islands hydrate in the browser: the nav (`client:load` in the layout, for the accordion and mobile menu) and the Dancing Phantoms page (which repositions images with a `ResizeObserver`).
-- The ʻokina (U+02BB) is wrapped in `<span class="okina">` at build time by a rehype plugin in `svelte.config.js`, so CSS can give it a font with a correct advance width.
+- Almost everything is prerendered static HTML. Svelte remains only for the two hydrated islands: the nav (`client:load` in the layout, for the accordion and mobile menu) and the search results page. The Dancing Phantoms page repositions images with a plain `<script>` `ResizeObserver` in its dedicated page.
+- The ʻokina (U+02BB) is wrapped in `<span class="okina">` at build time by a rehype plugin in `astro.config.mjs`, so CSS can give it a font with a correct advance width.
 
 ## SEO: page titles & descriptions
 
@@ -23,8 +24,8 @@ description: A free guided walk on the first Saturday of every month...
 ```
 
 - `title` becomes `<title>Title | Jack Shields Christensen</title>`; `description` becomes the meta description. The search index also prefers the frontmatter `title`.
-- If a `.svx` file has no frontmatter `title`, the page still gets one derived from its file name (via `makeReadableName`); with no `description`, the meta tag is simply omitted.
-- The two `.svelte` content pages can't carry frontmatter, so they export the same data from a module script instead (see `src/content/contact.svelte`); the home page's description lives in `src/pages/index.astro`.
+- If an `.mdx` file has no frontmatter `title`, the page still gets one derived from its file name (via `makeReadableName`); with no `description`, the meta tag is simply omitted.
+- The home page's description lives in `src/pages/index.astro`.
 - The dedicated pages (`src/pages/index.astro`, `search.astro`, `404.astro`) pass `title`/`description` straight to `BaseLayout`.
 
 ## Search
