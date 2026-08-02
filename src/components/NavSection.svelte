@@ -29,6 +29,7 @@
 <style>
   div {
     width: 100%;
+    --menu-transition-duration: 0.3s;
   }
 
   a {
@@ -74,16 +75,24 @@
     background-position: center;
     float: right;
     transform: rotate(180deg);
-    transition: transform 0.3s;
+    transition: transform var(--menu-transition-duration);
   }
 
+  /* Animating to height: auto isn't possible, so the open/close is driven by
+     a single-row grid going from 0fr to 1fr, which can transition. */
   button + div {
-    height: 0;
+    display: grid;
+    grid-template-rows: 0fr;
     overflow: hidden;
+    transition: grid-template-rows var(--menu-transition-duration);
+  }
+
+  button + div > :global(*) {
+    min-height: 0;
   }
 
   button + div.isOpenedChildren {
-    height: auto;
+    grid-template-rows: 1fr;
     margin-left: -1.5rem;
   }
 
