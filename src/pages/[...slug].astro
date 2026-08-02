@@ -22,7 +22,15 @@ export async function getStaticPaths() {
 
     const isFolderIndex = route.endsWith('/index');
     const folderRoute = isFolderIndex ? route.slice(0, -'/index'.length) : null;
-    const slug = isFolderIndex ? folderRoute : route;
+    let slug = isFolderIndex ? folderRoute : route;
+
+    // A page named after its own folder (about-uncle-jack/about-uncle-jack)
+    // is that folder's page, served at the folder's URL rather than with the
+    // segment repeated.
+    const segments = route.split('/');
+    if (!isFolderIndex && segments.length > 1 && segments.at(-1) === segments.at(-2)) {
+      slug = segments.slice(0, -1).join('/');
+    }
 
     // The <title> and meta description come from the page's YAML frontmatter
     // (MDX exports it as `frontmatter`). A page without one still gets a
