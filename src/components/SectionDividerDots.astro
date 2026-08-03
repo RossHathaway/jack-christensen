@@ -1,14 +1,12 @@
 ---
 // A row of small dots marking a break between sections, replacing comments
-// like {/* 0 O O three dots */} in the content: 0 = filled dot, O = outlined.
-const { dots = "0 0 0 0" } = Astro.props;
-const shapes = [...dots]
-    .filter((c) => c.trim() !== "")
-    .map((c) => (c === "O" || c === "o" || c === "○" ? "outlined" : "filled"));
+// like {/* three dots */} in the content. Dots are all filled unless the
+// outlined prop is set.
+const { count = 4, outlined = false } = Astro.props;
 ---
 
 <div class="section-divider" role="separator">
-    {shapes.map((shape) => <span class:list={["dot", shape]} />)}
+    {Array.from({ length: count }, () => <span class:list={["dot", outlined ? "outlined" : "filled"]} />)}
 </div>
 
 <style>
