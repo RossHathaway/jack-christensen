@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig, fontProviders } from 'astro/config';
 import { unified } from '@astrojs/markdown-remark';
 import mdx from '@astrojs/mdx';
 import svelte from '@astrojs/svelte';
@@ -87,6 +87,14 @@ function wrapOkina() {
 // are MDX; Svelte remains only for the hydrated islands (Nav, SearchResults).
 export default defineConfig({
   output: 'static',
+  // Prefetch every internal link's HTML as it scrolls into view. Pages are
+  // small static documents, and `viewport` also covers touch devices where
+  // `hover` never fires; Astro skips prefetching on slow/data-saver
+  // connections automatically.
+  prefetch: {
+    prefetchAll: true,
+    defaultStrategy: 'viewport',
+  },
   // Pages named after their own folder used to be served with the segment
   // repeated; keep the old URLs working.
   redirects: {
@@ -107,4 +115,82 @@ export default defineConfig({
     }),
   },
   integrations: [mdx(), svelte()],
+  // Self-hosted fonts, served as hashed woff2 from /_astro/fonts. The files
+  // in src/assets/fonts are Google Fonts' own latin and latin-ext subset
+  // builds (400 normal only, matching what the old render-blocking
+  // css?family=Gelasio|Galindo|Noto+Serif link served; bold/italic stay
+  // browser-synthesized), with each variant's unicode-range copied from the
+  // Google CSS so browsers still skip subsets a page doesn't use. The ʻokina
+  // (U+02BB) is in the latin range. The generated @font-face names are
+  // hashed, so all CSS must reference the --font-* variables.
+  fonts: [
+    localGoogleSubsets({
+      name: 'Gelasio',
+      cssVariable: '--font-gelasio',
+      fallbacks: ['Georgia', 'serif'],
+      files: {
+        latin: './src/assets/fonts/gelasio-400-latin.woff2',
+        latinExt: './src/assets/fonts/gelasio-400-latin-ext.woff2',
+      },
+    }),
+    // Only used for the ʻokina (see wrapOkina above): Gelasio's U+02BB has
+    // a near-zero advance width, Noto Serif's is correct.
+    localGoogleSubsets({
+      name: 'Noto Serif',
+      cssVariable: '--font-noto-serif',
+      fallbacks: ['serif'],
+      files: {
+        latin: './src/assets/fonts/noto-serif-400-latin.woff2',
+        latinExt: './src/assets/fonts/noto-serif-400-latin-ext.woff2',
+      },
+    }),
+    localGoogleSubsets({
+      name: 'Galindo',
+      cssVariable: '--font-galindo',
+      fallbacks: ['cursive', 'sans-serif'],
+      files: {
+        latin: './src/assets/fonts/galindo-400-latin.woff2',
+        latinExt: './src/assets/fonts/galindo-400-latin-ext.woff2',
+      },
+    }),
+  ],
 });
+
+// A local-provider font family from Google's latin/latin-ext subset files,
+// with the unicode-range values Google's CSS serves for those subsets.
+function localGoogleSubsets({ name, cssVariable, fallbacks, files }) {
+  const LATIN_RANGE = [
+    'U+0000-00FF', 'U+0131', 'U+0152-0153', 'U+02BB-02BC', 'U+02C6',
+    'U+02DA', 'U+02DC', 'U+0304', 'U+0308', 'U+0329', 'U+2000-206F',
+    'U+20AC', 'U+2122', 'U+2191', 'U+2193', 'U+2212', 'U+2215',
+    'U+FEFF', 'U+FFFD',
+  ];
+  const LATIN_EXT_RANGE = [
+    'U+0100-02BA', 'U+02BD-02C5', 'U+02C7-02CC', 'U+02CE-02D7',
+    'U+02DD-02FF', 'U+0304', 'U+0308', 'U+0329', 'U+1D00-1DBF',
+    'U+1E00-1E9F', 'U+1EF2-1EFF', 'U+2020', 'U+20A0-20AB',
+    'U+20AD-20C0', 'U+2113', 'U+2C60-2C7F', 'U+A720-A7FF',
+  ];
+  return {
+    provider: fontProviders.local(),
+    name,
+    cssVariable,
+    fallbacks,
+    options: {
+      variants: [
+        {
+          src: [files.latin],
+          weight: 400,
+          style: 'normal',
+          unicodeRange: LATIN_RANGE,
+        },
+        {
+          src: [files.latinExt],
+          weight: 400,
+          style: 'normal',
+          unicodeRange: LATIN_EXT_RANGE,
+        },
+      ],
+    },
+  };
+}

@@ -12,7 +12,7 @@ import imgAntaeusTheGiant from '../../../assets/quit-smoking-posters/antaeus-the
 
 <main>
     <section class="byr-border centered no-padding-visible">
-        <Image src={imgDancingWithCancerettes} alt="puppet person controlled by cigarettes" />
+        <Image src={imgDancingWithCancerettes} alt="puppet person controlled by cigarettes" width={736} densities={[1, 2]} />
     </section>
     <section id="autosuggestion" class="bwr-border">
         <figure>
@@ -31,7 +31,7 @@ import imgAntaeusTheGiant from '../../../assets/quit-smoking-posters/antaeus-the
     </section>
     <section class="bwr-border">
         <figure>
-            <Image src={imgTwoJapaneseRingsPainting} alt="Japanese style painting" />
+            <Image src={imgTwoJapaneseRingsPainting} alt="Japanese style painting" width={736} densities={[1, 2]} />
             <figcaption>
                 BAD HABITS are only careless circles of repetitious,
                 conditioned behavior –– but they have the power
@@ -41,7 +41,9 @@ import imgAntaeusTheGiant from '../../../assets/quit-smoking-posters/antaeus-the
     </section>
     <section class="byr-border">
         <figure>
-        <Image src={imgAntaeusTheGiant} alt="Antaeus the giant protecting two people" />
+        {/* No explicit width: this line-art scan compresses far better at its
+    intrinsic size than resampled (resizing inflates the webp ~5x). */}
+<Image src={imgAntaeusTheGiant} alt="Antaeus the giant protecting two people" />
             <figcaption>
                 Good habits are guardians, bad habits are barriers
             </figcaption>
