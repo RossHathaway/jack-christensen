@@ -24,7 +24,7 @@ html {
 
 body {
     margin: 0;
-    font-family: "Gelasio", serif;
+    font-family: var(--font-gelasio);
     font-size: 1.25rem;
     letter-spacing: 0.02em;
     line-height: 1.5;
@@ -130,7 +130,7 @@ figure {
 }
 
 .okina {
-    font-family: 'Noto Serif', serif;
+    font-family: var(--font-noto-serif);
     display: inline-block;
     min-width: 0.35em;
 }
