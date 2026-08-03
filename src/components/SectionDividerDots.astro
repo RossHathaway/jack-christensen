@@ -1,0 +1,38 @@
+---
+// A row of small dots marking a break between sections, replacing comments
+// like {/* 0 O O three dots */} in the content: 0 = filled dot, O = outlined.
+const { dots = "0 0 0 0" } = Astro.props;
+const shapes = [...dots]
+    .filter((c) => c.trim() !== "")
+    .map((c) => (c === "O" || c === "o" || c === "○" ? "outlined" : "filled"));
+---
+
+<div class="section-divider" role="separator">
+    {shapes.map((shape) => <span class:list={["dot", shape]} />)}
+</div>
+
+<style>
+    .section-divider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .dot {
+        box-sizing: border-box;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+    }
+
+    .filled {
+        background-color: currentColor;
+    }
+
+    .outlined {
+        border: 2px solid currentColor;
+        background-color: transparent;
+    }
+</style>
