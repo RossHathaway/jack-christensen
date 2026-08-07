@@ -47,6 +47,75 @@ function unwrapHtmlBlockParagraphs() {
   return (tree) => visit(tree);
 }
 
+// Rehype plugin: put two spaces between sentences in body text (headings are
+// left alone). HTML collapses runs of literal spaces, so the gap is rendered
+// as U+00A0 + a normal space, which browsers keep while still allowing a line
+// break at the boundary. A sentence boundary is end punctuation (plus any
+// closing quotes/brackets) followed by whitespace and a capitalized word;
+// periods after honorifics ("Mr.") or single initials ("James A. Michener",
+// "U.S.") don't count. Boundaries split across inline elements ("...end.</u>
+// Next") are found by carrying the preceding text and the pending whitespace
+// across text nodes, resetting at every non-inline element so formatting
+// whitespace between blocks is never touched.
+function doubleSpaceSentences() {
+  const SKIP = new Set(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'pre', 'code', 'script', 'style']);
+  const INLINE = new Set([
+    'a', 'abbr', 'b', 'cite', 'del', 'em', 'i', 'ins', 'mark', 'q', 'small',
+    'span', 'strong', 'sub', 'sup', 'time', 'u',
+  ]);
+  const END = `[.!?…][)\\]"'”’]*`;
+  const START = `[(\\["'“‘]*[A-Z]`;
+  const boundary = new RegExp(`(${END})(\\s+)(?=${START})`, 'g');
+  const endsSentence = new RegExp(`(${END})$`);
+  const startsSentence = new RegExp(`^${START}`);
+  const abbreviation =
+    /(?:\b(?:Mr|Mrs|Ms|Dr|Mt|St|Prof|Rev|Fr|Lt|Gen|Col|Capt|Sgt|No|vs)|(?:^|[^A-Za-z])[A-Z])$/;
+
+  // True when `punct` ends a sentence given the text leading up to it.
+  function isBoundary(punct, before) {
+    return punct[0] !== '.' || !abbreviation.test(before);
+  }
+
+  function processNode(node, ctx) {
+    if (node.type === 'text') {
+      // Boundary split across nodes: this node starts a sentence and the
+      // punctuation — and possibly the whitespace too — came earlier.
+      if (ctx.pending && startsSentence.test(node.value)) {
+        ctx.pending.value = ctx.pending.value.replace(/\s+$/, '\u00A0 ');
+      } else if (!ctx.pending && /^\s/.test(node.value)) {
+        const m = ctx.tail.match(endsSentence);
+        if (m && isBoundary(m[1], ctx.tail.slice(0, m.index)) &&
+            startsSentence.test(node.value.replace(/^\s+/, ''))) {
+          node.value = node.value.replace(/^\s+/, '\u00A0 ');
+        }
+      }
+      node.value = node.value.replace(boundary, (match, punct, ws, offset, str) =>
+        isBoundary(punct, str.slice(0, offset)) ? `${punct}\u00A0 ` : match
+      );
+      const m = node.value.match(new RegExp(`${END}\\s+$`));
+      ctx.pending = m && isBoundary(m[0], node.value.slice(0, m.index)) ? node : null;
+      ctx.tail = (ctx.tail + node.value).slice(-80);
+      return;
+    }
+    if (!node.children) {
+      // A childless node (<br>, an image, a comment, an MDX expression) may
+      // render anything, so don't look for a boundary across it.
+      Object.assign(ctx, { tail: '', pending: null });
+      return;
+    }
+    if (node.type === 'element' && SKIP.has(node.tagName)) {
+      Object.assign(ctx, { tail: '', pending: null });
+      return;
+    }
+    const inline = node.type === 'element' && INLINE.has(node.tagName);
+    const ctx2 = inline ? ctx : { tail: '', pending: null };
+    node.children.forEach((child) => processNode(child, ctx2));
+    if (!inline) Object.assign(ctx, { tail: '', pending: null });
+  }
+
+  return (tree) => processNode(tree, { tail: '', pending: null });
+}
+
 // Rehype plugin: wrap every U+02BB (ʻokina) in <span class="okina"> so that
 // the CSS can give it the correct font and layout, avoiding the overlap caused
 // by Gelasio's near-zero advance width for this character. (Carried over from
@@ -111,7 +180,7 @@ export default defineConfig({
     processor: unified({
       smartypants: { dashes: true },
       remarkPlugins: [unwrapHtmlBlockParagraphs],
-      rehypePlugins: [wrapOkina],
+      rehypePlugins: [doubleSpaceSentences, wrapOkina],
     }),
   },
   integrations: [mdx(), svelte()],
