@@ -1,0 +1,41 @@
+---
+// A row of small dots marking a break between sections, replacing comments
+// like {/* three dots */} in the content. Dots are all filled unless the
+// outlined prop is set.
+const { count = 4, outlined = false } = Astro.props;
+---
+
+<div class="section-divider" role="separator">
+    {Array.from({ length: count }, () => <span class:list={["dot", outlined ? "outlined" : "filled"]} />)}
+</div>
+
+<style>
+    .section-divider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        /* Own the surrounding space rather than relying on a neighbour's
+           margin, which is absent after a bare <div> or <br />. Collapses
+           with adjacent paragraph margins, so every divider gets the same
+           airy break the printed handouts use. */
+        margin-block: 2rem;
+    }
+
+    .dot {
+        box-sizing: border-box;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+    }
+
+    .filled {
+        background-color: currentColor;
+    }
+
+    .outlined {
+        border: 2px solid currentColor;
+        background-color: transparent;
+    }
+</style>

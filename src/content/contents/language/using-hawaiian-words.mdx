@@ -4,6 +4,7 @@ title: Using Hawaiian Words
 description: A free lecture on Hawaiian words and place names from The Program to Preserve Hawaiian Place Names, a statewide public service since 1974. The easiest way to find out how to say and write individual Hawaiian words.
 ---
 import DocumentWrapper from '../../../components/DocumentWrapper.astro';
+import SectionDividerDots from '../../../components/SectionDividerDots.astro';
 
 <DocumentWrapper component="hawaiianPersonHeader">
     <div class="centered" slot="header">
@@ -25,7 +26,9 @@ FOR
 EDUCATIONAL INSTITUTIONS
 SOCIAL ORGANIZATIONS
 BUSINESS GROUPS
-</div> {/* TODO: four circles */}
+</div> 
+
+<SectionDividerDots outlined /> 
 
 **THIS HELPFUL SESSION** has been conducted by volunteer speakers
 since April, 1974 as the easiest and fastest way to find out how to cope with saying and writing individual Hawaiian words.
@@ -42,6 +45,8 @@ for standard spelling, pronunciation and usage of traditional terms people encou
 Such knowledge is essential for professionals who use Hawaiian
 words frequently —- especially persons employed in the visitor
 industry, public relations, advertising, writers and editors, broadcasters and recording artists.
+
+<SectionDividerDots outlined />
 
 #### BACKGROUND
 
@@ -95,7 +100,7 @@ Waikiki Public Library, Honolulu<br />
 (Thirty—eight consecutive Saturday afternoon sessions)<br />
 Halekulani (Four private sessions for hotel staff and guests)<br />
 
-{/* 0 O O three dots*/}
+<SectionDividerDots count={3} outlined /> 
 
 #### ADVISORY
 
@@ -204,7 +209,7 @@ helpful SOUND PATTERNS to your own __Personal Hawaiian Vocabulary__.
 It’s the key item for quick reference, indicating exactly how
 to say a word -— without having to figure it out all over again!
 
-{/* 0 O O dots */}
+<SectionDividerDots count={3} outlined /> 
 
 ## The Program To Preserve Hawaiian Place Names
 
@@ -265,7 +270,7 @@ standard dictionary. Useful words from other languages are “Hawaiianized”
 into suitable terms. Also certain Hawaiian words are updated and revised
 for accuracy, and elements are included from similar Polynesian Languages.]
 
-{/* TODO: 3 dots */}
+<SectionDividerDots count={3} outlined />
 
 REFERENCE MAPS OF THE ISLANDS 0F HAWAIʻI<br />
 By James A. Bier<br />
@@ -289,7 +294,7 @@ KAUAʻi, 7th Edition, 2004, 22x14s inches
 
 MOLOKAʻi & LANAʻI, 5th Edition, 2002, 21x18 inches
 
-{/* three dots */}
+<SectionDividerDots count={3} outlined />
 
 THE WEB SITE http://www.ulukau.org was announced in the spring of 2004
 as the first Hawaiian/English e—library. The site’s dictionaries allow
