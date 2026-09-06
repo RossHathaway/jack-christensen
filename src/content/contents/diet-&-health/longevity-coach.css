@@ -30,12 +30,12 @@
   display: flex;
 }
 
-.page-longevity-coach span:first-child {
+.page-longevity-coach ul span:first-child {
   order: 1;
   margin-right: 4px;
 }
 
-.page-longevity-coach span:last-child {
+.page-longevity-coach ul span:last-child {
   order: 3;
   margin-left: 4px;
 }
