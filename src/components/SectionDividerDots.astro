@@ -16,6 +16,11 @@ const { count = 4, outlined = false } = Astro.props;
         align-items: center;
         gap: 1rem;
         width: 100%;
+        /* Own the surrounding space rather than relying on a neighbour's
+           margin, which is absent after a bare <div> or <br />. Collapses
+           with adjacent paragraph margins, so every divider gets the same
+           airy break the printed handouts use. */
+        margin-block: 2rem;
     }
 
     .dot {
