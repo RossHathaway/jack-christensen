@@ -5,6 +5,14 @@
     align-items: center;
   }
 
+  /* A flex container never collapses its items' margins, so the trailing
+     paragraph's margin-bottom stays trapped inside this box and adds itself
+     to whatever spacing follows -- pushing the dots divider below down by an
+     extra line. Let the next element own the gap. */
+  .page-hike-to-diamond-head-lighthouse div.centered > :last-child {
+    margin-block-end: 0;
+  }
+
   .page-hike-to-diamond-head-lighthouse figure {
     width: 390px;
     margin: 1rem;
