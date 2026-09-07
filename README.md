@@ -12,7 +12,9 @@ Built with [Astro](https://astro.build) and [Svelte 5](https://svelte.dev), migr
 - Almost everything is prerendered static HTML. Svelte remains only for the two hydrated islands: the nav (`client:load` in the layout, for the accordion and mobile menu) and the search results page. The Dancing Phantoms page repositions images with a plain `<script>` `ResizeObserver` in its dedicated page.
 - The ʻokina (U+02BB) is wrapped in `<span class="okina">` at build time by a rehype plugin in `astro.config.mjs`, so CSS can give it a font with a correct advance width.
 
-## SEO: page titles & descriptions
+## SEO
+
+### Page titles & descriptions
 
 Every page gets a unique `<title>` and `<meta name="description">`, rendered by `src/layouts/BaseLayout.astro`. To change them, edit the YAML frontmatter at the top of the page's file in `src/content/`:
 
@@ -27,6 +29,15 @@ description: A free guided walk on the first Saturday of every month...
 - If an `.mdx` file has no frontmatter `title`, the page still gets one derived from its file name (via `makeReadableName`); with no `description`, the meta tag is simply omitted.
 - The home page's description lives in `src/pages/index.astro`.
 - The dedicated pages (`src/pages/index.astro`, `search.astro`, `404.astro`) pass `title`/`description` straight to `BaseLayout`.
+
+### Canonical URLs, link previews & the sitemap
+
+`site` in `astro.config.mjs` is the canonical origin (`https://jackshieldschristensen.com`); every absolute URL below is resolved against it.
+
+- `BaseLayout.astro` renders a `<link rel="canonical">` plus Open Graph and Twitter card tags on every page. Canonical URLs carry no trailing slash, matching the site's own links, and the home page stays a bare `/`.
+- The link-preview image is `src/assets/og-circle-square-logo.svg`: Jack's circle-and-square symbol on the site's background color, drawn at 1200×630 for the wide (`summary_large_image`) card. The scrapers don't render SVG, so the build rasterizes it to PNG — which is what `image.dangerouslyProcessSVG` in `astro.config.mjs` is for. To change the preview, edit that one file.
+- `@astrojs/sitemap` writes `sitemap-index.xml` and `sitemap-0.xml` at build time. `/404`, `/search`, and the self-named redirect URLs in `redirects` are left out; the redirect stubs Astro generates are already `noindex` and point their canonical at the real page.
+- `public/robots.txt` points crawlers at the sitemap and disallows `/search` and `/api/`.
 
 ## Search
 

@@ -1,11 +1,12 @@
 ---
-import { Font } from 'astro:assets';
+import { Font, getImage } from 'astro:assets';
 
 import '../styles/global.css';
 import CircleSquareLogoButton from '../components/CircleSquareLogoButton.astro';
 import Nav from '../components/Nav.svelte';
 import Title from '../components/Title.svelte';
 import { getAllLinks } from '../helpers/navLinks.js';
+import ogImageSource from '../assets/og-circle-square-logo.svg';
 
 // Page-specific <title> and meta description for SEO. Content pages set
 // these via frontmatter (see src/pages/[...slug].astro); dedicated pages
@@ -15,6 +16,18 @@ const { title, description } = Astro.props;
 const fullTitle = title ? `${title} | ${SITE_TITLE}` : SITE_TITLE;
 const links = getAllLinks();
 const currentPath = Astro.url.pathname;
+
+// Canonical URL, resolved against `site` in astro.config.mjs. No trailing
+// slash, matching both the site's own links and the sitemap; the home page
+// stays a bare "/".
+const canonicalURL = new URL(currentPath.replace(/(.)\/$/, '$1'), Astro.site);
+
+// Jack's circle-and-square symbol, rasterized for link previews: the
+// scrapers do not render SVG. Flat color and hard edges, so PNG rather than
+// a JPEG that would ring around the curves. The source is already drawn at
+// 1200x630, the ratio the wide card below expects.
+const ogImage = await getImage({ src: ogImageSource, format: 'png' });
+const ogImageURL = new URL(ogImage.src, Astro.site);
 ---
 
 <html lang="en">
@@ -39,6 +52,22 @@ const currentPath = Astro.url.pathname;
 
     <title>{fullTitle}</title>
     {description && <meta name="description" content={description} />}
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Link previews. Every URL here is absolute: <base href="/"> above only
+         resolves relative ones in the document, and the scrapers that read
+         these tags need full URLs anyway. -->
+    <meta property="og:type" content={currentPath === '/' ? 'website' : 'article'} />
+    <meta property="og:site_name" content={SITE_TITLE} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content={fullTitle} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={ogImageURL} />
+    <meta property="og:image:width" content={ogImage.attributes.width} />
+    <meta property="og:image:height" content={ogImage.attributes.height} />
+    <meta property="og:image:alt" content="Jack's circle-and-square symbol" />
+    <meta name="twitter:card" content="summary_large_image" />
   </head>
 
   <body>

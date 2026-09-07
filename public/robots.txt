@@ -1,0 +1,9 @@
+# Everything on the site is meant to be indexed except the search page, which
+# is an empty shell until its client-side island fetches results, and the
+# serverless function behind it.
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /search
+
+Sitemap: https://jackshieldschristensen.com/sitemap-index.xml

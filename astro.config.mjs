@@ -1,6 +1,7 @@
 import { defineConfig, fontProviders } from 'astro/config';
 import { unified } from '@astrojs/markdown-remark';
 import mdx from '@astrojs/mdx';
+import sitemap from '@astrojs/sitemap';
 import svelte from '@astrojs/svelte';
 
 // Remark plugin: undo MDX's paragraph-wrapping of text that the old mdsvex
@@ -151,11 +152,30 @@ function wrapOkina() {
   return (tree) => processNode(tree);
 }
 
+// Pages named after their own folder used to be served with the segment
+// repeated; keep the old URLs working. Declared out here so the sitemap can
+// leave these duplicates out (see SITEMAP_EXCLUDED below).
+const REDIRECTS = {
+  '/about-uncle-jack/about-uncle-jack': '/about-uncle-jack',
+  '/contents/clean-air-team/clean-air-team': '/contents/clean-air-team',
+  '/featured/mahatma-gandhi/mahatma-gandhi': '/featured/mahatma-gandhi',
+  '/featured/the-mature-american/the-mature-american': '/featured/the-mature-american',
+};
+
+// Kept out of the sitemap: /search is a client-only island with nothing to
+// index, and the redirect URLs are meta-refresh stubs for pages already
+// listed at their real URL. (/404 and /500 the integration drops itself.)
+const SITEMAP_EXCLUDED = new Set(['/search', ...Object.keys(REDIRECTS)]);
+
 // Static site, same as the old `sapper export` output: every route becomes
 // route/index.html and assets are served from the site root. Content pages
 // are MDX; Svelte remains only for the hydrated islands (Nav, SearchResults).
 export default defineConfig({
   output: 'static',
+  // The canonical origin. Required by @astrojs/sitemap, and what
+  // BaseLayout.astro resolves <link rel="canonical"> and the og: URLs
+  // against.
+  site: 'https://jackshieldschristensen.com',
   // Prefetch every internal link's HTML as it scrolls into view. Pages are
   // small static documents, and `viewport` also covers touch devices where
   // `hover` never fires; Astro skips prefetching on slow/data-saver
@@ -164,14 +184,7 @@ export default defineConfig({
     prefetchAll: true,
     defaultStrategy: 'viewport',
   },
-  // Pages named after their own folder used to be served with the segment
-  // repeated; keep the old URLs working.
-  redirects: {
-    '/about-uncle-jack/about-uncle-jack': '/about-uncle-jack',
-    '/contents/clean-air-team/clean-air-team': '/contents/clean-air-team',
-    '/featured/mahatma-gandhi/mahatma-gandhi': '/featured/mahatma-gandhi',
-    '/featured/the-mature-american/the-mature-american': '/featured/the-mature-american',
-  },
+  redirects: REDIRECTS,
   // The unified (remark/rehype) processor instead of Astro's default one:
   // custom plugins only run through `markdown.processor`, and the MDX
   // integration inherits this pipeline. `dashes: true` matches mdsvex's
@@ -183,7 +196,23 @@ export default defineConfig({
       rehypePlugins: [doubleSpaceSentences, wrapOkina],
     }),
   },
-  integrations: [mdx(), svelte()],
+  // Lets the build rasterize an SVG source, which BaseLayout.astro needs for
+  // the link-preview image (the scrapers do not render SVG). "Dangerously"
+  // because an SVG can pull in external resources while being rendered; the
+  // only one this applies to is src/assets/og-circle-square-logo.svg, drawn
+  // in this repo. SVGs under public/ are copied, never processed.
+  image: { dangerouslyProcessSVG: true },
+  integrations: [
+    mdx(),
+    svelte(),
+    sitemap({
+      filter: (page) => !SITEMAP_EXCLUDED.has(new URL(page).pathname.replace(/(.)\/$/, '$1')),
+      // The site's own links never carry a trailing slash, so neither should
+      // the URLs it nominates as canonical. BaseLayout.astro builds
+      // <link rel="canonical"> the same way.
+      serialize: (item) => ({ ...item, url: item.url.replace(/(.)\/$/, '$1') }),
+    }),
+  ],
   // Self-hosted fonts, served as hashed woff2 from /_astro/fonts. The files
   // in src/assets/fonts are Google Fonts' own latin and latin-ext subset
   // builds (400 normal only, matching what the old render-blocking
