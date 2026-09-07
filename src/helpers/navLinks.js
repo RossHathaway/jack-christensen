@@ -46,14 +46,22 @@ function getContentsSectionLinks() {
 
   for (const [file, mod] of Object.entries(contentsModules)) {
     const route = file.replace('../content/', '').replace(/\.mdx$/, '');
-    const fileName = removeFileEnding(route.split('/').at(-1));
+    const segments = route.split('/');
+    const fileName = removeFileEnding(segments.at(-1));
+    // A page named after its own folder is served at the folder's URL
+    // (see src/pages/[...slug].astro), so its link drops the repeated
+    // segment — otherwise the nav points at a redirect instead of the page.
+    const linkPath =
+      segments.length > 1 && segments.at(-1) === segments.at(-2)
+        ? segments.slice(0, -1).join('/')
+        : route;
     // A page without tags falls back to the folder it lives in.
-    const tags = mod.frontmatter?.tags ?? [route.split('/')[1]];
+    const tags = mod.frontmatter?.tags ?? [segments[1]];
 
     for (const tag of tags) {
       if (!sections.has(tag)) sections.set(tag, []);
       sections.get(tag).push({
-        path: route,
+        path: linkPath,
         name: makeReadableName(fileName),
         lastUrlSegment: fileName,
         children: null,
