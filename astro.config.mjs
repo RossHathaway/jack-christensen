@@ -196,6 +196,12 @@ export default defineConfig({
       rehypePlugins: [doubleSpaceSentences, wrapOkina],
     }),
   },
+  // Lets the build rasterize an SVG source, which BaseLayout.astro needs for
+  // the link-preview image (the scrapers do not render SVG). "Dangerously"
+  // because an SVG can pull in external resources while being rendered; the
+  // only one this applies to is src/assets/og-circle-square-logo.svg, drawn
+  // in this repo. SVGs under public/ are copied, never processed.
+  image: { dangerouslyProcessSVG: true },
   integrations: [
     mdx(),
     svelte(),

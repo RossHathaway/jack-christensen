@@ -35,7 +35,7 @@ description: A free guided walk on the first Saturday of every month...
 `site` in `astro.config.mjs` is the canonical origin (`https://jackshieldschristensen.com`); every absolute URL below is resolved against it.
 
 - `BaseLayout.astro` renders a `<link rel="canonical">` plus Open Graph and Twitter card tags on every page. Canonical URLs carry no trailing slash, matching the site's own links, and the home page stays a bare `/`.
-- The link-preview image is the home page's photo of Jack, re-encoded at build time to an 800px JPEG (~135 kB) — the source PNG is ~1.9 MB, more than the scrapers will fetch. It is portrait, so the Twitter card is `summary` rather than a wide one that would crop it to a strip.
+- The link-preview image is `src/assets/og-circle-square-logo.svg`: Jack's circle-and-square symbol on the site's background color, drawn at 1200×630 for the wide (`summary_large_image`) card. The scrapers don't render SVG, so the build rasterizes it to PNG — which is what `image.dangerouslyProcessSVG` in `astro.config.mjs` is for. To change the preview, edit that one file.
 - `@astrojs/sitemap` writes `sitemap-index.xml` and `sitemap-0.xml` at build time. `/404`, `/search`, and the self-named redirect URLs in `redirects` are left out; the redirect stubs Astro generates are already `noindex` and point their canonical at the real page.
 - `public/robots.txt` points crawlers at the sitemap and disallows `/search` and `/api/`.
 
