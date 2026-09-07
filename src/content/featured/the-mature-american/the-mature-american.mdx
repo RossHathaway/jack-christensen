@@ -113,7 +113,11 @@ Let us settle ourselves and work and wedge our feet downward through the mud and
 
 <SectionDividerDots count={3} outlined />
 
-<blockquote class="centered">
+{/* Set in a column narrower than the body text, like the staggered poem in
+    contents/japan/my-mystical-pathways-in-japan. Auto margins replace the
+    browser's default 40px on each side, so the narrow-screen fallback keeps
+    that same inset rather than letting the verse run the full body width. */}
+<blockquote class="centered" style="width: min(550px, 100% - 80px); margin-inline: auto">
 I hearing get, who had but ears,
 And sight, who had but eyes before;
 I moments live, who lived but years,
