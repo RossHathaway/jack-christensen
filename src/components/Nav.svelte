@@ -75,8 +75,6 @@
 
     width: 18rem;
     margin: 0 0 0 1rem;
-
-    transition: width 0.3s;
   }
 
   a {
@@ -131,23 +129,32 @@
       display: block;
     }
 
+    /* The closed menu keeps the width it has when open, so a section left
+       open on the previous page is laid out at its final width from the
+       start. Animating the width instead would re-wrap that section's links
+       on every frame, making it open several hundred pixels too tall and
+       then shrink. `height: 0` keeps the closed menu out of the page's
+       scroll height, and the reveal is a clip-path wipe, which paints
+       without reflowing. */
     nav {
-      width: 0;
+      width: 18rem;
+      max-width: calc(100vw - 2rem);
       height: 0;
       overflow: hidden;
+      clip-path: inset(0 0 0 100%);
 
+      margin: 0 1rem;
       position: absolute;
       top: calc(7vw + 60px);
       right: 0;
       z-index: 3;
+
+      transition: clip-path 0.3s;
     }
 
     #menu-toggle:checked ~ nav {
-      margin: 0 1rem;
-      width: 18rem;
       height: auto;
-      max-width: 18rem;
-      max-height: auto;
+      clip-path: inset(0);
     }
   }
 </style>
