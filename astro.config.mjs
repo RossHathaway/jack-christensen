@@ -187,11 +187,13 @@ export default defineConfig({
   redirects: REDIRECTS,
   // The unified (remark/rehype) processor instead of Astro's default one:
   // custom plugins only run through `markdown.processor`, and the MDX
-  // integration inherits this pipeline. `dashes: true` matches mdsvex's
-  // typography from the old .svx content (`--` becomes an em dash).
+  // integration inherits this pipeline. `dashes: false` keeps the typewriter
+  // double hyphen the transcribed handouts use: the source documents type
+  // `--`, so the pages show two hyphens rather than the em dash mdsvex used
+  // to substitute. Smartypants' quotes, ellipses and backticks stay on.
   markdown: {
     processor: unified({
-      smartypants: { dashes: true },
+      smartypants: { dashes: false },
       remarkPlugins: [unwrapHtmlBlockParagraphs],
       rehypePlugins: [doubleSpaceSentences, wrapOkina],
     }),
