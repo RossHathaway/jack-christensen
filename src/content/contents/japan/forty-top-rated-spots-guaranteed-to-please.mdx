@@ -3,6 +3,10 @@ tags: [japan, travel]
 title: Forty Top-Rated Spots Guaranteed to Please
 description: Jack’s forty favorite places in Japan, arranged by area including Tokyo, Sakura, Omiya, Nikko, Kyoto, Nara, Ise, Shiga, Himeji, and Hiroshima, many of which are free.
 ---
+import './forty-top-rated-spots-guaranteed-to-please.css';
+import { Image } from 'astro:assets';
+import imgTerukuniCraneTree from '../../../assets/japan/terukuni-shrine-crane-tree.png';
+
 <main>
 
 ## FORTY TOP-RATED SPOTS GUARANTEED TO PLEASE
@@ -49,4 +53,9 @@ White Heron Castle (Japan’s only remaining original wood castle) <br />
 <strong>HIROSHIMA:</strong> (1:45 southwest of Kyoto on JR Bullet Train) Peace Memorial Park* & A-Bomb Museum & Shukkeien Garden <br />
 Miyajima Island’s Big Torii* & Utsukushima “Floating” Shrine & Senjokaku “Hall Of A Thousand Mats” & Gojunoto Pagoda* <br />
 & Optional cable car ride or Nature Trail Hike* to the Mt. Misen viewpoint overlooking The Inland Sea
+
+<figure>
+  <Image src={imgTerukuniCraneTree} alt="The Crane Tree, a sculpted tree with outstretched wing-like branches, in front of the steps and halls of Terukuni Shinto Shrine" width={936} densities={[1, 2]} />
+  <figcaption>This is the centerpiece at Terukuni Shinto Shrine at Kagoshima City on the southern tip of Kyushu Island. The Crane Tree symbolizes longevity and in 2015 was estimated to be 170 years old.</figcaption>
+</figure>
 </main>
