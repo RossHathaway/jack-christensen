@@ -1,0 +1,16 @@
+.page-forty-top-rated-spots-guaranteed-to-please figure {
+  margin: 2.5rem auto 0;
+  max-width: 936px;
+}
+
+.page-forty-top-rated-spots-guaranteed-to-please figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.page-forty-top-rated-spots-guaranteed-to-please figcaption {
+  margin-top: 0.75rem;
+  font-style: italic;
+  line-height: 1.5;
+}
